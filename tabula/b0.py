@@ -28,6 +28,12 @@ def _underlined(page, w):
                for r in page.rects + page.lines if r["bottom"] - r["top"] < 2)
 
 
+def _box(ws):
+    """Union of word boxes -> [x0, top, x1, bottom] in PDF points, origin top-left (pdfplumber)."""
+    return [round(min(w["x0"] for w in ws), 1), round(min(w["top"] for w in ws), 1),
+            round(max(w["x1"] for w in ws), 1), round(max(w["bottom"] for w in ws), 1)] if ws else None
+
+
 def extract(pdf_path, page_no=1):
     page = pdfplumber.open(pdf_path).pages[page_no - 1]
     words, flags = verify_page(page)
@@ -71,6 +77,8 @@ def extract(pdf_path, page_no=1):
         vwords = {columns[i]["id"]: r[k]["words"] for i, k in enumerate(vcols) if i < len(columns)}
         rows.append({"label": label, "x0": x0, "raw": raw, "values": values, "footnote_refs": refs,
                      "underlined": {cid: any(_underlined(page, w) for w in ws) for cid, ws in vwords.items()},
+                     "bbox": _box(label_cell["words"] + [w for ws in vwords.values() for w in ws]),
+                     "cell_bbox": {cid: _box(ws) for cid, ws in vwords.items()},
                      "tainted": label_cell["tainted"] or any(r[k]["tainted"] for k in vcols)})
 
     # levels: cluster label x0 (within 3pt)
@@ -116,6 +124,8 @@ def extract(pdf_path, page_no=1):
         "unit": meta["unit"] and {**meta["unit"], "currency": "JPY"},
         "columns": columns, "rows": rows,
         "continues_on_next_page": meta["continues_on_next_page"],
+        "page_size": [round(float(page.width), 1), h],
+        "rounding": {"method": meta["rounding_note"] or "unknown", "source": "note" if meta["rounding_note"] else "none"},
         "security_flags": flags,
     }
     return doc

@@ -2,17 +2,17 @@
 
 The model sees the page image only, so hidden text-layer content can't reach it.
 This adapter turns its raw JSON into the PRD §4 schema with the same normalizer as every track.
-    kaggle kernels output kamrulhasan12345/tabula-rasa-b1-qwen3vl -p runs/b1/kaggle
+Where the model runs (live endpoint, or replay of saved Kaggle outputs) is tabula/vlm.py's business.
 """
 import json
 import re
 import unicodedata
 from pathlib import Path
 
+from tabula import vlm
 from tabula.b0 import CONTRA, NET
 from tabula.normalize import normalize_label, parse_jp_date, parse_value
 
-OUTPUTS = Path(__file__).parent.parent / "runs/b1/kaggle/b1_outputs.json"
 UNITS = {"千円": 1000, "百万円": 1_000_000, "円": 1}
 
 
@@ -82,15 +82,23 @@ def convert(raw, doc_id, page_no):
             "columns": cols, "rows": rows}
 
 
+def _png(pdf_path, page_no, dpi=200):  # same resolution as the Kaggle page images
+    import io
+    import pdfplumber
+    with pdfplumber.open(pdf_path) as pdf:
+        buf = io.BytesIO()
+        pdf.pages[page_no - 1].to_image(resolution=dpi).original.save(buf, "PNG")
+        return buf.getvalue()
+
+
 def predict(pdf_path, page_no, doc_id=None):
     doc_id = doc_id or Path(pdf_path).stem
-    key = f"{doc_id}_p{page_no}.png"
-    recs = {}
-    for f in sorted(OUTPUTS.parent.parent.glob("kaggle*/b1_outputs.json")):  # main run + EDINET-only run
-        recs |= json.loads(f.read_text())
-    if key not in recs:
-        return None, {}  # not run yet: the harness skips this page
-    rec = recs[key]
+    try:
+        rec = vlm.read_page(f"{doc_id}_p{page_no}.png", lambda: _png(pdf_path, page_no))
+    except OSError as e:  # endpoint down / timeout: the page continues on B0 alone
+        return None, {"vlm_error": f"{type(e).__name__}: {e}"}
+    if rec is None:
+        return None, {}  # demo mode, page not run: the harness skips it, the hybrid uses B0 alone
     try:
         raw = _json(rec["text"])
     except json.JSONDecodeError:

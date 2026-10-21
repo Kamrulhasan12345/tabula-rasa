@@ -2,7 +2,15 @@
 
 For agents and people picking this project up. Newest state first. Results: [REPORT.md](../REPORT.md). Design and research: [PRD.md](PRD.md).
 
-## Current state (2026-10-22, commit `f897167`)
+## Current state (2026-10-22)
+
+**API milestone (latest).** The VLM no longer depends on Kaggle files at runtime:
+- `tabula/vlm.py` calls any OpenAI-compatible endpoint (`TABULA_VLM_URL`), or replays saved outputs in demo mode (the default). No real endpoint exists yet; `tests/test_api.py` stands one up as a fake.
+- `tabula/api.py` provides `parse_pdf()`. Output adds `cell_bbox`, inferred sum checks (`check_results`), `warnings` and HTML.
+- `tabula/server.py` is the FastAPI server: upload → background parse → poll → page JSON / CSV / HTML / PNG.
+- The inferred sum checks were validated on gold values: 356 pass, 10 false alarms (2.7%), from a cost-of-goods schedule with subtracted rows and gold pages missing rows.
+
+**MVP milestone** (commit `f897167`):
 
 The MVP submission is done:
 - M0–M4 milestones, plus a hybrid parser (B0 text layer + B1 VLM cross-check).
@@ -40,15 +48,15 @@ Not started:
 
 | # | Item | PRD ref | Time |
 |---|---|---|---|
-| 1 | **Live VLM call.** B1 only reads saved Kaggle outputs (`runs/b1/kaggle*/b1_outputs.json`), so new PDFs get B0 only. Waiting on the user: self-hosted GPU endpoint or hosted VLM API | F1, F7 | 3–4 h |
-| 2 | `parse(pdf_bytes) -> [page JSON]` function + FastAPI server | F1, F3 | 1–2 h |
-| 3 | Cell `bbox` in output (B0 has word boxes; not emitted yet) | §4 | 1–2 h |
-| 4 | Sum checks at runtime, from 合計 rows, without XBRL | F6 | 2–3 h |
+| 1 | **VLM endpoint.** The client is done; still needs a real endpoint: `vllm serve` on a GPU host, or a hosted VLM API key. Then set `TABULA_VLM_URL` | F1, F7 | 1 h once it exists |
+| 2 | ~~Library function + FastAPI server~~ done (`api.py`, `server.py`) | F1, F3 | – |
+| 3 | ~~Cell `bbox`~~ done for text-layer pages. Scan pages (VLM only) have no boxes: needs OCR box matching | §4 | 2 h for scans |
+| 4 | ~~Runtime sum checks~~ done for 合計/小計 rows. Profit lines (売上総利益 = 売上高 − 売上原価) not yet | F6 | 2 h for PL |
 | 5 | Latency p95 ≤ 10 s/page (VLM ~300 s; security OCR ~18 s) | §9 | 4–8 h |
 | 6 | All tables on a page; B0 and gold take only Camelot's first table | F1 | 2–3 h |
 | 7 | Multi-page stitching; check 資産合計 = 負債純資産合計 | F8 | 2–3 h |
 | 8 | Per-row unit overrides (1株当たり 円, 株, %) | F4a | 1 h |
-| 9 | HTML output (`evaluate.to_html` exists; wire it into the CLI) | F3 | 15 min |
+| 9 | ~~HTML output~~ done (`api.to_html`, CLI and server) | F3 | – |
 | 10 | Keep 訂正前 and 訂正後 tables apart when both are on one page | F6a | 2 h |
 
 ## How things fit together
@@ -60,6 +68,9 @@ PDF page ─┬─ security.verify_page  (keep only visibly painted words; OCR c
           ├─ b1.predict            (saved VLM output → §4 JSON via convert())
           └─ hybrid.merge          (B0 values; cell_status agreed/review/b0_only/vlm_only;
                                     periods filled from B1 when the router found none)
+api.parse_page = hybrid.parse + checks.infer_checks/run_checks + warnings
+server.py      = upload / background parse (one at a time, in-process lock) / page JSON, CSV, HTML, PNG
+b1.predict     = vlm.read_page (live HTTP or demo replay) + b1.convert
 ```
 
 - **Output:** PRD §4 schema, one JSON per page. The CLI also writes a CSV.
@@ -97,6 +108,7 @@ PDF page ─┬─ security.verify_page  (keep only visibly painted words; OCR c
 - `tests/test_m2.py`
 - `tests/test_m3.py`
 - `tests/test_hybrid.py`
+- `tests/test_api.py` (~30 s, OCR; runs the live path against a fake VLM endpoint)
 
 Rebuild specific gold pages (needs local PDFs + XBRL):
 ```bash
