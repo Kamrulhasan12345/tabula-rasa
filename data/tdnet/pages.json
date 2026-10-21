@@ -1,0 +1,1390 @@
+[
+ {
+  "doc": "081220260925540070",
+  "name": "薬王堂ＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs",
+   "cf"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260925540070",
+  "name": "薬王堂ＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 6,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260925540070",
+  "name": "薬王堂ＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 7,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260925540070",
+  "name": "薬王堂ＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 8,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260925540070",
+  "name": "薬王堂ＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 9,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929541752",
+  "name": "ＮＩＳＳＨＡ",
+  "stratum": "IFRS",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929541752",
+  "name": "ＮＩＳＳＨＡ",
+  "stratum": "IFRS",
+  "page": 7,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929541752",
+  "name": "ＮＩＳＳＨＡ",
+  "stratum": "IFRS",
+  "page": 9,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929541752",
+  "name": "ＮＩＳＳＨＡ",
+  "stratum": "IFRS",
+  "page": 10,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929541752",
+  "name": "ＮＩＳＳＨＡ",
+  "stratum": "IFRS",
+  "page": 11,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929541752",
+  "name": "ＮＩＳＳＨＡ",
+  "stratum": "IFRS",
+  "page": 12,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542433",
+  "name": "イリソ電子工業",
+  "stratum": "JGAAP-連結-年度",
+  "page": 3,
+  "kinds": [
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542433",
+  "name": "イリソ電子工業",
+  "stratum": "JGAAP-連結-年度",
+  "page": 6,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542433",
+  "name": "イリソ電子工業",
+  "stratum": "JGAAP-連結-年度",
+  "page": 8,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542433",
+  "name": "イリソ電子工業",
+  "stratum": "JGAAP-連結-年度",
+  "page": 9,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542433",
+  "name": "イリソ電子工業",
+  "stratum": "JGAAP-連結-年度",
+  "page": 10,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542433",
+  "name": "イリソ電子工業",
+  "stratum": "JGAAP-連結-年度",
+  "page": 12,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542483",
+  "name": "Ｇ－インテグループ",
+  "stratum": "JGAAP-非連結",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542483",
+  "name": "Ｇ－インテグループ",
+  "stratum": "JGAAP-非連結",
+  "page": 5,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542483",
+  "name": "Ｇ－インテグループ",
+  "stratum": "JGAAP-非連結",
+  "page": 6,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260929542486",
+  "name": "ニデック",
+  "stratum": "IFRS",
+  "page": 4,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260930543480",
+  "name": "ナブテスコ",
+  "stratum": "訂正-IFRS",
+  "page": 4,
+  "kinds": [
+   "pl",
+   "bs",
+   "ss"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260930543480",
+  "name": "ナブテスコ",
+  "stratum": "訂正-IFRS",
+  "page": 9,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260930543480",
+  "name": "ナブテスコ",
+  "stratum": "訂正-IFRS",
+  "page": 11,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260930543480",
+  "name": "ナブテスコ",
+  "stratum": "訂正-IFRS",
+  "page": 12,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260930543480",
+  "name": "ナブテスコ",
+  "stratum": "訂正-IFRS",
+  "page": 13,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220260930543480",
+  "name": "ナブテスコ",
+  "stratum": "訂正-IFRS",
+  "page": 15,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261005546065",
+  "name": "パルグループＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261005546065",
+  "name": "パルグループＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 5,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261005546065",
+  "name": "パルグループＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 7,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261005546065",
+  "name": "パルグループＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 8,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261005546065",
+  "name": "パルグループＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 9,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261006546386",
+  "name": "ＫＧ情報",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261006546386",
+  "name": "ＫＧ情報",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 5,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261006546386",
+  "name": "ＫＧ情報",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 7,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261006546386",
+  "name": "ＫＧ情報",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 8,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 3,
+  "kinds": [
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 7,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 9,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 11,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 12,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 14,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 19,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 21,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548219",
+  "name": "ＨＫＳ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 22,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548285",
+  "name": "Ｇ－メディア",
+  "stratum": "JGAAP-連結-年度",
+  "page": 9,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548285",
+  "name": "Ｇ－メディア",
+  "stratum": "JGAAP-連結-年度",
+  "page": 11,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548285",
+  "name": "Ｇ－メディア",
+  "stratum": "JGAAP-連結-年度",
+  "page": 12,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548285",
+  "name": "Ｇ－メディア",
+  "stratum": "JGAAP-連結-年度",
+  "page": 13,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261008548285",
+  "name": "Ｇ－メディア",
+  "stratum": "JGAAP-連結-年度",
+  "page": 14,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549466",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 4,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549466",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 9,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549466",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 11,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549466",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 13,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549466",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 15,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549466",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 20,
+  "kinds": [
+   "segment"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549509",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 4,
+  "kinds": [
+   "ci",
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549509",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 8,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549509",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 10,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261013549509",
+  "name": "アークランズ",
+  "stratum": "訂正-JGAAP",
+  "page": 12,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550257",
+  "name": "プリントネット",
+  "stratum": "JGAAP-非連結",
+  "page": 3,
+  "kinds": [
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550257",
+  "name": "プリントネット",
+  "stratum": "JGAAP-非連結",
+  "page": 7,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550257",
+  "name": "プリントネット",
+  "stratum": "JGAAP-非連結",
+  "page": 9,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550257",
+  "name": "プリントネット",
+  "stratum": "JGAAP-非連結",
+  "page": 11,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550257",
+  "name": "プリントネット",
+  "stratum": "JGAAP-非連結",
+  "page": 13,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550336",
+  "name": "Ｕ－ＮＥＸＴ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 4,
+  "kinds": [
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550336",
+  "name": "Ｕ－ＮＥＸＴ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 10,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550336",
+  "name": "Ｕ－ＮＥＸＴ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 12,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550336",
+  "name": "Ｕ－ＮＥＸＴ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 13,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550336",
+  "name": "Ｕ－ＮＥＸＴ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 14,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550336",
+  "name": "Ｕ－ＮＥＸＴ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 16,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550696",
+  "name": "Ｇ－ＦＩＸＥＲ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 7,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550696",
+  "name": "Ｇ－ＦＩＸＥＲ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 8,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550696",
+  "name": "Ｇ－ＦＩＸＥＲ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 9,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550696",
+  "name": "Ｇ－ＦＩＸＥＲ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 10,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550696",
+  "name": "Ｇ－ＦＩＸＥＲ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 12,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550893",
+  "name": "ウエストＨＤ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 3,
+  "kinds": [
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550893",
+  "name": "ウエストＨＤ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 8,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550893",
+  "name": "ウエストＨＤ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 10,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550893",
+  "name": "ウエストＨＤ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 11,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550893",
+  "name": "ウエストＨＤ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 12,
+  "kinds": [
+   "ss"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261014550893",
+  "name": "ウエストＨＤ",
+  "stratum": "JGAAP-連結-年度",
+  "page": 13,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261015551275",
+  "name": "ベルテックス",
+  "stratum": "JGAAP-非連結",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261015551275",
+  "name": "ベルテックス",
+  "stratum": "JGAAP-非連結",
+  "page": 5,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261015551275",
+  "name": "ベルテックス",
+  "stratum": "JGAAP-非連結",
+  "page": 7,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261015551443",
+  "name": "シーラＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261015551443",
+  "name": "シーラＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 6,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261015551443",
+  "name": "シーラＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 8,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261015551443",
+  "name": "シーラＨＤ",
+  "stratum": "JGAAP-連結-四半期",
+  "page": 9,
+  "kinds": [
+   "ci"
+  ],
+  "unit": "百万円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261019552797",
+  "name": "Ｒ－ハウスリート",
+  "stratum": "REIT",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261019552797",
+  "name": "Ｒ－ハウスリート",
+  "stratum": "REIT",
+  "page": 16,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261019552797",
+  "name": "Ｒ－ハウスリート",
+  "stratum": "REIT",
+  "page": 19,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261019552797",
+  "name": "Ｒ－ハウスリート",
+  "stratum": "REIT",
+  "page": 23,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261020553462",
+  "name": "Ｒ－ラサールロジ",
+  "stratum": "REIT",
+  "page": 3,
+  "kinds": [
+   "pl",
+   "bs"
+  ],
+  "unit": null,
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261020553462",
+  "name": "Ｒ－ラサールロジ",
+  "stratum": "REIT",
+  "page": 11,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261020553462",
+  "name": "Ｒ－ラサールロジ",
+  "stratum": "REIT",
+  "page": 13,
+  "kinds": [
+   "pl"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261020553462",
+  "name": "Ｒ－ラサールロジ",
+  "stratum": "REIT",
+  "page": 17,
+  "kinds": [
+   "cf"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ },
+ {
+  "doc": "081220261020553462",
+  "name": "Ｒ－ラサールロジ",
+  "stratum": "REIT",
+  "page": 23,
+  "kinds": [
+   "bs"
+  ],
+  "unit": "千円",
+  "img_only": false,
+  "landscape": false,
+  "teisei": false,
+  "radicals": 0
+ }
+]

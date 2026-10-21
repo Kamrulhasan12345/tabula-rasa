@@ -1,0 +1,1082 @@
+[
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 63,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結貸借対照表",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 65,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 66,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 67,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結株主資本等変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 69,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 102,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 104,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XHMO",
+  "name": "パーク二四株式会社（定款上の商号　パーク２４株式会社）",
+  "title": "有価証券報告書",
+  "page": 106,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 90,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結財政状態計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 92,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 93,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 94,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結持分変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 96,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 160,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 162,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100XTOY",
+  "name": "ナブテスコ株式会社",
+  "title": "有価証券報告書",
+  "page": 163,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 38,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結貸借対照表",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 40,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 41,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 42,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結株主資本等変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 44,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 65,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 66,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y4K3",
+  "name": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "page": 67,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 54,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結貸借対照表",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 56,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 57,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 58,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結株主資本等変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 60,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 98,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 100,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Y5KN",
+  "name": "アークランズ株式会社",
+  "title": "有価証券報告書",
+  "page": 101,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 31,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結貸借対照表",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 33,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 34,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 35,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結株主資本等変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 37,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 63,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 65,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YIEA",
+  "name": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "page": 66,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 44,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結貸借対照表",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 46,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 47,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 48,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結株主資本等変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 50,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 81,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 83,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100YJMY",
+  "name": "内海造船株式会社",
+  "title": "有価証券報告書",
+  "page": 84,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 93,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結財政状態計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 95,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 96,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 97,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結持分変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 99,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 167,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 169,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z4C8",
+  "name": "ナブテスコ株式会社",
+  "title": "訂正有価証券報告書",
+  "page": 170,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-訂正"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 58,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結貸借対照表",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 60,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 61,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 62,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結株主資本等変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 64,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 97,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 99,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z57M",
+  "name": "イリソ電子工業株式会社",
+  "title": "有価証券報告書",
+  "page": 100,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-JGAAP"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 128,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "連結財政状態計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 130,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "連結損益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 131,
+  "kinds": [
+   "ci"
+  ],
+  "title_text": "連結包括利益計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 132,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "連結持分変動計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 134,
+  "kinds": [
+   "cf"
+  ],
+  "title_text": "連結キャッシュ・フロー計算書",
+  "scope": "consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 221,
+  "kinds": [
+   "bs"
+  ],
+  "title_text": "貸借対照表",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 223,
+  "kinds": [
+   "pl"
+  ],
+  "title_text": "損益計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ },
+ {
+  "doc": "S100Z5CA",
+  "name": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "page": 224,
+  "kinds": [
+   "ss"
+  ],
+  "title_text": "株主資本等変動計算書",
+  "scope": "non_consolidated",
+  "unit": "百万円",
+  "landscape": false,
+  "teisei": false,
+  "stratum": "EDINET-IFRS"
+ }
+]

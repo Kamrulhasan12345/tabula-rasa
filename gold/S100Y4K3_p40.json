@@ -1,0 +1,1128 @@
+{
+ "doc_id": "S100Y4K3",
+ "page": 40,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "(自",
+   "period_type": null,
+   "period_end": "2025-02-28",
+   "period_start": "2024-03-01"
+  },
+  {
+   "id": "c1",
+   "label": "(単位:百万円)",
+   "period_type": null,
+   "period_end": "2026-02-28",
+   "period_start": "2025-03-01"
+  }
+ ],
+ "rows": [
+  {
+   "label": "2【連結損益計算書及び連結包括利益計算書】",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "【連結損益計算書】",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "2【連結損益計算書及び連結包括利益計算書】"
+   ],
+   "id": "r02",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "売上高",
+   "raw": {
+    "c0": "151,957",
+    "c1": "163,808"
+   },
+   "values": {
+    "c0": 151957,
+    "c1": 163808
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03",
+   "xbrl": {
+    "c0": "NetSalesSummaryOfBusinessResults",
+    "c1": "NetSalesSummaryOfBusinessResults"
+   },
+   "xbrl_sign": 1,
+   "concept": "NetSalesSummaryOfBusinessResults"
+  },
+  {
+   "label": "売上原価",
+   "raw": {
+    "c0": "119,347",
+    "c1": "128,634"
+   },
+   "values": {
+    "c0": 119347,
+    "c1": 128634
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r04",
+   "xbrl": {
+    "c0": "CostOfSales",
+    "c1": "CostOfSales"
+   },
+   "xbrl_sign": 1,
+   "concept": "CostOfSales"
+  },
+  {
+   "label": "売上総利益",
+   "raw": {
+    "c0": "32,609",
+    "c1": "35,173"
+   },
+   "values": {
+    "c0": 32609,
+    "c1": 35173
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05",
+   "xbrl": {
+    "c0": "GrossProfit",
+    "c1": "GrossProfit"
+   },
+   "xbrl_sign": 1,
+   "concept": "GrossProfit"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r06",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "給料",
+   "raw": {
+    "c0": "9,335",
+    "c1": "10,370"
+   },
+   "values": {
+    "c0": 9335,
+    "c1": 10370
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "SalariesSGA",
+    "c1": "SalariesSGA"
+   },
+   "xbrl_sign": 1,
+   "concept": "SalariesSGA"
+  },
+  {
+   "label": "賞与引当金繰入額",
+   "raw": {
+    "c0": "621",
+    "c1": null
+   },
+   "values": {
+    "c0": 621,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "ProvisionForBonusesSGA"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProvisionForBonusesSGA"
+  },
+  {
+   "label": "退職給付費用",
+   "raw": {
+    "c0": "117",
+    "c1": "128"
+   },
+   "values": {
+    "c0": 117,
+    "c1": 128
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "RetirementBenefitExpensesSGA",
+    "c1": "RetirementBenefitExpensesSGA"
+   },
+   "xbrl_sign": 1,
+   "concept": "RetirementBenefitExpensesSGA"
+  },
+  {
+   "label": "賃借料",
+   "raw": {
+    "c0": "3,406",
+    "c1": "3,724"
+   },
+   "values": {
+    "c0": 3406,
+    "c1": 3724
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "RentExpensesSGA",
+    "c1": "RentExpensesSGA"
+   },
+   "xbrl_sign": 1,
+   "concept": "RentExpensesSGA"
+  },
+  {
+   "label": "減価償却費",
+   "raw": {
+    "c0": "2,946",
+    "c1": "3,467"
+   },
+   "values": {
+    "c0": 2946,
+    "c1": 3467
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "DepreciationSGA",
+    "c1": "DepreciationSGA"
+   },
+   "xbrl_sign": 1,
+   "concept": "DepreciationSGA"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "10,700",
+    "c1": "11,503"
+   },
+   "values": {
+    "c0": 10700,
+    "c1": 11503
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r12",
+   "xbrl": {
+    "c0": "OtherSGA",
+    "c1": "OtherSGA"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherSGA"
+  },
+  {
+   "label": "販売費及び一般管理費合計",
+   "raw": {
+    "c0": "27,127",
+    "c1": "29,888"
+   },
+   "values": {
+    "c0": 27127,
+    "c1": 29888
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r13",
+   "xbrl": {
+    "c0": "SellingGeneralAndAdministrativeExpenses",
+    "c1": "SellingGeneralAndAdministrativeExpenses"
+   },
+   "xbrl_sign": 1,
+   "concept": "SellingGeneralAndAdministrativeExpenses"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "5,481",
+    "c1": "5,285"
+   },
+   "values": {
+    "c0": 5481,
+    "c1": 5285
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r14",
+   "xbrl": {
+    "c0": "OperatingIncome",
+    "c1": "OperatingIncome"
+   },
+   "xbrl_sign": 1,
+   "concept": "OperatingIncome"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r15",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "18",
+    "c1": "29"
+   },
+   "values": {
+    "c0": 18,
+    "c1": 29
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r16",
+   "xbrl": {
+    "c0": "InterestIncomeNOI",
+    "c1": "InterestIncomeNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "InterestIncomeNOI"
+  },
+  {
+   "label": "受取事務手数料",
+   "raw": {
+    "c0": "195",
+    "c1": "204"
+   },
+   "values": {
+    "c0": 195,
+    "c1": 204
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r17",
+   "xbrl": {
+    "c0": "OfficeWorkFeeNOI",
+    "c1": "OfficeWorkFeeNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "OfficeWorkFeeNOI"
+  },
+  {
+   "label": "固定資産受贈益",
+   "raw": {
+    "c0": "37",
+    "c1": "57"
+   },
+   "values": {
+    "c0": 37,
+    "c1": 57
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r18",
+   "xbrl": {
+    "c0": "GainOnDonationOfNoncurrentAssetsNOI",
+    "c1": "GainOnDonationOfNoncurrentAssetsNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "GainOnDonationOfNoncurrentAssetsNOI"
+  },
+  {
+   "label": "受取手数料",
+   "raw": {
+    "c0": "17",
+    "c1": "15"
+   },
+   "values": {
+    "c0": 17,
+    "c1": 15
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r19",
+   "xbrl": {
+    "c0": "CommissionFeeNOI",
+    "c1": "CommissionFeeNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "CommissionFeeNOI"
+  },
+  {
+   "label": "古紙売却収入",
+   "raw": {
+    "c0": "36",
+    "c1": "37"
+   },
+   "values": {
+    "c0": 36,
+    "c1": 37
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r20",
+   "xbrl": {
+    "c0": "IncomeFromSalesOfUsedPaperNOI",
+    "c1": "GainOnDonationOfNoncurrentAssetsNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeFromSalesOfUsedPaperNOI"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "85",
+    "c1": "97"
+   },
+   "values": {
+    "c0": 85,
+    "c1": 97
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r21",
+   "xbrl": {
+    "c0": "OtherNOI",
+    "c1": "OtherNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherNOI"
+  },
+  {
+   "label": "営業外収益合計",
+   "raw": {
+    "c0": "391",
+    "c1": "442"
+   },
+   "values": {
+    "c0": 391,
+    "c1": 442
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r22",
+   "xbrl": {
+    "c0": "NonOperatingIncome",
+    "c1": "NonOperatingIncome"
+   },
+   "xbrl_sign": 1,
+   "concept": "NonOperatingIncome"
+  },
+  {
+   "label": "営業外費用",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r23",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "86",
+    "c1": "246"
+   },
+   "values": {
+    "c0": 86,
+    "c1": 246
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r24",
+   "xbrl": {
+    "c0": "InterestExpensesNOE",
+    "c1": "InterestExpensesNOE"
+   },
+   "xbrl_sign": 1,
+   "concept": "InterestExpensesNOE"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "7",
+    "c1": "10"
+   },
+   "values": {
+    "c0": 7,
+    "c1": 10
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r25",
+   "xbrl": {
+    "c0": "OtherNOE",
+    "c1": "CarryingAmountSharesOtherThanThoseNotListedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherNOE"
+  },
+  {
+   "label": "営業外費用合計",
+   "raw": {
+    "c0": "94",
+    "c1": "256"
+   },
+   "values": {
+    "c0": 94,
+    "c1": 256
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r26",
+   "xbrl": {
+    "c0": "NonOperatingExpenses",
+    "c1": "NonOperatingExpenses"
+   },
+   "xbrl_sign": 1,
+   "concept": "NonOperatingExpenses"
+  },
+  {
+   "label": "経常利益",
+   "raw": {
+    "c0": "5,778",
+    "c1": "5,471"
+   },
+   "values": {
+    "c0": 5778,
+    "c1": 5471
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r27",
+   "xbrl": {
+    "c0": "OrdinaryIncomeLossSummaryOfBusinessResults",
+    "c1": "OrdinaryIncomeLossSummaryOfBusinessResults"
+   },
+   "xbrl_sign": 1,
+   "concept": "OrdinaryIncomeLossSummaryOfBusinessResults"
+  },
+  {
+   "label": "特別損失",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r28",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "減損損失",
+   "raw": {
+    "c0": "※294",
+    "c1": "※2212"
+   },
+   "values": {
+    "c0": "unparsed",
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r29",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "固定資産除却損",
+   "raw": {
+    "c0": "3",
+    "c1": "1"
+   },
+   "values": {
+    "c0": 3,
+    "c1": 1
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r30",
+   "xbrl": {
+    "c0": "LossOnRetirementOfNoncurrentAssetsEL",
+    "c1": "LossOnRetirementOfNoncurrentAssetsEL"
+   },
+   "xbrl_sign": 1,
+   "concept": "LossOnRetirementOfNoncurrentAssetsEL"
+  },
+  {
+   "label": "特別損失合計",
+   "raw": {
+    "c0": "98",
+    "c1": "213"
+   },
+   "values": {
+    "c0": 98,
+    "c1": 213
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r31",
+   "xbrl": {
+    "c0": "ExtraordinaryLoss",
+    "c1": "ExtraordinaryLoss"
+   },
+   "xbrl_sign": 1,
+   "concept": "ExtraordinaryLoss"
+  },
+  {
+   "label": "税金等調整前当期純利益",
+   "raw": {
+    "c0": "5,680",
+    "c1": "5,258"
+   },
+   "values": {
+    "c0": 5680,
+    "c1": 5258
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r32",
+   "xbrl": {
+    "c0": "IncomeBeforeIncomeTaxes",
+    "c1": "IncomeBeforeIncomeTaxes"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeBeforeIncomeTaxes"
+  },
+  {
+   "label": "法人税、住民税及び事業税",
+   "raw": {
+    "c0": "1,600",
+    "c1": "1,619"
+   },
+   "values": {
+    "c0": 1600,
+    "c1": 1619
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r33",
+   "xbrl": {
+    "c0": "IncomeTaxesCurrent",
+    "c1": "IncomeTaxesCurrent"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeTaxesCurrent"
+  },
+  {
+   "label": "法人税等調整額",
+   "raw": {
+    "c0": "△195",
+    "c1": "△389"
+   },
+   "values": {
+    "c0": -195,
+    "c1": -389
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r34",
+   "xbrl": {
+    "c0": "OfficeWorkFeeNOI",
+    "c1": "IncomeTaxesDeferred"
+   },
+   "xbrl_sign": 1,
+   "concept": "OfficeWorkFeeNOI"
+  },
+  {
+   "label": "法人税等合計",
+   "raw": {
+    "c0": "1,404",
+    "c1": "1,229"
+   },
+   "values": {
+    "c0": 1404,
+    "c1": 1229
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "total",
+   "path": [],
+   "id": "r35",
+   "xbrl": {
+    "c0": "IncomeTaxes",
+    "c1": "IncomeTaxes"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeTaxes"
+  },
+  {
+   "label": "当期純利益",
+   "raw": {
+    "c0": "4,275",
+    "c1": "4,028"
+   },
+   "values": {
+    "c0": 4275,
+    "c1": 4028
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r36",
+   "xbrl": {
+    "c0": "ProfitLossAttributableToOwnersOfParentSummaryOfBusinessResults",
+    "c1": "ProfitLossAttributableToOwnersOfParentSummaryOfBusinessResults"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossAttributableToOwnersOfParentSummaryOfBusinessResults"
+  },
+  {
+   "label": "非支配株主に帰属する当期純利益",
+   "raw": {
+    "c0": "-",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r37",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "親会社株主に帰属する当期純利益",
+   "raw": {
+    "c0": "4,275",
+    "c1": "4,028"
+   },
+   "values": {
+    "c0": 4275,
+    "c1": 4028
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r38",
+   "xbrl": {
+    "c0": "ProfitLossAttributableToOwnersOfParentSummaryOfBusinessResults",
+    "c1": "ProfitLossAttributableToOwnersOfParentSummaryOfBusinessResults"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossAttributableToOwnersOfParentSummaryOfBusinessResults"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r13",
+   "items": [
+    "r07",
+    "r08",
+    "r09",
+    "r10",
+    "r11",
+    "r12"
+   ],
+   "weights": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r14",
+   "items": [
+    "r05",
+    "r13"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r26",
+   "items": [
+    "r24",
+    "r25"
+   ],
+   "weights": [
+    1,
+    1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "inferred_from_sums"
+ },
+ "source": {
+  "company": "株式会社薬王堂ホールディングス",
+  "title": "有価証券報告書",
+  "stratum": "EDINET-JGAAP",
+  "pdf": "data/edinet/S100Y4K3.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 59,
+ "xbrl_unconfirmed_cells": 0
+}

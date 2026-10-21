@@ -1,0 +1,653 @@
+{
+ "doc_id": "S100Z5CA",
+ "page": 128,
+ "statement_type": "consolidated_balance_sheet",
+ "scope": "consolidated",
+ "accounting_standard": "IFRS",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "(修正再表示後)",
+   "period_type": "instant",
+   "period_end": "2025-03-31"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2026-03-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "資産の部",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r02",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "現金及び現金同等物",
+   "raw": {
+    "c0": "246,254",
+    "c1": "852,204"
+   },
+   "values": {
+    "c0": 246254,
+    "c1": 852204
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r03",
+   "xbrl": {
+    "c0": "CashAndCashEquivalentsIFRSSummaryOfBusinessResults",
+    "c1": "CashAndCashEquivalentsIFRSSummaryOfBusinessResults"
+   },
+   "xbrl_sign": 1,
+   "concept": "CashAndCashEquivalentsIFRSSummaryOfBusinessResults"
+  },
+  {
+   "label": "営業債権及びその他の債権",
+   "raw": {
+    "c0": "686,589",
+    "c1": "736,512"
+   },
+   "values": {
+    "c0": 686589,
+    "c1": 736512
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "TradeAndOtherReceivablesCAIFRS",
+    "c1": "TradeAndOtherReceivablesCAIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "TradeAndOtherReceivablesCAIFRS"
+  },
+  {
+   "label": "その他の金融資産",
+   "raw": {
+    "c0": "1,297",
+    "c1": "2,811"
+   },
+   "values": {
+    "c0": 1297,
+    "c1": 2811
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c0": "OtherFinancialAssetsCAIFRS",
+    "c1": "OtherFinancialAssetsCAIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherFinancialAssetsCAIFRS"
+  },
+  {
+   "label": "未収法人所得税",
+   "raw": {
+    "c0": "22,246",
+    "c1": "21,000"
+   },
+   "values": {
+    "c0": 22246,
+    "c1": 21000
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "IncomeTaxesReceivableCAIFRS",
+    "c1": "IncomeTaxesReceivableCAIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeTaxesReceivableCAIFRS"
+  },
+  {
+   "label": "棚卸資産",
+   "raw": {
+    "c0": "530,436",
+    "c1": "560,987"
+   },
+   "values": {
+    "c0": 530436,
+    "c1": 560987
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "InventoriesCAIFRS",
+    "c1": "InventoriesCAIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "InventoriesCAIFRS"
+  },
+  {
+   "label": "その他の流動資産",
+   "raw": {
+    "c0": "79,643",
+    "c1": "101,384"
+   },
+   "values": {
+    "c0": 79643,
+    "c1": 101384
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "OtherCurrentAssetsCAIFRS",
+    "c1": "OtherCurrentAssetsCAIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherCurrentAssetsCAIFRS"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "1,566,465",
+    "c1": "2,274,898"
+   },
+   "values": {
+    "c0": 1566465,
+    "c1": 2274898
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "CurrentAssetsIFRS",
+    "c1": "CurrentAssetsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "CurrentAssetsIFRS"
+  },
+  {
+   "label": "非流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r10",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": "668,502",
+    "c1": "449,713"
+   },
+   "values": {
+    "c0": 668502,
+    "c1": 449713
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "PropertyPlantAndEquipmentIFRS",
+    "c1": "PropertyPlantAndEquipmentIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "PropertyPlantAndEquipmentIFRS"
+  },
+  {
+   "label": "のれん",
+   "raw": {
+    "c0": "355,694",
+    "c1": "170,238"
+   },
+   "values": {
+    "c0": 355694,
+    "c1": 170238
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r12",
+   "xbrl": {
+    "c0": "GoodwillIFRS",
+    "c1": "GoodwillIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "GoodwillIFRS"
+  },
+  {
+   "label": "無形資産",
+   "raw": {
+    "c0": "222,380",
+    "c1": "129,539"
+   },
+   "values": {
+    "c0": 222380,
+    "c1": 129539
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r13",
+   "xbrl": {
+    "c0": "IntangibleAssetsIFRS",
+    "c1": "IntangibleAssetsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "IntangibleAssetsIFRS"
+  },
+  {
+   "label": "持分法で会計処理される投資",
+   "raw": {
+    "c0": "1,044",
+    "c1": "1,621"
+   },
+   "values": {
+    "c0": 1044,
+    "c1": 1621
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r14",
+   "xbrl": {
+    "c0": "InvestmentsAccountedForUsingEquityMethodIFRS",
+    "c1": "InvestmentsAccountedForUsingEquityMethodIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "InvestmentsAccountedForUsingEquityMethodIFRS"
+  },
+  {
+   "label": "その他の投資",
+   "raw": {
+    "c0": "36,337",
+    "c1": "40,862"
+   },
+   "values": {
+    "c0": 36337,
+    "c1": 40862
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r15",
+   "xbrl": {
+    "c0": "OtherInvestmentsIFRS",
+    "c1": "OtherInvestmentsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherInvestmentsIFRS"
+  },
+  {
+   "label": "その他の金融資産",
+   "raw": {
+    "c0": "7,614",
+    "c1": "8,484"
+   },
+   "values": {
+    "c0": 7614,
+    "c1": 8484
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r16",
+   "xbrl": {
+    "c0": "OtherFinancialAssetsNCAIFRS",
+    "c1": "OtherFinancialAssetsNCAIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherFinancialAssetsNCAIFRS"
+  },
+  {
+   "label": "繰延税金資産",
+   "raw": {
+    "c0": "50,089",
+    "c1": "24,034"
+   },
+   "values": {
+    "c0": 50089,
+    "c1": 24034
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r17",
+   "xbrl": {
+    "c0": "DeferredTaxAssetsIFRS",
+    "c1": "DeferredTaxAssetsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "DeferredTaxAssetsIFRS"
+  },
+  {
+   "label": "その他の非流動資産",
+   "raw": {
+    "c0": "11,640",
+    "c1": "8,232"
+   },
+   "values": {
+    "c0": 11640,
+    "c1": 8232
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r18",
+   "xbrl": {
+    "c0": "OtherNonCurrentAssetsNCAIFRS",
+    "c1": "OtherNonCurrentAssetsNCAIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherNonCurrentAssetsNCAIFRS"
+  },
+  {
+   "label": "非流動資産合計",
+   "raw": {
+    "c0": "1,353,300",
+    "c1": "832,723"
+   },
+   "values": {
+    "c0": 1353300,
+    "c1": 832723
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "非流動資産"
+   ],
+   "id": "r19",
+   "xbrl": {
+    "c0": "NonCurrentAssetsIFRS",
+    "c1": "NonCurrentAssetsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "NonCurrentAssetsIFRS"
+  },
+  {
+   "label": "資産合計",
+   "raw": {
+    "c0": "2,919,765",
+    "c1": "3,107,621"
+   },
+   "values": {
+    "c0": 2919765,
+    "c1": 3107621
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r20",
+   "xbrl": {
+    "c0": "TotalAssetsIFRSSummaryOfBusinessResults",
+    "c1": "TotalAssetsIFRSSummaryOfBusinessResults"
+   },
+   "xbrl_sign": 1,
+   "concept": "TotalAssetsIFRSSummaryOfBusinessResults"
+  }
+ ],
+ "continues_on_next_page": true,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r19",
+   "items": [
+    "r11",
+    "r12",
+    "r13",
+    "r14",
+    "r15",
+    "r16",
+    "r17",
+    "r18"
+   ],
+   "weights": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "inferred_from_sums"
+ },
+ "source": {
+  "company": "ニデック株式会社",
+  "title": "有価証券報告書",
+  "stratum": "EDINET-IFRS",
+  "pdf": "data/edinet/S100Z5CA.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 34,
+ "xbrl_unconfirmed_cells": 0
+}

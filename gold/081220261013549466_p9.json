@@ -1,0 +1,253 @@
+{
+ "doc_id": "081220261013549466",
+ "page": 9,
+ "statement_type": "consolidated_balance_sheet",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [],
+ "rows": [
+  {
+   "label": "無形固定資産",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "のれん",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "無形固定資産"
+   ],
+   "id": "r02",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "商標権",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "無形固定資産"
+   ],
+   "id": "r03",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "借地権",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "無形固定資産"
+   ],
+   "id": "r04",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "ソフトウエア",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "無形固定資産"
+   ],
+   "id": "r05",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "その他",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "無形固定資産"
+   ],
+   "id": "r06",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "無形固定資産合計",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "無形固定資産"
+   ],
+   "id": "r07",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "投資その他の資産",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r08",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "投資有価証券",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資その他の資産"
+   ],
+   "id": "r09",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "敷金及び保証金",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資その他の資産"
+   ],
+   "id": "r10",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "長期前払費用",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資その他の資産"
+   ],
+   "id": "r11",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "長期貸付金",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資その他の資産"
+   ],
+   "id": "r12",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "繰延税金資産",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資その他の資産"
+   ],
+   "id": "r13",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "その他",
+   "raw": {},
+   "values": {},
+   "footnote_refs": [],
+   "underlined": {},
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資その他の資産"
+   ],
+   "id": "r14",
+   "xbrl": {},
+   "concept": null
+  }
+ ],
+ "continues_on_next_page": true,
+ "checks": [],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "アークランズ",
+  "title": "（訂正・数値データ訂正）「2026年２月期　決算短信〔日本基準〕（連結）」の一部訂正について",
+  "stratum": "訂正-JGAAP",
+  "pdf": "data/tdnet/081220261013549466/doc.pdf"
+ },
+ "gold_status": "review",
+ "review": [],
+ "xbrl_confirmed_cells": 0,
+ "xbrl_unconfirmed_cells": 0
+}

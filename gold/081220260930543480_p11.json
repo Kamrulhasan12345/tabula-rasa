@@ -1,0 +1,713 @@
+{
+ "doc_id": "081220260930543480",
+ "page": 11,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前中間連結会計期間",
+   "period_type": null,
+   "period_end": "2025-06-30",
+   "period_start": "2025-01-01"
+  },
+  {
+   "id": "c1",
+   "label": "当中間連結会計期間",
+   "period_type": null,
+   "period_end": "2026-06-30",
+   "period_start": "2026-01-01"
+  }
+ ],
+ "rows": [
+  {
+   "label": "継続事業",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "売上高",
+   "raw": {
+    "c0": "143,272",
+    "c1": "167,401"
+   },
+   "values": {
+    "c0": 143272,
+    "c1": 167401
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r02",
+   "xbrl": {
+    "c0": "NetSalesIFRS",
+    "c1": "NetSalesIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "NetSalesIFRS"
+  },
+  {
+   "label": "売上原価",
+   "raw": {
+    "c0": "△100,298",
+    "c1": "△115,180"
+   },
+   "values": {
+    "c0": -100298,
+    "c1": -115180
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r03",
+   "xbrl": {
+    "c0": "CostOfSalesIFRS",
+    "c1": "CostOfSalesIFRS"
+   },
+   "xbrl_sign": -1,
+   "concept": "CostOfSalesIFRS"
+  },
+  {
+   "label": "売上総利益",
+   "raw": {
+    "c0": "42,975",
+    "c1": "52,221"
+   },
+   "values": {
+    "c0": 42975,
+    "c1": 52221
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "GrossProfitIFRS",
+    "c1": "GrossProfitIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "GrossProfitIFRS"
+  },
+  {
+   "label": "その他の収益",
+   "raw": {
+    "c0": "656",
+    "c1": "1,289"
+   },
+   "values": {
+    "c0": 656,
+    "c1": 1289
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c0": "OtherIncomeIFRS",
+    "c1": "OtherIncomeIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherIncomeIFRS"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": "△34,215",
+    "c1": "△37,314"
+   },
+   "values": {
+    "c0": -34215,
+    "c1": -37314
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "SellingGeneralAndAdministrativeExpensesIFRS",
+    "c1": "SellingGeneralAndAdministrativeExpensesIFRS"
+   },
+   "xbrl_sign": -1,
+   "concept": "SellingGeneralAndAdministrativeExpensesIFRS"
+  },
+  {
+   "label": "その他の費用",
+   "raw": {
+    "c0": "△110",
+    "c1": "△438"
+   },
+   "values": {
+    "c0": -110,
+    "c1": -438
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "OtherExpensesIFRS",
+    "c1": "OtherExpensesIFRS"
+   },
+   "xbrl_sign": -1,
+   "concept": "OtherExpensesIFRS"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "9,305",
+    "c1": "15,759"
+   },
+   "values": {
+    "c0": 9305,
+    "c1": 15759
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "OperatingProfitLossIFRS",
+    "c1": "OperatingProfitLossIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "OperatingProfitLossIFRS"
+  },
+  {
+   "label": "金融収益",
+   "raw": {
+    "c0": "223",
+    "c1": "749"
+   },
+   "values": {
+    "c0": 223,
+    "c1": 749
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "FinanceIncomeIFRS",
+    "c1": "FinanceIncomeIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "FinanceIncomeIFRS"
+  },
+  {
+   "label": "金融費用",
+   "raw": {
+    "c0": "△833",
+    "c1": "△637"
+   },
+   "values": {
+    "c0": -833,
+    "c1": -637
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "FinanceCostsIFRS",
+    "c1": "FinanceCostsIFRS"
+   },
+   "xbrl_sign": -1,
+   "concept": "FinanceCostsIFRS"
+  },
+  {
+   "label": "持分法による投資利益",
+   "raw": {
+    "c0": "50",
+    "c1": "1,488"
+   },
+   "values": {
+    "c0": 50,
+    "c1": 1488
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "ShareOfProfitLossOfInvestmentsAccountedForUsingEquityMethodIFRS",
+    "c1": "ShareOfProfitLossOfInvestmentsAccountedForUsingEquityMethodIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ShareOfProfitLossOfInvestmentsAccountedForUsingEquityMethodIFRS"
+  },
+  {
+   "label": "税引前中間利益",
+   "raw": {
+    "c0": "8,745",
+    "c1": "17,359"
+   },
+   "values": {
+    "c0": 8745,
+    "c1": 17359
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r12",
+   "xbrl": {
+    "c0": "ProfitLossBeforeTaxIFRS",
+    "c1": "ProfitLossBeforeTaxIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossBeforeTaxIFRS"
+  },
+  {
+   "label": "法人所得税費用",
+   "raw": {
+    "c0": "△2,423",
+    "c1": "△5,670"
+   },
+   "values": {
+    "c0": -2423,
+    "c1": -5670
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r13",
+   "xbrl": {
+    "c0": "IncomeTaxExpenseIFRS",
+    "c1": "IncomeTaxExpenseIFRS"
+   },
+   "xbrl_sign": -1,
+   "concept": "IncomeTaxExpenseIFRS"
+  },
+  {
+   "label": "継続事業からの中間利益",
+   "raw": {
+    "c0": "6,323",
+    "c1": "11,689"
+   },
+   "values": {
+    "c0": 6323,
+    "c1": 11689
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "継続事業"
+   ],
+   "id": "r14",
+   "xbrl": {
+    "c0": "ProfitLossFromContinuingOperationsIFRS",
+    "c1": "ProfitLossFromContinuingOperationsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossFromContinuingOperationsIFRS"
+  },
+  {
+   "label": "非継続事業",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r15",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "非継続事業からの中間利益",
+   "raw": {
+    "c0": "1,122",
+    "c1": "1,359"
+   },
+   "values": {
+    "c0": 1122,
+    "c1": 1359
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非継続事業"
+   ],
+   "id": "r16",
+   "xbrl": {
+    "c0": "ProfitLossFromDiscontinuedOperationsIFRS",
+    "c1": "ProfitLossFromDiscontinuedOperationsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossFromDiscontinuedOperationsIFRS"
+  },
+  {
+   "label": "中間利益",
+   "raw": {
+    "c0": "7,445",
+    "c1": "13,047"
+   },
+   "values": {
+    "c0": 7445,
+    "c1": 13047
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非継続事業"
+   ],
+   "id": "r17",
+   "xbrl": {
+    "c0": "ProfitLossIFRS",
+    "c1": "ProfitLossIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossIFRS"
+  },
+  {
+   "label": "中間利益の帰属",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "非継続事業"
+   ],
+   "id": "r18",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "親会社の所有者",
+   "raw": {
+    "c0": "6,701",
+    "c1": "12,515"
+   },
+   "values": {
+    "c0": 6701,
+    "c1": 12515
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "非継続事業",
+    "中間利益の帰属"
+   ],
+   "id": "r19",
+   "xbrl": {
+    "c0": "ProfitLossAttributableToOwnersOfParentIFRS",
+    "c1": "ProfitLossAttributableToOwnersOfParentIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossAttributableToOwnersOfParentIFRS"
+  },
+  {
+   "label": "非支配持分",
+   "raw": {
+    "c0": "744",
+    "c1": "533"
+   },
+   "values": {
+    "c0": 744,
+    "c1": 533
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "非継続事業",
+    "中間利益の帰属"
+   ],
+   "id": "r20",
+   "xbrl": {
+    "c0": "ProfitLossAttributableToNonControllingInterestsIFRS",
+    "c1": "ProfitLossAttributableToNonControllingInterestsIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossAttributableToNonControllingInterestsIFRS"
+  },
+  {
+   "label": "中間利益",
+   "raw": {
+    "c0": "7,445",
+    "c1": "13,047"
+   },
+   "values": {
+    "c0": 7445,
+    "c1": 13047
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "非継続事業",
+    "中間利益の帰属"
+   ],
+   "id": "r21",
+   "xbrl": {
+    "c0": "ProfitLossIFRS",
+    "c1": "ProfitLossIFRS"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossIFRS"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r04",
+   "items": [
+    "r02",
+    "r03"
+   ],
+   "weights": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r08",
+   "items": [
+    "r04",
+    "r06",
+    "r05",
+    "r07"
+   ],
+   "weights": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r12",
+   "items": [
+    "r08",
+    "r09",
+    "r10",
+    "r11"
+   ],
+   "weights": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r14",
+   "items": [
+    "r12",
+    "r13"
+   ],
+   "weights": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r21",
+   "items": [
+    "r16",
+    "r14"
+   ],
+   "weights": [
+    1,
+    1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "round",
+  "source": "note"
+ },
+ "source": {
+  "company": "ナブテスコ",
+  "title": "（訂正・数値データ訂正）2026年12月期 第２四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+  "stratum": "訂正-IFRS",
+  "pdf": "data/tdnet/081220260930543480/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 36,
+ "xbrl_unconfirmed_cells": 0
+}

@@ -1,0 +1,260 @@
+{
+ "doc_id": "081220261014550336",
+ "page": 16,
+ "statement_type": "cf",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "duration",
+   "period_end": "2025-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "減損損失",
+   "raw": {
+    "c0": "228"
+   },
+   "values": {
+    "c0": 228
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r01",
+   "xbrl": {
+    "c0": "ImpairmentLossEL"
+   },
+   "concept": "ImpairmentLossEL"
+  },
+  {
+   "label": "固定資産除却損",
+   "raw": {
+    "c0": "885"
+   },
+   "values": {
+    "c0": 885
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02",
+   "xbrl": {
+    "c0": "LossOnRetirementOfNoncurrentAssetsOpeCF"
+   },
+   "concept": "LossOnRetirementOfNoncurrentAssetsOpeCF"
+  },
+  {
+   "label": "固定資産売却損益(△は益)",
+   "raw": {
+    "c0": "△145"
+   },
+   "values": {
+    "c0": -145
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03",
+   "xbrl": {
+    "c0": "LossGainOnSalesOfNoncurrentAssetsOpeCF"
+   },
+   "concept": "LossGainOnSalesOfNoncurrentAssetsOpeCF"
+  },
+  {
+   "label": "売上債権の増減額(△は増加)",
+   "raw": {
+    "c0": "△7,242"
+   },
+   "values": {
+    "c0": -7242
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r04",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+   },
+   "concept": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+  },
+  {
+   "label": "棚卸資産の増減額(△は増加)",
+   "raw": {
+    "c0": "△866"
+   },
+   "values": {
+    "c0": -866
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInInventoriesOpeCF"
+   },
+   "concept": "DecreaseIncreaseInInventoriesOpeCF"
+  },
+  {
+   "label": "仕入債務の増減額(△は減少)",
+   "raw": {
+    "c0": "5,398"
+   },
+   "values": {
+    "c0": 5398
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r06",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+   },
+   "concept": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+  },
+  {
+   "label": "電子記録債務の増減額(△は減少)",
+   "raw": {
+    "c0": "△1,115"
+   },
+   "values": {
+    "c0": -1115
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r07",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInElectronicallyRecordedObligationsOperatingOpeCF"
+   },
+   "concept": "IncreaseDecreaseInElectronicallyRecordedObligationsOperatingOpeCF"
+  },
+  {
+   "label": "未払金の増減額(△は減少)",
+   "raw": {
+    "c0": "△1,967"
+   },
+   "values": {
+    "c0": -1967
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r08",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAccountsPayableOtherOpeCF"
+   },
+   "concept": "IncreaseDecreaseInAccountsPayableOtherOpeCF"
+  },
+  {
+   "label": "コンテンツ配信権の増減額(△は増加)",
+   "raw": {
+    "c0": "△6,757"
+   },
+   "values": {
+    "c0": -6757
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r09",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInContentdistributionrightsOpeCF"
+   },
+   "concept": "DecreaseIncreaseInContentdistributionrightsOpeCF"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "558"
+   },
+   "values": {
+    "c0": 558
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r10",
+   "xbrl": {
+    "c0": "OtherNetOpeCF"
+   },
+   "concept": "OtherNetOpeCF"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "Ｕ－ＮＥＸＴ",
+  "title": "2026年８月期　決算短信［日本基準］（連結）",
+  "stratum": "JGAAP-連結-年度",
+  "pdf": "data/tdnet/081220261014550336/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 10,
+ "xbrl_unconfirmed_cells": 0
+}

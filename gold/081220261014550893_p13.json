@@ -1,0 +1,652 @@
+{
+ "doc_id": "081220261014550893",
+ "page": 13,
+ "statement_type": "cf",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前連結会計年度",
+   "period_type": "duration",
+   "period_end": "2025-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "(自",
+   "raw": {
+    "c0": "2024年９月１日(自"
+   },
+   "values": {
+    "c0": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "税金等調整前当期純利益",
+   "raw": {
+    "c0": "7,767"
+   },
+   "values": {
+    "c0": 7767
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02",
+   "xbrl": {
+    "c0": "IncomeBeforeIncomeTaxes"
+   },
+   "concept": "IncomeBeforeIncomeTaxes"
+  },
+  {
+   "label": "減価償却費",
+   "raw": {
+    "c0": "2,576"
+   },
+   "values": {
+    "c0": 2576
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03",
+   "xbrl": {
+    "c0": "DepreciationAndAmortizationOpeCF"
+   },
+   "concept": "DepreciationAndAmortizationOpeCF"
+  },
+  {
+   "label": "減損損失",
+   "raw": {
+    "c0": "30"
+   },
+   "values": {
+    "c0": 30
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r04",
+   "xbrl": {
+    "c0": "ImpairmentLossEL"
+   },
+   "concept": "ImpairmentLossEL"
+  },
+  {
+   "label": "のれん償却額",
+   "raw": {
+    "c0": "147"
+   },
+   "values": {
+    "c0": 147
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05",
+   "xbrl": {
+    "c0": "AmortizationOfGoodwillOpeCF"
+   },
+   "concept": "AmortizationOfGoodwillOpeCF"
+  },
+  {
+   "label": "貸倒引当金の増減額(△は減少)",
+   "raw": {
+    "c0": "△21"
+   },
+   "values": {
+    "c0": -21
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r06",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF"
+   },
+   "concept": "IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF"
+  },
+  {
+   "label": "完成工事補償引当金の増減額(△は減少)",
+   "raw": {
+    "c0": "60"
+   },
+   "values": {
+    "c0": 60
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r07",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInProvisionForWarrantiesForCompletedConstructionOpeCF"
+   },
+   "concept": "IncreaseDecreaseInProvisionForWarrantiesForCompletedConstructionOpeCF"
+  },
+  {
+   "label": "受取利息及び受取配当金",
+   "raw": {
+    "c0": "△82"
+   },
+   "values": {
+    "c0": -82
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r08",
+   "xbrl": {
+    "c0": "InterestAndDividendsIncomeOpeCF"
+   },
+   "concept": "InterestAndDividendsIncomeOpeCF"
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "1,090"
+   },
+   "values": {
+    "c0": 1090
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r09",
+   "xbrl": {
+    "c0": "AssetRetirementObligationsNCL"
+   },
+   "concept": "AssetRetirementObligationsNCL"
+  },
+  {
+   "label": "売上債権の増減額(△は増加)",
+   "raw": {
+    "c0": "△3,561"
+   },
+   "values": {
+    "c0": -3561
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r10",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+   },
+   "concept": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+  },
+  {
+   "label": "棚卸資産の増減額(△は増加)",
+   "raw": {
+    "c0": "△1,609"
+   },
+   "values": {
+    "c0": -1609
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r11",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInInventoriesOpeCF"
+   },
+   "concept": "DecreaseIncreaseInInventoriesOpeCF"
+  },
+  {
+   "label": "前渡金の増減額(△は増加)",
+   "raw": {
+    "c0": "853"
+   },
+   "values": {
+    "c0": 853
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r12",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInAdvancePaymentsOpeCF"
+   },
+   "concept": "DecreaseIncreaseInAdvancePaymentsOpeCF"
+  },
+  {
+   "label": "仕入債務の増減額(△は減少)",
+   "raw": {
+    "c0": "542"
+   },
+   "values": {
+    "c0": 542
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r13",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+   },
+   "concept": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+  },
+  {
+   "label": "関係会社株式売却損益(△は益)",
+   "raw": {
+    "c0": "－"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r14",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "固定資産除却損",
+   "raw": {
+    "c0": "17"
+   },
+   "values": {
+    "c0": 17
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r15",
+   "xbrl": {
+    "c0": "LossOnRetirementOfNoncurrentAssetsEL"
+   },
+   "concept": "LossOnRetirementOfNoncurrentAssetsEL"
+  },
+  {
+   "label": "未成工事受入金の増減額(△は減少)",
+   "raw": {
+    "c0": "△119"
+   },
+   "values": {
+    "c0": -119
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r16",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAdvancesReceivedOnUncompletedConstructionContractsOpeCFCNS"
+   },
+   "concept": "IncreaseDecreaseInAdvancesReceivedOnUncompletedConstructionContractsOpeCFCNS"
+  },
+  {
+   "label": "未収入金の増減額(△は増加)",
+   "raw": {
+    "c0": "916"
+   },
+   "values": {
+    "c0": 916
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r17",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInAccountsReceivableOtherOpeCF"
+   },
+   "concept": "DecreaseIncreaseInAccountsReceivableOtherOpeCF"
+  },
+  {
+   "label": "未払金の増減額(△は減少)",
+   "raw": {
+    "c0": "△154"
+   },
+   "values": {
+    "c0": -154
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r18",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAccountsPayableOtherOpeCF"
+   },
+   "concept": "IncreaseDecreaseInAccountsPayableOtherOpeCF"
+  },
+  {
+   "label": "未払消費税等の増減額(△は減少)",
+   "raw": {
+    "c0": "82"
+   },
+   "values": {
+    "c0": 82
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r19",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAccruedConsumptionTaxesOpeCF"
+   },
+   "concept": "IncreaseDecreaseInAccruedConsumptionTaxesOpeCF"
+  },
+  {
+   "label": "前受金の増減額(△は減少)",
+   "raw": {
+    "c0": "1,678"
+   },
+   "values": {
+    "c0": 1678
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r20",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAdvancesReceivedOpeCF"
+   },
+   "concept": "IncreaseDecreaseInAdvancesReceivedOpeCF"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "△1,887"
+   },
+   "values": {
+    "c0": -1887
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r21",
+   "xbrl": {
+    "c0": "OtherNetOpeCF"
+   },
+   "concept": "OtherNetOpeCF"
+  },
+  {
+   "label": "小計",
+   "raw": {
+    "c0": "8,327"
+   },
+   "values": {
+    "c0": 8327
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r22",
+   "xbrl": {
+    "c0": "SubtotalOpeCF"
+   },
+   "concept": "SubtotalOpeCF"
+  },
+  {
+   "label": "利息及び配当金の受取額",
+   "raw": {
+    "c0": "78"
+   },
+   "values": {
+    "c0": 78
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r23",
+   "xbrl": {
+    "c0": "InterestAndDividendsIncomeReceivedOpeCFInvCF"
+   },
+   "concept": "InterestAndDividendsIncomeReceivedOpeCFInvCF"
+  },
+  {
+   "label": "利息の支払額",
+   "raw": {
+    "c0": "△1,091"
+   },
+   "values": {
+    "c0": -1091
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r24",
+   "xbrl": {
+    "c0": "InterestExpensesPaidOpeCFFinCF"
+   },
+   "concept": "InterestExpensesPaidOpeCFFinCF"
+  },
+  {
+   "label": "保険金の受取額",
+   "raw": {
+    "c0": "248"
+   },
+   "values": {
+    "c0": 248
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r25",
+   "xbrl": {
+    "c0": "InsuranceIncomeNOI"
+   },
+   "concept": "InsuranceIncomeNOI"
+  },
+  {
+   "label": "法人税等の支払額",
+   "raw": {
+    "c0": "△4,124"
+   },
+   "values": {
+    "c0": -4124
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r26",
+   "xbrl": {
+    "c0": "IncomeTaxesPaidOpeCF"
+   },
+   "concept": "IncomeTaxesPaidOpeCF"
+  },
+  {
+   "label": "過年度法人税等の支払額",
+   "raw": {
+    "c0": "△173"
+   },
+   "values": {
+    "c0": -173
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r27",
+   "xbrl": {
+    "c0": "IncomeTaxesForPriorPeriodsPaidOpeCF"
+   },
+   "concept": "IncomeTaxesForPriorPeriodsPaidOpeCF"
+  },
+  {
+   "label": "営業活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": "3,263"
+   },
+   "values": {
+    "c0": 3263
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r28",
+   "xbrl": {
+    "c0": "NetCashProvidedByUsedInOperatingActivities"
+   },
+   "concept": "NetCashProvidedByUsedInOperatingActivities"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "ウエストＨＤ",
+  "title": "2026年８月期決算短信〔日本基準〕(連結)",
+  "stratum": "JGAAP-連結-年度",
+  "pdf": "data/tdnet/081220261014550893/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 26,
+ "xbrl_unconfirmed_cells": 0
+}

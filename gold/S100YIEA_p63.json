@@ -1,0 +1,441 @@
+{
+ "doc_id": "S100YIEA",
+ "page": 63,
+ "statement_type": null,
+ "scope": null,
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "※1692",
+   "period_type": "instant",
+   "period_end": "2025-03-31",
+   "period_start": "2025-04-01"
+  },
+  {
+   "id": "c1",
+   "label": "※1760",
+   "period_type": "instant",
+   "period_end": "2026-03-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "資産の部",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r02",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "現金及び預金",
+   "raw": {
+    "c0": "8,982",
+    "c1": "9,166"
+   },
+   "values": {
+    "c0": 8982,
+    "c1": 9166
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r03",
+   "xbrl": {
+    "c0": "CashAndDeposits",
+    "c1": "CashAndDeposits"
+   },
+   "xbrl_sign": 1,
+   "concept": "CashAndDeposits"
+  },
+  {
+   "label": "受取手形",
+   "raw": {
+    "c0": "1,068",
+    "c1": "412"
+   },
+   "values": {
+    "c0": 1068,
+    "c1": 412
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "NotesReceivableTrade",
+    "c1": "NotesReceivableTrade"
+   },
+   "xbrl_sign": 1,
+   "concept": "NotesReceivableTrade"
+  },
+  {
+   "label": "電子記録債権",
+   "raw": {
+    "c0": "337",
+    "c1": null
+   },
+   "values": {
+    "c0": 337,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c0": "ElectronicallyRecordedMonetaryClaimsOperatingCA"
+   },
+   "xbrl_sign": 1,
+   "concept": "ElectronicallyRecordedMonetaryClaimsOperatingCA"
+  },
+  {
+   "label": "売掛金",
+   "raw": {
+    "c0": "10,180",
+    "c1": "10,499"
+   },
+   "values": {
+    "c0": 10180,
+    "c1": 10499
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "AccountsReceivableTrade",
+    "c1": "AccountsReceivableTrade"
+   },
+   "xbrl_sign": 1,
+   "concept": "AccountsReceivableTrade"
+  },
+  {
+   "label": "商品及び製品",
+   "raw": {
+    "c0": "135",
+    "c1": "140"
+   },
+   "values": {
+    "c0": 135,
+    "c1": 140
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "MerchandiseAndFinishedGoods",
+    "c1": "MerchandiseAndFinishedGoods"
+   },
+   "xbrl_sign": 1,
+   "concept": "MerchandiseAndFinishedGoods"
+  },
+  {
+   "label": "原材料及び貯蔵品",
+   "raw": {
+    "c0": "2,282",
+    "c1": "2,237"
+   },
+   "values": {
+    "c0": 2282,
+    "c1": 2237
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "RawMaterialsAndSupplies",
+    "c1": "RawMaterialsAndSupplies"
+   },
+   "xbrl_sign": 1,
+   "concept": "RawMaterialsAndSupplies"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "741",
+    "c1": null
+   },
+   "values": {
+    "c0": 741,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "OtherCA"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherCA"
+  },
+  {
+   "label": "貸倒引当金",
+   "raw": {
+    "c0": "△232",
+    "c1": "△214"
+   },
+   "values": {
+    "c0": -232,
+    "c1": -214
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "contra",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "AllowanceForDoubtfulAccountsCA",
+    "c1": "AllowanceForDoubtfulAccountsCA"
+   },
+   "xbrl_sign": 1,
+   "concept": "AllowanceForDoubtfulAccountsCA"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "23,495",
+    "c1": "23,908"
+   },
+   "values": {
+    "c0": 23495,
+    "c1": 23908
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "CurrentAssets",
+    "c1": "CurrentAssets"
+   },
+   "xbrl_sign": 1,
+   "concept": "CurrentAssets"
+  },
+  {
+   "label": "固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r12",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r13",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "建物",
+   "raw": {
+    "c0": "※1692",
+    "c1": "※1760"
+   },
+   "values": {
+    "c0": "unparsed",
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r14",
+   "xbrl": {},
+   "concept": null
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [],
+ "rounding": {
+  "method": "unknown",
+  "source": "inferred_from_sums"
+ },
+ "source": {
+  "company": "日和産業株式会社",
+  "title": "有価証券報告書",
+  "stratum": "EDINET-JGAAP",
+  "pdf": "data/edinet/S100YIEA.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 16,
+ "xbrl_unconfirmed_cells": 0
+}

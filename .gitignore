@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+runs/
+kaggle/pages/
+# filings are large and not ours to redistribute; keep only the page indexes
+data/tdnet/*
+!data/tdnet/pages.json
+data/edinet/*
+!data/edinet/pages.json

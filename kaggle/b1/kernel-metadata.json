@@ -1,0 +1,12 @@
+{
+  "id": "kamrulhasan12345/tabula-rasa-b1-qwen3vl",
+  "title": "tabula-rasa-b1-qwen3vl",
+  "code_file": "b1_qwen3vl.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["kamrulhasan12345/tabula-rasa-pages"]
+}

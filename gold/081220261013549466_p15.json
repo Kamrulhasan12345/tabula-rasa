@@ -1,0 +1,1119 @@
+{
+ "doc_id": "081220261013549466",
+ "page": 15,
+ "statement_type": "cf",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前連結会計年度",
+   "period_type": "duration",
+   "period_end": "2025-02-28"
+  }
+ ],
+ "rows": [
+  {
+   "label": "営業活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "税金等調整前当期純利益",
+   "raw": {
+    "c0": "16,201"
+   },
+   "values": {
+    "c0": 16201
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r02",
+   "xbrl": {
+    "c0": "IncomeBeforeIncomeTaxes"
+   },
+   "concept": "IncomeBeforeIncomeTaxes"
+  },
+  {
+   "label": "減価償却費",
+   "raw": {
+    "c0": "10,993"
+   },
+   "values": {
+    "c0": 10993
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r03",
+   "xbrl": {
+    "c0": "DepreciationAndAmortizationOpeCF"
+   },
+   "concept": "DepreciationAndAmortizationOpeCF"
+  },
+  {
+   "label": "のれん償却額",
+   "raw": {
+    "c0": "1,546"
+   },
+   "values": {
+    "c0": 1546
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "AmortizationOfGoodwillOpeCF"
+   },
+   "concept": "AmortizationOfGoodwillOpeCF"
+  },
+  {
+   "label": "減損損失",
+   "raw": {
+    "c0": "1,331"
+   },
+   "values": {
+    "c0": 1331
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c0": "ImpairmentLossEL"
+   },
+   "concept": "ImpairmentLossEL"
+  },
+  {
+   "label": "貸倒引当金の増減額(△は減少)",
+   "raw": {
+    "c0": "△5"
+   },
+   "values": {
+    "c0": -5
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF"
+   },
+   "concept": "IncreaseDecreaseInAllowanceForDoubtfulAccountsOpeCF"
+  },
+  {
+   "label": "退職給付に係る負債の増減額(△は減少)",
+   "raw": {
+    "c0": "8"
+   },
+   "values": {
+    "c0": 8
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "GainOnSalesOfNoncurrentAssetsEI"
+   },
+   "concept": "GainOnSalesOfNoncurrentAssetsEI"
+  },
+  {
+   "label": "契約負債の増減額(△は減少)",
+   "raw": {
+    "c0": "57"
+   },
+   "values": {
+    "c0": 57
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInContractLiabilitiesOpeCF"
+   },
+   "concept": "IncreaseDecreaseInContractLiabilitiesOpeCF"
+  },
+  {
+   "label": "受取利息及び受取配当金",
+   "raw": {
+    "c0": "△298"
+   },
+   "values": {
+    "c0": -298
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "InterestAndDividendsIncomeOpeCF"
+   },
+   "concept": "InterestAndDividendsIncomeOpeCF"
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "1,159"
+   },
+   "values": {
+    "c0": 1159
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "InterestExpensesNOE"
+   },
+   "concept": "InterestExpensesNOE"
+  },
+  {
+   "label": "為替差損益(△は益)",
+   "raw": {
+    "c0": "12"
+   },
+   "values": {
+    "c0": 12
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "ForeignExchangeLossesNOE"
+   },
+   "concept": "ForeignExchangeLossesNOE"
+  },
+  {
+   "label": "持分法による投資損益(△は益)",
+   "raw": {
+    "c0": "△200"
+   },
+   "values": {
+    "c0": -200
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r12",
+   "xbrl": {
+    "c0": "EquityInEarningsLossesOfAffiliatesOpeCF"
+   },
+   "concept": "EquityInEarningsLossesOfAffiliatesOpeCF"
+  },
+  {
+   "label": "投資有価証券売却損益(△は益)",
+   "raw": {
+    "c0": "△2,442"
+   },
+   "values": {
+    "c0": -2442
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r13",
+   "xbrl": {
+    "c0": "LossGainOnSalesOfInvestmentSecuritiesOpeCF"
+   },
+   "concept": "LossGainOnSalesOfInvestmentSecuritiesOpeCF"
+  },
+  {
+   "label": "固定資産売却損益(△は益)",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": true,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r14",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "固定資産除却損",
+   "raw": {
+    "c0": "155"
+   },
+   "values": {
+    "c0": 155
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r15",
+   "xbrl": {
+    "c0": "LossOnRetirementOfNoncurrentAssetsEL"
+   },
+   "concept": "LossOnRetirementOfNoncurrentAssetsEL"
+  },
+  {
+   "label": "店舗閉鎖損失",
+   "raw": {
+    "c0": "1,176"
+   },
+   "values": {
+    "c0": 1176
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r16",
+   "xbrl": {
+    "c0": "LossOnClosingOfStoresEL"
+   },
+   "concept": "LossOnClosingOfStoresEL"
+  },
+  {
+   "label": "解体撤去費用",
+   "raw": {
+    "c0": "143"
+   },
+   "values": {
+    "c0": 143
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r17",
+   "xbrl": {
+    "c0": "DismantlementExpansesEL"
+   },
+   "concept": "DismantlementExpansesEL"
+  },
+  {
+   "label": "売上債権の増減額(△は増加)",
+   "raw": {
+    "c0": "△654"
+   },
+   "values": {
+    "c0": -654
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r18",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+   },
+   "concept": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+  },
+  {
+   "label": "棚卸資産の増減額(△は増加)",
+   "raw": {
+    "c0": "91"
+   },
+   "values": {
+    "c0": 91
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r19",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInInventoriesOpeCF"
+   },
+   "concept": "DecreaseIncreaseInInventoriesOpeCF"
+  },
+  {
+   "label": "その他の資産の増減額(△は増加)",
+   "raw": {
+    "c0": "△638"
+   },
+   "values": {
+    "c0": -638
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r20",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInOtherAssetsOpeCF"
+   },
+   "concept": "DecreaseIncreaseInOtherAssetsOpeCF"
+  },
+  {
+   "label": "仕入債務の増減額(△は減少)",
+   "raw": {
+    "c0": "11,263"
+   },
+   "values": {
+    "c0": 11263
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r21",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+   },
+   "concept": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+  },
+  {
+   "label": "その他の負債の増減額(△は減少)",
+   "raw": {
+    "c0": "42"
+   },
+   "values": {
+    "c0": 42
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r22",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInOtherLiabilitiesOpeCF"
+   },
+   "concept": "IncreaseDecreaseInOtherLiabilitiesOpeCF"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "△360"
+   },
+   "values": {
+    "c0": -360
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r23",
+   "xbrl": {
+    "c0": "OtherNetOpeCF"
+   },
+   "concept": "OtherNetOpeCF"
+  },
+  {
+   "label": "小計",
+   "raw": {
+    "c0": "39,574"
+   },
+   "values": {
+    "c0": 39574
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r24",
+   "xbrl": {
+    "c0": "SubtotalOpeCF"
+   },
+   "concept": "SubtotalOpeCF"
+  },
+  {
+   "label": "利息及び配当金の受取額",
+   "raw": {
+    "c0": "282"
+   },
+   "values": {
+    "c0": 282
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r25",
+   "xbrl": {
+    "c0": "InterestAndDividendsIncomeReceivedOpeCFInvCF"
+   },
+   "concept": "InterestAndDividendsIncomeReceivedOpeCFInvCF"
+  },
+  {
+   "label": "利息の支払額",
+   "raw": {
+    "c0": "△1,195"
+   },
+   "values": {
+    "c0": -1195
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r26",
+   "xbrl": {
+    "c0": "InterestExpensesPaidOpeCFFinCF"
+   },
+   "concept": "InterestExpensesPaidOpeCFFinCF"
+  },
+  {
+   "label": "法人税等の支払額",
+   "raw": {
+    "c0": "△7,649"
+   },
+   "values": {
+    "c0": -7649
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r27",
+   "xbrl": {
+    "c0": "IncomeTaxesPaidOpeCF"
+   },
+   "concept": "IncomeTaxesPaidOpeCF"
+  },
+  {
+   "label": "営業活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": "31,011"
+   },
+   "values": {
+    "c0": 31011
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r28",
+   "xbrl": {
+    "c0": "NetCashProvidedByUsedInOperatingActivities"
+   },
+   "concept": "NetCashProvidedByUsedInOperatingActivities"
+  },
+  {
+   "label": "投資活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r29",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "有形固定資産の取得による支出",
+   "raw": {
+    "c0": "△16,030"
+   },
+   "values": {
+    "c0": -16030
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r30",
+   "xbrl": {
+    "c0": "PurchaseOfPropertyPlantAndEquipmentInvCF"
+   },
+   "concept": "PurchaseOfPropertyPlantAndEquipmentInvCF"
+  },
+  {
+   "label": "有形固定資産の売却による収入",
+   "raw": {
+    "c0": "15,669"
+   },
+   "values": {
+    "c0": 15669
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r31",
+   "xbrl": {
+    "c0": "ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF"
+   },
+   "concept": "ProceedsFromSalesOfPropertyPlantAndEquipmentInvCF"
+  },
+  {
+   "label": "無形固定資産の取得による支出",
+   "raw": {
+    "c0": "△1,495"
+   },
+   "values": {
+    "c0": -1495
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r32",
+   "xbrl": {
+    "c0": "PurchaseOfIntangibleAssetsInvCF"
+   },
+   "concept": "PurchaseOfIntangibleAssetsInvCF"
+  },
+  {
+   "label": "投資有価証券の取得による支出",
+   "raw": {
+    "c0": "△9"
+   },
+   "values": {
+    "c0": -9
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": true,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r33",
+   "xbrl": {
+    "c0": "PurchaseOfInvestmentSecuritiesInvCF"
+   },
+   "concept": "PurchaseOfInvestmentSecuritiesInvCF"
+  },
+  {
+   "label": "投資有価証券の売却による収入",
+   "raw": {
+    "c0": "7,441"
+   },
+   "values": {
+    "c0": 7441
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r34",
+   "xbrl": {
+    "c0": "ProceedsFromSalesOfInvestmentSecuritiesInvCF"
+   },
+   "concept": "ProceedsFromSalesOfInvestmentSecuritiesInvCF"
+  },
+  {
+   "label": "敷金及び保証金の差入による支出",
+   "raw": {
+    "c0": "△2,718"
+   },
+   "values": {
+    "c0": -2718
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r35",
+   "xbrl": {
+    "c0": "PaymentsForLeaseAndGuaranteeDepositsInvCF"
+   },
+   "concept": "PaymentsForLeaseAndGuaranteeDepositsInvCF"
+  },
+  {
+   "label": "敷金及び保証金の回収による収入",
+   "raw": {
+    "c0": "383"
+   },
+   "values": {
+    "c0": 383
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r36",
+   "xbrl": {
+    "c0": "ProceedsFromCollectionOfLeaseAndGuaranteeDepositsInvCF"
+   },
+   "concept": "ProceedsFromCollectionOfLeaseAndGuaranteeDepositsInvCF"
+  },
+  {
+   "label": "長期前払費用の取得による支出",
+   "raw": {
+    "c0": "△296"
+   },
+   "values": {
+    "c0": -296
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r37",
+   "xbrl": {
+    "c0": "PurchaseOfLongTermPrepaidExpensesInvCF"
+   },
+   "concept": "PurchaseOfLongTermPrepaidExpensesInvCF"
+  },
+  {
+   "label": "預り保証金の受入による収入",
+   "raw": {
+    "c0": "2,074"
+   },
+   "values": {
+    "c0": 2074
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r38",
+   "xbrl": {
+    "c0": "ProceedsFromGuaranteeDepositsReceivedInvCF"
+   },
+   "concept": "ProceedsFromGuaranteeDepositsReceivedInvCF"
+  },
+  {
+   "label": "預り保証金の返還による支出",
+   "raw": {
+    "c0": "△616"
+   },
+   "values": {
+    "c0": -616
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r39",
+   "xbrl": {
+    "c0": "RepaymentsOfGuaranteeDepositsReceivedInvCF"
+   },
+   "concept": "RepaymentsOfGuaranteeDepositsReceivedInvCF"
+  },
+  {
+   "label": "連結の範囲の変更を伴う子会社株式の取得による",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r40",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "支出",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r41",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "連結の範囲の変更を伴う子会社株式の取得による",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r42",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "収入",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r43",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "116"
+   },
+   "values": {
+    "c0": 116
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r44",
+   "xbrl": {
+    "c0": "OtherNetInvCF"
+   },
+   "concept": "OtherNetInvCF"
+  },
+  {
+   "label": "投資活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": "5,093"
+   },
+   "values": {
+    "c0": 5093
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r45",
+   "xbrl": {
+    "c0": "NetCashProvidedByUsedInInvestmentActivities"
+   },
+   "concept": "NetCashProvidedByUsedInInvestmentActivities"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r28",
+   "items": [
+    "r24",
+    "r25",
+    "r26",
+    "r27"
+   ],
+   "weights": [
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "アークランズ",
+  "title": "（訂正・数値データ訂正）「2026年２月期　決算短信〔日本基準〕（連結）」の一部訂正について",
+  "stratum": "訂正-JGAAP",
+  "pdf": "data/tdnet/081220261013549466/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 38,
+ "xbrl_unconfirmed_cells": 0
+}

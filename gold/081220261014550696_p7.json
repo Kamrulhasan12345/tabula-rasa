@@ -1,0 +1,316 @@
+{
+ "doc_id": "081220261014550696",
+ "page": 7,
+ "statement_type": "consolidated_balance_sheet",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2025-08-31"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2026-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "資産の部",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r02",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "現金及び預金",
+   "raw": {
+    "c0": "3,088",
+    "c1": "1,205"
+   },
+   "values": {
+    "c0": 3088,
+    "c1": 1205
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r03",
+   "xbrl": {
+    "c0": "CashAndDeposits",
+    "c1": "CashAndDeposits"
+   },
+   "concept": "CashAndDeposits"
+  },
+  {
+   "label": "売掛金及び契約資産",
+   "raw": {
+    "c0": "767",
+    "c1": "434"
+   },
+   "values": {
+    "c0": 767,
+    "c1": 434
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "AccountsReceivableTradeAndContractAssetsCA",
+    "c1": "AccountsReceivableTradeAndContractAssetsCA"
+   },
+   "concept": "AccountsReceivableTradeAndContractAssetsCA"
+  },
+  {
+   "label": "仕掛品",
+   "raw": {
+    "c0": "－",
+    "c1": "192"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 192
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c1": "WorkInProcess"
+   },
+   "concept": "WorkInProcess"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "288",
+    "c1": "193"
+   },
+   "values": {
+    "c0": 288,
+    "c1": 193
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "OtherCA",
+    "c1": "OtherCA"
+   },
+   "concept": "OtherCA"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "4,144",
+    "c1": "2,026"
+   },
+   "values": {
+    "c0": 4144,
+    "c1": 2026
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "CurrentAssets",
+    "c1": "CurrentAssets"
+   },
+   "concept": "CurrentAssets"
+  },
+  {
+   "label": "固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r08",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r09",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "建物(純額)",
+   "raw": {
+    "c0": "0",
+    "c1": "0"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "net",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r10",
+   "xbrl": {},
+   "concept": null
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "Ｇ－ＦＩＸＥＲ",
+  "title": "2026年８月期決算短信〔日本基準〕(連結)",
+  "stratum": "JGAAP-連結-年度",
+  "pdf": "data/tdnet/081220261014550696/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 9,
+ "xbrl_unconfirmed_cells": 0
+}

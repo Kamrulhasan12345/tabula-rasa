@@ -1,0 +1,338 @@
+{
+ "doc_id": "081220261013549509",
+ "page": 10,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "duration",
+   "period_end": "2024-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "営業外費用合計",
+   "raw": {
+    "c0": "611"
+   },
+   "values": {
+    "c0": 611
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [],
+   "id": "r01",
+   "xbrl": {
+    "c0": "NonOperatingExpenses"
+   },
+   "concept": "NonOperatingExpenses"
+  },
+  {
+   "label": "経常利益",
+   "raw": {
+    "c0": "10,166"
+   },
+   "values": {
+    "c0": 10166
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02",
+   "xbrl": {
+    "c0": "OrdinaryIncome"
+   },
+   "concept": "OrdinaryIncome"
+  },
+  {
+   "label": "特別利益",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r03",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "固定資産売却益",
+   "raw": {
+    "c0": "3"
+   },
+   "values": {
+    "c0": 3
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別利益"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "GainOnSalesOfNoncurrentAssetsEI"
+   },
+   "concept": "GainOnSalesOfNoncurrentAssetsEI"
+  },
+  {
+   "label": "特別利益合計",
+   "raw": {
+    "c0": "3"
+   },
+   "values": {
+    "c0": 3
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "特別利益"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c0": "GainOnSalesOfNoncurrentAssetsEI"
+   },
+   "concept": "GainOnSalesOfNoncurrentAssetsEI"
+  },
+  {
+   "label": "特別損失",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r06",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "固定資産除却損",
+   "raw": {
+    "c0": "12"
+   },
+   "values": {
+    "c0": 12
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "LossOnRetirementOfNoncurrentAssetsEL"
+   },
+   "concept": "LossOnRetirementOfNoncurrentAssetsEL"
+  },
+  {
+   "label": "店舗閉鎖損失",
+   "raw": {
+    "c0": "305"
+   },
+   "values": {
+    "c0": 305
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "LossOnClosingOfStoresEL"
+   },
+   "concept": "LossOnClosingOfStoresEL"
+  },
+  {
+   "label": "解体撤去費用",
+   "raw": {
+    "c0": "33"
+   },
+   "values": {
+    "c0": 33
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "DismantlementExpansesEL"
+   },
+   "concept": "DismantlementExpansesEL"
+  },
+  {
+   "label": "貸倒引当金繰入額",
+   "raw": {
+    "c0": "81"
+   },
+   "values": {
+    "c0": 81
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "ProvisionOfAllowanceForDoubtfulAccountsEL"
+   },
+   "concept": "ProvisionOfAllowanceForDoubtfulAccountsEL"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "3"
+   },
+   "values": {
+    "c0": 3
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "GainOnSalesOfNoncurrentAssetsEI"
+   },
+   "concept": "GainOnSalesOfNoncurrentAssetsEI"
+  },
+  {
+   "label": "特別損失合計",
+   "raw": {
+    "c0": "436"
+   },
+   "values": {
+    "c0": 436
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r12",
+   "xbrl": {
+    "c0": "ExtraordinaryLoss"
+   },
+   "concept": "ExtraordinaryLoss"
+  },
+  {
+   "label": "税金等調整前中間純利益",
+   "raw": {
+    "c0": "9,733"
+   },
+   "values": {
+    "c0": 9733
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r13",
+   "xbrl": {
+    "c0": "IncomeBeforeIncomeTaxes"
+   },
+   "concept": "IncomeBeforeIncomeTaxes"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "アークランズ",
+  "title": "（訂正・数値データ訂正）「2026年２月期　第２四半期（中間期）決算短信〔日本基準〕（連結）」の一部訂正について",
+  "stratum": "訂正-JGAAP",
+  "pdf": "data/tdnet/081220261013549509/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 11,
+ "xbrl_unconfirmed_cells": 0
+}

@@ -1,0 +1,276 @@
+{
+ "doc_id": "081220261014550696",
+ "page": 12,
+ "statement_type": "cf",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "duration",
+   "period_end": "2025-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "売上債権の増減額(△は増加)",
+   "raw": {
+    "c0": "440"
+   },
+   "values": {
+    "c0": 440
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+   },
+   "concept": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+  },
+  {
+   "label": "棚卸資産の増減額(△は増加)",
+   "raw": {
+    "c0": "－"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "仕入債務の増減額(△は減少)",
+   "raw": {
+    "c0": "△32"
+   },
+   "values": {
+    "c0": -32
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r04",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+   },
+   "concept": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+  },
+  {
+   "label": "賞与引当金の増減額(△は減少)",
+   "raw": {
+    "c0": "△11"
+   },
+   "values": {
+    "c0": -11
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInProvisionForBonusesOpeCF"
+   },
+   "concept": "IncreaseDecreaseInProvisionForBonusesOpeCF"
+  },
+  {
+   "label": "役員賞与引当金の増減額(△は減少)",
+   "raw": {
+    "c0": "△0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r06",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "未払金の増減額(△は減少)",
+   "raw": {
+    "c0": "109"
+   },
+   "values": {
+    "c0": 109
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r07",
+   "xbrl": {
+    "c0": "ProvisionForBonuses"
+   },
+   "concept": "ProvisionForBonuses"
+  },
+  {
+   "label": "未払費用の増減額(△は減少)",
+   "raw": {
+    "c0": "△52"
+   },
+   "values": {
+    "c0": -52
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r08",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInAccruedExpensesOpeCF"
+   },
+   "concept": "IncreaseDecreaseInAccruedExpensesOpeCF"
+  },
+  {
+   "label": "その他の資産の増減額(△は増加)",
+   "raw": {
+    "c0": "△28"
+   },
+   "values": {
+    "c0": -28
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r09",
+   "xbrl": {
+    "c0": "DecreaseIncreaseInOtherAssetsOpeCF"
+   },
+   "concept": "DecreaseIncreaseInOtherAssetsOpeCF"
+  },
+  {
+   "label": "その他の負債の増減額(△は減少)",
+   "raw": {
+    "c0": "△32"
+   },
+   "values": {
+    "c0": -32
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r10",
+   "xbrl": {
+    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+   },
+   "concept": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+  },
+  {
+   "label": "小計",
+   "raw": {
+    "c0": "△1,274"
+   },
+   "values": {
+    "c0": -1274
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r11",
+   "xbrl": {
+    "c0": "SubtotalOpeCF"
+   },
+   "concept": "SubtotalOpeCF"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "Ｇ－ＦＩＸＥＲ",
+  "title": "2026年８月期決算短信〔日本基準〕(連結)",
+  "stratum": "JGAAP-連結-年度",
+  "pdf": "data/tdnet/081220261014550696/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 8,
+ "xbrl_unconfirmed_cells": 0
+}

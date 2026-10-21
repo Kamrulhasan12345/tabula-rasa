@@ -1,0 +1,219 @@
+{
+ "doc_id": "081220261006546386",
+ "page": 7,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "千円",
+  "multiplier": 1000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前第3四半期連結累計期間",
+   "period_type": "duration",
+   "period_end": "2025-09-20"
+  }
+ ],
+ "rows": [
+  {
+   "label": "営業収益",
+   "raw": {
+    "c0": "1,995,521"
+   },
+   "values": {
+    "c0": 1995521
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r01",
+   "xbrl": {
+    "c0": "OperatingRevenue1"
+   },
+   "concept": "OperatingRevenue1"
+  },
+  {
+   "label": "営業原価",
+   "raw": {
+    "c0": "1,406,368"
+   },
+   "values": {
+    "c0": 1406368
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02",
+   "xbrl": {
+    "c0": "OperatingCost"
+   },
+   "concept": "OperatingCost"
+  },
+  {
+   "label": "営業総利益",
+   "raw": {
+    "c0": "589,153"
+   },
+   "values": {
+    "c0": 589153
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03",
+   "xbrl": {
+    "c0": "OperatingGrossProfit"
+   },
+   "concept": "OperatingGrossProfit"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": "342,127"
+   },
+   "values": {
+    "c0": 342127
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r04",
+   "xbrl": {
+    "c0": "SellingGeneralAndAdministrativeExpenses"
+   },
+   "concept": "SellingGeneralAndAdministrativeExpenses"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "247,025"
+   },
+   "values": {
+    "c0": 247025
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05",
+   "xbrl": {
+    "c0": "OperatingIncome"
+   },
+   "concept": "OperatingIncome"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r06",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "5,447"
+   },
+   "values": {
+    "c0": 5447
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "InterestIncomeNOI"
+   },
+   "concept": "InterestIncomeNOI"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r03",
+   "items": [
+    "r01",
+    "r02"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r05",
+   "items": [
+    "r03",
+    "r04"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "ＫＧ情報",
+  "title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+  "stratum": "JGAAP-連結-四半期",
+  "pdf": "data/tdnet/081220261006546386/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 6,
+ "xbrl_unconfirmed_cells": 0
+}

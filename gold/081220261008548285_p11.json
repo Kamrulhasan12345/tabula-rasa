@@ -1,0 +1,219 @@
+{
+ "doc_id": "081220261008548285",
+ "page": 11,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "千円",
+  "multiplier": 1000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前連結会計年度",
+   "period_type": "duration",
+   "period_end": "2025-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "売上高",
+   "raw": {
+    "c0": "1,873,495"
+   },
+   "values": {
+    "c0": 1873495
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r01",
+   "xbrl": {
+    "c0": "NetSales"
+   },
+   "concept": "NetSales"
+  },
+  {
+   "label": "売上原価",
+   "raw": {
+    "c0": "964,462"
+   },
+   "values": {
+    "c0": 964462
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02",
+   "xbrl": {
+    "c0": "CostOfSales"
+   },
+   "concept": "CostOfSales"
+  },
+  {
+   "label": "売上総利益",
+   "raw": {
+    "c0": "909,033"
+   },
+   "values": {
+    "c0": 909033
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03",
+   "xbrl": {
+    "c0": "GrossProfit"
+   },
+   "concept": "GrossProfit"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": "1,232,480"
+   },
+   "values": {
+    "c0": 1232480
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r04",
+   "xbrl": {
+    "c0": "SellingGeneralAndAdministrativeExpenses"
+   },
+   "concept": "SellingGeneralAndAdministrativeExpenses"
+  },
+  {
+   "label": "営業損失(△)",
+   "raw": {
+    "c0": "△323,447"
+   },
+   "values": {
+    "c0": -323447
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05",
+   "xbrl": {
+    "c0": "OperatingIncome"
+   },
+   "concept": "OperatingIncome"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r06",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "6,673"
+   },
+   "values": {
+    "c0": 6673
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "InterestIncomeNOI"
+   },
+   "concept": "InterestIncomeNOI"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r03",
+   "items": [
+    "r01",
+    "r02"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r05",
+   "items": [
+    "r03",
+    "r04"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "Ｇ－メディア",
+  "title": "2026年８月期　決算短信〔日本基準〕（連結）",
+  "stratum": "JGAAP-連結-年度",
+  "pdf": "data/tdnet/081220261008548285/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 6,
+ "xbrl_unconfirmed_cells": 0
+}

@@ -1,0 +1,741 @@
+{
+ "doc_id": "081220261014550696",
+ "page": 8,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前連結会計年度",
+   "period_type": "duration",
+   "period_end": "2025-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "売上高",
+   "raw": {
+    "c0": "3,980"
+   },
+   "values": {
+    "c0": 3980
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r01",
+   "xbrl": {
+    "c0": "NetSales"
+   },
+   "concept": "NetSales"
+  },
+  {
+   "label": "売上原価",
+   "raw": {
+    "c0": "3,498"
+   },
+   "values": {
+    "c0": 3498
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02",
+   "xbrl": {
+    "c0": "CostOfSales"
+   },
+   "concept": "CostOfSales"
+  },
+  {
+   "label": "売上総利益又は売上総損失(△)",
+   "raw": {
+    "c0": "482"
+   },
+   "values": {
+    "c0": 482
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03",
+   "xbrl": {
+    "c0": "GrossProfit"
+   },
+   "concept": "GrossProfit"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r04",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "給料及び賞与",
+   "raw": {
+    "c0": "656"
+   },
+   "values": {
+    "c0": 656
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c0": "SalariesAndBonusesSGA"
+   },
+   "concept": "SalariesAndBonusesSGA"
+  },
+  {
+   "label": "賞与引当金繰入額",
+   "raw": {
+    "c0": "48"
+   },
+   "values": {
+    "c0": 48
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "ProvisionForBonusesSGA"
+   },
+   "concept": "ProvisionForBonusesSGA"
+  },
+  {
+   "label": "支払手数料",
+   "raw": {
+    "c0": "283"
+   },
+   "values": {
+    "c0": 283
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "LeaseDepositsIOA"
+   },
+   "concept": "LeaseDepositsIOA"
+  },
+  {
+   "label": "地代家賃",
+   "raw": {
+    "c0": "278"
+   },
+   "values": {
+    "c0": 278
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "RentsSGA"
+   },
+   "concept": "RentsSGA"
+  },
+  {
+   "label": "支払報酬",
+   "raw": {
+    "c0": "330"
+   },
+   "values": {
+    "c0": 330
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "CompensationsSGA"
+   },
+   "concept": "CompensationsSGA"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "615"
+   },
+   "values": {
+    "c0": 615
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "OtherSGA"
+   },
+   "concept": "OtherSGA"
+  },
+  {
+   "label": "販売費及び一般管理費合計",
+   "raw": {
+    "c0": "2,212"
+   },
+   "values": {
+    "c0": 2212
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "販売費及び一般管理費"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "SellingGeneralAndAdministrativeExpenses"
+   },
+   "concept": "SellingGeneralAndAdministrativeExpenses"
+  },
+  {
+   "label": "営業損失(△)",
+   "raw": {
+    "c0": "△1,729"
+   },
+   "values": {
+    "c0": -1729
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r12",
+   "xbrl": {
+    "c0": "OperatingIncome"
+   },
+   "concept": "OperatingIncome"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r13",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "4"
+   },
+   "values": {
+    "c0": 4
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r14",
+   "xbrl": {
+    "c0": "InterestIncomeNOI"
+   },
+   "concept": "InterestIncomeNOI"
+  },
+  {
+   "label": "受取配当金",
+   "raw": {
+    "c0": "0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r15",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "為替差益",
+   "raw": {
+    "c0": "0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r16",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "雑収入",
+   "raw": {
+    "c0": "6"
+   },
+   "values": {
+    "c0": 6
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r17",
+   "xbrl": {
+    "c0": "OtherCL"
+   },
+   "concept": "OtherCL"
+  },
+  {
+   "label": "営業外収益合計",
+   "raw": {
+    "c0": "11"
+   },
+   "values": {
+    "c0": 11
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r18",
+   "xbrl": {
+    "c0": "NonOperatingIncome"
+   },
+   "concept": "NonOperatingIncome"
+  },
+  {
+   "label": "営業外費用",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r19",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r20",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "雑損失",
+   "raw": {
+    "c0": "0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r21",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "営業外費用合計",
+   "raw": {
+    "c0": "1"
+   },
+   "values": {
+    "c0": 1
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r22",
+   "xbrl": {
+    "c0": "IncomeTaxesPayable"
+   },
+   "concept": "IncomeTaxesPayable"
+  },
+  {
+   "label": "経常損失(△)",
+   "raw": {
+    "c0": "△1,719"
+   },
+   "values": {
+    "c0": -1719
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r23",
+   "xbrl": {
+    "c0": "OrdinaryIncome"
+   },
+   "concept": "OrdinaryIncome"
+  },
+  {
+   "label": "特別利益",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r24",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "新株予約権戻入益",
+   "raw": {
+    "c0": "0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別利益"
+   ],
+   "id": "r25",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "特別利益合計",
+   "raw": {
+    "c0": "0"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "特別利益"
+   ],
+   "id": "r26",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "特別損失",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r27",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "減損損失",
+   "raw": {
+    "c0": "335"
+   },
+   "values": {
+    "c0": 335
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r28",
+   "xbrl": {
+    "c0": "ImpairmentLossEL"
+   },
+   "concept": "ImpairmentLossEL"
+  },
+  {
+   "label": "特別損失合計",
+   "raw": {
+    "c0": "335"
+   },
+   "values": {
+    "c0": 335
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "特別損失"
+   ],
+   "id": "r29",
+   "xbrl": {
+    "c0": "ImpairmentLossEL"
+   },
+   "concept": "ImpairmentLossEL"
+  },
+  {
+   "label": "税金等調整前当期純損失(△)",
+   "raw": {
+    "c0": "△2,055"
+   },
+   "values": {
+    "c0": -2055
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r30",
+   "xbrl": {
+    "c0": "IncomeBeforeIncomeTaxes"
+   },
+   "concept": "IncomeBeforeIncomeTaxes"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r03",
+   "items": [
+    "r01",
+    "r02"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r12",
+   "items": [
+    "r03",
+    "r11"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "Ｇ－ＦＩＸＥＲ",
+  "title": "2026年８月期決算短信〔日本基準〕(連結)",
+  "stratum": "JGAAP-連結-年度",
+  "pdf": "data/tdnet/081220261014550696/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 19,
+ "xbrl_unconfirmed_cells": 0
+}

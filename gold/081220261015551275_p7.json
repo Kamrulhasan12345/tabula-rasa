@@ -1,0 +1,681 @@
+{
+ "doc_id": "081220261015551275",
+ "page": 7,
+ "statement_type": "pl",
+ "scope": "non_consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "千円",
+  "multiplier": 1000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "(単位:千円)",
+   "period_type": "duration",
+   "period_end": "2026-08-31",
+   "period_start": "2025-12-01"
+  }
+ ],
+ "rows": [
+  {
+   "label": "(2)四半期損益計算書",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "第3四半期累計期間",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r02",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "売上高",
+   "raw": {
+    "c0": "24,289,968"
+   },
+   "values": {
+    "c0": 24289968
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r03",
+   "xbrl": {
+    "c0": "NetSales"
+   },
+   "concept": "NetSales"
+  },
+  {
+   "label": "売上原価",
+   "raw": {
+    "c0": "19,774,334"
+   },
+   "values": {
+    "c0": 19774334
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "CostOfSales"
+   },
+   "concept": "CostOfSales"
+  },
+  {
+   "label": "売上総利益",
+   "raw": {
+    "c0": "4,515,634"
+   },
+   "values": {
+    "c0": 4515634
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c0": "GrossProfit"
+   },
+   "concept": "GrossProfit"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": "3,297,381"
+   },
+   "values": {
+    "c0": 3297381
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "SellingGeneralAndAdministrativeExpenses"
+   },
+   "concept": "SellingGeneralAndAdministrativeExpenses"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "1,218,253"
+   },
+   "values": {
+    "c0": 1218253
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "OperatingIncome"
+   },
+   "concept": "OperatingIncome"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r08",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "6,544"
+   },
+   "values": {
+    "c0": 6544
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外収益"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "InterestIncomeNOI"
+   },
+   "concept": "InterestIncomeNOI"
+  },
+  {
+   "label": "受取配当金",
+   "raw": {
+    "c0": "87"
+   },
+   "values": {
+    "c0": 87
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外収益"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "DividendsIncomeNOI"
+   },
+   "concept": "DividendsIncomeNOI"
+  },
+  {
+   "label": "和解金収入",
+   "raw": {
+    "c0": "4,000"
+   },
+   "values": {
+    "c0": 4000
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外収益"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "SettlementIncomeNOI"
+   },
+   "concept": "SettlementIncomeNOI"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "2,564"
+   },
+   "values": {
+    "c0": 2564
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外収益"
+   ],
+   "id": "r12",
+   "xbrl": {
+    "c0": "OtherNOI"
+   },
+   "concept": "OtherNOI"
+  },
+  {
+   "label": "営業外収益合計",
+   "raw": {
+    "c0": "13,196"
+   },
+   "values": {
+    "c0": 13196
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外収益"
+   ],
+   "id": "r13",
+   "xbrl": {
+    "c0": "NonOperatingIncome"
+   },
+   "concept": "NonOperatingIncome"
+  },
+  {
+   "label": "営業外費用",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r14",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "83,933"
+   },
+   "values": {
+    "c0": 83933
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外費用"
+   ],
+   "id": "r15",
+   "xbrl": {
+    "c0": "InterestExpensesNOE"
+   },
+   "concept": "InterestExpensesNOE"
+  },
+  {
+   "label": "支払手数料",
+   "raw": {
+    "c0": "8,406"
+   },
+   "values": {
+    "c0": 8406
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外費用"
+   ],
+   "id": "r16",
+   "xbrl": {
+    "c0": "CommissionFeeNOE"
+   },
+   "concept": "CommissionFeeNOE"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "16,633"
+   },
+   "values": {
+    "c0": 16633
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外費用"
+   ],
+   "id": "r17",
+   "xbrl": {
+    "c0": "OtherNOE"
+   },
+   "concept": "OtherNOE"
+  },
+  {
+   "label": "営業外費用合計",
+   "raw": {
+    "c0": "108,973"
+   },
+   "values": {
+    "c0": 108973
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "(2)四半期損益計算書",
+    "営業外費用"
+   ],
+   "id": "r18",
+   "xbrl": {
+    "c0": "NonOperatingExpenses"
+   },
+   "concept": "NonOperatingExpenses"
+  },
+  {
+   "label": "経常利益",
+   "raw": {
+    "c0": "1,122,475"
+   },
+   "values": {
+    "c0": 1122475
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r19",
+   "xbrl": {
+    "c0": "OrdinaryIncome"
+   },
+   "concept": "OrdinaryIncome"
+  },
+  {
+   "label": "税引前四半期純利益",
+   "raw": {
+    "c0": "1,122,475"
+   },
+   "values": {
+    "c0": 1122475
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r20",
+   "xbrl": {
+    "c0": "OrdinaryIncome"
+   },
+   "concept": "OrdinaryIncome"
+  },
+  {
+   "label": "法人税、住民税及び事業税",
+   "raw": {
+    "c0": "414,095"
+   },
+   "values": {
+    "c0": 414095
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r21",
+   "xbrl": {
+    "c0": "IncomeTaxesCurrent"
+   },
+   "concept": "IncomeTaxesCurrent"
+  },
+  {
+   "label": "法人税等調整額",
+   "raw": {
+    "c0": "25,974"
+   },
+   "values": {
+    "c0": 25974
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r22",
+   "xbrl": {
+    "c0": "IncomeTaxesDeferred"
+   },
+   "concept": "IncomeTaxesDeferred"
+  },
+  {
+   "label": "法人税等合計",
+   "raw": {
+    "c0": "440,070"
+   },
+   "values": {
+    "c0": 440070
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r23",
+   "xbrl": {
+    "c0": "IncomeTaxes"
+   },
+   "concept": "IncomeTaxes"
+  },
+  {
+   "label": "四半期純利益",
+   "raw": {
+    "c0": "682,405"
+   },
+   "values": {
+    "c0": 682405
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(2)四半期損益計算書"
+   ],
+   "id": "r24",
+   "xbrl": {
+    "c0": "ProfitLoss"
+   },
+   "concept": "ProfitLoss"
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r05",
+   "items": [
+    "r03",
+    "r04"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r07",
+   "items": [
+    "r05",
+    "r06"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r18",
+   "items": [
+    "r15",
+    "r16",
+    "r17"
+   ],
+   "weights": [
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r20",
+   "items": [
+    "r07",
+    "r13",
+    "r18"
+   ],
+   "weights": [
+    1,
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r23",
+   "items": [
+    "r21",
+    "r22"
+   ],
+   "weights": [
+    1,
+    1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "ベルテックス",
+  "title": "2026年11月期 第3四半期決算短信〔日本基準〕（非連結）",
+  "stratum": "JGAAP-非連結",
+  "pdf": "data/tdnet/081220261015551275/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 20,
+ "xbrl_unconfirmed_cells": 0
+}

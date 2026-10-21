@@ -1,0 +1,196 @@
+{
+ "doc_id": "081220261020553462",
+ "page": 23,
+ "statement_type": "non_consolidated_balance_sheet",
+ "scope": "non_consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "千円",
+  "multiplier": 1000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "duration",
+   "period_end": "2026-02-28"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": "duration",
+   "period_end": "2026-02-28"
+  }
+ ],
+ "rows": [
+  {
+   "label": "貸借対照表計上額",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "期首残高",
+   "raw": {
+    "c0": "359,060,954",
+    "c1": "350,282,173"
+   },
+   "values": {
+    "c0": 359060954,
+    "c1": 350282173
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "貸借対照表計上額"
+   ],
+   "id": "r02",
+   "xbrl": {
+    "c1": "PropertyPlantAndEquipment"
+   },
+   "concept": "PropertyPlantAndEquipment"
+  },
+  {
+   "label": "期中増減額",
+   "raw": {
+    "c0": "△8,778,780",
+    "c1": "△17,068,280"
+   },
+   "values": {
+    "c0": -8778780,
+    "c1": -17068280
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "貸借対照表計上額"
+   ],
+   "id": "r03",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "期末残高",
+   "raw": {
+    "c0": "350,282,173",
+    "c1": "333,213,893"
+   },
+   "values": {
+    "c0": 350282173,
+    "c1": 333213893
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "貸借対照表計上額"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "PropertyPlantAndEquipment"
+   },
+   "concept": "PropertyPlantAndEquipment"
+  },
+  {
+   "label": "期末時価",
+   "raw": {
+    "c0": "444,480,000",
+    "c1": "426,950,000"
+   },
+   "values": {
+    "c0": 444480000,
+    "c1": 426950000
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "(注1)貸借対照表計上額は、取得原価から減価償却累計額を控除した金額です。",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r06",
+   "xbrl": {},
+   "concept": null
+  }
+ ],
+ "continues_on_next_page": false,
+ "checks": [],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "Ｒ－ラサールロジ",
+  "title": "2026年８月期　決算短信（ＲＥＩＴ）",
+  "stratum": "REIT",
+  "pdf": "data/tdnet/081220261020553462/doc.pdf"
+ },
+ "gold_status": "excluded",
+ "review": [
+  "not a statement: REIT rental-property fair-value note (matched 貸借対照表計上額)"
+ ],
+ "xbrl_confirmed_cells": 2,
+ "xbrl_unconfirmed_cells": 6
+}

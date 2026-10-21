@@ -1,0 +1,553 @@
+{
+ "doc_id": "081220261014550893",
+ "page": 8,
+ "statement_type": "consolidated_balance_sheet",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2025-08-31"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2026-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "資産の部",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r02",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "現金及び預金",
+   "raw": {
+    "c0": "35,564",
+    "c1": "37,359"
+   },
+   "values": {
+    "c0": 35564,
+    "c1": 37359
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r03",
+   "xbrl": {
+    "c0": "CashAndDeposits",
+    "c1": "CashAndDeposits"
+   },
+   "concept": "CashAndDeposits"
+  },
+  {
+   "label": "売掛金",
+   "raw": {
+    "c0": "1,286",
+    "c1": "1,607"
+   },
+   "values": {
+    "c0": 1286,
+    "c1": 1607
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r04",
+   "xbrl": {
+    "c0": "AccountsReceivableTrade",
+    "c1": "AccountsReceivableTrade"
+   },
+   "concept": "AccountsReceivableTrade"
+  },
+  {
+   "label": "契約資産",
+   "raw": {
+    "c0": "－",
+    "c1": "199"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 199
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r05",
+   "xbrl": {
+    "c1": "ContractAssets"
+   },
+   "concept": "ContractAssets"
+  },
+  {
+   "label": "リース債権",
+   "raw": {
+    "c0": "4,578",
+    "c1": "4,149"
+   },
+   "values": {
+    "c0": 4578,
+    "c1": 4149
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r06",
+   "xbrl": {
+    "c0": "LeaseReceivablesCA",
+    "c1": "LeaseReceivablesCA"
+   },
+   "concept": "LeaseReceivablesCA"
+  },
+  {
+   "label": "完成工事未収入金",
+   "raw": {
+    "c0": "24,543",
+    "c1": "31,251"
+   },
+   "values": {
+    "c0": 24543,
+    "c1": 31251
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r07",
+   "xbrl": {
+    "c0": "AccountsReceivableFromCompletedConstructionContractsCNS",
+    "c1": "AccountsReceivableFromCompletedConstructionContractsCNS"
+   },
+   "concept": "AccountsReceivableFromCompletedConstructionContractsCNS"
+  },
+  {
+   "label": "商品",
+   "raw": {
+    "c0": "8,037",
+    "c1": "6,386"
+   },
+   "values": {
+    "c0": 8037,
+    "c1": 6386
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r08",
+   "xbrl": {
+    "c0": "Merchandise",
+    "c1": "Merchandise"
+   },
+   "concept": "Merchandise"
+  },
+  {
+   "label": "販売用不動産",
+   "raw": {
+    "c0": "1,119",
+    "c1": "1,152"
+   },
+   "values": {
+    "c0": 1119,
+    "c1": 1152
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r09",
+   "xbrl": {
+    "c0": "RealEstateForSaleCNS",
+    "c1": "RealEstateForSaleCNS"
+   },
+   "concept": "RealEstateForSaleCNS"
+  },
+  {
+   "label": "未成工事支出金",
+   "raw": {
+    "c0": "6,126",
+    "c1": "5,515"
+   },
+   "values": {
+    "c0": 6126,
+    "c1": 5515
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r10",
+   "xbrl": {
+    "c0": "CostsOnUncompletedConstructionContractsCNS",
+    "c1": "CostsOnUncompletedConstructionContractsCNS"
+   },
+   "concept": "CostsOnUncompletedConstructionContractsCNS"
+  },
+  {
+   "label": "原材料及び貯蔵品",
+   "raw": {
+    "c0": "11",
+    "c1": "14"
+   },
+   "values": {
+    "c0": 11,
+    "c1": 14
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r11",
+   "xbrl": {
+    "c0": "RawMaterialsAndSupplies",
+    "c1": "RawMaterialsAndSupplies"
+   },
+   "concept": "RawMaterialsAndSupplies"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "7,992",
+    "c1": "11,852"
+   },
+   "values": {
+    "c0": 7992,
+    "c1": 11852
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r12",
+   "xbrl": {
+    "c0": "OtherCA",
+    "c1": "OtherCA"
+   },
+   "concept": "OtherCA"
+  },
+  {
+   "label": "貸倒引当金",
+   "raw": {
+    "c0": "△90",
+    "c1": "△359"
+   },
+   "values": {
+    "c0": -90,
+    "c1": -359
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "contra",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r13",
+   "xbrl": {
+    "c0": "AllowanceForDoubtfulAccountsCA",
+    "c1": "AllowanceForDoubtfulAccountsCA"
+   },
+   "concept": "AllowanceForDoubtfulAccountsCA"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "89,170",
+    "c1": "99,129"
+   },
+   "values": {
+    "c0": 89170,
+    "c1": 99129
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r14",
+   "xbrl": {
+    "c0": "CurrentAssets",
+    "c1": "CurrentAssets"
+   },
+   "concept": "CurrentAssets"
+  },
+  {
+   "label": "固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r15",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r16",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "建物及び構築物",
+   "raw": {
+    "c0": "2,713",
+    "c1": "2,697"
+   },
+   "values": {
+    "c0": 2713,
+    "c1": 2697
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r17",
+   "xbrl": {
+    "c0": "BuildingsAndStructures",
+    "c1": "BuildingsAndStructures"
+   },
+   "concept": "BuildingsAndStructures"
+  }
+ ],
+ "continues_on_next_page": true,
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r14",
+   "items": [
+    "r03",
+    "r04",
+    "r05",
+    "r11",
+    "r12",
+    "r13",
+    "r06",
+    "r07",
+    "r08",
+    "r09",
+    "r10"
+   ],
+   "weights": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
+ "source": {
+  "company": "ウエストＨＤ",
+  "title": "2026年８月期決算短信〔日本基準〕(連結)",
+  "stratum": "JGAAP-連結-年度",
+  "pdf": "data/tdnet/081220261014550893/doc.pdf"
+ },
+ "gold_status": "confirmed",
+ "review": [],
+ "xbrl_confirmed_cells": 25,
+ "xbrl_unconfirmed_cells": 0
+}
