@@ -1,0 +1,1002 @@
+{
+ "doc_id": "doc",
+ "page": 13,
+ "statement_type": "pl",
+ "scope": "non_consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "千円",
+  "multiplier": 1000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前期",
+   "period_type": null,
+   "period_end": null
+  },
+  {
+   "id": "c1",
+   "label": "当期",
+   "period_type": null,
+   "period_end": null
+  }
+ ],
+ "rows": [
+  {
+   "label": "営業収益",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "賃貸事業収入",
+   "raw": {
+    "c0": "10,384,455",
+    "c1": "※１9,935,527"
+   },
+   "values": {
+    "c0": null,
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収益"
+   ],
+   "id": "r02"
+  },
+  {
+   "label": "その他賃貸事業収入",
+   "raw": {
+    "c0": "※１833,213",
+    "c1": "※１837,441"
+   },
+   "values": {
+    "c0": "unparsed",
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収益"
+   ],
+   "id": "r03"
+  },
+  {
+   "label": "不動産等売却益",
+   "raw": {
+    "c0": "1,020,314",
+    "c1": "2,143,868"
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収益"
+   ],
+   "id": "r04"
+  },
+  {
+   "label": "受取配当金",
+   "raw": {
+    "c0": "5,139",
+    "c1": "75,998"
+   },
+   "values": {
+    "c0": 5139,
+    "c1": 75998
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収益"
+   ],
+   "id": "r05"
+  },
+  {
+   "label": "匿名組合分配金",
+   "raw": {
+    "c0": "127,157",
+    "c1": "100,166"
+   },
+   "values": {
+    "c0": 127157,
+    "c1": 100166
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収益"
+   ],
+   "id": "r06"
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "100,833",
+    "c1": "117,584"
+   },
+   "values": {
+    "c0": 100833,
+    "c1": 117584
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収益"
+   ],
+   "id": "r07"
+  },
+  {
+   "label": "営業収益合計",
+   "raw": {
+    "c0": "12,471,114",
+    "c1": "13,210,585"
+   },
+   "values": {
+    "c0": 12471114,
+    "c1": 13210585
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業収益"
+   ],
+   "id": "r08"
+  },
+  {
+   "label": "営業費用",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r09"
+  },
+  {
+   "label": "賃貸事業費用",
+   "raw": {
+    "c0": "3,723,552",
+    "c1": "※１3,748,768"
+   },
+   "values": {
+    "c0": null,
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r10"
+  },
+  {
+   "label": "不動産等売却損",
+   "raw": {
+    "c0": "-",
+    "c1": "※３88,365"
+   },
+   "values": {
+    "c0": 0,
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r11"
+  },
+  {
+   "label": "資産運用報酬",
+   "raw": {
+    "c0": "1,646,134",
+    "c1": "1,837,350"
+   },
+   "values": {
+    "c0": 1646134,
+    "c1": 1837350
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r12"
+  },
+  {
+   "label": "資産保管・一般事務手数料",
+   "raw": {
+    "c0": "46,743",
+    "c1": "43,960"
+   },
+   "values": {
+    "c0": 46743,
+    "c1": 43960
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r13"
+  },
+  {
+   "label": "役員報酬",
+   "raw": {
+    "c0": "5,400",
+    "c1": "5,400"
+   },
+   "values": {
+    "c0": 5400,
+    "c1": 5400
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r14"
+  },
+  {
+   "label": "会計監査人報酬",
+   "raw": {
+    "c0": "14,000",
+    "c1": "14,000"
+   },
+   "values": {
+    "c0": 14000,
+    "c1": 14000
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r15"
+  },
+  {
+   "label": "その他営業費用",
+   "raw": {
+    "c0": "120,826",
+    "c1": "136,901"
+   },
+   "values": {
+    "c0": 120826,
+    "c1": 136901
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r16"
+  },
+  {
+   "label": "営業費用合計",
+   "raw": {
+    "c0": "5,556,657",
+    "c1": "5,874,747"
+   },
+   "values": {
+    "c0": 5556657,
+    "c1": 5874747
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業費用"
+   ],
+   "id": "r17"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "6,914,457",
+    "c1": "7,335,838"
+   },
+   "values": {
+    "c0": 6914457,
+    "c1": 7335838
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r18"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r19"
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "25,284",
+    "c1": "57,034"
+   },
+   "values": {
+    "c0": 25284,
+    "c1": 57034
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r20"
+  },
+  {
+   "label": "未払分配金戻入",
+   "raw": {
+    "c0": "357",
+    "c1": "359"
+   },
+   "values": {
+    "c0": 357,
+    "c1": 359
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r21"
+  },
+  {
+   "label": "還付加算金",
+   "raw": {
+    "c0": "17",
+    "c1": "24"
+   },
+   "values": {
+    "c0": 17,
+    "c1": 24
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r22"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "983",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 983,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r23"
+  },
+  {
+   "label": "営業外収益合計",
+   "raw": {
+    "c0": "26,643",
+    "c1": "57,419"
+   },
+   "values": {
+    "c0": 26643,
+    "c1": 57419
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r24"
+  },
+  {
+   "label": "営業外費用",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r25"
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "665,002",
+    "c1": "750,035"
+   },
+   "values": {
+    "c0": 665002,
+    "c1": 750035
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r26"
+  },
+  {
+   "label": "投資法人債利息",
+   "raw": {
+    "c0": "38,646",
+    "c1": "39,903"
+   },
+   "values": {
+    "c0": 38646,
+    "c1": 39903
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r27"
+  },
+  {
+   "label": "投資口交付費償却",
+   "raw": {
+    "c0": "1,701",
+    "c1": "1,134"
+   },
+   "values": {
+    "c0": 1701,
+    "c1": 1134
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r28"
+  },
+  {
+   "label": "投資法人債発行費償却",
+   "raw": {
+    "c0": "4,772",
+    "c1": "4,772"
+   },
+   "values": {
+    "c0": 4772,
+    "c1": 4772
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r29"
+  },
+  {
+   "label": "融資関連費用",
+   "raw": {
+    "c0": "157,465",
+    "c1": "126,322"
+   },
+   "values": {
+    "c0": 157465,
+    "c1": 126322
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r30"
+  },
+  {
+   "label": "投資有価証券償還損",
+   "raw": {
+    "c0": "44,845",
+    "c1": "2,829"
+   },
+   "values": {
+    "c0": 44845,
+    "c1": 2829
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r31"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "7,273",
+    "c1": "9,439"
+   },
+   "values": {
+    "c0": 7273,
+    "c1": 9439
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r32"
+  },
+  {
+   "label": "営業外費用合計",
+   "raw": {
+    "c0": "919,707",
+    "c1": "934,437"
+   },
+   "values": {
+    "c0": 919707,
+    "c1": 934437
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外費用"
+   ],
+   "id": "r33"
+  },
+  {
+   "label": "経常利益",
+   "raw": {
+    "c0": "6,021,393",
+    "c1": "6,458,820"
+   },
+   "values": {
+    "c0": 6021393,
+    "c1": 6458820
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r34"
+  },
+  {
+   "label": "税引前当期純利益",
+   "raw": {
+    "c0": "6,021,393",
+    "c1": "6,458,820"
+   },
+   "values": {
+    "c0": 6021393,
+    "c1": 6458820
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r35"
+  },
+  {
+   "label": "法人税、住民税及び事業税",
+   "raw": {
+    "c0": "605",
+    "c1": "1,118"
+   },
+   "values": {
+    "c0": 605,
+    "c1": 1118
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r36"
+  },
+  {
+   "label": "法人税等調整額",
+   "raw": {
+    "c0": "15",
+    "c1": "△25"
+   },
+   "values": {
+    "c0": 15,
+    "c1": -25
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r37"
+  },
+  {
+   "label": "法人税等合計",
+   "raw": {
+    "c0": "620",
+    "c1": "1,093"
+   },
+   "values": {
+    "c0": 620,
+    "c1": 1093
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "total",
+   "path": [],
+   "id": "r38"
+  },
+  {
+   "label": "当期純利益",
+   "raw": {
+    "c0": "6,020,772",
+    "c1": "6,457,727"
+   },
+   "values": {
+    "c0": 6020772,
+    "c1": 6457727
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r39"
+  },
+  {
+   "label": "前期繰越利益",
+   "raw": {
+    "c0": "1,167",
+    "c1": "437"
+   },
+   "values": {
+    "c0": 1167,
+    "c1": 437
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r40"
+  },
+  {
+   "label": "当期未処分利益又は当期未処理損失(△)",
+   "raw": {
+    "c0": "6,021,940",
+    "c1": "6,458,164"
+   },
+   "values": {
+    "c0": 6021940,
+    "c1": 6458164
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r41"
+  }
+ ],
+ "continues_on_next_page": false,
+ "security_flags": [
+  {
+   "reason": "ocr-differs",
+   "text": "※１",
+   "bbox": [
+    336.20269027143695,
+    140.9571176642903,
+    348.14833789239185,
+    146.92977358276903
+   ],
+   "ocr": [
+    "110,384,455"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "※２",
+   "bbox": [
+    340.6823577460384,
+    164.8477484968903,
+    352.6280053669933,
+    170.820404415369
+   ],
+   "ocr": [
+    "21,020,314"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "※２",
+   "bbox": [
+    465.1161827758009,
+    164.8477484968903,
+    477.0618303967558,
+    170.820404415369
+   ],
+   "ocr": [
+    "22,143,868"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "※１",
+   "bbox": [
+    340.6852943843091,
+    238.0127804378003,
+    352.630942005264,
+    243.98543635627902
+   ],
+   "ocr": [
+    "13,723,552"
+   ]
+  }
+ ]
+}

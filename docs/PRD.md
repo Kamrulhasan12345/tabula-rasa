@@ -434,6 +434,8 @@ Reading it:
 
 ### 6.1 Comparison table to fill
 
+**Filled in [REPORT.md](../REPORT.md) (2026-10-22): B0, B1 and the hybrid on 85 XBRL-checked pages. Hybrid: 0.999 cells, 0.94 page exact.**
+
 | Approach | M1 T1 | M1 T4 | M6 pass | M9 | $/page | p95 s | Runs offline |
 |---|---|---|---|---|---|---|---|
 | B0 text rules | | n/a | | | ~0 | | yes |

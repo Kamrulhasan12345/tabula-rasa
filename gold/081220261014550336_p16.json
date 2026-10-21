@@ -15,22 +15,33 @@
   {
    "id": "c0",
    "label": "",
-   "period_type": "duration",
-   "period_end": "2025-08-31"
+   "period_type": null,
+   "period_end": "2025-08-31",
+   "period_start": "2024-09-01"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": null,
+   "period_end": "2026-08-31",
+   "period_start": "2025-09-01"
   }
  ],
  "rows": [
   {
    "label": "減損損失",
    "raw": {
-    "c0": "228"
+    "c0": "228",
+    "c1": "18"
    },
    "values": {
-    "c0": 228
+    "c0": 228,
+    "c1": 18
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -38,21 +49,26 @@
    "path": [],
    "id": "r01",
    "xbrl": {
-    "c0": "ImpairmentLossEL"
+    "c0": "ImpairmentLossEL",
+    "c1": "ImpairmentLossEL"
    },
+   "xbrl_sign": 1,
    "concept": "ImpairmentLossEL"
   },
   {
    "label": "固定資産除却損",
    "raw": {
-    "c0": "885"
+    "c0": "885",
+    "c1": "1,056"
    },
    "values": {
-    "c0": 885
+    "c0": 885,
+    "c1": 1056
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -60,21 +76,26 @@
    "path": [],
    "id": "r02",
    "xbrl": {
-    "c0": "LossOnRetirementOfNoncurrentAssetsOpeCF"
+    "c0": "LossOnRetirementOfNoncurrentAssetsOpeCF",
+    "c1": "LossOnRetirementOfNoncurrentAssetsEL"
    },
+   "xbrl_sign": 1,
    "concept": "LossOnRetirementOfNoncurrentAssetsOpeCF"
   },
   {
    "label": "固定資産売却損益(△は益)",
    "raw": {
-    "c0": "△145"
+    "c0": "△145",
+    "c1": "△7"
    },
    "values": {
-    "c0": -145
+    "c0": -145,
+    "c1": -7
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -82,21 +103,26 @@
    "path": [],
    "id": "r03",
    "xbrl": {
-    "c0": "LossGainOnSalesOfNoncurrentAssetsOpeCF"
+    "c0": "GainOnSalesOfNoncurrentAssetsEI",
+    "c1": "GainOnSalesOfNoncurrentAssetsEI"
    },
-   "concept": "LossGainOnSalesOfNoncurrentAssetsOpeCF"
+   "xbrl_sign": -1,
+   "concept": "GainOnSalesOfNoncurrentAssetsEI"
   },
   {
    "label": "売上債権の増減額(△は増加)",
    "raw": {
-    "c0": "△7,242"
+    "c0": "△7,242",
+    "c1": "△39,867"
    },
    "values": {
-    "c0": -7242
+    "c0": -7242,
+    "c1": -39867
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -104,21 +130,26 @@
    "path": [],
    "id": "r04",
    "xbrl": {
-    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF",
+    "c1": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
   },
   {
    "label": "棚卸資産の増減額(△は増加)",
    "raw": {
-    "c0": "△866"
+    "c0": "△866",
+    "c1": "△89"
    },
    "values": {
-    "c0": -866
+    "c0": -866,
+    "c1": -89
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -126,21 +157,26 @@
    "path": [],
    "id": "r05",
    "xbrl": {
-    "c0": "DecreaseIncreaseInInventoriesOpeCF"
+    "c0": "DecreaseIncreaseInInventoriesOpeCF",
+    "c1": "DecreaseIncreaseInInventoriesOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "DecreaseIncreaseInInventoriesOpeCF"
   },
   {
    "label": "仕入債務の増減額(△は減少)",
    "raw": {
-    "c0": "5,398"
+    "c0": "5,398",
+    "c1": "39,711"
    },
    "values": {
-    "c0": 5398
+    "c0": 5398,
+    "c1": 39711
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -148,21 +184,26 @@
    "path": [],
    "id": "r06",
    "xbrl": {
-    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF",
+    "c1": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
   },
   {
    "label": "電子記録債務の増減額(△は減少)",
    "raw": {
-    "c0": "△1,115"
+    "c0": "△1,115",
+    "c1": "△514"
    },
    "values": {
-    "c0": -1115
+    "c0": -1115,
+    "c1": -514
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -170,21 +211,26 @@
    "path": [],
    "id": "r07",
    "xbrl": {
-    "c0": "IncreaseDecreaseInElectronicallyRecordedObligationsOperatingOpeCF"
+    "c0": "IncreaseDecreaseInElectronicallyRecordedObligationsOperatingOpeCF",
+    "c1": "IncreaseDecreaseInElectronicallyRecordedObligationsOperatingOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInElectronicallyRecordedObligationsOperatingOpeCF"
   },
   {
    "label": "未払金の増減額(△は減少)",
    "raw": {
-    "c0": "△1,967"
+    "c0": "△1,967",
+    "c1": "△1,943"
    },
    "values": {
-    "c0": -1967
+    "c0": -1967,
+    "c1": -1943
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -192,21 +238,26 @@
    "path": [],
    "id": "r08",
    "xbrl": {
-    "c0": "IncreaseDecreaseInAccountsPayableOtherOpeCF"
+    "c0": "IncreaseDecreaseInAccountsPayableOtherOpeCF",
+    "c1": "IncreaseDecreaseInAccountsPayableOtherOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInAccountsPayableOtherOpeCF"
   },
   {
    "label": "コンテンツ配信権の増減額(△は増加)",
    "raw": {
-    "c0": "△6,757"
+    "c0": "△6,757",
+    "c1": "△5,642"
    },
    "values": {
-    "c0": -6757
+    "c0": -6757,
+    "c1": -5642
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -214,21 +265,26 @@
    "path": [],
    "id": "r09",
    "xbrl": {
-    "c0": "DecreaseIncreaseInContentdistributionrightsOpeCF"
+    "c0": "DecreaseIncreaseInContentdistributionrightsOpeCF",
+    "c1": "DecreaseIncreaseInContentdistributionrightsOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "DecreaseIncreaseInContentdistributionrightsOpeCF"
   },
   {
    "label": "その他",
    "raw": {
-    "c0": "558"
+    "c0": "558",
+    "c1": "△941"
    },
    "values": {
-    "c0": 558
+    "c0": 558,
+    "c1": -941
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -236,8 +292,10 @@
    "path": [],
    "id": "r10",
    "xbrl": {
-    "c0": "OtherNetOpeCF"
+    "c0": "OtherNetOpeCF",
+    "c1": "OtherNetOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "OtherNetOpeCF"
   }
  ],
@@ -255,6 +313,6 @@
  },
  "gold_status": "confirmed",
  "review": [],
- "xbrl_confirmed_cells": 10,
+ "xbrl_confirmed_cells": 20,
  "xbrl_unconfirmed_cells": 0
 }

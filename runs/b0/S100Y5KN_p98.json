@@ -1,0 +1,1075 @@
+{
+ "doc_id": "S100Y5KN",
+ "page": 98,
+ "statement_type": null,
+ "scope": null,
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2025-02-28"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2026-02-28"
+  }
+ ],
+ "rows": [
+  {
+   "label": "資産の部",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r02"
+  },
+  {
+   "label": "現金及び預金",
+   "raw": {
+    "c0": "3,518",
+    "c1": "2,809"
+   },
+   "values": {
+    "c0": 3518,
+    "c1": 2809
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r03"
+  },
+  {
+   "label": "売掛金",
+   "raw": {
+    "c0": "4,263",
+    "c1": "4,928"
+   },
+   "values": {
+    "c0": 4263,
+    "c1": 4928
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r04"
+  },
+  {
+   "label": "商品及び製品",
+   "raw": {
+    "c0": "49,564",
+    "c1": "52,278"
+   },
+   "values": {
+    "c0": 49564,
+    "c1": 52278
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r05"
+  },
+  {
+   "label": "原材料及び貯蔵品",
+   "raw": {
+    "c0": "0",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r06"
+  },
+  {
+   "label": "関係会社短期貸付金",
+   "raw": {
+    "c0": "-",
+    "c1": "8,850"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 8850
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r07"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "4,513",
+    "c1": "4,314"
+   },
+   "values": {
+    "c0": 4513,
+    "c1": 4314
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r08"
+  },
+  {
+   "label": "貸倒引当金",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r09"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "61,856",
+    "c1": "73,177"
+   },
+   "values": {
+    "c0": 61856,
+    "c1": 73177
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r10"
+  },
+  {
+   "label": "固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r11"
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r12"
+  },
+  {
+   "label": "建物",
+   "raw": {
+    "c0": "86,329",
+    "c1": "97,123"
+   },
+   "values": {
+    "c0": 86329,
+    "c1": 97123
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r13"
+  },
+  {
+   "label": "構築物",
+   "raw": {
+    "c0": "4,654",
+    "c1": "5,288"
+   },
+   "values": {
+    "c0": 4654,
+    "c1": 5288
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r14"
+  },
+  {
+   "label": "機械及び装置",
+   "raw": {
+    "c0": "2,188",
+    "c1": "2,027"
+   },
+   "values": {
+    "c0": 2188,
+    "c1": 2027
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r15"
+  },
+  {
+   "label": "車両運搬具",
+   "raw": {
+    "c0": "18",
+    "c1": "23"
+   },
+   "values": {
+    "c0": 18,
+    "c1": 23
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r16"
+  },
+  {
+   "label": "工具、器具及び備品",
+   "raw": {
+    "c0": "1,026",
+    "c1": "1,257"
+   },
+   "values": {
+    "c0": 1026,
+    "c1": 1257
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r17"
+  },
+  {
+   "label": "土地",
+   "raw": {
+    "c0": "62,518",
+    "c1": "44,541"
+   },
+   "values": {
+    "c0": 62518,
+    "c1": 44541
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r18"
+  },
+  {
+   "label": "リース資産",
+   "raw": {
+    "c0": "17,217",
+    "c1": "16,759"
+   },
+   "values": {
+    "c0": 17217,
+    "c1": 16759
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r19"
+  },
+  {
+   "label": "建設仮勘定",
+   "raw": {
+    "c0": "4,595",
+    "c1": "731"
+   },
+   "values": {
+    "c0": 4595,
+    "c1": 731
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r20"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "53",
+    "c1": "406"
+   },
+   "values": {
+    "c0": 53,
+    "c1": 406
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r21"
+  },
+  {
+   "label": "有形固定資産合計",
+   "raw": {
+    "c0": "178,604",
+    "c1": "168,158"
+   },
+   "values": {
+    "c0": 178604,
+    "c1": 168158
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r22"
+  },
+  {
+   "label": "無形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r23"
+  },
+  {
+   "label": "のれん",
+   "raw": {
+    "c0": "15,731",
+    "c1": "14,268"
+   },
+   "values": {
+    "c0": 15731,
+    "c1": 14268
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "id": "r24"
+  },
+  {
+   "label": "商標権",
+   "raw": {
+    "c0": "7,429",
+    "c1": "6,970"
+   },
+   "values": {
+    "c0": 7429,
+    "c1": 6970
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "id": "r25"
+  },
+  {
+   "label": "借地権",
+   "raw": {
+    "c0": "3,591",
+    "c1": "3,594"
+   },
+   "values": {
+    "c0": 3591,
+    "c1": 3594
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "id": "r26"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "3,610",
+    "c1": "3,908"
+   },
+   "values": {
+    "c0": 3610,
+    "c1": 3908
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "id": "r27"
+  },
+  {
+   "label": "無形固定資産合計",
+   "raw": {
+    "c0": "30,363",
+    "c1": "28,741"
+   },
+   "values": {
+    "c0": 30363,
+    "c1": 28741
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "id": "r28"
+  },
+  {
+   "label": "投資その他の資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r29"
+  },
+  {
+   "label": "投資有価証券",
+   "raw": {
+    "c0": "821",
+    "c1": "1,244"
+   },
+   "values": {
+    "c0": 821,
+    "c1": 1244
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r30"
+  },
+  {
+   "label": "出資金",
+   "raw": {
+    "c0": "-",
+    "c1": "888"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 888
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r31"
+  },
+  {
+   "label": "関係会社株式",
+   "raw": {
+    "c0": "39,660",
+    "c1": "46,363"
+   },
+   "values": {
+    "c0": 39660,
+    "c1": 46363
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r32"
+  },
+  {
+   "label": "長期貸付金",
+   "raw": {
+    "c0": "1,696",
+    "c1": "1,646"
+   },
+   "values": {
+    "c0": 1696,
+    "c1": 1646
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r33"
+  },
+  {
+   "label": "関係会社長期貸付金",
+   "raw": {
+    "c0": "229",
+    "c1": "189"
+   },
+   "values": {
+    "c0": 229,
+    "c1": 189
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r34"
+  },
+  {
+   "label": "長期前払費用",
+   "raw": {
+    "c0": "1,270",
+    "c1": "1,246"
+   },
+   "values": {
+    "c0": 1270,
+    "c1": 1246
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r35"
+  },
+  {
+   "label": "敷金及び保証金",
+   "raw": {
+    "c0": "22,358",
+    "c1": "22,221"
+   },
+   "values": {
+    "c0": 22358,
+    "c1": 22221
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r36"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "23",
+    "c1": "22"
+   },
+   "values": {
+    "c0": 23,
+    "c1": 22
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r37"
+  },
+  {
+   "label": "貸倒引当金",
+   "raw": {
+    "c0": "△248",
+    "c1": "△207"
+   },
+   "values": {
+    "c0": -248,
+    "c1": -207
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "contra",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r38"
+  },
+  {
+   "label": "投資その他の資産合計",
+   "raw": {
+    "c0": "65,813",
+    "c1": "73,615"
+   },
+   "values": {
+    "c0": 65813,
+    "c1": 73615
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "id": "r39"
+  },
+  {
+   "label": "固定資産合計",
+   "raw": {
+    "c0": "274,781",
+    "c1": "270,514"
+   },
+   "values": {
+    "c0": 274781,
+    "c1": 270514
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r40"
+  },
+  {
+   "label": "資産合計",
+   "raw": {
+    "c0": "336,638",
+    "c1": "343,692"
+   },
+   "values": {
+    "c0": 336638,
+    "c1": 343692
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r41"
+  }
+ ],
+ "continues_on_next_page": false,
+ "security_flags": [
+  {
+   "reason": "ocr-differs",
+   "text": "①【貸借対照表】",
+   "bbox": [
+    70.22835,
+    67.498741,
+    142.22835,
+    76.498741
+   ],
+   "ocr": [
+    "【貸借対照表】"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "△3",
+   "bbox": [
+    372.47836,
+    221.82989099999998,
+    385.97836,
+    230.82989099999998
+   ],
+   "ocr": [
+    "ε∇"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "△3",
+   "bbox": [
+    497.47836,
+    221.82989099999998,
+    510.97836,
+    230.82989099999998
+   ],
+   "ocr": [
+    "ε"
+   ]
+  }
+ ]
+}

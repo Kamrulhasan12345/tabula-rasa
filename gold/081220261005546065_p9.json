@@ -15,22 +15,33 @@
   {
    "id": "c0",
    "label": "前中間連結会計期間",
-   "period_type": "duration",
-   "period_end": "2025-08-31"
+   "period_type": null,
+   "period_end": "2025-08-31",
+   "period_start": "2025-03-01"
+  },
+  {
+   "id": "c1",
+   "label": "当中間連結会計期間",
+   "period_type": null,
+   "period_end": "2026-08-31",
+   "period_start": "2026-03-01"
   }
  ],
  "rows": [
   {
    "label": "(自",
    "raw": {
-    "c0": "2025年３月１日(自"
+    "c0": "2025年３月１日(自",
+    "c1": "2026年３月１日"
    },
    "values": {
-    "c0": "unparsed"
+    "c0": "unparsed",
+    "c1": "unparsed"
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 2,
@@ -43,14 +54,17 @@
   {
    "label": "至",
    "raw": {
-    "c0": "2025年８月31日)至"
+    "c0": "2025年８月31日)至",
+    "c1": "2026年８月31日)"
    },
    "values": {
-    "c0": "unparsed"
+    "c0": "unparsed",
+    "c1": "unparsed"
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 3,
@@ -63,14 +77,17 @@
   {
    "label": "営業活動によるキャッシュ・フロー",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -83,14 +100,17 @@
   {
    "label": "税金等調整前中間純利益",
    "raw": {
-    "c0": "13,934"
+    "c0": "13,934",
+    "c1": "13,959"
    },
    "values": {
-    "c0": 13934
+    "c0": 13934,
+    "c1": 13959
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -100,21 +120,26 @@
    ],
    "id": "r04",
    "xbrl": {
-    "c0": "IncomeBeforeIncomeTaxes"
+    "c0": "IncomeBeforeIncomeTaxes",
+    "c1": "IncomeBeforeIncomeTaxes"
    },
+   "xbrl_sign": 1,
    "concept": "IncomeBeforeIncomeTaxes"
   },
   {
    "label": "減価償却費",
    "raw": {
-    "c0": "1,502"
+    "c0": "1,502",
+    "c1": "1,751"
    },
    "values": {
-    "c0": 1502
+    "c0": 1502,
+    "c1": 1751
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -124,21 +149,26 @@
    ],
    "id": "r05",
    "xbrl": {
-    "c0": "DepreciationAndAmortizationOpeCF"
+    "c0": "DepreciationAndAmortizationOpeCF",
+    "c1": "DepreciationAndAmortizationOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "DepreciationAndAmortizationOpeCF"
   },
   {
    "label": "減損損失",
    "raw": {
-    "c0": "131"
+    "c0": "131",
+    "c1": "233"
    },
    "values": {
-    "c0": 131
+    "c0": 131,
+    "c1": 233
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -148,21 +178,26 @@
    ],
    "id": "r06",
    "xbrl": {
-    "c0": "ImpairmentLossEL"
+    "c0": "ImpairmentLossEL",
+    "c1": "RemeasurementsOfDefinedBenefitPlans"
    },
+   "xbrl_sign": 1,
    "concept": "ImpairmentLossEL"
   },
   {
    "label": "貸倒引当金の増減額(△は減少)",
    "raw": {
-    "c0": "21"
+    "c0": "21",
+    "c1": "－"
    },
    "values": {
-    "c0": 21
+    "c0": 21,
+    "c1": 0
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -174,19 +209,23 @@
    "xbrl": {
     "c0": "ForeignExchangeGainsNOI"
    },
+   "xbrl_sign": 1,
    "concept": "ForeignExchangeGainsNOI"
   },
   {
    "label": "受取利息及び受取配当金",
    "raw": {
-    "c0": "△11"
+    "c0": "△11",
+    "c1": "△17"
    },
    "values": {
-    "c0": -11
+    "c0": -11,
+    "c1": -17
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -196,21 +235,26 @@
    ],
    "id": "r08",
    "xbrl": {
-    "c0": "InterestAndDividendsIncomeOpeCF"
+    "c0": "InterestAndDividendsIncomeOpeCF",
+    "c1": "InterestAndDividendsIncomeOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "InterestAndDividendsIncomeOpeCF"
   },
   {
    "label": "支払利息",
    "raw": {
-    "c0": "79"
+    "c0": "79",
+    "c1": "104"
    },
    "values": {
-    "c0": 79
+    "c0": 79,
+    "c1": 104
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -220,21 +264,26 @@
    ],
    "id": "r09",
    "xbrl": {
-    "c0": "InterestExpensesNOE"
+    "c0": "InterestExpensesNOE",
+    "c1": "InterestExpensesNOE"
    },
+   "xbrl_sign": 1,
    "concept": "InterestExpensesNOE"
   },
   {
    "label": "売上債権の増減額(△は増加)",
    "raw": {
-    "c0": "△4,483"
+    "c0": "△4,483",
+    "c1": "△816"
    },
    "values": {
-    "c0": -4483
+    "c0": -4483,
+    "c1": -816
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -244,21 +293,26 @@
    ],
    "id": "r10",
    "xbrl": {
-    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
+    "c0": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF",
+    "c1": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "DecreaseIncreaseInNotesAndAccountsReceivableTradeOpeCF"
   },
   {
    "label": "棚卸資産の増減額(△は増加)",
    "raw": {
-    "c0": "△2,261"
+    "c0": "△2,261",
+    "c1": "717"
    },
    "values": {
-    "c0": -2261
+    "c0": -2261,
+    "c1": 717
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -268,21 +322,26 @@
    ],
    "id": "r11",
    "xbrl": {
-    "c0": "DecreaseIncreaseInInventoriesOpeCF"
+    "c0": "DecreaseIncreaseInInventoriesOpeCF",
+    "c1": "DecreaseIncreaseInInventoriesOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "DecreaseIncreaseInInventoriesOpeCF"
   },
   {
    "label": "仕入債務の増減額(△は減少)",
    "raw": {
-    "c0": "12,408"
+    "c0": "12,408",
+    "c1": "△12,221"
    },
    "values": {
-    "c0": 12408
+    "c0": 12408,
+    "c1": -12221
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -292,21 +351,26 @@
    ],
    "id": "r12",
    "xbrl": {
-    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
+    "c0": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF",
+    "c1": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInNotesAndAccountsPayableTradeOpeCF"
   },
   {
    "label": "賞与引当金の増減額(△は減少)",
    "raw": {
-    "c0": "△89"
+    "c0": "△89",
+    "c1": "△173"
    },
    "values": {
-    "c0": -89
+    "c0": -89,
+    "c1": -173
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -316,21 +380,26 @@
    ],
    "id": "r13",
    "xbrl": {
-    "c0": "IncreaseDecreaseInProvisionForBonusesOpeCF"
+    "c0": "IncreaseDecreaseInProvisionForBonusesOpeCF",
+    "c1": "IncreaseDecreaseInProvisionForBonusesOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInProvisionForBonusesOpeCF"
   },
   {
    "label": "役員賞与引当金の増減額(△は減少)",
    "raw": {
-    "c0": "△35"
+    "c0": "△35",
+    "c1": "△1,011"
    },
    "values": {
-    "c0": -35
+    "c0": -35,
+    "c1": -1011
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -340,21 +409,26 @@
    ],
    "id": "r14",
    "xbrl": {
-    "c0": "IncreaseDecreaseInProvisionForDirectorsBonusesOpeCF"
+    "c0": "IncreaseDecreaseInProvisionForDirectorsBonusesOpeCF",
+    "c1": "IncreaseDecreaseInProvisionForDirectorsBonusesOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInProvisionForDirectorsBonusesOpeCF"
   },
   {
    "label": "役員退職慰労引当金の増減額(△は減少)",
    "raw": {
-    "c0": "△3,722"
+    "c0": "△3,722",
+    "c1": "△109"
    },
    "values": {
-    "c0": -3722
+    "c0": -3722,
+    "c1": -109
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -364,21 +438,26 @@
    ],
    "id": "r15",
    "xbrl": {
-    "c0": "IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF"
+    "c0": "IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF",
+    "c1": "IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInProvisionForDirectorsRetirementBenefitsOpeCF"
   },
   {
    "label": "ポイント引当金の増減額(△は減少)",
    "raw": {
-    "c0": "△2"
+    "c0": "△2",
+    "c1": "10"
    },
    "values": {
-    "c0": -2
+    "c0": -2,
+    "c1": 10
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -388,21 +467,26 @@
    ],
    "id": "r16",
    "xbrl": {
-    "c0": "IncreaseDecreaseInProvisionForPointCardCertificatesOpeCF"
+    "c0": "IncreaseDecreaseInProvisionForPointCardCertificatesOpeCF",
+    "c1": "IncreaseDecreaseInProvisionForPointCardCertificatesOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncreaseDecreaseInProvisionForPointCardCertificatesOpeCF"
   },
   {
    "label": "未収又は未払消費税等の増減額(△は減少)",
    "raw": {
-    "c0": "△493"
+    "c0": "△493",
+    "c1": "△60"
    },
    "values": {
-    "c0": -493
+    "c0": -493,
+    "c1": -60
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -412,21 +496,26 @@
    ],
    "id": "r17",
    "xbrl": {
-    "c0": "IncraseDecreaseInConsumptionTaxesReceivablePayableOpeCF"
+    "c0": "IncraseDecreaseInConsumptionTaxesReceivablePayableOpeCF",
+    "c1": "IncraseDecreaseInConsumptionTaxesReceivablePayableOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncraseDecreaseInConsumptionTaxesReceivablePayableOpeCF"
   },
   {
    "label": "固定資産除却損",
    "raw": {
-    "c0": "3"
+    "c0": "3",
+    "c1": "22"
    },
    "values": {
-    "c0": 3
+    "c0": 3,
+    "c1": 22
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -436,21 +525,26 @@
    ],
    "id": "r18",
    "xbrl": {
-    "c0": "LossOnRetirementOfNoncurrentAssetsEL"
+    "c0": "LossOnRetirementOfNoncurrentAssetsEL",
+    "c1": "LossOnRetirementOfNoncurrentAssetsEL"
    },
+   "xbrl_sign": 1,
    "concept": "LossOnRetirementOfNoncurrentAssetsEL"
   },
   {
    "label": "その他",
    "raw": {
-    "c0": "1,507"
+    "c0": "1,507",
+    "c1": "△518"
    },
    "values": {
-    "c0": 1507
+    "c0": 1507,
+    "c1": -518
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -460,21 +554,26 @@
    ],
    "id": "r19",
    "xbrl": {
-    "c0": "OtherNetOpeCF"
+    "c0": "OtherNetOpeCF",
+    "c1": "OtherNetOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "OtherNetOpeCF"
   },
   {
    "label": "小計",
    "raw": {
-    "c0": "18,488"
+    "c0": "18,488",
+    "c1": "1,872"
    },
    "values": {
-    "c0": 18488
+    "c0": 18488,
+    "c1": 1872
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -484,21 +583,26 @@
    ],
    "id": "r20",
    "xbrl": {
-    "c0": "SubtotalOpeCF"
+    "c0": "SubtotalOpeCF",
+    "c1": "SubtotalOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "SubtotalOpeCF"
   },
   {
    "label": "利息及び配当金の受取額",
    "raw": {
-    "c0": "11"
+    "c0": "11",
+    "c1": "17"
    },
    "values": {
-    "c0": 11
+    "c0": 11,
+    "c1": 17
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -508,21 +612,26 @@
    ],
    "id": "r21",
    "xbrl": {
-    "c0": "InterestAndDividendsIncomeReceivedOpeCFInvCF"
+    "c0": "InterestAndDividendsIncomeOpeCF",
+    "c1": "InterestAndDividendsIncomeOpeCF"
    },
-   "concept": "InterestAndDividendsIncomeReceivedOpeCFInvCF"
+   "xbrl_sign": -1,
+   "concept": "InterestAndDividendsIncomeOpeCF"
   },
   {
    "label": "利息の支払額",
    "raw": {
-    "c0": "△78"
+    "c0": "△78",
+    "c1": "△107"
    },
    "values": {
-    "c0": -78
+    "c0": -78,
+    "c1": -107
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -532,21 +641,26 @@
    ],
    "id": "r22",
    "xbrl": {
-    "c0": "InterestExpensesPaidOpeCFFinCF"
+    "c0": "InterestExpensesPaidOpeCFFinCF",
+    "c1": "InterestExpensesPaidOpeCFFinCF"
    },
+   "xbrl_sign": 1,
    "concept": "InterestExpensesPaidOpeCFFinCF"
   },
   {
    "label": "法人税等の支払額又は還付額(△は支払)",
    "raw": {
-    "c0": "△5,510"
+    "c0": "△5,510",
+    "c1": "△4,821"
    },
    "values": {
-    "c0": -5510
+    "c0": -5510,
+    "c1": -4821
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -556,21 +670,26 @@
    ],
    "id": "r23",
    "xbrl": {
-    "c0": "IncomeTaxesPaidRefundOpeCF"
+    "c0": "IncomeTaxesPaidRefundOpeCF",
+    "c1": "IncomeTaxesPaidRefundOpeCF"
    },
+   "xbrl_sign": 1,
    "concept": "IncomeTaxesPaidRefundOpeCF"
   },
   {
    "label": "営業活動によるキャッシュ・フロー",
    "raw": {
-    "c0": "12,910"
+    "c0": "12,910",
+    "c1": "△3,040"
    },
    "values": {
-    "c0": 12910
+    "c0": 12910,
+    "c1": -3040
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -580,21 +699,26 @@
    ],
    "id": "r24",
    "xbrl": {
-    "c0": "NetCashProvidedByUsedInOperatingActivities"
+    "c0": "NetCashProvidedByUsedInOperatingActivities",
+    "c1": "NetCashProvidedByUsedInOperatingActivities"
    },
+   "xbrl_sign": 1,
    "concept": "NetCashProvidedByUsedInOperatingActivities"
   },
   {
    "label": "投資活動によるキャッシュ・フロー",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -607,14 +731,17 @@
   {
    "label": "有形固定資産の取得による支出",
    "raw": {
-    "c0": "△1,810"
+    "c0": "△1,810",
+    "c1": "△1,666"
    },
    "values": {
-    "c0": -1810
+    "c0": -1810,
+    "c1": -1666
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -624,21 +751,26 @@
    ],
    "id": "r26",
    "xbrl": {
-    "c0": "PurchaseOfPropertyPlantAndEquipmentInvCF"
+    "c0": "PurchaseOfPropertyPlantAndEquipmentInvCF",
+    "c1": "PurchaseOfPropertyPlantAndEquipmentInvCF"
    },
+   "xbrl_sign": 1,
    "concept": "PurchaseOfPropertyPlantAndEquipmentInvCF"
   },
   {
    "label": "資産除去債務の履行による支出",
    "raw": {
-    "c0": "△57"
+    "c0": "△57",
+    "c1": "△122"
    },
    "values": {
-    "c0": -57
+    "c0": -57,
+    "c1": -122
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -648,21 +780,26 @@
    ],
    "id": "r27",
    "xbrl": {
-    "c0": "PaymentsForAssetRetirementObligationsInvCF"
+    "c0": "PaymentsForAssetRetirementObligationsInvCF",
+    "c1": "PaymentsForAssetRetirementObligationsInvCF"
    },
+   "xbrl_sign": 1,
    "concept": "PaymentsForAssetRetirementObligationsInvCF"
   },
   {
    "label": "保険積立金の解約による収入",
    "raw": {
-    "c0": "－"
+    "c0": "－",
+    "c1": "33"
    },
    "values": {
-    "c0": 0
+    "c0": 0,
+    "c1": 33
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -671,20 +808,26 @@
     "投資活動によるキャッシュ・フロー"
    ],
    "id": "r28",
-   "xbrl": {},
-   "concept": null
+   "xbrl": {
+    "c1": "ProceedsFromCancellationOfInsuranceFundsInvCF"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProceedsFromCancellationOfInsuranceFundsInvCF"
   },
   {
    "label": "短期貸付金の増減額(△は増加)",
    "raw": {
-    "c0": "0"
+    "c0": "0",
+    "c1": "－"
    },
    "values": {
-    "c0": 0
+    "c0": 0,
+    "c1": 0
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -699,14 +842,17 @@
   {
    "label": "差入保証金の差入による支出",
    "raw": {
-    "c0": "△560"
+    "c0": "△560",
+    "c1": "△512"
    },
    "values": {
-    "c0": -560
+    "c0": -560,
+    "c1": -512
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -716,21 +862,26 @@
    ],
    "id": "r30",
    "xbrl": {
-    "c0": "PaymentsForGuaranteeDepositsInvCF"
+    "c0": "PaymentsForGuaranteeDepositsInvCF",
+    "c1": "PaymentsForGuaranteeDepositsInvCF"
    },
+   "xbrl_sign": 1,
    "concept": "PaymentsForGuaranteeDepositsInvCF"
   },
   {
    "label": "差入保証金の回収による収入",
    "raw": {
-    "c0": "314"
+    "c0": "314",
+    "c1": "277"
    },
    "values": {
-    "c0": 314
+    "c0": 314,
+    "c1": 277
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -740,21 +891,26 @@
    ],
    "id": "r31",
    "xbrl": {
-    "c0": "ProceedsFromCollectionOfGuaranteeDepositsInvCF"
+    "c0": "ProceedsFromCollectionOfGuaranteeDepositsInvCF",
+    "c1": "ProvisionForPointCardCertificatesCL"
    },
+   "xbrl_sign": 1,
    "concept": "ProceedsFromCollectionOfGuaranteeDepositsInvCF"
   },
   {
    "label": "無形固定資産の取得による支出",
    "raw": {
-    "c0": "△15"
+    "c0": "△15",
+    "c1": "△149"
    },
    "values": {
-    "c0": -15
+    "c0": -15,
+    "c1": -149
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -764,21 +920,26 @@
    ],
    "id": "r32",
    "xbrl": {
-    "c0": "PurchaseOfIntangibleAssetsInvCF"
+    "c0": "PurchaseOfIntangibleAssetsInvCF",
+    "c1": "PurchaseOfIntangibleAssetsInvCF"
    },
+   "xbrl_sign": 1,
    "concept": "PurchaseOfIntangibleAssetsInvCF"
   },
   {
    "label": "投資活動によるキャッシュ・フロー",
    "raw": {
-    "c0": "△2,129"
+    "c0": "△2,129",
+    "c1": "△2,140"
    },
    "values": {
-    "c0": -2129
+    "c0": -2129,
+    "c1": -2140
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -788,21 +949,26 @@
    ],
    "id": "r33",
    "xbrl": {
-    "c0": "NetCashProvidedByUsedInInvestmentActivities"
+    "c0": "NetCashProvidedByUsedInInvestmentActivities",
+    "c1": "NetCashProvidedByUsedInInvestmentActivities"
    },
+   "xbrl_sign": 1,
    "concept": "NetCashProvidedByUsedInInvestmentActivities"
   },
   {
    "label": "財務活動によるキャッシュ・フロー",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -815,14 +981,17 @@
   {
    "label": "短期借入金の純増減額(△は減少)",
    "raw": {
-    "c0": "123"
+    "c0": "123",
+    "c1": "190"
    },
    "values": {
-    "c0": 123
+    "c0": 123,
+    "c1": 190
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -832,21 +1001,26 @@
    ],
    "id": "r35",
    "xbrl": {
-    "c0": "NetIncreaseDecreaseInShortTermLoansPayableFinCF"
+    "c0": "NetIncreaseDecreaseInShortTermLoansPayableFinCF",
+    "c1": "NetIncreaseDecreaseInShortTermLoansPayableFinCF"
    },
+   "xbrl_sign": 1,
    "concept": "NetIncreaseDecreaseInShortTermLoansPayableFinCF"
   },
   {
    "label": "長期借入れによる収入",
    "raw": {
-    "c0": "10,964"
+    "c0": "10,964",
+    "c1": "11,395"
    },
    "values": {
-    "c0": 10964
+    "c0": 10964,
+    "c1": 11395
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -856,21 +1030,26 @@
    ],
    "id": "r36",
    "xbrl": {
-    "c0": "ProceedsFromLongTermLoansPayableFinCF"
+    "c0": "ProceedsFromLongTermLoansPayableFinCF",
+    "c1": "ProceedsFromLongTermLoansPayableFinCF"
    },
+   "xbrl_sign": 1,
    "concept": "ProceedsFromLongTermLoansPayableFinCF"
   },
   {
    "label": "長期借入金の返済による支出",
    "raw": {
-    "c0": "△11,498"
+    "c0": "△11,498",
+    "c1": "△10,770"
    },
    "values": {
-    "c0": -11498
+    "c0": -11498,
+    "c1": -10770
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -880,21 +1059,26 @@
    ],
    "id": "r37",
    "xbrl": {
-    "c0": "RepaymentOfLongTermLoansPayableFinCF"
+    "c0": "RepaymentOfLongTermLoansPayableFinCF",
+    "c1": "RepaymentOfLongTermLoansPayableFinCF"
    },
+   "xbrl_sign": 1,
    "concept": "RepaymentOfLongTermLoansPayableFinCF"
   },
   {
    "label": "自己株式の取得による支出",
    "raw": {
-    "c0": "－"
+    "c0": "－",
+    "c1": "△848"
    },
    "values": {
-    "c0": 0
+    "c0": 0,
+    "c1": -848
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -903,20 +1087,26 @@
     "財務活動によるキャッシュ・フロー"
    ],
    "id": "r38",
-   "xbrl": {},
-   "concept": null
+   "xbrl": {
+    "c1": "PurchaseOfTreasuryStockFinCF"
+   },
+   "xbrl_sign": 1,
+   "concept": "PurchaseOfTreasuryStockFinCF"
   },
   {
    "label": "ファイナンス・リース債務の返済による支出",
    "raw": {
-    "c0": "△306"
+    "c0": "△306",
+    "c1": "△291"
    },
    "values": {
-    "c0": -306
+    "c0": -306,
+    "c1": -291
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -926,21 +1116,26 @@
    ],
    "id": "r39",
    "xbrl": {
-    "c0": "RepaymentsOfFinanceLeaseObligationsFinCF"
+    "c0": "RepaymentsOfFinanceLeaseObligationsFinCF",
+    "c1": "RepaymentsOfFinanceLeaseObligationsFinCF"
    },
+   "xbrl_sign": 1,
    "concept": "RepaymentsOfFinanceLeaseObligationsFinCF"
   },
   {
    "label": "配当金の支払額",
    "raw": {
-    "c0": "△5,209"
+    "c0": "△5,209",
+    "c1": "△6,943"
    },
    "values": {
-    "c0": -5209
+    "c0": -5209,
+    "c1": -6943
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -950,21 +1145,26 @@
    ],
    "id": "r40",
    "xbrl": {
-    "c0": "CashDividendsPaidFinCF"
+    "c0": "CashDividendsPaidFinCF",
+    "c1": "CashDividendsPaidFinCF"
    },
+   "xbrl_sign": 1,
    "concept": "CashDividendsPaidFinCF"
   },
   {
    "label": "財務活動によるキャッシュ・フロー",
    "raw": {
-    "c0": "△5,927"
+    "c0": "△5,927",
+    "c1": "△7,268"
    },
    "values": {
-    "c0": -5927
+    "c0": -5927,
+    "c1": -7268
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -974,21 +1174,26 @@
    ],
    "id": "r41",
    "xbrl": {
-    "c0": "NetCashProvidedByUsedInFinancingActivities"
+    "c0": "NetCashProvidedByUsedInFinancingActivities",
+    "c1": "NetCashProvidedByUsedInFinancingActivities"
    },
+   "xbrl_sign": 1,
    "concept": "NetCashProvidedByUsedInFinancingActivities"
   },
   {
    "label": "現金及び現金同等物に係る換算差額",
    "raw": {
-    "c0": "△24"
+    "c0": "△24",
+    "c1": "36"
    },
    "values": {
-    "c0": -24
+    "c0": -24,
+    "c1": 36
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -996,8 +1201,10 @@
    "path": [],
    "id": "r42",
    "xbrl": {
-    "c0": "ForeignCurrencyTranslationAdjustmentNetOfTaxOCI"
+    "c0": "ForeignCurrencyTranslationAdjustmentNetOfTaxOCI",
+    "c1": "EffectOfExchangeRateChangeOnCashAndCashEquivalents"
    },
+   "xbrl_sign": 1,
    "concept": "ForeignCurrencyTranslationAdjustmentNetOfTaxOCI"
   }
  ],
@@ -1005,14 +1212,18 @@
  "checks": [
   {
    "type": "sum",
-   "total": "r24",
+   "total": "r41",
    "items": [
-    "r20",
-    "r21",
-    "r22",
-    "r23"
+    "r36",
+    "r37",
+    "r38",
+    "r39",
+    "r40",
+    "r35"
    ],
    "weights": [
+    1,
+    1,
     1,
     1,
     1,
@@ -1032,6 +1243,6 @@
  },
  "gold_status": "confirmed",
  "review": [],
- "xbrl_confirmed_cells": 34,
+ "xbrl_confirmed_cells": 69,
  "xbrl_unconfirmed_cells": 0
 }

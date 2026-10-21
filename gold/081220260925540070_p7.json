@@ -15,22 +15,33 @@
   {
    "id": "c0",
    "label": "前中間連結会計期間",
-   "period_type": "duration",
-   "period_end": "2025-08-31"
+   "period_type": null,
+   "period_end": "2025-08-31",
+   "period_start": "2025-03-01"
+  },
+  {
+   "id": "c1",
+   "label": "(単位:百万円)",
+   "period_type": null,
+   "period_end": "2026-08-31",
+   "period_start": "2026-03-01"
   }
  ],
  "rows": [
   {
    "label": "売上高",
    "raw": {
-    "c0": "82,821"
+    "c0": "82,821",
+    "c1": "89,759"
    },
    "values": {
-    "c0": 82821
+    "c0": 82821,
+    "c1": 89759
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -38,21 +49,26 @@
    "path": [],
    "id": "r01",
    "xbrl": {
-    "c0": "NetSales"
+    "c0": "NetSales",
+    "c1": "NetSales"
    },
+   "xbrl_sign": 1,
    "concept": "NetSales"
   },
   {
    "label": "売上原価",
    "raw": {
-    "c0": "64,878"
+    "c0": "64,878",
+    "c1": "70,063"
    },
    "values": {
-    "c0": 64878
+    "c0": 64878,
+    "c1": 70063
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -60,21 +76,26 @@
    "path": [],
    "id": "r02",
    "xbrl": {
-    "c0": "CostOfSales"
+    "c0": "CostOfSales",
+    "c1": "CostOfSales"
    },
+   "xbrl_sign": 1,
    "concept": "CostOfSales"
   },
   {
    "label": "売上総利益",
    "raw": {
-    "c0": "17,942"
+    "c0": "17,942",
+    "c1": "19,695"
    },
    "values": {
-    "c0": 17942
+    "c0": 17942,
+    "c1": 19695
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -82,21 +103,26 @@
    "path": [],
    "id": "r03",
    "xbrl": {
-    "c0": "GrossProfit"
+    "c0": "GrossProfit",
+    "c1": "GrossProfit"
    },
+   "xbrl_sign": 1,
    "concept": "GrossProfit"
   },
   {
    "label": "販売費及び一般管理費",
    "raw": {
-    "c0": "14,470"
+    "c0": "14,470",
+    "c1": "16,406"
    },
    "values": {
-    "c0": 14470
+    "c0": 14470,
+    "c1": 16406
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -104,21 +130,26 @@
    "path": [],
    "id": "r04",
    "xbrl": {
-    "c0": "SellingGeneralAndAdministrativeExpenses"
+    "c0": "SellingGeneralAndAdministrativeExpenses",
+    "c1": "SellingGeneralAndAdministrativeExpenses"
    },
+   "xbrl_sign": 1,
    "concept": "SellingGeneralAndAdministrativeExpenses"
   },
   {
    "label": "営業利益",
    "raw": {
-    "c0": "3,472"
+    "c0": "3,472",
+    "c1": "3,289"
    },
    "values": {
-    "c0": 3472
+    "c0": 3472,
+    "c1": 3289
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -126,21 +157,26 @@
    "path": [],
    "id": "r05",
    "xbrl": {
-    "c0": "OperatingIncome"
+    "c0": "OperatingIncome",
+    "c1": "OperatingIncome"
    },
+   "xbrl_sign": 1,
    "concept": "OperatingIncome"
   },
   {
    "label": "営業外収益",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -153,14 +189,17 @@
   {
    "label": "受取利息",
    "raw": {
-    "c0": "13"
+    "c0": "13",
+    "c1": "22"
    },
    "values": {
-    "c0": 13
+    "c0": 13,
+    "c1": 22
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -170,8 +209,10 @@
    ],
    "id": "r07",
    "xbrl": {
-    "c0": "InterestIncomeNOI"
+    "c0": "InterestIncomeNOI",
+    "c1": "InterestIncomeNOI"
    },
+   "xbrl_sign": 1,
    "concept": "InterestIncomeNOI"
   }
  ],
@@ -214,6 +255,6 @@
  },
  "gold_status": "confirmed",
  "review": [],
- "xbrl_confirmed_cells": 6,
+ "xbrl_confirmed_cells": 12,
  "xbrl_unconfirmed_cells": 0
 }

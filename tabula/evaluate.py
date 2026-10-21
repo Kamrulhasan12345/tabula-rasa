@@ -41,9 +41,13 @@ def align(gold_rows, pred_rows):
 def _col_map(gold, pred):
     """gold column id -> pred column id."""
     pcols = pred.get("columns") or []
-    by_end = {c.get("period_end"): c["id"] for c in pcols}
-    return {g["id"]: by_end.get(g.get("period_end")) or (pcols[k]["id"] if k < len(pcols) else None)
-            for k, g in enumerate(gold["columns"])}
+    by_end = {c.get("period_end"): c["id"] for c in pcols if c.get("period_end")}
+    out = {g["id"]: by_end.get(g.get("period_end")) for g in gold["columns"]}
+    free = [c["id"] for c in pcols if c["id"] not in out.values()]  # unmatched gold columns take the rest in order
+    for gid in out:
+        if out[gid] is None and free:
+            out[gid] = free.pop(0)
+    return out
 
 
 def to_html(doc):

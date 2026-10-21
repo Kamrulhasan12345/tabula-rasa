@@ -1,0 +1,417 @@
+{
+ "doc_id": "S100YIEA",
+ "page": 63,
+ "statement_type": null,
+ "scope": null,
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "※1692",
+   "period_type": "instant",
+   "period_end": "2025-03-31"
+  },
+  {
+   "id": "c1",
+   "label": "※1760",
+   "period_type": "instant",
+   "period_end": "2026-03-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "資産の部",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r02"
+  },
+  {
+   "label": "現金及び預金",
+   "raw": {
+    "c0": "8,982",
+    "c1": "9,166"
+   },
+   "values": {
+    "c0": 8982,
+    "c1": 9166
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r03"
+  },
+  {
+   "label": "受取手形",
+   "raw": {
+    "c0": "1,068",
+    "c1": "412"
+   },
+   "values": {
+    "c0": 1068,
+    "c1": 412
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r04"
+  },
+  {
+   "label": "電子記録債権",
+   "raw": {
+    "c0": "337",
+    "c1": null
+   },
+   "values": {
+    "c0": 337,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r05"
+  },
+  {
+   "label": "売掛金",
+   "raw": {
+    "c0": "10,180",
+    "c1": "10,499"
+   },
+   "values": {
+    "c0": 10180,
+    "c1": 10499
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r06"
+  },
+  {
+   "label": "商品及び製品",
+   "raw": {
+    "c0": "135",
+    "c1": "140"
+   },
+   "values": {
+    "c0": 135,
+    "c1": 140
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r07"
+  },
+  {
+   "label": "原材料及び貯蔵品",
+   "raw": {
+    "c0": "2,282",
+    "c1": "2,237"
+   },
+   "values": {
+    "c0": 2282,
+    "c1": 2237
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r08"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "741",
+    "c1": null
+   },
+   "values": {
+    "c0": 741,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r09"
+  },
+  {
+   "label": "貸倒引当金",
+   "raw": {
+    "c0": "△232",
+    "c1": "△214"
+   },
+   "values": {
+    "c0": -232,
+    "c1": -214
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "contra",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r10"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "23,495",
+    "c1": "23,908"
+   },
+   "values": {
+    "c0": 23495,
+    "c1": 23908
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r11"
+  },
+  {
+   "label": "固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r12"
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r13"
+  },
+  {
+   "label": "建物",
+   "raw": {
+    "c0": "※1692",
+    "c1": "※1760"
+   },
+   "values": {
+    "c0": "unparsed",
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r14"
+  }
+ ],
+ "continues_on_next_page": false,
+ "security_flags": [
+  {
+   "reason": "ocr-differs",
+   "text": "①【貸借対照表】",
+   "bbox": [
+    63.75,
+    69.981851,
+    135.75,
+    78.981851
+   ],
+   "ocr": [
+    "【貸借対照表】"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "974",
+   "bbox": [
+    490.45001,
+    184.88185099999998,
+    503.95001,
+    193.88185099999998
+   ],
+   "ocr": [
+    "47"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "691",
+   "bbox": [
+    490.45001,
+    238.88185099999998,
+    503.95001,
+    247.88185099999998
+   ],
+   "ocr": [
+    "I69"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "※1",
+   "bbox": [
+    460.95001,
+    335.2708109999999,
+    469.95001,
+    341.2708109999999
+   ],
+   "ocr": [
+    "1"
+   ]
+  }
+ ]
+}

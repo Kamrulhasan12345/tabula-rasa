@@ -11,11 +11,12 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 from tabula.evaluate import score
 
+golds = {f"{g['doc_id']}_p{g['page']}": g for g in (json.loads(p.read_text()) for p in (ROOT / "gold").glob("*.json"))}
 tot = collections.defaultdict(lambda: [0, 0])
 pages = collections.Counter()
 for pp in sorted((ROOT / "runs/hybrid").glob("*.json")):
     pred = json.loads(pp.read_text())
-    gold = json.loads((ROOT / "gold" / pp.name).read_text())
+    gold = golds[pp.stem]
     for st, (n, ok) in score(gold, pred)["by_status"].items():
         tot[st][0] += n
         tot[st][1] += ok

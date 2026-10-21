@@ -1,9 +1,20 @@
 .venv/
 __pycache__/
-runs/
+
 kaggle/pages/
 # filings are large and not ours to redistribute; keep only the page indexes
 data/tdnet/*
 !data/tdnet/pages.json
 data/edinet/*
 !data/edinet/pages.json
+# committed so the eval reproduces without PDFs or a GPU: raw VLM outputs, B0 predictions, results log
+!runs/
+runs/*
+!runs/results.csv
+!runs/b0/
+!runs/b1/
+runs/b1/*
+!runs/b1/kaggle_main/
+!runs/b1/kaggle_edinet/
+runs/b1/kaggle_*/*
+!runs/b1/kaggle_*/b1_outputs.json

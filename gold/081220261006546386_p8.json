@@ -15,22 +15,33 @@
   {
    "id": "c0",
    "label": "前第3四半期連結累計期間",
-   "period_type": "duration",
-   "period_end": "2025-09-20"
+   "period_type": null,
+   "period_end": "2025-09-20",
+   "period_start": "2024-12-21"
+  },
+  {
+   "id": "c1",
+   "label": "(単位:千円)",
+   "period_type": null,
+   "period_end": "2026-09-20",
+   "period_start": "2025-12-21"
   }
  ],
  "rows": [
   {
    "label": "四半期純利益",
    "raw": {
-    "c0": "179,508"
+    "c0": "179,508",
+    "c1": "391,115"
    },
    "values": {
-    "c0": 179508
+    "c0": 179508,
+    "c1": 391115
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -38,21 +49,26 @@
    "path": [],
    "id": "r01",
    "xbrl": {
-    "c0": "ProfitLoss"
+    "c0": "ProfitLoss",
+    "c1": "ProfitLoss"
    },
+   "xbrl_sign": 1,
    "concept": "ProfitLoss"
   },
   {
    "label": "その他の包括利益",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -65,14 +81,17 @@
   {
    "label": "その他有価証券評価差額金",
    "raw": {
-    "c0": "21,476"
+    "c0": "21,476",
+    "c1": "△60,861"
    },
    "values": {
-    "c0": 21476
+    "c0": 21476,
+    "c1": -60861
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -82,21 +101,26 @@
    ],
    "id": "r03",
    "xbrl": {
-    "c0": "ValuationDifferenceOnAvailableForSaleSecuritiesNetOfTaxOCI"
+    "c0": "ValuationDifferenceOnAvailableForSaleSecuritiesNetOfTaxOCI",
+    "c1": "ValuationDifferenceOnAvailableForSaleSecurities"
    },
+   "xbrl_sign": -1,
    "concept": "ValuationDifferenceOnAvailableForSaleSecuritiesNetOfTaxOCI"
   },
   {
    "label": "為替換算調整勘定",
    "raw": {
-    "c0": "51"
+    "c0": "51",
+    "c1": "292"
    },
    "values": {
-    "c0": 51
+    "c0": 51,
+    "c1": 292
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -106,21 +130,26 @@
    ],
    "id": "r04",
    "xbrl": {
-    "c0": "ForeignCurrencyTranslationAdjustmentNetOfTaxOCI"
+    "c0": "ForeignCurrencyTranslationAdjustmentNetOfTaxOCI",
+    "c1": "ForeignCurrencyTranslationAdjustmentNetOfTaxOCI"
    },
+   "xbrl_sign": 1,
    "concept": "ForeignCurrencyTranslationAdjustmentNetOfTaxOCI"
   },
   {
    "label": "その他の包括利益合計",
    "raw": {
-    "c0": "21,528"
+    "c0": "21,528",
+    "c1": "△60,568"
    },
    "values": {
-    "c0": 21528
+    "c0": 21528,
+    "c1": -60568
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -130,21 +159,26 @@
    ],
    "id": "r05",
    "xbrl": {
-    "c0": "OtherComprehensiveIncome"
+    "c0": "OtherComprehensiveIncome",
+    "c1": "OtherComprehensiveIncome"
    },
+   "xbrl_sign": 1,
    "concept": "OtherComprehensiveIncome"
   },
   {
    "label": "四半期包括利益",
    "raw": {
-    "c0": "201,036"
+    "c0": "201,036",
+    "c1": "330,546"
    },
    "values": {
-    "c0": 201036
+    "c0": 201036,
+    "c1": 330546
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -152,21 +186,26 @@
    "path": [],
    "id": "r06",
    "xbrl": {
-    "c0": "ComprehensiveIncome"
+    "c0": "ComprehensiveIncome",
+    "c1": "ComprehensiveIncome"
    },
+   "xbrl_sign": 1,
    "concept": "ComprehensiveIncome"
   },
   {
    "label": "(内訳)",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -179,14 +218,17 @@
   {
    "label": "親会社株主に係る四半期包括利益",
    "raw": {
-    "c0": "201,036"
+    "c0": "201,036",
+    "c1": "330,546"
    },
    "values": {
-    "c0": 201036
+    "c0": 201036,
+    "c1": 330546
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -196,21 +238,26 @@
    ],
    "id": "r08",
    "xbrl": {
-    "c0": "ComprehensiveIncome"
+    "c0": "ComprehensiveIncome",
+    "c1": "ComprehensiveIncome"
    },
+   "xbrl_sign": 1,
    "concept": "ComprehensiveIncome"
   },
   {
    "label": "非支配株主に係る四半期包括利益",
    "raw": {
-    "c0": "―"
+    "c0": "―",
+    "c1": "―"
    },
    "values": {
-    "c0": 0
+    "c0": 0,
+    "c1": 0
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -233,7 +280,7 @@
     "r04"
    ],
    "weights": [
-    1,
+    -1,
     1
    ]
   },
@@ -260,8 +307,11 @@
   "stratum": "JGAAP-連結-四半期",
   "pdf": "data/tdnet/081220261006546386/doc.pdf"
  },
- "gold_status": "confirmed",
- "review": [],
- "xbrl_confirmed_cells": 6,
+ "gold_status": "review",
+ "review": [
+  "check fails: total r05 c0 diff 42953",
+  "check fails: total r05 c1 diff -121721"
+ ],
+ "xbrl_confirmed_cells": 12,
  "xbrl_unconfirmed_cells": 0
 }

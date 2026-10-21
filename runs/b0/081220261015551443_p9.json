@@ -1,0 +1,178 @@
+{
+ "doc_id": "doc",
+ "page": 9,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前第1四半期連結累計期間",
+   "period_type": "duration",
+   "period_end": "2025-08-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "四半期純利益",
+   "raw": {
+    "c0": "5,683"
+   },
+   "values": {
+    "c0": 5683
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "その他の包括利益",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r02"
+  },
+  {
+   "label": "その他有価証券評価差額金",
+   "raw": {
+    "c0": "25"
+   },
+   "values": {
+    "c0": 25
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "その他の包括利益"
+   ],
+   "id": "r03"
+  },
+  {
+   "label": "その他の包括利益合計",
+   "raw": {
+    "c0": "25"
+   },
+   "values": {
+    "c0": 25
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "その他の包括利益"
+   ],
+   "id": "r04"
+  },
+  {
+   "label": "四半期包括利益",
+   "raw": {
+    "c0": "5,709"
+   },
+   "values": {
+    "c0": 5709
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05"
+  },
+  {
+   "label": "(内訳)",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r06"
+  },
+  {
+   "label": "親会社株主に係る四半期包括利益",
+   "raw": {
+    "c0": "5,714"
+   },
+   "values": {
+    "c0": 5714
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(内訳)"
+   ],
+   "id": "r07"
+  },
+  {
+   "label": "非支配株主に係る四半期包括利益",
+   "raw": {
+    "c0": "△5"
+   },
+   "values": {
+    "c0": -5
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "(内訳)"
+   ],
+   "id": "r08"
+  }
+ ],
+ "continues_on_next_page": false,
+ "security_flags": []
+}

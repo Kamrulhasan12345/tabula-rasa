@@ -35,7 +35,8 @@ def write_csv(doc, path):
     cols = doc.get("columns") or []
     with open(path, "w", newline="", encoding="utf-8-sig") as f:  # BOM so Excel reads the Japanese
         w = csv.writer(f)
-        w.writerow(["path", "label", "row_type"] + [c.get("period_end") or c.get("label") or c["id"] for c in cols] + ["status"])
+        unit = (doc.get("unit") or {}).get("raw") or "?"
+        w.writerow(["path", "label", "row_type"] + [f"{c.get('period_end') or c.get('label') or c['id']} ({unit})" for c in cols] + ["status"])
         for r in doc.get("rows") or []:
             st = (r.get("cell_status") or {}).values()
             w.writerow([" / ".join(r.get("path") or []), r["label"], r.get("row_type")]

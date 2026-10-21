@@ -1,0 +1,200 @@
+{
+ "doc_id": "S100Z4C8",
+ "page": 93,
+ "statement_type": "consolidated_balance_sheet",
+ "scope": "consolidated",
+ "accounting_standard": "IFRS",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2024-12-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "売却目的で保有する資産",
+   "raw": {
+    "c0": "−"
+   },
+   "values": {
+    "c0": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "228,970"
+   },
+   "values": {
+    "c0": 228970
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": true
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [],
+   "id": "r02"
+  },
+  {
+   "label": "非流動資産",
+   "raw": {
+    "c0": null
+   },
+   "values": {
+    "c0": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r03"
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": "114,340"
+   },
+   "values": {
+    "c0": 114340
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非流動資産"
+   ],
+   "id": "r04"
+  },
+  {
+   "label": "無形資産",
+   "raw": {
+    "c0": "12,955"
+   },
+   "values": {
+    "c0": 12955
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非流動資産"
+   ],
+   "id": "r05"
+  },
+  {
+   "label": "使用権資産",
+   "raw": {
+    "c0": "12,122"
+   },
+   "values": {
+    "c0": 12122
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非流動資産"
+   ],
+   "id": "r06"
+  },
+  {
+   "label": "のれん",
+   "raw": {
+    "c0": "26,259"
+   },
+   "values": {
+    "c0": 26259
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非流動資産"
+   ],
+   "id": "r07"
+  },
+  {
+   "label": "投資不動産",
+   "raw": {
+    "c0": "9,309"
+   },
+   "values": {
+    "c0": 9309
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非流動資産"
+   ],
+   "id": "r08"
+  },
+  {
+   "label": "持分法で会計処理されている投資",
+   "raw": {
+    "c0": "24,348"
+   },
+   "values": {
+    "c0": 24348
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": true
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "非流動資産"
+   ],
+   "id": "r09"
+  }
+ ],
+ "continues_on_next_page": true,
+ "security_flags": []
+}

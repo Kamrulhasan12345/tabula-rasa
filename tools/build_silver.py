@@ -200,9 +200,12 @@ def main():
     pages = (select_edinet if edinet else select)(json.loads((ROOT / f"data/{'edinet' if edinet else 'tdnet'}/pages.json").read_text()))
     lines = ["# Silver gold review queue", "", "| page | stratum | kinds | rows | xbrl ✓ | ✗ | checks | status | first issue |", "|---|---|---|---|---|---|---|---|---|"]
     redo_all = "--all" in sys.argv
+    only = next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith("--only=")), None)  # doc_pN,... to rebuild
     for p in pages:
+        if only and f"{p['doc']}_p{p['page']}" not in only:
+            continue
         out = ROOT / "gold" / f"{p['doc']}_p{p['page']}.json"
-        if out.exists() and not redo_all and json.loads(out.read_text()).get("gold_status") in ("confirmed", "excluded"):
+        if out.exists() and not redo_all and not only and json.loads(out.read_text()).get("gold_status") in ("confirmed", "excluded"):
             doc = json.loads(out.read_text())  # keep confirmed pages; rebuild only review/missing ones
             lines.append(f"| {p['doc']} p{p['page']} | {p['stratum']} | {','.join(p['kinds'])} | {len(doc['rows'])} | {doc['xbrl_confirmed_cells']} | "
                          f"{doc['xbrl_unconfirmed_cells']} | {len(doc['checks'])} | {doc['gold_status']} | |")
@@ -217,7 +220,8 @@ def main():
         lines.append(f"| {p['doc']} p{p['page']} | {p['stratum']} | {','.join(p['kinds'])} | {len(doc['rows'])} | {doc['xbrl_confirmed_cells']} | "
                      f"{doc['xbrl_unconfirmed_cells']} | {len(doc['checks'])} | {doc['gold_status']} | {(doc['review'] or [''])[0][:80]} |")
         print(p["doc"], p["page"], doc["gold_status"], doc["xbrl_confirmed_cells"], doc["xbrl_unconfirmed_cells"], flush=True)
-    (ROOT / f"gold/REVIEW{'_edinet' if edinet else ''}.md").write_text("\n".join(lines) + "\n")
+    if not only:  # a partial rebuild doesn't rewrite the whole queue
+        (ROOT / f"gold/REVIEW{'_edinet' if edinet else ''}.md").write_text("\n".join(lines) + "\n")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,480 @@
+{
+ "doc_id": "S100XTOY",
+ "page": 160,
+ "statement_type": "non_consolidated_balance_sheet",
+ "scope": "non_consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2024-12-31"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": "instant",
+   "period_end": "2025-12-31"
+  }
+ ],
+ "rows": [
+  {
+   "label": "資産の部",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "流動資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r02"
+  },
+  {
+   "label": "現金及び預金",
+   "raw": {
+    "c0": "26,656",
+    "c1": "22,502"
+   },
+   "values": {
+    "c0": 26656,
+    "c1": 22502
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r03"
+  },
+  {
+   "label": "受取手形",
+   "raw": {
+    "c0": "3,414",
+    "c1": "3,005"
+   },
+   "values": {
+    "c0": 3414,
+    "c1": 3005
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r04"
+  },
+  {
+   "label": "売掛金",
+   "raw": {
+    "c0": "49,533",
+    "c1": "42,931"
+   },
+   "values": {
+    "c0": 49533,
+    "c1": 42931
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r05"
+  },
+  {
+   "label": "商品及び製品",
+   "raw": {
+    "c0": "3,504",
+    "c1": null
+   },
+   "values": {
+    "c0": 3504,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r06"
+  },
+  {
+   "label": "仕掛品",
+   "raw": {
+    "c0": "7,316",
+    "c1": "7,183"
+   },
+   "values": {
+    "c0": 7316,
+    "c1": 7183
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r07"
+  },
+  {
+   "label": "原材料及び貯蔵品",
+   "raw": {
+    "c0": null,
+    "c1": "9,026"
+   },
+   "values": {
+    "c0": null,
+    "c1": 9026
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r08"
+  },
+  {
+   "label": "未収入金",
+   "raw": {
+    "c0": "3,880",
+    "c1": "5,222"
+   },
+   "values": {
+    "c0": 3880,
+    "c1": 5222
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r09"
+  },
+  {
+   "label": "立替金",
+   "raw": {
+    "c0": "3,869",
+    "c1": null
+   },
+   "values": {
+    "c0": 3869,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": true,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r10"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "1,403",
+    "c1": "1,704"
+   },
+   "values": {
+    "c0": 1403,
+    "c1": 1704
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r11"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "108,575",
+    "c1": "103,852"
+   },
+   "values": {
+    "c0": 108575,
+    "c1": 103852
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "流動資産"
+   ],
+   "id": "r12"
+  },
+  {
+   "label": "固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "id": "r13"
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "id": "r14"
+  },
+  {
+   "label": "建物",
+   "raw": {
+    "c0": "34,972",
+    "c1": "29,672"
+   },
+   "values": {
+    "c0": 34972,
+    "c1": 29672
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "id": "r15"
+  }
+ ],
+ "continues_on_next_page": true,
+ "security_flags": [
+  {
+   "reason": "ocr-differs",
+   "text": "3,324",
+   "bbox": [
+    481.45001,
+    198.83559100000002,
+    503.95001,
+    207.83559100000002
+   ],
+   "ocr": [
+    "3,°24"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "9,000",
+   "bbox": [
+    356.25001,
+    225.83559100000002,
+    378.75001,
+    234.83559100000002
+   ],
+   "ocr": [
+    "0006"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "※１",
+   "bbox": [
+    332.75001,
+    254.72455100000002,
+    344.75001,
+    260.724551
+   ],
+   "ocr": [
+    "13,869"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "※１",
+   "bbox": [
+    457.95001,
+    254.72455100000002,
+    469.95001,
+    260.724551
+   ],
+   "ocr": [
+    "8994954"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "8,954",
+   "bbox": [
+    481.45001,
+    252.14455099999998,
+    503.95001,
+    261.144551
+   ],
+   "ocr": [
+    "8994954"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "△8",
+   "bbox": [
+    365.25001,
+    590.148091,
+    378.75001,
+    599.148091
+   ],
+   "ocr": [
+    "8∇"
+   ]
+  },
+  {
+   "reason": "ocr-differs",
+   "text": "△8",
+   "bbox": [
+    490.45001,
+    590.148091,
+    503.95001,
+    599.148091
+   ],
+   "ocr": [
+    "8√"
+   ]
+  }
+ ]
+}

@@ -6,6 +6,7 @@ This adapter turns its raw JSON into the PRD §4 schema with the same normalizer
 """
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 from tabula.b0 import CONTRA, NET
@@ -28,6 +29,18 @@ def _date(s):
         return None
 
 
+def _period(*texts):
+    """Column header -> (period_type, start, end). "自 X 至 Y" is a duration ending at Y."""
+    for t in texts:
+        t = "".join(unicodedata.normalize("NFKC", t or "").split())
+        if "至" in t:
+            a, _, b = t.partition("至")
+            return "duration", _date(a), _date(b)
+        if _date(t):
+            return "instant", None, _date(t)
+    return "instant", None, None
+
+
 def convert(raw, doc_id, page_no):
     # Models also transcribe 注記番号 / label columns: keep only columns holding real thousands groups
     # (same rule as B0), and take the period from the label when "date" is empty.
@@ -35,11 +48,15 @@ def convert(raw, doc_id, page_no):
     vals = lambda k: [(r.get("values") or [])[k] for r in rawrows if k < len(r.get("values") or []) and (r.get("values") or [])[k]]
     keep = [k for k in range(max([len(rawcols)] + [len(r.get("values") or []) for r in rawrows]))
             if any(re.search(r"\d{1,3}(,\d{3})+", str(v)) for v in vals(k))]
+    # headers may include a label / 注記 column, and 内訳 sub-columns have no header: when there are at least as
+    # many headers as value columns, the value columns take the rightmost ones in order
+    hdrs = rawcols[-len(keep):] if keep and len(rawcols) >= len(keep) else None
     cols = []
     for i, k in enumerate(keep):
-        c = rawcols[k] if k < len(rawcols) else {}
-        cols.append({"id": f"c{i}", "label": normalize_label(c.get("label") or "")[0], "period_type": "instant",
-                     "period_end": _date(c.get("date")) or _date(c.get("label")), "_src": k})
+        c = hdrs[i] if hdrs else (rawcols[k] if k < len(rawcols) else {})
+        ptype, start, end = _period(c.get("date"), c.get("label"))
+        cols.append({"id": f"c{i}", "label": normalize_label(c.get("label") or "")[0], "period_type": ptype,
+                     "period_end": end, **({"period_start": start} if start else {}), "_src": k})
     rows = []
     for i, r in enumerate(raw.get("rows") or [], 1):
         label, refs = normalize_label(r.get("label") or "")

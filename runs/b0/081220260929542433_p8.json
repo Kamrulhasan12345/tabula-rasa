@@ -1,0 +1,195 @@
+{
+ "doc_id": "doc",
+ "page": 8,
+ "statement_type": "ci",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "百万円",
+  "multiplier": 1000000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前連結会計年度",
+   "period_type": null,
+   "period_end": null
+  },
+  {
+   "id": "c1",
+   "label": "(単位:百万円)",
+   "period_type": null,
+   "period_end": null
+  }
+ ],
+ "rows": [
+  {
+   "label": "売上高",
+   "raw": {
+    "c0": "56,385",
+    "c1": "61,961"
+   },
+   "values": {
+    "c0": 56385,
+    "c1": 61961
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "売上原価",
+   "raw": {
+    "c0": "38,371",
+    "c1": "44,393"
+   },
+   "values": {
+    "c0": 38371,
+    "c1": 44393
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r02"
+  },
+  {
+   "label": "売上総利益",
+   "raw": {
+    "c0": "18,013",
+    "c1": "17,568"
+   },
+   "values": {
+    "c0": 18013,
+    "c1": 17568
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r03"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": "12,564",
+    "c1": "12,131"
+   },
+   "values": {
+    "c0": 12564,
+    "c1": 12131
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r04"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "5,449",
+    "c1": "5,436"
+   },
+   "values": {
+    "c0": 5449,
+    "c1": 5436
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r05"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r06"
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "327",
+    "c1": "294"
+   },
+   "values": {
+    "c0": 327,
+    "c1": 294
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "id": "r07"
+  }
+ ],
+ "continues_on_next_page": false,
+ "security_flags": [
+  {
+   "reason": "ocr-differs",
+   "text": "決算短信",
+   "bbox": [
+    487.13,
+    26.539999999999964,
+    523.13,
+    35.539999999999964
+   ],
+   "ocr": [
+    "イリソ電子工業株式会社(6908)2026年3月期决算短信"
+   ]
+  }
+ ]
+}

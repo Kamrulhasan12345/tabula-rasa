@@ -1,0 +1,1092 @@
+{
+ "doc_id": "doc",
+ "page": 14,
+ "statement_type": "cf",
+ "scope": "consolidated",
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": {
+  "raw": "千円",
+  "multiplier": 1000,
+  "currency": "JPY"
+ },
+ "columns": [
+  {
+   "id": "c0",
+   "label": "前連結会計年度",
+   "period_type": null,
+   "period_end": null
+  },
+  {
+   "id": "c1",
+   "label": "当連結会計年度",
+   "period_type": null,
+   "period_end": null
+  }
+ ],
+ "rows": [
+  {
+   "label": "(自",
+   "raw": {
+    "c0": "2024年９月１日(自",
+    "c1": "2025年９月１日"
+   },
+   "values": {
+    "c0": "unparsed",
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "item",
+   "path": [],
+   "id": "r01"
+  },
+  {
+   "label": "至",
+   "raw": {
+    "c0": "2025年８月31日)至",
+    "c1": "2026年８月31日)"
+   },
+   "values": {
+    "c0": "unparsed",
+    "c1": "unparsed"
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [],
+   "id": "r02"
+  },
+  {
+   "label": "営業活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r03"
+  },
+  {
+   "label": "税金等調整前当期純損失(△)",
+   "raw": {
+    "c0": "△432,209",
+    "c1": "△715,079"
+   },
+   "values": {
+    "c0": -432209,
+    "c1": -715079
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r04"
+  },
+  {
+   "label": "減価償却費",
+   "raw": {
+    "c0": "37,107",
+    "c1": "61,961"
+   },
+   "values": {
+    "c0": 37107,
+    "c1": 61961
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r05"
+  },
+  {
+   "label": "減損損失",
+   "raw": {
+    "c0": "114,732",
+    "c1": "142,893"
+   },
+   "values": {
+    "c0": 114732,
+    "c1": 142893
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r06"
+  },
+  {
+   "label": "固定資産除却損",
+   "raw": {
+    "c0": "-",
+    "c1": "82,621"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 82621
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r07"
+  },
+  {
+   "label": "事業譲渡益",
+   "raw": {
+    "c0": "-",
+    "c1": "△3,999"
+   },
+   "values": {
+    "c0": 0,
+    "c1": -3999
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r08"
+  },
+  {
+   "label": "受取保険金",
+   "raw": {
+    "c0": "△3,880",
+    "c1": "-"
+   },
+   "values": {
+    "c0": -3880,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r09"
+  },
+  {
+   "label": "補助金収入",
+   "raw": {
+    "c0": "△16,200",
+    "c1": "-"
+   },
+   "values": {
+    "c0": -16200,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r10"
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "△6,673",
+    "c1": "△6,646"
+   },
+   "values": {
+    "c0": -6673,
+    "c1": -6646
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r11"
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "11,923",
+    "c1": "11,115"
+   },
+   "values": {
+    "c0": 11923,
+    "c1": 11115
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r12"
+  },
+  {
+   "label": "社債発行費",
+   "raw": {
+    "c0": "8,887",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 8887,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r13"
+  },
+  {
+   "label": "売上債権の増減額(△は増加)",
+   "raw": {
+    "c0": "30,410",
+    "c1": "25,928"
+   },
+   "values": {
+    "c0": 30410,
+    "c1": 25928
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r14"
+  },
+  {
+   "label": "棚卸資産の増減額(△は増加)",
+   "raw": {
+    "c0": "△5,028",
+    "c1": "5,320"
+   },
+   "values": {
+    "c0": -5028,
+    "c1": 5320
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r15"
+  },
+  {
+   "label": "仕入債務の増減額(△は減少)",
+   "raw": {
+    "c0": "△4,783",
+    "c1": "△5,258"
+   },
+   "values": {
+    "c0": -4783,
+    "c1": -5258
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r16"
+  },
+  {
+   "label": "株主優待引当金の増減額(△は減少)",
+   "raw": {
+    "c0": "33,296",
+    "c1": "△35,731"
+   },
+   "values": {
+    "c0": 33296,
+    "c1": -35731
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r17"
+  },
+  {
+   "label": "未払金の増減額(△は減少)",
+   "raw": {
+    "c0": "△11,435",
+    "c1": "△22,148"
+   },
+   "values": {
+    "c0": -11435,
+    "c1": -22148
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r18"
+  },
+  {
+   "label": "未払費用の増減額(△は減少)",
+   "raw": {
+    "c0": "△4,007",
+    "c1": "△3,874"
+   },
+   "values": {
+    "c0": -4007,
+    "c1": -3874
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r19"
+  },
+  {
+   "label": "未払消費税等の増減額(△は減少)",
+   "raw": {
+    "c0": "△10,588",
+    "c1": "13,494"
+   },
+   "values": {
+    "c0": -10588,
+    "c1": 13494
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r20"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "27,204",
+    "c1": "△23,232"
+   },
+   "values": {
+    "c0": 27204,
+    "c1": -23232
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r21"
+  },
+  {
+   "label": "小計",
+   "raw": {
+    "c0": "△231,245",
+    "c1": "△472,635"
+   },
+   "values": {
+    "c0": -231245,
+    "c1": -472635
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r22"
+  },
+  {
+   "label": "利息及び配当金の受取額",
+   "raw": {
+    "c0": "6,591",
+    "c1": "7,225"
+   },
+   "values": {
+    "c0": 6591,
+    "c1": 7225
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r23"
+  },
+  {
+   "label": "利息の支払額",
+   "raw": {
+    "c0": "△11,823",
+    "c1": "△11,476"
+   },
+   "values": {
+    "c0": -11823,
+    "c1": -11476
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r24"
+  },
+  {
+   "label": "保険金の受取額",
+   "raw": {
+    "c0": "3,880",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 3880,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r25"
+  },
+  {
+   "label": "補助金の受取額",
+   "raw": {
+    "c0": "16,200",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 16200,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r26"
+  },
+  {
+   "label": "法人税等の支払額",
+   "raw": {
+    "c0": "△4,089",
+    "c1": "△980"
+   },
+   "values": {
+    "c0": -4089,
+    "c1": -980
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r27"
+  },
+  {
+   "label": "法人税等の還付額",
+   "raw": {
+    "c0": "58",
+    "c1": "1,537"
+   },
+   "values": {
+    "c0": 58,
+    "c1": 1537
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r28"
+  },
+  {
+   "label": "営業活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": "△220,427",
+    "c1": "△476,328"
+   },
+   "values": {
+    "c0": -220427,
+    "c1": -476328
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業活動によるキャッシュ・フロー"
+   ],
+   "id": "r29"
+  },
+  {
+   "label": "投資活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r30"
+  },
+  {
+   "label": "有形固定資産の取得による支出",
+   "raw": {
+    "c0": "△32,155",
+    "c1": "△52,591"
+   },
+   "values": {
+    "c0": -32155,
+    "c1": -52591
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r31"
+  },
+  {
+   "label": "無形固定資産の取得による支出",
+   "raw": {
+    "c0": "△198,083",
+    "c1": "△134,228"
+   },
+   "values": {
+    "c0": -198083,
+    "c1": -134228
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r32"
+  },
+  {
+   "label": "敷金及び保証金の差入による支出",
+   "raw": {
+    "c0": "-",
+    "c1": "△47,059"
+   },
+   "values": {
+    "c0": 0,
+    "c1": -47059
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r33"
+  },
+  {
+   "label": "敷金及び保証金の回収による収入",
+   "raw": {
+    "c0": "-",
+    "c1": "93,365"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 93365
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r34"
+  },
+  {
+   "label": "貸付金の回収による収入",
+   "raw": {
+    "c0": "10,000",
+    "c1": "10,000"
+   },
+   "values": {
+    "c0": 10000,
+    "c1": 10000
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r35"
+  },
+  {
+   "label": "事業譲渡による収入",
+   "raw": {
+    "c0": "-",
+    "c1": "4,000"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 4000
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r36"
+  },
+  {
+   "label": "投資活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": "△220,239",
+    "c1": "△126,513"
+   },
+   "values": {
+    "c0": -220239,
+    "c1": -126513
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "投資活動によるキャッシュ・フロー"
+   ],
+   "id": "r37"
+  },
+  {
+   "label": "財務活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "id": "r38"
+  },
+  {
+   "label": "短期借入金の純増減額(△は減少)",
+   "raw": {
+    "c0": "97,200",
+    "c1": "△36,400"
+   },
+   "values": {
+    "c0": 97200,
+    "c1": -36400
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "財務活動によるキャッシュ・フロー"
+   ],
+   "id": "r39"
+  },
+  {
+   "label": "長期借入れによる収入",
+   "raw": {
+    "c0": "200,000",
+    "c1": "80,000"
+   },
+   "values": {
+    "c0": 200000,
+    "c1": 80000
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "財務活動によるキャッシュ・フロー"
+   ],
+   "id": "r40"
+  },
+  {
+   "label": "長期借入金の返済による支出",
+   "raw": {
+    "c0": "△683,192",
+    "c1": "△536,337"
+   },
+   "values": {
+    "c0": -683192,
+    "c1": -536337
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "財務活動によるキャッシュ・フロー"
+   ],
+   "id": "r41"
+  },
+  {
+   "label": "転換社債型新株予約権付社債の発行による収入",
+   "raw": {
+    "c0": "291,112",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 291112,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "財務活動によるキャッシュ・フロー"
+   ],
+   "id": "r42"
+  },
+  {
+   "label": "新株予約権の発行による収入",
+   "raw": {
+    "c0": "4,901",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 4901,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "財務活動によるキャッシュ・フロー"
+   ],
+   "id": "r43"
+  },
+  {
+   "label": "新株予約権の行使による収入",
+   "raw": {
+    "c0": "166,250",
+    "c1": "316,600"
+   },
+   "values": {
+    "c0": 166250,
+    "c1": 316600
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "財務活動によるキャッシュ・フロー"
+   ],
+   "id": "r44"
+  },
+  {
+   "label": "財務活動によるキャッシュ・フロー",
+   "raw": {
+    "c0": "76,271",
+    "c1": "△176,137"
+   },
+   "values": {
+    "c0": 76271,
+    "c1": -176137
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "財務活動によるキャッシュ・フロー"
+   ],
+   "id": "r45"
+  },
+  {
+   "label": "現金及び現金同等物に係る換算差額",
+   "raw": {
+    "c0": "-",
+    "c1": "-"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "id": "r46"
+  }
+ ],
+ "continues_on_next_page": false,
+ "security_flags": [
+  {
+   "reason": "ocr-differs",
+   "text": "決算短信",
+   "bbox": [
+    487.13,
+    26.539999999999964,
+    523.13,
+    35.539999999999964
+   ],
+   "ocr": [
+    "株式会社メディア工房(3815)2026年8月期决算短信"
+   ]
+  }
+ ]
+}

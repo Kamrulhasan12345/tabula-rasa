@@ -15,22 +15,33 @@
   {
    "id": "c0",
    "label": "",
-   "period_type": "duration",
-   "period_end": "2024-08-31"
+   "period_type": null,
+   "period_end": "2024-08-31",
+   "period_start": "2024-03-01"
+  },
+  {
+   "id": "c1",
+   "label": "",
+   "period_type": null,
+   "period_end": "2025-08-31",
+   "period_start": "2025-03-01"
   }
  ],
  "rows": [
   {
    "label": "営業外費用合計",
    "raw": {
-    "c0": "611"
+    "c0": "611",
+    "c1": "587"
    },
    "values": {
-    "c0": 611
+    "c0": 611,
+    "c1": 587
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": true
    },
    "tainted": false,
    "level": 1,
@@ -38,21 +49,26 @@
    "path": [],
    "id": "r01",
    "xbrl": {
-    "c0": "NonOperatingExpenses"
+    "c0": "NonOperatingExpenses",
+    "c1": "NonOperatingExpenses"
    },
+   "xbrl_sign": 1,
    "concept": "NonOperatingExpenses"
   },
   {
    "label": "経常利益",
    "raw": {
-    "c0": "10,166"
+    "c0": "10,166",
+    "c1": "8,414"
    },
    "values": {
-    "c0": 10166
+    "c0": 10166,
+    "c1": 8414
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": true
    },
    "tainted": false,
    "level": 0,
@@ -60,21 +76,26 @@
    "path": [],
    "id": "r02",
    "xbrl": {
-    "c0": "OrdinaryIncome"
+    "c0": "OrdinaryIncome",
+    "c1": "OrdinaryIncome"
    },
+   "xbrl_sign": 1,
    "concept": "OrdinaryIncome"
   },
   {
    "label": "特別利益",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -87,14 +108,17 @@
   {
    "label": "固定資産売却益",
    "raw": {
-    "c0": "3"
+    "c0": "3",
+    "c1": "664"
    },
    "values": {
-    "c0": 3
+    "c0": 3,
+    "c1": 664
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -104,21 +128,26 @@
    ],
    "id": "r04",
    "xbrl": {
-    "c0": "GainOnSalesOfNoncurrentAssetsEI"
+    "c0": "GainOnSalesOfNoncurrentAssetsEI",
+    "c1": "GainOnSalesOfNoncurrentAssetsEI"
    },
+   "xbrl_sign": 1,
    "concept": "GainOnSalesOfNoncurrentAssetsEI"
   },
   {
    "label": "特別利益合計",
    "raw": {
-    "c0": "3"
+    "c0": "3",
+    "c1": "664"
    },
    "values": {
-    "c0": 3
+    "c0": 3,
+    "c1": 664
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -128,21 +157,26 @@
    ],
    "id": "r05",
    "xbrl": {
-    "c0": "GainOnSalesOfNoncurrentAssetsEI"
+    "c0": "GainOnSalesOfNoncurrentAssetsEI",
+    "c1": "GainOnSalesOfNoncurrentAssetsEI"
    },
+   "xbrl_sign": 1,
    "concept": "GainOnSalesOfNoncurrentAssetsEI"
   },
   {
    "label": "特別損失",
    "raw": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "values": {
-    "c0": null
+    "c0": null,
+    "c1": null
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 0,
@@ -155,14 +189,17 @@
   {
    "label": "固定資産除却損",
    "raw": {
-    "c0": "12"
+    "c0": "12",
+    "c1": "43"
    },
    "values": {
-    "c0": 12
+    "c0": 12,
+    "c1": 43
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": true
    },
    "tainted": false,
    "level": 1,
@@ -172,21 +209,26 @@
    ],
    "id": "r07",
    "xbrl": {
-    "c0": "LossOnRetirementOfNoncurrentAssetsEL"
+    "c0": "LossOnRetirementOfNoncurrentAssetsEL",
+    "c1": "LossOnRetirementOfNoncurrentAssetsEL"
    },
+   "xbrl_sign": 1,
    "concept": "LossOnRetirementOfNoncurrentAssetsEL"
   },
   {
    "label": "店舗閉鎖損失",
    "raw": {
-    "c0": "305"
+    "c0": "305",
+    "c1": "60"
    },
    "values": {
-    "c0": 305
+    "c0": 305,
+    "c1": 60
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -196,21 +238,26 @@
    ],
    "id": "r08",
    "xbrl": {
-    "c0": "LossOnClosingOfStoresEL"
+    "c0": "LossOnClosingOfStoresEL",
+    "c1": "AllowanceForDoubtfulAccountsIOAByGroup"
    },
+   "xbrl_sign": -1,
    "concept": "LossOnClosingOfStoresEL"
   },
   {
    "label": "解体撤去費用",
    "raw": {
-    "c0": "33"
+    "c0": "33",
+    "c1": "78"
    },
    "values": {
-    "c0": 33
+    "c0": 33,
+    "c1": 78
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -220,21 +267,26 @@
    ],
    "id": "r09",
    "xbrl": {
-    "c0": "DismantlementExpansesEL"
+    "c0": "DismantlementExpansesEL",
+    "c1": "DismantlementExpansesEL"
    },
+   "xbrl_sign": 1,
    "concept": "DismantlementExpansesEL"
   },
   {
    "label": "貸倒引当金繰入額",
    "raw": {
-    "c0": "81"
+    "c0": "81",
+    "c1": "－"
    },
    "values": {
-    "c0": 81
+    "c0": 81,
+    "c1": 0
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": false
    },
    "tainted": false,
    "level": 1,
@@ -246,19 +298,23 @@
    "xbrl": {
     "c0": "ProvisionOfAllowanceForDoubtfulAccountsEL"
    },
+   "xbrl_sign": 1,
    "concept": "ProvisionOfAllowanceForDoubtfulAccountsEL"
   },
   {
    "label": "その他",
    "raw": {
-    "c0": "3"
+    "c0": "3",
+    "c1": "47"
    },
    "values": {
-    "c0": 3
+    "c0": 3,
+    "c1": 47
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": true
    },
    "tainted": false,
    "level": 1,
@@ -268,21 +324,26 @@
    ],
    "id": "r11",
    "xbrl": {
-    "c0": "GainOnSalesOfNoncurrentAssetsEI"
+    "c0": "GainOnSalesOfNoncurrentAssetsEI",
+    "c1": "OtherEL"
    },
+   "xbrl_sign": 1,
    "concept": "GainOnSalesOfNoncurrentAssetsEI"
   },
   {
    "label": "特別損失合計",
    "raw": {
-    "c0": "436"
+    "c0": "436",
+    "c1": "230"
    },
    "values": {
-    "c0": 436
+    "c0": 436,
+    "c1": 230
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": true
    },
    "tainted": false,
    "level": 1,
@@ -292,21 +353,26 @@
    ],
    "id": "r12",
    "xbrl": {
-    "c0": "ExtraordinaryLoss"
+    "c0": "ExtraordinaryLoss",
+    "c1": "ExtraordinaryLoss"
    },
+   "xbrl_sign": 1,
    "concept": "ExtraordinaryLoss"
   },
   {
    "label": "税金等調整前中間純利益",
    "raw": {
-    "c0": "9,733"
+    "c0": "9,733",
+    "c1": "8,848"
    },
    "values": {
-    "c0": 9733
+    "c0": 9733,
+    "c1": 8848
    },
    "footnote_refs": [],
    "underlined": {
-    "c0": false
+    "c0": false,
+    "c1": true
    },
    "tainted": false,
    "level": 0,
@@ -314,8 +380,10 @@
    "path": [],
    "id": "r13",
    "xbrl": {
-    "c0": "IncomeBeforeIncomeTaxes"
+    "c0": "IncomeBeforeIncomeTaxes",
+    "c1": "IncomeBeforeIncomeTaxes"
    },
+   "xbrl_sign": 1,
    "concept": "IncomeBeforeIncomeTaxes"
   }
  ],
@@ -333,6 +401,6 @@
  },
  "gold_status": "confirmed",
  "review": [],
- "xbrl_confirmed_cells": 11,
+ "xbrl_confirmed_cells": 21,
  "xbrl_unconfirmed_cells": 0
 }

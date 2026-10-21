@@ -26,7 +26,7 @@ RADICALS = _radicals()
 
 
 def parse_value(raw):
-    s = (raw or "").strip()
+    s = re.sub(r"^[※*]\s*\d*\s+(?=\S)", "", (raw or "").strip())  # 有報 prints note marks beside values: "※1 49,533"
     if not s:
         return None
     if s in NIL:

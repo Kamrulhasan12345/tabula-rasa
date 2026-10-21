@@ -49,6 +49,12 @@ def merge(b0, b1):
     doc = {**b0, "engine": "b0+b1" if usable(b1) else "b0"}
     m = align(b0["rows"], b1["rows"]) if usable(b1) else {}
     cm = _col_map(b0, b1) if usable(b1) else {}
+    b1cols = {c["id"]: c for c in (b1 or {}).get("columns") or []}
+    doc["columns"] = [dict(c) for c in b0["columns"]]
+    for c in doc["columns"]:  # the router often finds no header dates; the VLM reads them
+        v = b1cols.get(cm.get(c["id"]))
+        if not c.get("period_end") and v and v.get("period_end"):
+            c.update({k: v[k] for k in ("period_type", "period_start", "period_end") if v.get(k)}, period_source="vlm")
     for i, r in enumerate(doc["rows"]):
         p = b1["rows"][m[i]] if i in m else None
         st = {}
@@ -65,7 +71,9 @@ def merge(b0, b1):
                 st[cid] = "agreed" if pv == v else "review"
         r["cell_status"] = st
     statuses = [s for r in doc["rows"] for s in r["cell_status"].values()]
-    doc["status"] = "review" if "review" in statuses or doc.get("security_flags") else "ok"
+    # unverified words outside the table (OCR reading a header differently) stay listed in security_flags but
+    # can't reach a value: cells are built from verified words only. A row with unverified text is reviewed.
+    doc["status"] = "review" if "review" in statuses or any(r.get("tainted") for r in doc["rows"]) else "ok"
     return doc
 
 
