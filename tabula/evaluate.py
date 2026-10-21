@@ -59,6 +59,7 @@ def score(gold, pred):
     grows, prows = gold["rows"], pred.get("rows") or []
     m, cm = align(grows, prows), _col_map(gold, pred)
     cells = ok = sign_ok = sign_n = 0
+    by_status = {}  # hybrid: cell_status -> [cells, correct]; shows whether "agreed" can skip human review
     hier = cer = 0.0
     for i, g in enumerate(grows):
         p = prows[m[i]] if i in m else None
@@ -72,6 +73,11 @@ def score(gold, pred):
             pv = (p.get("values") or {}).get(cm.get(cid)) if p else None
             cells += 1
             ok += pv == gv
+            st = (p.get("cell_status") or {}).get(cm.get(cid)) if p else None
+            if st or (p and "cell_status" in p):
+                b = by_status.setdefault(st or "missing", [0, 0])
+                b[0] += 1
+                b[1] += pv == gv
             if isinstance(pv, int) and gv:
                 sign_n += 1
                 sign_ok += (pv < 0) == (gv < 0)
@@ -96,4 +102,5 @@ def score(gold, pred):
         "m6_pass": sum(c[2] == "ok" for c in checks) / len(checks) if checks else None,  # M6; None = page has no checks
         "missing_rows": len(grows) - len(m),
         "extra_rows": len(extra),
+        "by_status": by_status,
     }
