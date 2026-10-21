@@ -29,13 +29,22 @@ def _date(s):
 
 
 def convert(raw, doc_id, page_no):
-    cols = [{"id": f"c{i}", "label": normalize_label(c.get("label") or "")[0], "period_type": "instant",
-             "period_end": _date(c.get("date"))} for i, c in enumerate(raw.get("columns") or [])]
+    # Models also transcribe 注記番号 / label columns: keep only columns holding real thousands groups
+    # (same rule as B0), and take the period from the label when "date" is empty.
+    rawcols, rawrows = raw.get("columns") or [], raw.get("rows") or []
+    vals = lambda k: [(r.get("values") or [])[k] for r in rawrows if k < len(r.get("values") or []) and (r.get("values") or [])[k]]
+    keep = [k for k in range(max([len(rawcols)] + [len(r.get("values") or []) for r in rawrows]))
+            if any(re.search(r"\d{1,3}(,\d{3})+", str(v)) for v in vals(k))]
+    cols = []
+    for i, k in enumerate(keep):
+        c = rawcols[k] if k < len(rawcols) else {}
+        cols.append({"id": f"c{i}", "label": normalize_label(c.get("label") or "")[0], "period_type": "instant",
+                     "period_end": _date(c.get("date")) or _date(c.get("label")), "_src": k})
     rows = []
     for i, r in enumerate(raw.get("rows") or [], 1):
         label, refs = normalize_label(r.get("label") or "")
-        vals = list(r.get("values") or [])
-        rawv = {c["id"]: (vals[k] if k < len(vals) and vals[k] else None) for k, c in enumerate(cols)}
+        rv = list(r.get("values") or [])
+        rawv = {c["id"]: (rv[c["_src"]] if c["_src"] < len(rv) and rv[c["_src"]] else None) for c in cols}
         values = {cid: (parse_value(v) if v else None) for cid, v in rawv.items()}
         if not any(rawv.values()):
             rtype = "header"
@@ -49,6 +58,8 @@ def convert(raw, doc_id, page_no):
             rtype = "item"
         rows.append({"id": f"r{i:02d}", "label": label, "path": [normalize_label(p)[0] for p in r.get("path") or []],
                      "row_type": rtype, "raw": rawv, "values": values, "footnote_refs": refs})
+    for c in cols:
+        c.pop("_src")
     unit = re.search(r"千円|百万円|円", raw.get("unit") or "")
     return {"doc_id": doc_id, "page": page_no, "unit": unit and {"raw": unit.group(0), "multiplier": UNITS[unit.group(0)], "currency": "JPY"},
             "columns": cols, "rows": rows}

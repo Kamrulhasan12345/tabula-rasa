@@ -416,6 +416,22 @@ Deprioritized, with reason:
 
 Bake-off plan (M6): run the six "contender" rows zero-shot on the eval set with the §6.0 pre-processing, score M1/M1s/M6, then fine-tune the winner's family (Qwen3-VL-8B or GLM-OCR).
 
+**B1 on the M4 set (2026-10-22, 86 pages, Qwen3-VL-8B Unsloth 4-bit, zero-shot, image only, Kaggle T4 ×2, ~295 s/page).**
+
+| Group | Pages | Cells | Sign | Page exact | Hierarchy | Extra rows/page |
+|---|---|---|---|---|---|---|
+| TDnet J-GAAP | 42 | 0.998 | 0.998 | 0.14 | 0.67 | 11.9 |
+| TDnet IFRS | 6 | 1.000 | 1.000 | 0.33 | 0.49 | 1.2 |
+| TDnet REIT | 5 | 0.905 | 1.000 | 0.20 | 0.50 | 0.0 |
+| Synthetic scans | 6 | 0.989 | 1.000 | 0.33 | 0.65 | 4.0 |
+| EDINET 有報 | 26 | 0.936 | 1.000 | 0.23 | 0.69 | 5.7 |
+| **All** | **86** | **0.973** | **0.999** | **0.21** | **0.66** | **7.9** |
+
+Reading it:
+- **Values are mostly right; the losses are structural.** The first scoring gave 0.837 cells because the model transcribes 注記番号 and label columns and puts dates in column labels; the shared post-processor now keeps only columns with thousands groups and reads dates from labels (0.837 → 0.973).
+- **"Extra rows" and low "page exact" are partly a gold artefact:** silver gold covers the first table Camelot finds, while the model transcribes every table on the page (e.g. PL + 包括利益 on one page). Hierarchy follows B0's path convention, so 0.66 is a convention gap as much as a model error. Both need gold that covers the whole page before they mean much.
+- Signs (△) are near-perfect, contrary to the general warning that VLMs drop them.
+
 ### 6.1 Comparison table to fill
 
 | Approach | M1 T1 | M1 T4 | M6 pass | M9 | $/page | p95 s | Runs offline |
