@@ -6,7 +6,7 @@
 Each page: PRD §4 JSON from tabula.hybrid, plus
   rows[].bbox / rows[].cell_bbox   [x0, top, x1, bottom] in PDF points, origin top-left (B0 pages only;
                                    VLM-only scan pages have none), page_size = [width, height]
-  rows[].cell_status               agreed / review / b0_only / vlm_only
+  rows[].cell_status               agreed / review / b0_only / reader_only
   checks, check_results            sum checks inferred from 合計 / 小計 rows, run with the page's rounding rule
   warnings, status                 "ok" | "review" | "failed"
 Document level: statements = pages grouped by continues_on_next_page, with 資産合計 = 負債純資産合計 checked.
@@ -24,7 +24,7 @@ from tabula import vlm
 from tabula.checks import infer_checks, run_checks
 from tabula.hybrid import parse
 
-WORST = ["review", "vlm_only", "b0_only", "agreed"]
+WORST = ["review", "reader_only", "b0_only", "agreed"]
 
 
 def find_pages(pdf_path):
@@ -79,7 +79,7 @@ def locate_cells(pdf_path, doc):
 def parse_page(pdf_path, page_no, doc_id):
     doc, meta = parse(pdf_path, page_no, doc_id)
     doc.setdefault("rounding", {"method": "unknown", "source": "none"})
-    doc["warnings"] = [meta["vlm_error"]] if meta.get("vlm_error") else []
+    doc["warnings"] = [meta["reader_error"]] if meta.get("reader_error") else []
     doc["checks"] = infer_checks(doc) if doc.get("rows") else []
     labels = {r["id"]: r["label"] for r in doc.get("rows") or []}
     doc["check_results"] = [{"total": c["total"], "label": labels.get(c["total"]), "column": cid, "status": st, "diff": d}
@@ -90,7 +90,7 @@ def parse_page(pdf_path, page_no, doc_id):
             if doc["status"] == "ok":
                 doc["status"] = "review"
     doc["page"] = page_no
-    if doc.get("engine") == "b1":
+    if doc.get("engine") not in ("b0", "none") and not doc["engine"].startswith("b0+"):  # reader-only (scan): no word boxes
         locate_cells(pdf_path, doc)
     _decision_models(pdf_path, doc)
     return doc
@@ -105,7 +105,7 @@ def _decision_models(pdf_path, doc):
     rows = doc.get("rows") or []
     cols = [c["id"] for c in doc.get("columns") or []]
     cells = [((r["id"], cid), r["label"], cols.index(cid), (r.get("raw") or {}).get(cid) or str(r["values"].get(cid)))
-             for r in rows for cid, st in (r.get("cell_status") or {}).items() if st in ("review", "vlm_only") and cid in cols]
+             for r in rows for cid, st in (r.get("cell_status") or {}).items() if st in ("review", "reader_only") and cid in cols]
     try:
         probs = remote.amos_verify(_png(pdf_path, doc["page"], dpi=150), cells) if cells and os.environ.get("TABULA_AMOS") == "1" else None
         kinds = remote.sqwish_row_types([r for r in rows if not r.get("tainted")])
@@ -174,7 +174,8 @@ def parse_pdf(pdf_path, pages=None, doc_id=None, on_page=None):
         out.append(parse_page(pdf_path, n, doc_id))
         if on_page:
             on_page(out[-1])
-    return {"doc_id": doc_id, "vlm_mode": vlm.mode(), "table_pages": tables, "image_only_pages": image_only,
+    from tabula.hybrid import reader_name
+    return {"doc_id": doc_id, "reader": reader_name(), "vlm_mode": vlm.mode(), "table_pages": tables, "image_only_pages": image_only,
             "statements": stitch(out), "pages": out}
 
 

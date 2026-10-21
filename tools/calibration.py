@@ -1,6 +1,6 @@
-"""Hybrid calibration: accuracy of cells by status (agreed / review / vlm_only / b0_only) over runs/hybrid.
+"""Hybrid calibration: accuracy of cells by status (agreed / review / reader_only / b0_only) over runs/hybrid.
 
-    .venv/bin/python tools/calibration.py
+    .venv/bin/python tools/calibration.py [hybrid | hybrid_typellm]
 """
 import collections
 import json
@@ -14,7 +14,7 @@ from tabula.evaluate import score
 golds = {f"{g['doc_id']}_p{g['page']}": g for g in (json.loads(p.read_text()) for p in (ROOT / "gold").glob("*.json"))}
 tot = collections.defaultdict(lambda: [0, 0])
 pages = collections.Counter()
-for pp in sorted((ROOT / "runs/hybrid").glob("*.json")):
+for pp in sorted((ROOT / "runs" / (sys.argv[1] if len(sys.argv) > 1 else "hybrid")).glob("*.json")):
     pred = json.loads(pp.read_text())
     gold = golds[pp.stem]
     for st, (n, ok) in score(gold, pred)["by_status"].items():

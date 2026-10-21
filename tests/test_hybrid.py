@@ -34,7 +34,7 @@ alone = merge(b0, None)
 assert alone["engine"] == "b0" and alone["rows"][0]["cell_status"]["c0"] == "b0_only"
 
 scan = merge({"rows": [], "columns": [], "error": "no table"}, b1)
-assert scan["engine"] == "b1" and scan["rows"][0]["cell_status"] == {"c0": "vlm_only", "c1": "vlm_only"}
+assert scan["engine"] == "b1" and scan["rows"][0]["cell_status"] == {"c0": "reader_only", "c1": "reader_only"}
 
 assert merge({"rows": [], "columns": []}, None)["status"] == "failed"
 print("ok")

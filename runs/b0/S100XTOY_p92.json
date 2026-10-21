@@ -41,10 +41,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    41.6,
+    102.4,
+    77.6,
+    111.4
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -62,12 +73,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    130.6,
+    500.0,
+    139.6
+   ],
+   "cell_bbox": {
+    "c0": [
+     332.7,
+     130.6,
+     373.2,
+     139.6
+    ],
+    "c1": [
+     459.5,
+     130.6,
+     500.0,
+     139.6
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -85,12 +117,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    145.1,
+    500.0,
+    154.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.2,
+     145.1,
+     373.2,
+     154.1
+    ],
+    "c1": [
+     473.0,
+     145.1,
+     500.0,
+     154.1
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -108,12 +161,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    159.6,
+    500.0,
+    168.6
+   ],
+   "cell_bbox": {
+    "c0": [
+     350.7,
+     159.6,
+     373.2,
+     168.6
+    ],
+    "c1": [
+     477.5,
+     159.6,
+     500.0,
+     168.6
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -131,12 +205,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    173.7,
+    500.0,
+    182.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     337.2,
+     173.7,
+     373.2,
+     182.7
+    ],
+    "c1": [
+     464.0,
+     173.7,
+     500.0,
+     182.7
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -154,12 +249,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    187.8,
+    500.0,
+    196.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     341.7,
+     187.8,
+     373.2,
+     196.8
+    ],
+    "c1": [
+     468.5,
+     187.8,
+     500.0,
+     196.8
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -177,12 +293,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    202.3,
+    500.0,
+    211.3
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.2,
+     202.3,
+     373.2,
+     211.3
+    ],
+    "c1": [
+     473.0,
+     202.3,
+     500.0,
+     211.3
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r07"
   },
   {
@@ -200,12 +337,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    216.8,
+    500.0,
+    225.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     359.7,
+     216.8,
+     373.2,
+     225.8
+    ],
+    "c1": [
+     486.5,
+     216.8,
+     500.0,
+     225.8
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r08"
   },
   {
@@ -223,12 +381,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    230.9,
+    500.0,
+    239.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     350.7,
+     230.9,
+     373.2,
+     239.9
+    ],
+    "c1": [
+     468.5,
+     230.9,
+     500.0,
+     239.9
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r09"
   },
   {
@@ -246,12 +425,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    245.0,
+    500.0,
+    254.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     359.7,
+     245.0,
+     373.2,
+     254.0
+    ],
+    "c1": [
+     477.5,
+     245.0,
+     500.0,
+     254.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r10"
   },
   {
@@ -269,12 +469,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    259.5,
+    500.0,
+    268.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.2,
+     259.5,
+     373.2,
+     268.5
+    ],
+    "c1": [
+     473.0,
+     259.5,
+     500.0,
+     268.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r11"
   },
   {
@@ -292,12 +513,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    273.8,
+    500.0,
+    282.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     341.7,
+     273.8,
+     373.2,
+     282.8
+    ],
+    "c1": [
+     468.5,
+     273.8,
+     500.0,
+     282.8
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r12"
   },
   {
@@ -315,12 +557,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    288.1,
+    500.0,
+    297.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.2,
+     288.1,
+     373.2,
+     297.1
+    ],
+    "c1": [
+     473.0,
+     288.1,
+     500.0,
+     297.1
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "継続事業"
    ],
+   "unit_override": null,
    "id": "r13"
   },
   {
@@ -338,10 +601,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    41.6,
+    302.6,
+    86.6,
+    311.6
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r14"
   },
   {
@@ -359,12 +633,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    316.5,
+    500.0,
+    325.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     350.7,
+     316.5,
+     373.2,
+     325.5
+    ],
+    "c1": [
+     477.5,
+     316.5,
+     500.0,
+     325.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非継続事業"
    ],
+   "unit_override": null,
    "id": "r15"
   },
   {
@@ -382,12 +677,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    331.0,
+    500.0,
+    340.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.2,
+     331.0,
+     373.2,
+     340.0
+    ],
+    "c1": [
+     473.0,
+     331.0,
+     500.0,
+     340.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非継続事業"
    ],
+   "unit_override": null,
    "id": "r16"
   },
   {
@@ -405,12 +721,23 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    50.6,
+    359.8,
+    113.6,
+    368.8
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "非継続事業"
    ],
+   "unit_override": null,
    "id": "r17"
   },
   {
@@ -428,6 +755,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    373.9,
+    500.0,
+    382.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.2,
+     373.9,
+     373.2,
+     382.9
+    ],
+    "c1": [
+     473.0,
+     373.9,
+     500.0,
+     382.9
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -435,6 +782,7 @@
     "非継続事業",
     "当期利益の帰属"
    ],
+   "unit_override": null,
    "id": "r18"
   },
   {
@@ -452,6 +800,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    388.0,
+    500.0,
+    397.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     350.7,
+     388.0,
+     373.2,
+     397.0
+    ],
+    "c1": [
+     477.5,
+     388.0,
+     500.0,
+     397.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -459,6 +827,7 @@
     "非継続事業",
     "当期利益の帰属"
    ],
+   "unit_override": null,
    "id": "r19"
   },
   {
@@ -476,6 +845,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    59.6,
+    402.5,
+    500.0,
+    411.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.2,
+     402.5,
+     373.2,
+     411.5
+    ],
+    "c1": [
+     473.0,
+     402.5,
+     500.0,
+     411.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -483,10 +872,19 @@
     "非継続事業",
     "当期利益の帰属"
    ],
+   "unit_override": null,
    "id": "r20"
   }
  ],
  "continues_on_next_page": false,
+ "page_size": [
+  595.3,
+  841.889771
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": [
   {
    "reason": "ocr-differs",

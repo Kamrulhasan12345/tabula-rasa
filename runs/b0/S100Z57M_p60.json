@@ -41,10 +41,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    54.8,
+    39.0,
+    248.2,
+    48.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -62,12 +73,23 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.8,
+    54.5,
+    144.8,
+    63.5
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 2,
    "row_type": "header",
    "path": [
     "2【連結損益計算書及び連結包括利益計算書】"
    ],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -85,10 +107,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    114.8,
+    504.0,
+    124.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.8,
+     114.8,
+     378.8,
+     123.8
+    ],
+    "c1": [
+     477.0,
+     114.8,
+     504.0,
+     123.8
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -106,10 +149,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    128.0,
+    504.0,
+    137.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.8,
+     128.0,
+     378.8,
+     137.0
+    ],
+    "c1": [
+     477.0,
+     128.0,
+     504.0,
+     137.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -127,10 +191,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    142.4,
+    504.0,
+    151.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.8,
+     142.4,
+     378.8,
+     151.4
+    ],
+    "c1": [
+     477.0,
+     142.4,
+     504.0,
+     151.4
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -148,10 +233,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    155.2,
+    504.0,
+    164.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.8,
+     155.2,
+     378.8,
+     164.2
+    ],
+    "c1": [
+     477.0,
+     155.2,
+     504.0,
+     164.2
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -169,10 +275,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    169.4,
+    504.0,
+    178.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     169.4,
+     378.8,
+     178.4
+    ],
+    "c1": [
+     481.5,
+     169.4,
+     504.0,
+     178.4
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r07"
   },
   {
@@ -190,10 +317,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    182.9,
+    89.2,
+    191.9
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r08"
   },
   {
@@ -211,12 +349,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    196.4,
+    504.0,
+    205.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     196.4,
+     378.8,
+     205.4
+    ],
+    "c1": [
+     490.5,
+     196.4,
+     504.0,
+     205.4
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r09"
   },
   {
@@ -234,12 +393,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    209.9,
+    504.0,
+    218.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     374.3,
+     209.9,
+     378.8,
+     218.9
+    ],
+    "c1": [
+     499.5,
+     209.9,
+     504.0,
+     218.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r10"
   },
   {
@@ -257,12 +437,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    223.4,
+    504.0,
+    232.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.8,
+     223.4,
+     378.8,
+     232.4
+    ],
+    "c1": [
+     490.5,
+     223.4,
+     504.0,
+     232.4
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r11"
   },
   {
@@ -280,12 +481,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    236.9,
+    504.0,
+    245.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.8,
+     236.9,
+     378.8,
+     245.9
+    ],
+    "c1": [
+     490.5,
+     236.9,
+     504.0,
+     245.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r12"
   },
   {
@@ -303,12 +525,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    250.2,
+    504.0,
+    259.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     250.2,
+     378.8,
+     259.2
+    ],
+    "c1": [
+     495.0,
+     250.2,
+     504.0,
+     259.2
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r13"
   },
   {
@@ -326,12 +569,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    263.9,
+    504.0,
+    272.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     263.9,
+     378.8,
+     272.9
+    ],
+    "c1": [
+     490.5,
+     263.9,
+     504.0,
+     272.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r14"
   },
   {
@@ -349,10 +613,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    277.4,
+    89.2,
+    286.4
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r15"
   },
   {
@@ -370,12 +645,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    290.9,
+    504.0,
+    299.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     290.9,
+     378.8,
+     299.9
+    ],
+    "c1": [
+     490.5,
+     290.9,
+     504.0,
+     299.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r16"
   },
   {
@@ -393,12 +689,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    304.4,
+    504.0,
+    313.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.8,
+     304.4,
+     378.8,
+     313.4
+    ],
+    "c1": [
+     495.0,
+     304.4,
+     504.0,
+     313.4
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r17"
   },
   {
@@ -416,12 +733,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    317.9,
+    504.0,
+    326.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.8,
+     317.9,
+     378.8,
+     326.9
+    ],
+    "c1": [
+     495.0,
+     317.9,
+     504.0,
+     326.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r18"
   },
   {
@@ -439,12 +777,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    331.2,
+    504.0,
+    340.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     331.2,
+     378.8,
+     340.2
+    ],
+    "c1": [
+     495.0,
+     331.2,
+     504.0,
+     340.2
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r19"
   },
   {
@@ -462,12 +821,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    344.9,
+    504.0,
+    353.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     344.9,
+     378.8,
+     353.9
+    ],
+    "c1": [
+     490.5,
+     344.9,
+     504.0,
+     353.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r20"
   },
   {
@@ -485,10 +865,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    358.4,
+    504.0,
+    367.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     358.4,
+     378.8,
+     367.4
+    ],
+    "c1": [
+     481.5,
+     358.4,
+     504.0,
+     367.4
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r21"
   },
   {
@@ -506,10 +907,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    371.9,
+    80.2,
+    380.9
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r22"
   },
   {
@@ -527,12 +939,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    384.7,
+    504.0,
+    394.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     350.8,
+     384.7,
+     378.8,
+     393.7
+    ],
+    "c1": [
+     471.5,
+     384.7,
+     504.0,
+     393.7
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別利益"
    ],
+   "unit_override": null,
    "id": "r23"
   },
   {
@@ -550,12 +983,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    398.2,
+    504.0,
+    407.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     341.8,
+     398.2,
+     378.8,
+     407.2
+    ],
+    "c1": [
+     481.5,
+     398.2,
+     504.0,
+     407.2
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別利益"
    ],
+   "unit_override": null,
    "id": "r24"
   },
   {
@@ -573,12 +1027,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    411.5,
+    504.0,
+    421.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.8,
+     412.2,
+     378.8,
+     421.2
+    ],
+    "c1": [
+     467.0,
+     411.5,
+     504.0,
+     420.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別利益"
    ],
+   "unit_override": null,
    "id": "r25"
   },
   {
@@ -596,12 +1071,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    425.9,
+    504.0,
+    434.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     425.9,
+     378.8,
+     434.9
+    ],
+    "c1": [
+     481.5,
+     425.9,
+     504.0,
+     434.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "特別利益"
    ],
+   "unit_override": null,
    "id": "r26"
   },
   {
@@ -619,10 +1115,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    439.4,
+    80.2,
+    448.4
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r27"
   },
   {
@@ -640,12 +1147,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    452.2,
+    504.0,
+    461.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     341.8,
+     452.2,
+     378.8,
+     461.2
+    ],
+    "c1": [
+     467.0,
+     452.2,
+     504.0,
+     461.2
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r28"
   },
   {
@@ -663,12 +1191,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    465.7,
+    504.0,
+    475.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     350.8,
+     465.7,
+     378.8,
+     474.7
+    ],
+    "c1": [
+     495.0,
+     466.4,
+     504.0,
+     475.4
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r29"
   },
   {
@@ -686,12 +1235,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    479.2,
+    504.0,
+    488.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     341.8,
+     479.2,
+     378.8,
+     488.2
+    ],
+    "c1": [
+     490.5,
+     479.2,
+     504.0,
+     488.2
+    ]
+   },
    "tainted": true,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r30"
   },
   {
@@ -709,12 +1279,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    492.7,
+    504.0,
+    502.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     492.7,
+     378.8,
+     501.7
+    ],
+    "c1": [
+     495.0,
+     493.4,
+     504.0,
+     502.4
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r31"
   },
   {
@@ -732,12 +1323,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    506.2,
+    504.0,
+    515.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.8,
+     506.2,
+     378.8,
+     515.2
+    ],
+    "c1": [
+     495.0,
+     506.9,
+     504.0,
+     515.9
+    ]
+   },
    "tainted": true,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r32"
   },
   {
@@ -755,12 +1367,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    519.5,
+    504.0,
+    529.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.8,
+     520.2,
+     378.8,
+     529.2
+    ],
+    "c1": [
+     481.5,
+     519.5,
+     504.0,
+     528.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r33"
   },
   {
@@ -778,12 +1411,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    57.2,
+    533.9,
+    504.0,
+    542.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     533.9,
+     378.8,
+     542.9
+    ],
+    "c1": [
+     481.5,
+     533.9,
+     504.0,
+     542.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r34"
   },
   {
@@ -801,10 +1455,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    547.4,
+    504.0,
+    556.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     547.4,
+     378.8,
+     556.4
+    ],
+    "c1": [
+     481.5,
+     547.4,
+     504.0,
+     556.4
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r35"
   },
   {
@@ -822,10 +1497,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    560.9,
+    504.0,
+    570.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     561.0,
+     378.8,
+     570.0
+    ],
+    "c1": [
+     481.5,
+     561.0,
+     504.0,
+     570.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r36"
   },
   {
@@ -843,10 +1539,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    574.2,
+    504.0,
+    583.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     574.2,
+     378.8,
+     583.2
+    ],
+    "c1": [
+     481.5,
+     574.2,
+     504.0,
+     583.2
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r37"
   },
   {
@@ -864,10 +1581,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    587.9,
+    504.0,
+    596.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     365.3,
+     587.9,
+     378.8,
+     596.9
+    ],
+    "c1": [
+     481.5,
+     587.9,
+     504.0,
+     596.9
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "total",
    "path": [],
+   "unit_override": null,
    "id": "r38"
   },
   {
@@ -885,10 +1623,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    601.4,
+    504.0,
+    610.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     601.4,
+     378.8,
+     610.4
+    ],
+    "c1": [
+     481.5,
+     601.4,
+     504.0,
+     610.4
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r39"
   },
   {
@@ -906,10 +1665,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    614.9,
+    504.0,
+    623.9
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": [
+     486.0,
+     614.9,
+     504.0,
+     623.9
+    ]
+   },
    "tainted": true,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r40"
   },
   {
@@ -927,14 +1702,43 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    44.2,
+    628.4,
+    504.0,
+    637.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     356.3,
+     628.4,
+     378.8,
+     637.4
+    ],
+    "c1": [
+     481.5,
+     628.4,
+     504.0,
+     637.4
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r41"
   }
  ],
  "continues_on_next_page": false,
+ "page_size": [
+  595.3,
+  841.889771
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": [
   {
    "reason": "ocr-differs",

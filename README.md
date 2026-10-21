@@ -22,14 +22,26 @@ For every statement page this writes `out/<doc>_p<n>.json` (PRD §4 schema), `.c
 | `agreed` | text layer and VLM read the same number |
 | `review` | they disagree, or the cell held hidden/unverified text: send to a human |
 | `b0_only` | text layer only (no VLM output for this page yet) |
-| `vlm_only` | no usable text layer (scan): VLM reading only |
+| `reader_only` | no usable text layer (scan): VLM reading only |
 
 Each page also gets:
 - `cell_bbox` per cell: `[x0, top, x1, bottom]` in PDF points, top-left origin. Text-layer pages only.
 - `check_results`: sum checks inferred from the 合計 / 小計 rows, run with the filing's rounding rule.
 - `warnings` and a page `status` of `ok` or `review`.
 
-## VLM: live or demo
+## Second reader
+
+`TABULA_READER` picks what reads the page image alongside the text layer:
+
+| value | reader |
+|---|---|
+| `typellm` (default when `TYPELLM_API_KEY` is set) | TypeLLM API, the best measured: see REPORT §3 |
+| `scaledown` | ScaleDown Extract API |
+| `vlm` | Qwen3-VL via an OpenAI-compatible endpoint, or demo replay (below) |
+
+Put keys in `.env` (git-ignored, loaded automatically): `TYPELLM_API_KEY`, `SCALEDOWN_API_KEY`, `SQWISH_API_KEY`. `TABULA_AMOS=1` enables Amos cell checks; it needs no key but sends page images out.
+
+### VLM: live or demo
 
 The VLM reader (`tabula/vlm.py`) speaks the OpenAI-compatible chat API. That's what `vllm serve Qwen/Qwen3-VL-8B-Instruct` and most hosted VLMs expose.
 
@@ -89,7 +101,8 @@ Gold: `gold/*.json`, 86 pages. Every number is matched to the filing's own XBRL;
 | `tabula/b1.py` | VLM output → §4 schema |
 | `tabula/hybrid.py` | B0 + B1 cross-check, per-cell status |
 | `tabula/vlm.py` | VLM client: live OpenAI-compatible endpoint, or demo replay |
+| `tabula/remote.py` | ScaleDown, TypeLLM, Amos, Sqwish adapters |
 | `tabula/api.py`, `server.py` | `parse_pdf()` library call; FastAPI server |
 | `tabula/evaluate.py`, `run_eval.py` | metrics M1–M6, TEDS |
 | `tools/` | data collection (TDnet, EDINET), silver-gold builder, synthetic scans, report tables |
-| `tests/` | `test_m0.py` … `test_hybrid.py`, `test_api.py` (fake VLM endpoint), poisoned-PDF fixtures |
+| `tests/` | `test_m0.py` … `test_hybrid.py`, `test_api.py` (fake VLM endpoint), `test_remote.py` (fake vendor APIs), poisoned-PDF fixtures |

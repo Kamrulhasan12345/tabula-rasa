@@ -56,7 +56,8 @@ def _save_meta(d, meta):
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "vlm_mode": vlm.mode()}
+    from tabula.hybrid import reader_name
+    return {"status": "ok", "reader": reader_name(), "vlm_mode": vlm.mode()}
 
 
 @app.post("/documents", status_code=201)

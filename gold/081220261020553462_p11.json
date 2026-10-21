@@ -43,10 +43,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    62.2,
+    132.2,
+    98.0,
+    141.1
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r01",
    "xbrl": {},
    "concept": null
@@ -66,12 +77,23 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.1,
+    144.1,
+    111.0,
+    153.1
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "資産の部"
    ],
+   "unit_override": null,
    "id": "r02",
    "xbrl": {},
    "concept": null
@@ -91,6 +113,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    156.1,
+    520.4,
+    165.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.1,
+     156.1,
+     395.9,
+     165.0
+    ],
+    "c1": [
+     475.6,
+     156.1,
+     520.4,
+     165.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -98,11 +140,13 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r03",
    "xbrl": {
     "c0": "CashAndDeposits",
     "c1": "CashAndDeposits"
    },
+   "xbrl_sign": 1,
    "concept": "CashAndDeposits"
   },
   {
@@ -120,6 +164,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    168.0,
+    520.4,
+    177.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     355.6,
+     168.0,
+     395.9,
+     177.0
+    ],
+    "c1": [
+     480.1,
+     168.0,
+     520.4,
+     177.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -127,11 +191,13 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r04",
    "xbrl": {
     "c0": "CashAndDepositsInTrustINV",
     "c1": "CashAndDepositsInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "CashAndDepositsInTrustINV"
   },
   {
@@ -149,6 +215,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    180.0,
+    520.4,
+    188.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.6,
+     180.0,
+     395.9,
+     188.9
+    ],
+    "c1": [
+     489.0,
+     180.0,
+     520.4,
+     188.9
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -156,11 +242,13 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r05",
    "xbrl": {
     "c0": "AccountsReceivableTradeCAINV",
     "c1": "AccountsReceivableTradeCAINV"
    },
+   "xbrl_sign": 1,
    "concept": "AccountsReceivableTradeCAINV"
   },
   {
@@ -178,6 +266,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    191.9,
+    520.4,
+    200.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.6,
+     191.9,
+     395.9,
+     200.9
+    ],
+    "c1": [
+     489.0,
+     191.9,
+     520.4,
+     200.9
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -185,11 +293,13 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r06",
    "xbrl": {
     "c0": "PrepaidExpenses",
     "c1": "PrepaidExpenses"
    },
+   "xbrl_sign": 1,
    "concept": "PrepaidExpenses"
   },
   {
@@ -207,6 +317,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    203.8,
+    520.4,
+    212.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     203.8,
+     395.9,
+     212.8
+    ],
+    "c1": [
+     493.5,
+     203.8,
+     520.4,
+     212.8
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -214,11 +344,13 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r07",
    "xbrl": {
     "c0": "IncomeTaxesReceivable",
     "c1": "IncomeTaxesReceivable"
    },
+   "xbrl_sign": 1,
    "concept": "IncomeTaxesReceivable"
   },
   {
@@ -236,6 +368,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    215.8,
+    520.4,
+    224.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     215.8,
+     395.9,
+     224.7
+    ],
+    "c1": [
+     493.5,
+     215.8,
+     520.4,
+     224.7
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -243,11 +395,13 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r08",
    "xbrl": {
     "c0": "OtherCA",
     "c1": "OtherCA"
    },
+   "xbrl_sign": 1,
    "concept": "OtherCA"
   },
   {
@@ -265,6 +419,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    228.1,
+    520.4,
+    237.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.1,
+     228.5,
+     395.9,
+     237.4
+    ],
+    "c1": [
+     475.6,
+     228.5,
+     520.4,
+     237.4
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "subtotal",
@@ -272,11 +446,13 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r09",
    "xbrl": {
     "c0": "CurrentAssets",
     "c1": "CurrentAssets"
    },
+   "xbrl_sign": 1,
    "concept": "CurrentAssets"
   },
   {
@@ -294,12 +470,23 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.1,
+    240.8,
+    111.0,
+    249.8
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "資産の部"
    ],
+   "unit_override": null,
    "id": "r10",
    "xbrl": {},
    "concept": null
@@ -319,6 +506,16 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    253.1,
+    141.8,
+    262.1
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 2,
    "row_type": "header",
@@ -326,6 +523,7 @@
     "資産の部",
     "固定資産"
    ],
+   "unit_override": null,
    "id": "r11",
    "xbrl": {},
    "concept": null
@@ -345,6 +543,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    265.1,
+    520.4,
+    274.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.7,
+     265.1,
+     395.9,
+     274.0
+    ],
+    "c1": [
+     471.1,
+     265.1,
+     520.4,
+     274.0
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -353,11 +571,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r12",
    "xbrl": {
     "c0": "BuildingsInTrustINV",
     "c1": "BuildingsInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "BuildingsInTrustINV"
   },
   {
@@ -375,6 +595,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    277.0,
+    520.4,
+    286.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     342.2,
+     277.0,
+     395.9,
+     286.0
+    ],
+    "c1": [
+     466.6,
+     277.0,
+     520.4,
+     286.0
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "contra",
@@ -384,11 +624,13 @@
     "有形固定資産",
     "信託建物"
    ],
+   "unit_override": null,
    "id": "r13",
    "xbrl": {
     "c0": "AccumulatedDepreciationBuildingsInTrustINV",
     "c1": "AccumulatedDepreciationBuildingsInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "AccumulatedDepreciationBuildingsInTrustINV"
   },
   {
@@ -406,6 +648,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    289.3,
+    520.4,
+    298.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.7,
+     289.7,
+     395.9,
+     298.7
+    ],
+    "c1": [
+     471.1,
+     289.7,
+     520.4,
+     298.7
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "net",
@@ -414,11 +676,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r14",
    "xbrl": {
     "c0": "BuildingsInTrustNetINV",
     "c1": "BuildingsInTrustNetINV"
    },
+   "xbrl_sign": 1,
    "concept": "BuildingsInTrustNetINV"
   },
   {
@@ -436,6 +700,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    302.0,
+    520.4,
+    311.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.6,
+     302.4,
+     395.9,
+     311.4
+    ],
+    "c1": [
+     489.0,
+     302.4,
+     520.4,
+     311.4
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -444,11 +728,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r15",
    "xbrl": {
     "c0": "StructuresInTrustINV",
     "c1": "StructuresInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "StructuresInTrustINV"
   },
   {
@@ -466,6 +752,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    314.3,
+    520.4,
+    323.3
+   ],
+   "cell_bbox": {
+    "c0": [
+     360.1,
+     314.3,
+     395.9,
+     323.3
+    ],
+    "c1": [
+     484.5,
+     314.3,
+     520.4,
+     323.3
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "contra",
@@ -475,11 +781,13 @@
     "有形固定資産",
     "信託構築物"
    ],
+   "unit_override": null,
    "id": "r16",
    "xbrl": {
     "c0": "AccumulatedDepreciationStructuresInTrustINV",
     "c1": "AccumulatedDepreciationStructuresInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "AccumulatedDepreciationStructuresInTrustINV"
   },
   {
@@ -497,6 +805,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    326.7,
+    520.4,
+    336.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.6,
+     327.0,
+     395.9,
+     336.0
+    ],
+    "c1": [
+     489.0,
+     327.0,
+     520.4,
+     336.0
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "net",
@@ -505,11 +833,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r17",
    "xbrl": {
     "c0": "StructuresInTrustNetINV",
     "c1": "StructuresInTrustNetINV"
    },
+   "xbrl_sign": 1,
    "concept": "StructuresInTrustNetINV"
   },
   {
@@ -527,6 +857,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    339.3,
+    520.4,
+    348.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.6,
+     339.7,
+     395.9,
+     348.7
+    ],
+    "c1": [
+     489.0,
+     339.7,
+     520.4,
+     348.7
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -535,11 +885,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r18",
    "xbrl": {
     "c0": "MachineryAndEquipmentInTrustINV",
     "c1": "MachineryAndEquipmentInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "MachineryAndEquipmentInTrustINV"
   },
   {
@@ -557,6 +909,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    351.7,
+    520.4,
+    360.6
+   ],
+   "cell_bbox": {
+    "c0": [
+     360.1,
+     351.7,
+     395.9,
+     360.6
+    ],
+    "c1": [
+     484.5,
+     351.7,
+     520.4,
+     360.6
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "contra",
@@ -566,11 +938,13 @@
     "有形固定資産",
     "信託機械及び装置"
    ],
+   "unit_override": null,
    "id": "r19",
    "xbrl": {
     "c0": "AccumulatedDepreciationMachineryAndEquipmentInTrustINV",
     "c1": "AccumulatedDepreciationMachineryAndEquipmentInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "AccumulatedDepreciationMachineryAndEquipmentInTrustINV"
   },
   {
@@ -588,6 +962,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    364.0,
+    520.4,
+    373.3
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.6,
+     364.4,
+     395.9,
+     373.3
+    ],
+    "c1": [
+     489.0,
+     364.4,
+     520.4,
+     373.3
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "net",
@@ -596,11 +990,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r20",
    "xbrl": {
     "c0": "MachineryAndEquipmentInTrustNetINV",
     "c1": "MachineryAndEquipmentInTrustNetINV"
    },
+   "xbrl_sign": 1,
    "concept": "MachineryAndEquipmentInTrustNetINV"
   },
   {
@@ -618,6 +1014,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    376.7,
+    520.4,
+    386.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     377.0,
+     395.9,
+     386.0
+    ],
+    "c1": [
+     493.5,
+     377.0,
+     520.4,
+     386.0
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -626,11 +1042,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r21",
    "xbrl": {
     "c0": "ToolsFurnitureAndFixturesInTrustINV",
     "c1": "ToolsFurnitureAndFixturesInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "ToolsFurnitureAndFixturesInTrustINV"
   },
   {
@@ -648,6 +1066,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    389.0,
+    520.4,
+    398.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     360.1,
+     389.0,
+     395.9,
+     398.0
+    ],
+    "c1": [
+     484.5,
+     389.0,
+     520.4,
+     398.0
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "contra",
@@ -657,11 +1095,13 @@
     "有形固定資産",
     "信託工具、器具及び備品"
    ],
+   "unit_override": null,
    "id": "r22",
    "xbrl": {
     "c0": "AccumulatedDepreciationToolsFurnitureAndFixturesInTrustINV",
     "c1": "AccumulatedDepreciationToolsFurnitureAndFixturesInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "AccumulatedDepreciationToolsFurnitureAndFixturesInTrustINV"
   },
   {
@@ -679,6 +1119,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    114.0,
+    401.3,
+    520.4,
+    410.6
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     401.7,
+     395.9,
+     410.6
+    ],
+    "c1": [
+     493.5,
+     401.7,
+     520.4,
+     410.6
+    ]
+   },
    "tainted": false,
    "level": 4,
    "row_type": "net",
@@ -687,11 +1147,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r23",
    "xbrl": {
     "c0": "ToolsFurnitureAndFixturesInTrustNetINV",
     "c1": "ToolsFurnitureAndFixturesInTrustNetINV"
    },
+   "xbrl_sign": 1,
    "concept": "ToolsFurnitureAndFixturesInTrustNetINV"
   },
   {
@@ -709,6 +1171,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    414.0,
+    520.4,
+    423.3
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.7,
+     414.4,
+     395.9,
+     423.3
+    ],
+    "c1": [
+     471.1,
+     414.4,
+     520.4,
+     423.3
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -717,11 +1199,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r24",
    "xbrl": {
     "c0": "LandInTrustINV",
     "c1": "LandInTrustINV"
    },
+   "xbrl_sign": 1,
    "concept": "LandInTrustINV"
   },
   {
@@ -739,6 +1223,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    426.7,
+    520.4,
+    436.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.7,
+     427.1,
+     395.9,
+     436.0
+    ],
+    "c1": [
+     471.1,
+     427.1,
+     520.4,
+     436.0
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "subtotal",
@@ -747,11 +1251,13 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r25",
    "xbrl": {
     "c0": "PropertyPlantAndEquipment",
     "c1": "PropertyPlantAndEquipment"
    },
+   "xbrl_sign": 1,
    "concept": "PropertyPlantAndEquipment"
   },
   {
@@ -769,6 +1275,16 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    439.4,
+    159.8,
+    448.3
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 2,
    "row_type": "header",
@@ -776,6 +1292,7 @@
     "資産の部",
     "固定資産"
    ],
+   "unit_override": null,
    "id": "r26",
    "xbrl": {},
    "concept": null
@@ -795,6 +1312,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    451.7,
+    520.4,
+    460.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.1,
+     451.7,
+     395.9,
+     460.7
+    ],
+    "c1": [
+     475.6,
+     451.7,
+     520.4,
+     460.7
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -803,11 +1340,13 @@
     "固定資産",
     "投資その他の資産"
    ],
+   "unit_override": null,
    "id": "r27",
    "xbrl": {
     "c0": "InvestmentSecurities",
     "c1": "InvestmentSecurities"
    },
+   "xbrl_sign": 1,
    "concept": "InvestmentSecurities"
   },
   {
@@ -825,6 +1364,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    463.7,
+    520.4,
+    472.6
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.6,
+     463.7,
+     395.9,
+     472.6
+    ],
+    "c1": [
+     489.0,
+     463.7,
+     520.4,
+     472.6
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -833,11 +1392,13 @@
     "固定資産",
     "投資その他の資産"
    ],
+   "unit_override": null,
    "id": "r28",
    "xbrl": {
     "c0": "LongTermPrepaidExpenses",
     "c1": "LongTermPrepaidExpenses"
    },
+   "xbrl_sign": 1,
    "concept": "LongTermPrepaidExpenses"
   },
   {
@@ -855,6 +1416,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    475.6,
+    520.4,
+    484.6
+   ],
+   "cell_bbox": {
+    "c0": [
+     391.5,
+     475.6,
+     395.9,
+     484.6
+    ],
+    "c1": [
+     511.4,
+     475.6,
+     520.4,
+     484.6
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -863,10 +1444,12 @@
     "固定資産",
     "投資その他の資産"
    ],
+   "unit_override": null,
    "id": "r29",
    "xbrl": {
     "c1": "DeferredTaxAssets"
    },
+   "xbrl_sign": 1,
    "concept": "DeferredTaxAssets"
   },
   {
@@ -884,6 +1467,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    487.5,
+    520.4,
+    496.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     487.5,
+     395.9,
+     496.5
+    ],
+    "c1": [
+     493.5,
+     487.5,
+     520.4,
+     496.5
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -892,11 +1495,13 @@
     "固定資産",
     "投資その他の資産"
    ],
+   "unit_override": null,
    "id": "r30",
    "xbrl": {
     "c0": "LeaseAndGuaranteeDeposits",
     "c1": "LeaseAndGuaranteeDeposits"
    },
+   "xbrl_sign": 1,
    "concept": "LeaseAndGuaranteeDeposits"
   },
   {
@@ -914,6 +1519,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    499.5,
+    520.4,
+    508.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     499.5,
+     395.9,
+     508.4
+    ],
+    "c1": [
+     493.5,
+     499.5,
+     520.4,
+     508.4
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "item",
@@ -922,11 +1547,13 @@
     "固定資産",
     "投資その他の資産"
    ],
+   "unit_override": null,
    "id": "r31",
    "xbrl": {
     "c0": "LeaseholdAndGuaranteeDepositsInTrustIOAINV",
     "c1": "LeaseholdAndGuaranteeDepositsInTrustIOAINV"
    },
+   "xbrl_sign": 1,
    "concept": "LeaseholdAndGuaranteeDepositsInTrustIOAINV"
   },
   {
@@ -944,6 +1571,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    101.0,
+    511.8,
+    520.4,
+    521.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     351.1,
+     512.2,
+     395.9,
+     521.1
+    ],
+    "c1": [
+     475.6,
+     512.2,
+     520.4,
+     521.1
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "subtotal",
@@ -952,11 +1599,13 @@
     "固定資産",
     "投資その他の資産"
    ],
+   "unit_override": null,
    "id": "r32",
    "xbrl": {
     "c0": "InvestmentsAndOtherAssets",
     "c1": "InvestmentsAndOtherAssets"
    },
+   "xbrl_sign": 1,
    "concept": "InvestmentsAndOtherAssets"
   },
   {
@@ -974,6 +1623,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    524.5,
+    520.4,
+    533.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.7,
+     524.9,
+     395.9,
+     533.8
+    ],
+    "c1": [
+     471.1,
+     524.9,
+     520.4,
+     533.8
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "subtotal",
@@ -981,11 +1650,13 @@
     "資産の部",
     "固定資産"
    ],
+   "unit_override": null,
    "id": "r33",
    "xbrl": {
     "c0": "NoncurrentAssets",
     "c1": "NoncurrentAssets"
    },
+   "xbrl_sign": 1,
    "concept": "NoncurrentAssets"
   },
   {
@@ -1003,12 +1674,23 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.1,
+    537.2,
+    111.0,
+    546.2
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "資産の部"
    ],
+   "unit_override": null,
    "id": "r34",
    "xbrl": {},
    "concept": null
@@ -1028,6 +1710,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    549.5,
+    520.4,
+    558.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     373.5,
+     549.5,
+     395.9,
+     558.5
+    ],
+    "c1": [
+     515.9,
+     549.5,
+     520.4,
+     558.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -1035,10 +1737,12 @@
     "資産の部",
     "繰延資産"
    ],
+   "unit_override": null,
    "id": "r35",
    "xbrl": {
     "c0": "InvestmentUnitIssuanceExpensesDAINV"
    },
+   "xbrl_sign": 1,
    "concept": "InvestmentUnitIssuanceExpensesDAINV"
   },
   {
@@ -1056,6 +1760,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    561.5,
+    520.4,
+    570.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     561.5,
+     395.9,
+     570.4
+    ],
+    "c1": [
+     493.5,
+     561.5,
+     520.4,
+     570.4
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -1063,11 +1787,13 @@
     "資産の部",
     "繰延資産"
    ],
+   "unit_override": null,
    "id": "r36",
    "xbrl": {
     "c0": "InvestmentCorporationBondIssuanceCostsINV",
     "c1": "InvestmentCorporationBondIssuanceCostsINV"
    },
+   "xbrl_sign": 1,
    "concept": "InvestmentCorporationBondIssuanceCostsINV"
   },
   {
@@ -1085,6 +1811,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    88.1,
+    573.8,
+    520.4,
+    583.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     369.1,
+     574.1,
+     395.9,
+     583.1
+    ],
+    "c1": [
+     493.5,
+     574.1,
+     520.4,
+     583.1
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "subtotal",
@@ -1092,11 +1838,13 @@
     "資産の部",
     "繰延資産"
    ],
+   "unit_override": null,
    "id": "r37",
    "xbrl": {
     "c0": "DeferredAssets",
     "c1": "InvestmentCorporationBondIssuanceCostsINV"
    },
+   "xbrl_sign": 1,
    "concept": "DeferredAssets"
   },
   {
@@ -1114,21 +1862,51 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.1,
+    586.5,
+    520.4,
+    595.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     346.7,
+     586.8,
+     395.9,
+     595.8
+    ],
+    "c1": [
+     471.1,
+     586.8,
+     520.4,
+     595.8
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "資産の部"
    ],
+   "unit_override": null,
    "id": "r38",
    "xbrl": {
     "c0": "Assets",
     "c1": "Assets"
    },
+   "xbrl_sign": 1,
    "concept": "Assets"
   }
  ],
  "continues_on_next_page": true,
+ "page_size": [
+  595.3,
+  841.89001
+ ],
+ "rounding": {
+  "method": "truncate",
+  "source": "note"
+ },
  "checks": [
   {
    "type": "sum",
@@ -1255,10 +2033,6 @@
    ]
   }
  ],
- "rounding": {
-  "method": "truncate",
-  "source": "note"
- },
  "source": {
   "company": "Ｒ－ラサールロジ",
   "title": "2026年８月期　決算短信（ＲＥＩＴ）",

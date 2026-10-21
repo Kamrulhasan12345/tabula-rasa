@@ -22,3 +22,10 @@ runs/b1/kaggle_*/*
 # secrets
 .env
 .env.*
+# hosted-API replies (cached; rescoring is free and reproducible)
+!runs/typellm/
+runs/typellm/*
+!runs/typellm/raw/
+!runs/scaledown/
+runs/scaledown/*
+!runs/scaledown/raw/

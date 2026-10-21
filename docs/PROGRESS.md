@@ -4,6 +4,15 @@ For agents and people picking this project up. Newest state first. Results: [REP
 
 ## Current state (2026-10-22)
 
+**Tracks B/C + whole-page gold (latest).**
+- TypeLLM and ScaleDown run on all 85 pages (keys in `.env`). Gold is whole-page now: 4,619 cells.
+- Hybrid B0 + TypeLLM (default reader): 1.000 cells, 0.93 page exact, 0.987 hierarchy, ≈ $0.0001/page.
+- TypeLLM alone: 0.996. B1: 0.995. ScaleDown: 0.720.
+- Full tables are in REPORT §3.
+- Second reader is chosen by `TABULA_READER` (`hybrid.reader_name`). Eval approach: `hybrid_typellm`.
+- Bug fixed: Camelot returns overlapping tables, which doubled rows when B0 read every table (verified on the page image). Each word now counts once.
+
+
 **API milestone (latest).** The VLM no longer depends on Kaggle files at runtime:
 - `tabula/vlm.py` calls any OpenAI-compatible endpoint (`TABULA_VLM_URL`), or replays saved outputs in demo mode (the default). No real endpoint exists yet; `tests/test_api.py` stands one up as a fake.
 - `tabula/api.py` provides `parse_pdf()`. Output adds `cell_bbox`, inferred sum checks (`check_results`), `warnings` and HTML.
@@ -57,7 +66,7 @@ Not started:
 | 7 | ~~Multi-page stitching~~ done: `api.stitch` groups pages by `continues_on_next_page`, checks 資産合計 = 負債純資産合計 exactly | F8 | – |
 | 8 | ~~Unit overrides~~ done: 1株当たり / (円) → 円 (decimals parsed), 株, %; heading context carries to rows below | F4a | – |
 | 9 | ~~HTML output~~ done (`api.to_html`, CLI and server) | F3 | – |
-| 10 | Keep 訂正前 and 訂正後 apart when both are on one page. Not built: no such page found in the eval set yet | F6a | 2 h |
+| 10 | Keep 訂正前 and 訂正後 apart when both are on one page. Not built: across all downloaded filings only S100Z4C8 p192 and p198 mention both, and neither is an eval page. TDnet 訂正 PDFs print each version on its own page | F6a | 2 h |
 
 ### Tracks B/C (hosted APIs), `tabula/remote.py`
 
@@ -79,7 +88,7 @@ PDF page ─┬─ security.verify_page  (keep only visibly painted words; OCR c
           ├─ router.route          (statement, scope, standard, unit, periods, 訂正)
           ├─ b0.extract            (Camelot cells rebuilt from verified words → §4 JSON)
           ├─ b1.predict            (saved VLM output → §4 JSON via convert())
-          └─ hybrid.merge          (B0 values; cell_status agreed/review/b0_only/vlm_only;
+          └─ hybrid.merge          (B0 values; cell_status agreed/review/b0_only/reader_only;
                                     periods filled from B1 when the router found none)
 api.parse_page = hybrid.parse + checks.infer_checks/run_checks + warnings
 server.py      = upload / background parse (one at a time, in-process lock) / page JSON, CSV, HTML, PNG

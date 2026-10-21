@@ -40,7 +40,7 @@ def extract(pdf_path, page_no=1):
     meta = route(page, words)
     h = float(page.height)
     text = lambda cell: "".join(w["text"] for w in sorted(cell["words"], key=lambda w: w["x0"]))
-    columns, rows = None, []
+    columns, rows, used = None, [], set()
     # every table Camelot finds (a page can hold PL + 包括利益, or a split BS); tables with the same number of
     # value columns are one statement continuing. ponytail: a table with a different column layout is dropped,
     # add doc["other_tables"] when segment / 注記 tables matter.
@@ -73,8 +73,9 @@ def extract(pdf_path, page_no=1):
 
         for r in raw_rows:
             label_cell = r[0]
-            if not label_cell["words"]:
-                continue
+            if not label_cell["words"] or any(id(w) in used for w in label_cell["words"]):
+                continue  # Camelot can return overlapping tables over the same rows: each word counts once
+            used.update(id(w) for c in r for w in c["words"])
             label, refs = normalize_label(text(label_cell))
             x0 = min(w["x0"] for w in label_cell["words"])
             raw = {columns[i]["id"]: (text(r[k]) or None) for i, k in enumerate(vcols)}

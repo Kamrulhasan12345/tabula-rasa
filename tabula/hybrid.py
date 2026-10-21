@@ -5,9 +5,10 @@ Per value cell, row["cell_status"][cid] is one of:
   agreed   - B0 (verified text layer) and B1 (pixels) read the same number
   review   - they disagree, or B0's cell held unverified (possibly hidden) text
   b0_only  - no VLM output for this cell
-  vlm_only - page has no usable text layer (scan) or B0 failed; B1's reading only
+  reader_only - page has no usable text layer (scan) or B0 failed; B1's reading only
 The value kept is B0's when B0 is usable (it is the filer's own text), else B1's.
 """
+import os
 import subprocess
 import tempfile
 from pathlib import Path
@@ -37,16 +38,16 @@ def usable(doc):
     return bool(doc and doc.get("columns") and any(isinstance(v, int) for r in doc["rows"] for v in r["values"].values()))
 
 
-def merge(b0, b1):
+def merge(b0, b1, reader="b1"):
     if not usable(b0):
         if not usable(b1):
             return {**(b0 or {}), "engine": "none", "status": "failed"}
-        doc = {**b1, "engine": "b1"}
+        doc = {**b1, "engine": reader}
         for r in doc["rows"]:
-            r["cell_status"] = {cid: "vlm_only" for cid, v in r["values"].items() if v is not None}
+            r["cell_status"] = {cid: "reader_only" for cid, v in r["values"].items() if v is not None}
         doc["status"] = "review"
         return doc
-    doc = {**b0, "engine": "b0+b1" if usable(b1) else "b0"}
+    doc = {**b0, "engine": f"b0+{reader}" if usable(b1) else "b0"}
     m = align(b0["rows"], b1["rows"]) if usable(b1) else {}
     cm = _col_map(b0, b1) if usable(b1) else {}
     b1cols = {c["id"]: c for c in (b1 or {}).get("columns") or []}
@@ -77,8 +78,28 @@ def merge(b0, b1):
     return doc
 
 
-def parse(pdf_path, page_no, doc_id=None, b0=None):
-    from tabula.b1 import predict
+def reader_name():
+    """Second reader: TABULA_READER = vlm | typellm | scaledown; default typellm when its key is set, else vlm."""
+    return os.environ.get("TABULA_READER") or ("typellm" if os.environ.get("TYPELLM_API_KEY") else "vlm")
+
+
+def read_second(pdf_path, page_no, doc_id, reader):
+    """-> (§4 doc or None, meta). Image-only readers: the PDF text layer never reaches them."""
+    if reader == "vlm":
+        from tabula.b1 import predict
+        return predict(pdf_path, page_no, doc_id)
+    from tabula.b1 import _png, convert
+    from tabula.remote import READERS
+    try:
+        raw = READERS[reader](_png(pdf_path, page_no))
+    except OSError as e:  # API down / timeout: the page continues on B0 alone
+        return None, {"reader_error": f"{reader}: {type(e).__name__}: {e}"}
+    return (convert(raw, doc_id, page_no) if raw else None), {}
+
+
+def parse(pdf_path, page_no, doc_id=None, b0=None, second=None, reader=None):
+    """second: a precomputed (doc, meta) from the second reader (eval caches); else it is called now."""
+    reader = reader or reader_name()
     b0 = b0 if b0 is not None else run_b0(pdf_path, page_no)
-    b1, meta = predict(pdf_path, page_no, doc_id)
-    return merge(b0, b1), meta
+    b1, meta = second if second is not None else read_second(pdf_path, page_no, doc_id or Path(pdf_path).stem, reader)
+    return merge(b0, b1, "b1" if reader == "vlm" else reader), meta

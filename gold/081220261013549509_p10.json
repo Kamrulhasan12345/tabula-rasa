@@ -43,10 +43,31 @@
     "c0": false,
     "c1": true
    },
+   "bbox": [
+    75.3,
+    399.5,
+    522.6,
+    408.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     399.5,
+     397.7,
+     408.5
+    ],
+    "c1": [
+     509.0,
+     399.5,
+     522.6,
+     408.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [],
+   "unit_override": null,
    "id": "r01",
    "xbrl": {
     "c0": "NonOperatingExpenses",
@@ -70,10 +91,31 @@
     "c0": false,
     "c1": true
    },
+   "bbox": [
+    62.3,
+    412.2,
+    522.6,
+    421.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.6,
+     412.2,
+     397.7,
+     421.2
+    ],
+    "c1": [
+     500.0,
+     412.2,
+     522.6,
+     421.2
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r02",
    "xbrl": {
     "c0": "OrdinaryIncome",
@@ -97,10 +139,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    62.3,
+    425.0,
+    98.3,
+    434.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r03",
    "xbrl": {},
    "concept": null
@@ -120,12 +173,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.3,
+    437.1,
+    522.6,
+    446.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     393.1,
+     437.1,
+     397.6,
+     446.1
+    ],
+    "c1": [
+     509.0,
+     437.1,
+     522.6,
+     446.1
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別利益"
    ],
+   "unit_override": null,
    "id": "r04",
    "xbrl": {
     "c0": "GainOnSalesOfNoncurrentAssetsEI",
@@ -149,12 +223,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.3,
+    449.8,
+    522.6,
+    458.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     393.1,
+     449.8,
+     397.6,
+     458.8
+    ],
+    "c1": [
+     509.0,
+     449.8,
+     522.6,
+     458.8
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "特別利益"
    ],
+   "unit_override": null,
    "id": "r05",
    "xbrl": {
     "c0": "GainOnSalesOfNoncurrentAssetsEI",
@@ -178,10 +273,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    62.3,
+    462.5,
+    98.3,
+    471.5
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r06",
    "xbrl": {},
    "concept": null
@@ -201,12 +307,33 @@
     "c0": false,
     "c1": true
    },
+   "bbox": [
+    75.3,
+    474.5,
+    522.6,
+    483.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     474.5,
+     397.7,
+     483.5
+    ],
+    "c1": [
+     513.6,
+     474.5,
+     522.6,
+     483.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r07",
    "xbrl": {
     "c0": "LossOnRetirementOfNoncurrentAssetsEL",
@@ -230,12 +357,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.3,
+    486.5,
+    522.6,
+    495.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     486.5,
+     397.7,
+     495.5
+    ],
+    "c1": [
+     513.6,
+     486.5,
+     522.6,
+     495.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r08",
    "xbrl": {
     "c0": "LossOnClosingOfStoresEL",
@@ -259,12 +407,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.3,
+    498.5,
+    522.6,
+    507.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     498.5,
+     397.7,
+     507.5
+    ],
+    "c1": [
+     513.6,
+     498.5,
+     522.6,
+     507.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r09",
    "xbrl": {
     "c0": "DismantlementExpansesEL",
@@ -288,12 +457,33 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    75.3,
+    510.5,
+    522.6,
+    519.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     510.5,
+     397.7,
+     519.5
+    ],
+    "c1": [
+     513.6,
+     510.5,
+     522.6,
+     519.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r10",
    "xbrl": {
     "c0": "ProvisionOfAllowanceForDoubtfulAccountsEL"
@@ -316,12 +506,33 @@
     "c0": false,
     "c1": true
    },
+   "bbox": [
+    75.3,
+    522.5,
+    522.6,
+    531.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     393.1,
+     522.5,
+     397.6,
+     531.5
+    ],
+    "c1": [
+     513.6,
+     522.5,
+     522.6,
+     531.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r11",
    "xbrl": {
     "c0": "GainOnSalesOfNoncurrentAssetsEI",
@@ -345,12 +556,33 @@
     "c0": false,
     "c1": true
    },
+   "bbox": [
+    75.3,
+    535.2,
+    522.6,
+    544.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     535.2,
+     397.7,
+     544.2
+    ],
+    "c1": [
+     509.0,
+     535.2,
+     522.6,
+     544.2
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "特別損失"
    ],
+   "unit_override": null,
    "id": "r12",
    "xbrl": {
     "c0": "ExtraordinaryLoss",
@@ -374,10 +606,31 @@
     "c0": false,
     "c1": true
    },
+   "bbox": [
+    62.3,
+    548.1,
+    522.6,
+    557.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.1,
+     548.1,
+     397.7,
+     557.1
+    ],
+    "c1": [
+     500.0,
+     548.1,
+     522.6,
+     557.1
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r13",
    "xbrl": {
     "c0": "IncomeBeforeIncomeTaxes",
@@ -385,14 +638,1399 @@
    },
    "xbrl_sign": 1,
    "concept": "IncomeBeforeIncomeTaxes"
+  },
+  {
+   "label": "売上高",
+   "raw": {
+    "c0": "159,153",
+    "c1": "170,933"
+   },
+   "values": {
+    "c0": 159153,
+    "c1": 170933
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    140.7,
+    522.6,
+    149.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.1,
+     140.7,
+     397.7,
+     149.7
+    ],
+    "c1": [
+     491.0,
+     140.7,
+     522.6,
+     149.7
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r14",
+   "xbrl": {
+    "c0": "NetSales",
+    "c1": "NetSales"
+   },
+   "xbrl_sign": 1,
+   "concept": "NetSales"
+  },
+  {
+   "label": "売上原価",
+   "raw": {
+    "c0": "99,186",
+    "c1": "106,129"
+   },
+   "values": {
+    "c0": 99186,
+    "c1": 106129
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    152.7,
+    522.6,
+    161.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.6,
+     152.7,
+     397.7,
+     161.7
+    ],
+    "c1": [
+     491.0,
+     152.7,
+     522.6,
+     161.7
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r15",
+   "xbrl": {
+    "c0": "CostOfSales",
+    "c1": "CostOfSales"
+   },
+   "xbrl_sign": 1,
+   "concept": "CostOfSales"
+  },
+  {
+   "label": "売上総利益",
+   "raw": {
+    "c0": "59,966",
+    "c1": "64,803"
+   },
+   "values": {
+    "c0": 59966,
+    "c1": 64803
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    165.4,
+    522.6,
+    174.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.6,
+     165.4,
+     397.7,
+     174.4
+    ],
+    "c1": [
+     495.6,
+     165.4,
+     522.6,
+     174.4
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r16",
+   "xbrl": {
+    "c0": "GrossProfit",
+    "c1": "GrossProfit"
+   },
+   "xbrl_sign": 1,
+   "concept": "GrossProfit"
+  },
+  {
+   "label": "営業収入",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    62.3,
+    178.2,
+    98.3,
+    187.2
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "unit_override": null,
+   "id": "r17",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "賃貸収入",
+   "raw": {
+    "c0": "7,126",
+    "c1": "7,823"
+   },
+   "values": {
+    "c0": 7126,
+    "c1": 7823
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    190.2,
+    522.6,
+    199.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.1,
+     190.2,
+     397.7,
+     199.2
+    ],
+    "c1": [
+     500.0,
+     190.2,
+     522.6,
+     199.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収入"
+   ],
+   "unit_override": null,
+   "id": "r18",
+   "xbrl": {
+    "c0": "RentIncomeRevOA",
+    "c1": "RentIncomeRevOA"
+   },
+   "xbrl_sign": 1,
+   "concept": "RentIncomeRevOA"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "107",
+    "c1": "140"
+   },
+   "values": {
+    "c0": 107,
+    "c1": 140
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    202.2,
+    522.6,
+    211.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     202.2,
+     397.7,
+     211.2
+    ],
+    "c1": [
+     509.0,
+     202.2,
+     522.6,
+     211.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業収入"
+   ],
+   "unit_override": null,
+   "id": "r19",
+   "xbrl": {
+    "c0": "OtherRevOA",
+    "c1": "OtherRevOA"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherRevOA"
+  },
+  {
+   "label": "営業総利益",
+   "raw": {
+    "c0": "67,200",
+    "c1": "72,767"
+   },
+   "values": {
+    "c0": 67200,
+    "c1": 72767
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    215.0,
+    522.6,
+    224.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.6,
+     215.0,
+     397.7,
+     224.0
+    ],
+    "c1": [
+     495.6,
+     215.0,
+     522.6,
+     224.0
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r20",
+   "xbrl": {
+    "c0": "OperatingGrossProfit",
+    "c1": "OperatingGrossProfit"
+   },
+   "xbrl_sign": 1,
+   "concept": "OperatingGrossProfit"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": "57,021",
+    "c1": "64,296"
+   },
+   "values": {
+    "c0": 57021,
+    "c1": 64296
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    227.7,
+    522.6,
+    236.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.6,
+     227.7,
+     397.7,
+     236.7
+    ],
+    "c1": [
+     495.6,
+     227.7,
+     522.6,
+     236.7
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r21",
+   "xbrl": {
+    "c0": "SellingGeneralAndAdministrativeExpenses",
+    "c1": "SellingGeneralAndAdministrativeExpenses"
+   },
+   "xbrl_sign": 1,
+   "concept": "SellingGeneralAndAdministrativeExpenses"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "10,178",
+    "c1": "8,471"
+   },
+   "values": {
+    "c0": 10178,
+    "c1": 8471
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    240.4,
+    522.6,
+    249.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.6,
+     240.4,
+     397.7,
+     249.4
+    ],
+    "c1": [
+     500.0,
+     240.4,
+     522.6,
+     249.4
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r22",
+   "xbrl": {
+    "c0": "OperatingIncome",
+    "c1": "OperatingIncome"
+   },
+   "xbrl_sign": 1,
+   "concept": "OperatingIncome"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    62.3,
+    253.2,
+    107.3,
+    262.2
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "unit_override": null,
+   "id": "r23",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "25",
+    "c1": "28"
+   },
+   "values": {
+    "c0": 25,
+    "c1": 28
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    265.2,
+    522.6,
+    274.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     265.2,
+     397.7,
+     274.2
+    ],
+    "c1": [
+     513.6,
+     265.2,
+     522.6,
+     274.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r24",
+   "xbrl": {
+    "c0": "InterestIncomeNOI",
+    "c1": "InterestIncomeNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "InterestIncomeNOI"
+  },
+  {
+   "label": "受取配当金",
+   "raw": {
+    "c0": "126",
+    "c1": "16"
+   },
+   "values": {
+    "c0": 126,
+    "c1": 16
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    277.2,
+    522.6,
+    286.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     277.2,
+     397.7,
+     286.2
+    ],
+    "c1": [
+     513.6,
+     277.2,
+     522.6,
+     286.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r25",
+   "xbrl": {
+    "c0": "DividendsIncomeNOI",
+    "c1": "DividendsIncomeNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "DividendsIncomeNOI"
+  },
+  {
+   "label": "仕入割引",
+   "raw": {
+    "c0": "52",
+    "c1": "33"
+   },
+   "values": {
+    "c0": 52,
+    "c1": 33
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    289.2,
+    522.6,
+    298.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     289.2,
+     397.7,
+     298.2
+    ],
+    "c1": [
+     513.6,
+     289.2,
+     522.6,
+     298.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r26",
+   "xbrl": {
+    "c0": "PurchaseDiscountsNOI",
+    "c1": "PurchaseDiscountsNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "PurchaseDiscountsNOI"
+  },
+  {
+   "label": "為替差益",
+   "raw": {
+    "c0": "－",
+    "c1": "62"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 62
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    301.2,
+    522.6,
+    310.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     301.2,
+     397.6,
+     310.2
+    ],
+    "c1": [
+     513.6,
+     301.2,
+     522.6,
+     310.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r27",
+   "xbrl": {
+    "c1": "ForeignExchangeGainsNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "ForeignExchangeGainsNOI"
+  },
+  {
+   "label": "持分法による投資利益",
+   "raw": {
+    "c0": "121",
+    "c1": "83"
+   },
+   "values": {
+    "c0": 121,
+    "c1": 83
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    313.2,
+    522.6,
+    322.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     313.2,
+     397.7,
+     322.2
+    ],
+    "c1": [
+     513.6,
+     313.2,
+     522.6,
+     322.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r28",
+   "xbrl": {
+    "c0": "EquityInEarningsOfAffiliatesNOI",
+    "c1": "EquityInEarningsOfAffiliatesNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "EquityInEarningsOfAffiliatesNOI"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "274",
+    "c1": "306"
+   },
+   "values": {
+    "c0": 274,
+    "c1": 306
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    75.3,
+    325.2,
+    522.6,
+    334.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     325.2,
+     397.7,
+     334.2
+    ],
+    "c1": [
+     509.0,
+     325.2,
+     522.6,
+     334.2
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r29",
+   "xbrl": {
+    "c0": "OtherNOI",
+    "c1": "OtherNOI"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherNOI"
+  },
+  {
+   "label": "営業外収益合計",
+   "raw": {
+    "c0": "599",
+    "c1": "530"
+   },
+   "values": {
+    "c0": 599,
+    "c1": 530
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    75.3,
+    338.0,
+    522.6,
+    347.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     338.0,
+     397.7,
+     347.0
+    ],
+    "c1": [
+     509.0,
+     338.0,
+     522.6,
+     347.0
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r30",
+   "xbrl": {
+    "c0": "NonOperatingIncome",
+    "c1": "NonOperatingIncome"
+   },
+   "xbrl_sign": 1,
+   "concept": "NonOperatingIncome"
+  },
+  {
+   "label": "営業外費用",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    62.3,
+    350.8,
+    107.3,
+    359.8
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "unit_override": null,
+   "id": "r31",
+   "xbrl": {},
+   "concept": null
+  },
+  {
+   "label": "支払利息",
+   "raw": {
+    "c0": "589",
+    "c1": "531"
+   },
+   "values": {
+    "c0": 589,
+    "c1": 531
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    362.8,
+    522.6,
+    371.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.1,
+     362.8,
+     397.7,
+     371.8
+    ],
+    "c1": [
+     509.0,
+     362.8,
+     522.6,
+     371.8
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "unit_override": null,
+   "id": "r32",
+   "xbrl": {
+    "c0": "InterestExpensesNOE",
+    "c1": "InterestExpensesNOE"
+   },
+   "xbrl_sign": 1,
+   "concept": "InterestExpensesNOE"
+  },
+  {
+   "label": "為替差損",
+   "raw": {
+    "c0": "14",
+    "c1": "－"
+   },
+   "values": {
+    "c0": 14,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    75.3,
+    374.8,
+    522.6,
+    383.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     374.8,
+     397.7,
+     383.8
+    ],
+    "c1": [
+     513.6,
+     374.8,
+     522.6,
+     383.8
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "unit_override": null,
+   "id": "r33",
+   "xbrl": {
+    "c0": "ForeignExchangeLossesNOE"
+   },
+   "xbrl_sign": 1,
+   "concept": "ForeignExchangeLossesNOE"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "7",
+    "c1": "55"
+   },
+   "values": {
+    "c0": 7,
+    "c1": 55
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    75.3,
+    386.8,
+    522.6,
+    395.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     393.1,
+     386.8,
+     397.6,
+     395.8
+    ],
+    "c1": [
+     513.6,
+     386.8,
+     522.6,
+     395.8
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "unit_override": null,
+   "id": "r34",
+   "xbrl": {
+    "c0": "OtherNOE",
+    "c1": "OtherNOE"
+   },
+   "xbrl_sign": 1,
+   "concept": "OtherNOE"
+  },
+  {
+   "label": "法人税、住民税及び事業税",
+   "raw": {
+    "c0": "3,518",
+    "c1": "6,588"
+   },
+   "values": {
+    "c0": 3518,
+    "c1": 6588
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    62.3,
+    560.8,
+    522.6,
+    569.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.1,
+     560.8,
+     397.7,
+     569.8
+    ],
+    "c1": [
+     500.0,
+     560.8,
+     522.6,
+     569.8
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r35",
+   "xbrl": {
+    "c0": "IncomeTaxesCurrent",
+    "c1": "IncomeTaxesCurrent"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeTaxesCurrent"
+  },
+  {
+   "label": "法人税等調整額",
+   "raw": {
+    "c0": null,
+    "c1": "△3,147"
+   },
+   "values": {
+    "c0": null,
+    "c1": -3147
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    572.8,
+    522.6,
+    581.8
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": [
+     491.0,
+     572.8,
+     522.6,
+     581.8
+    ]
+   },
+   "tainted": true,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r36",
+   "xbrl": {
+    "c1": "IncomeTaxesDeferred"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeTaxesDeferred"
+  },
+  {
+   "label": "法人税等合計",
+   "raw": {
+    "c0": "3,420",
+    "c1": "3,440"
+   },
+   "values": {
+    "c0": 3420,
+    "c1": 3440
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    585.5,
+    522.6,
+    594.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.1,
+     585.5,
+     397.7,
+     594.5
+    ],
+    "c1": [
+     500.0,
+     585.5,
+     522.6,
+     594.5
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "total",
+   "path": [],
+   "unit_override": null,
+   "id": "r37",
+   "xbrl": {
+    "c0": "IncomeTaxes",
+    "c1": "IncomeTaxes"
+   },
+   "xbrl_sign": 1,
+   "concept": "IncomeTaxes"
+  },
+  {
+   "label": "中間純利益",
+   "raw": {
+    "c0": "6,313",
+    "c1": "5,407"
+   },
+   "values": {
+    "c0": 6313,
+    "c1": 5407
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    598.2,
+    522.6,
+    607.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.1,
+     598.2,
+     397.7,
+     607.2
+    ],
+    "c1": [
+     500.0,
+     598.2,
+     522.6,
+     607.2
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r38",
+   "xbrl": {
+    "c0": "ProfitLoss",
+    "c1": "ProfitLoss"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLoss"
+  },
+  {
+   "label": "非支配株主に帰属する中間純利益",
+   "raw": {
+    "c0": "34",
+    "c1": "27"
+   },
+   "values": {
+    "c0": 34,
+    "c1": 27
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    62.3,
+    611.1,
+    522.6,
+    620.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.6,
+     611.1,
+     397.7,
+     620.1
+    ],
+    "c1": [
+     513.6,
+     611.1,
+     522.6,
+     620.1
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r39",
+   "xbrl": {
+    "c0": "ProfitLossAttributableToNonControllingInterests",
+    "c1": "ProfitLossAttributableToNonControllingInterests"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossAttributableToNonControllingInterests"
+  },
+  {
+   "label": "親会社株主に帰属する中間純利益",
+   "raw": {
+    "c0": "6,278",
+    "c1": "5,380"
+   },
+   "values": {
+    "c0": 6278,
+    "c1": 5380
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": true
+   },
+   "bbox": [
+    62.3,
+    623.8,
+    522.6,
+    632.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.1,
+     623.8,
+     397.7,
+     632.8
+    ],
+    "c1": [
+     500.0,
+     623.8,
+     522.6,
+     632.8
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r40",
+   "xbrl": {
+    "c0": "ProfitLossAttributableToOwnersOfParent",
+    "c1": "ProfitLossAttributableToOwnersOfParent"
+   },
+   "xbrl_sign": 1,
+   "concept": "ProfitLossAttributableToOwnersOfParent"
   }
  ],
  "continues_on_next_page": false,
- "checks": [],
+ "page_size": [
+  595.2,
+  841.8
+ ],
  "rounding": {
   "method": "truncate",
   "source": "note"
  },
+ "checks": [
+  {
+   "type": "sum",
+   "total": "r01",
+   "items": [
+    "r32",
+    "r33",
+    "r34"
+   ],
+   "weights": [
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r02",
+   "items": [
+    "r22",
+    "r30",
+    "r01"
+   ],
+   "weights": [
+    1,
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r16",
+   "items": [
+    "r14",
+    "r15"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r20",
+   "items": [
+    "r16",
+    "r18",
+    "r19"
+   ],
+   "weights": [
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r22",
+   "items": [
+    "r20",
+    "r21"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r30",
+   "items": [
+    "r24",
+    "r26",
+    "r25",
+    "r27",
+    "r28",
+    "r29"
+   ],
+   "weights": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r37",
+   "items": [
+    "r35",
+    "r36"
+   ],
+   "weights": [
+    1,
+    1
+   ]
+  },
+  {
+   "type": "sum",
+   "total": "r38",
+   "items": [
+    "r13",
+    "r37"
+   ],
+   "weights": [
+    1,
+    -1
+   ]
+  }
+ ],
  "source": {
   "company": "アークランズ",
   "title": "（訂正・数値データ訂正）「2026年２月期　第２四半期（中間期）決算短信〔日本基準〕（連結）」の一部訂正について",
@@ -401,6 +2039,6 @@
  },
  "gold_status": "confirmed",
  "review": [],
- "xbrl_confirmed_cells": 21,
+ "xbrl_confirmed_cells": 66,
  "xbrl_unconfirmed_cells": 0
 }

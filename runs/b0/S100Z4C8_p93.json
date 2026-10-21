@@ -32,10 +32,25 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    77.6,
+    282.9,
+    391.2,
+    291.9
+   ],
+   "cell_bbox": {
+    "c0": [
+     382.2,
+     282.9,
+     391.2,
+     291.9
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -50,10 +65,25 @@
    "underlined": {
     "c0": true
    },
+   "bbox": [
+    77.6,
+    297.2,
+    391.2,
+    306.2
+   ],
+   "cell_bbox": {
+    "c0": [
+     359.7,
+     297.2,
+     391.2,
+     306.2
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -68,10 +98,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    68.6,
+    311.7,
+    113.6,
+    320.7
+   ],
+   "cell_bbox": {
+    "c0": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -86,12 +126,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    77.6,
+    325.8,
+    391.2,
+    334.8
+   ],
+   "cell_bbox": {
+    "c0": [
+     359.7,
+     325.8,
+     391.2,
+     334.8
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非流動資産"
    ],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -106,12 +161,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    77.6,
+    340.1,
+    391.2,
+    349.1
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.2,
+     340.1,
+     391.2,
+     349.1
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非流動資産"
    ],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -126,12 +196,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    77.6,
+    354.4,
+    391.2,
+    363.4
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.2,
+     354.4,
+     391.2,
+     363.4
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非流動資産"
    ],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -146,12 +231,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    77.6,
+    368.7,
+    391.2,
+    377.7
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.2,
+     368.7,
+     391.2,
+     377.7
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非流動資産"
    ],
+   "unit_override": null,
    "id": "r07"
   },
   {
@@ -166,12 +266,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    77.6,
+    383.0,
+    391.2,
+    392.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     368.7,
+     383.0,
+     391.2,
+     392.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非流動資産"
    ],
+   "unit_override": null,
    "id": "r08"
   },
   {
@@ -186,15 +301,38 @@
    "underlined": {
     "c0": true
    },
+   "bbox": [
+    77.6,
+    397.3,
+    391.2,
+    406.3
+   ],
+   "cell_bbox": {
+    "c0": [
+     364.2,
+     397.3,
+     391.2,
+     406.3
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "非流動資産"
    ],
+   "unit_override": null,
    "id": "r09"
   }
  ],
  "continues_on_next_page": true,
+ "page_size": [
+  595.3,
+  841.889771
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": []
 }

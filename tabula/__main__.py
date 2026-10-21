@@ -38,7 +38,7 @@ def main(argv=None):
     res_id = a.doc_id or a.pdf.stem
     pages = [int(x) for x in a.pages.split(",")] if a.pages else None
     res = parse_pdf(a.pdf, pages, res_id, on_page=report)
-    print(f"{a.pdf}: VLM {res['vlm_mode']} | table pages {res['table_pages']}"
+    print(f"{a.pdf}: reader {res['reader']} (VLM {res['vlm_mode']}) | table pages {res['table_pages']}"
           + (f" | image-only {res['image_only_pages']}" if res["image_only_pages"] else ""))
 
 

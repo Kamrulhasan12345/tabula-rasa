@@ -34,6 +34,9 @@ srv = HTTPServer(("127.0.0.1", 0), FakeVLM)
 threading.Thread(target=srv.serve_forever, daemon=True).start()
 os.environ["TABULA_VLM_URL"] = f"http://127.0.0.1:{srv.server_port}/v1"
 os.environ["TABULA_STORE"] = tempfile.mkdtemp()
+os.environ["TABULA_READER"] = "vlm"  # the .env TypeLLM key would otherwise make it the default reader
+for k in ("SCALEDOWN_API_KEY", "TYPELLM_API_KEY", "SQWISH_API_KEY", "TABULA_AMOS"):
+    os.environ.pop(k, None)
 
 from fastapi.testclient import TestClient  # noqa: E402
 from tabula.server import app  # noqa: E402

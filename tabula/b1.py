@@ -29,15 +29,18 @@ def _date(s):
         return None
 
 
+DATE = re.compile(r"(?:令和|平成|昭和)?(?:元|\d+)年\d+月\d+日")
+
+
 def _period(*texts):
-    """Column header -> (period_type, start, end). "自 X 至 Y" is a duration ending at Y."""
+    """Column header -> (period_type, start, end). Two dates ("自 X 至 Y", "X - Y", "X～Y") = a duration ending at Y."""
     for t in texts:
         t = "".join(unicodedata.normalize("NFKC", t or "").split())
-        if "至" in t:
-            a, _, b = t.partition("至")
-            return "duration", _date(a), _date(b)
-        if _date(t):
-            return "instant", None, _date(t)
+        ds = [d for d in (_date(m) for m in DATE.findall(t)) if d]
+        if len(ds) >= 2:
+            return "duration", ds[0], ds[-1]
+        if ds:
+            return "instant", None, ds[0]
     return "instant", None, None
 
 
@@ -99,7 +102,7 @@ def predict(pdf_path, page_no, doc_id=None):
     try:
         rec = vlm.read_page(f"{doc_id}_p{page_no}.png", lambda: _png(pdf_path, page_no))
     except OSError as e:  # endpoint down / timeout: the page continues on B0 alone
-        return None, {"vlm_error": f"{type(e).__name__}: {e}"}
+        return None, {"reader_error": f"{type(e).__name__}: {e}"}
     if rec is None:
         return None, {}  # demo mode, page not run: the harness skips it, the hybrid uses B0 alone
     try:

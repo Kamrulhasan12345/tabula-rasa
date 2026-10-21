@@ -313,166 +313,6 @@
    "id": "r07"
   },
   {
-   "label": "販売費及び一般管理費",
-   "raw": {
-    "c0": "1,232,480",
-    "c1": "1,228,168"
-   },
-   "values": {
-    "c0": 1232480,
-    "c1": 1228168
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    63.2,
-    173.0,
-    522.9,
-    182.0
-   ],
-   "cell_bbox": {
-    "c0": [
-     357.2,
-     173.0,
-     397.7,
-     182.0
-    ],
-    "c1": [
-     482.4,
-     173.0,
-     522.9,
-     182.0
-    ]
-   },
-   "tainted": false,
-   "level": 0,
-   "row_type": "item",
-   "path": [],
-   "unit_override": null,
-   "id": "r08"
-  },
-  {
-   "label": "営業損失(△)",
-   "raw": {
-    "c0": "△323,447",
-    "c1": "△533,875"
-   },
-   "values": {
-    "c0": -323447,
-    "c1": -533875
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    63.2,
-    186.5,
-    522.9,
-    195.5
-   ],
-   "cell_bbox": {
-    "c0": [
-     357.2,
-     186.5,
-     397.7,
-     195.5
-    ],
-    "c1": [
-     482.4,
-     186.5,
-     522.9,
-     195.5
-    ]
-   },
-   "tainted": false,
-   "level": 0,
-   "row_type": "item",
-   "path": [],
-   "unit_override": null,
-   "id": "r09"
-  },
-  {
-   "label": "営業外収益",
-   "raw": {
-    "c0": null,
-    "c1": null
-   },
-   "values": {
-    "c0": null,
-    "c1": null
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    63.2,
-    200.0,
-    108.2,
-    209.0
-   ],
-   "cell_bbox": {
-    "c0": null,
-    "c1": null
-   },
-   "tainted": false,
-   "level": 0,
-   "row_type": "header",
-   "path": [],
-   "unit_override": null,
-   "id": "r10"
-  },
-  {
-   "label": "受取利息",
-   "raw": {
-    "c0": "6,673",
-    "c1": "6,646"
-   },
-   "values": {
-    "c0": 6673,
-    "c1": 6646
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    76.2,
-    213.5,
-    522.9,
-    222.5
-   ],
-   "cell_bbox": {
-    "c0": [
-     375.2,
-     213.5,
-     397.7,
-     222.5
-    ],
-    "c1": [
-     500.4,
-     213.5,
-     522.9,
-     222.5
-    ]
-   },
-   "tainted": false,
-   "level": 1,
-   "row_type": "item",
-   "path": [
-    "営業外収益"
-   ],
-   "unit_override": null,
-   "id": "r11"
-  },
-  {
    "label": "為替差益",
    "raw": {
     "c0": "54",
@@ -514,7 +354,7 @@
     "営業外収益"
    ],
    "unit_override": null,
-   "id": "r12"
+   "id": "r08"
   },
   {
    "label": "受取保険金",
@@ -558,7 +398,7 @@
     "営業外収益"
    ],
    "unit_override": null,
-   "id": "r13"
+   "id": "r09"
   },
   {
    "label": "補助金収入",
@@ -602,7 +442,7 @@
     "営業外収益"
    ],
    "unit_override": null,
-   "id": "r14"
+   "id": "r10"
   },
   {
    "label": "その他",
@@ -646,7 +486,7 @@
     "営業外収益"
    ],
    "unit_override": null,
-   "id": "r15"
+   "id": "r11"
   },
   {
    "label": "営業外収益合計",
@@ -690,7 +530,7 @@
     "営業外収益"
    ],
    "unit_override": null,
-   "id": "r16"
+   "id": "r12"
   },
   {
    "label": "営業外費用",
@@ -722,7 +562,7 @@
    "row_type": "header",
    "path": [],
    "unit_override": null,
-   "id": "r17"
+   "id": "r13"
   },
   {
    "label": "支払利息",
@@ -766,7 +606,7 @@
     "営業外費用"
    ],
    "unit_override": null,
-   "id": "r18"
+   "id": "r14"
   },
   {
    "label": "社債発行費",
@@ -810,7 +650,7 @@
     "営業外費用"
    ],
    "unit_override": null,
-   "id": "r19"
+   "id": "r15"
   },
   {
    "label": "その他",
@@ -854,7 +694,7 @@
     "営業外費用"
    ],
    "unit_override": null,
-   "id": "r20"
+   "id": "r16"
   },
   {
    "label": "営業外費用合計",
@@ -898,7 +738,7 @@
     "営業外費用"
    ],
    "unit_override": null,
-   "id": "r21"
+   "id": "r17"
   },
   {
    "label": "経常損失(△)",
@@ -940,7 +780,7 @@
    "row_type": "item",
    "path": [],
    "unit_override": null,
-   "id": "r22"
+   "id": "r18"
   },
   {
    "label": "特別利益",
@@ -972,7 +812,7 @@
    "row_type": "header",
    "path": [],
    "unit_override": null,
-   "id": "r23"
+   "id": "r19"
   },
   {
    "label": "移転補償金",
@@ -1016,7 +856,7 @@
     "特別利益"
    ],
    "unit_override": null,
-   "id": "r24"
+   "id": "r20"
   },
   {
    "label": "事業譲渡益",
@@ -1060,7 +900,7 @@
     "特別利益"
    ],
    "unit_override": null,
-   "id": "r25"
+   "id": "r21"
   },
   {
    "label": "特別利益合計",
@@ -1104,7 +944,7 @@
     "特別利益"
    ],
    "unit_override": null,
-   "id": "r26"
+   "id": "r22"
   },
   {
    "label": "特別損失",
@@ -1136,7 +976,7 @@
    "row_type": "header",
    "path": [],
    "unit_override": null,
-   "id": "r27"
+   "id": "r23"
   },
   {
    "label": "減損損失",
@@ -1180,7 +1020,7 @@
     "特別損失"
    ],
    "unit_override": null,
-   "id": "r28"
+   "id": "r24"
   },
   {
    "label": "固定資産除却損",
@@ -1224,7 +1064,7 @@
     "特別損失"
    ],
    "unit_override": null,
-   "id": "r29"
+   "id": "r25"
   },
   {
    "label": "特別損失合計",
@@ -1268,7 +1108,7 @@
     "特別損失"
    ],
    "unit_override": null,
-   "id": "r30"
+   "id": "r26"
   },
   {
    "label": "税金等調整前当期純損失(△)",
@@ -1310,7 +1150,7 @@
    "row_type": "item",
    "path": [],
    "unit_override": null,
-   "id": "r31"
+   "id": "r27"
   }
  ],
  "continues_on_next_page": false,

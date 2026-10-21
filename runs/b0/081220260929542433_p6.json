@@ -568,166 +568,6 @@
    "id": "r13"
   },
   {
-   "label": "流動資産合計",
-   "raw": {
-    "c0": "51,466",
-    "c1": "57,174"
-   },
-   "values": {
-    "c0": 51466,
-    "c1": 57174
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    89.2,
-    257.0,
-    522.9,
-    266.0
-   ],
-   "cell_bbox": {
-    "c0": [
-     370.7,
-     257.0,
-     397.7,
-     266.0
-    ],
-    "c1": [
-     495.9,
-     257.0,
-     522.9,
-     266.0
-    ]
-   },
-   "tainted": false,
-   "level": 2,
-   "row_type": "subtotal",
-   "path": [
-    "資産の部",
-    "固定資産"
-   ],
-   "unit_override": null,
-   "id": "r14"
-  },
-  {
-   "label": "固定資産",
-   "raw": {
-    "c0": null,
-    "c1": null
-   },
-   "values": {
-    "c0": null,
-    "c1": null
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    76.2,
-    270.5,
-    112.2,
-    279.5
-   ],
-   "cell_bbox": {
-    "c0": null,
-    "c1": null
-   },
-   "tainted": false,
-   "level": 1,
-   "row_type": "header",
-   "path": [
-    "資産の部"
-   ],
-   "unit_override": null,
-   "id": "r15"
-  },
-  {
-   "label": "有形固定資産",
-   "raw": {
-    "c0": null,
-    "c1": null
-   },
-   "values": {
-    "c0": null,
-    "c1": null
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    89.2,
-    284.0,
-    143.2,
-    293.0
-   ],
-   "cell_bbox": {
-    "c0": null,
-    "c1": null
-   },
-   "tainted": false,
-   "level": 2,
-   "row_type": "header",
-   "path": [
-    "資産の部",
-    "固定資産"
-   ],
-   "unit_override": null,
-   "id": "r16"
-  },
-  {
-   "label": "建物及び構築物(純額)",
-   "raw": {
-    "c0": "10,515",
-    "c1": "10,005"
-   },
-   "values": {
-    "c0": 10515,
-    "c1": 10005
-   },
-   "footnote_refs": [],
-   "underlined": {
-    "c0": false,
-    "c1": false
-   },
-   "bbox": [
-    102.2,
-    297.5,
-    522.9,
-    306.5
-   ],
-   "cell_bbox": {
-    "c0": [
-     370.7,
-     297.5,
-     397.7,
-     306.5
-    ],
-    "c1": [
-     495.9,
-     297.5,
-     522.9,
-     306.5
-    ]
-   },
-   "tainted": false,
-   "level": 3,
-   "row_type": "net",
-   "path": [
-    "資産の部",
-    "固定資産",
-    "有形固定資産"
-   ],
-   "unit_override": null,
-   "id": "r17"
-  },
-  {
    "label": "機械装置及び運搬具(純額)",
    "raw": {
     "c0": "13,789",
@@ -771,7 +611,7 @@
     "有形固定資産"
    ],
    "unit_override": null,
-   "id": "r18"
+   "id": "r14"
   },
   {
    "label": "工具、器具及び備品(純額)",
@@ -817,7 +657,7 @@
     "有形固定資産"
    ],
    "unit_override": null,
-   "id": "r19"
+   "id": "r15"
   },
   {
    "label": "土地",
@@ -863,7 +703,7 @@
     "有形固定資産"
    ],
    "unit_override": null,
-   "id": "r20"
+   "id": "r16"
   },
   {
    "label": "建設仮勘定",
@@ -909,7 +749,7 @@
     "有形固定資産"
    ],
    "unit_override": null,
-   "id": "r21"
+   "id": "r17"
   },
   {
    "label": "有形固定資産合計",
@@ -955,7 +795,7 @@
     "有形固定資産"
    ],
    "unit_override": null,
-   "id": "r22"
+   "id": "r18"
   },
   {
    "label": "無形固定資産",
@@ -990,7 +830,7 @@
     "固定資産"
    ],
    "unit_override": null,
-   "id": "r23"
+   "id": "r19"
   },
   {
    "label": "ソフトウエア",
@@ -1036,7 +876,7 @@
     "無形固定資産"
    ],
    "unit_override": null,
-   "id": "r24"
+   "id": "r20"
   },
   {
    "label": "のれん",
@@ -1082,7 +922,7 @@
     "無形固定資産"
    ],
    "unit_override": null,
-   "id": "r25"
+   "id": "r21"
   },
   {
    "label": "その他",
@@ -1128,7 +968,7 @@
     "無形固定資産"
    ],
    "unit_override": null,
-   "id": "r26"
+   "id": "r22"
   },
   {
    "label": "無形固定資産合計",
@@ -1174,7 +1014,7 @@
     "無形固定資産"
    ],
    "unit_override": null,
-   "id": "r27"
+   "id": "r23"
   },
   {
    "label": "投資その他の資産",
@@ -1209,7 +1049,7 @@
     "固定資産"
    ],
    "unit_override": null,
-   "id": "r28"
+   "id": "r24"
   },
   {
    "label": "投資有価証券",
@@ -1255,7 +1095,7 @@
     "投資その他の資産"
    ],
    "unit_override": null,
-   "id": "r29"
+   "id": "r25"
   },
   {
    "label": "繰延税金資産",
@@ -1301,7 +1141,7 @@
     "投資その他の資産"
    ],
    "unit_override": null,
-   "id": "r30"
+   "id": "r26"
   },
   {
    "label": "その他",
@@ -1347,7 +1187,7 @@
     "投資その他の資産"
    ],
    "unit_override": null,
-   "id": "r31"
+   "id": "r27"
   },
   {
    "label": "貸倒引当金",
@@ -1393,7 +1233,7 @@
     "投資その他の資産"
    ],
    "unit_override": null,
-   "id": "r32"
+   "id": "r28"
   },
   {
    "label": "投資その他の資産合計",
@@ -1439,7 +1279,7 @@
     "投資その他の資産"
    ],
    "unit_override": null,
-   "id": "r33"
+   "id": "r29"
   },
   {
    "label": "固定資産合計",
@@ -1484,7 +1324,7 @@
     "固定資産"
    ],
    "unit_override": null,
-   "id": "r34"
+   "id": "r30"
   }
  ],
  "continues_on_next_page": true,

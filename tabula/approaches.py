@@ -58,5 +58,18 @@ def _remote(name):
     return run
 
 
+def hybrid_typellm(pdf_path, page_no, gold):
+    """Hybrid with TypeLLM as the second reader, from the cached runs (b0 and typellm)."""
+    import json
+    from pathlib import Path
+    from tabula.hybrid import parse
+    root = Path(__file__).parent.parent / "runs"
+    b0p, tl = root / f"b0/{gold['doc_id']}_p{page_no}.json", APPROACHES["typellm"](pdf_path, page_no, gold)
+    doc, _ = parse(pdf_path, page_no, gold["doc_id"], json.loads(b0p.read_text()) if b0p.exists() else None,
+                   second=tl, reader="typellm")
+    return doc, {"gpu_secs": None}
+
+
 APPROACHES = {"oracle": oracle, "b0": b0, "b1": b1, "hybrid": hybrid,
-              "scaledown": _remote("scaledown"), "typellm": _remote("typellm")}
+              "scaledown": _remote("scaledown"), "typellm": _remote("typellm"),
+              "hybrid_typellm": hybrid_typellm}
