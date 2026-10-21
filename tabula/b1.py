@@ -11,7 +11,7 @@ from pathlib import Path
 
 from tabula import vlm
 from tabula.b0 import CONTRA, NET
-from tabula.normalize import normalize_label, parse_jp_date, parse_value
+from tabula.normalize import normalize_label, parse_jp_date, parse_value, unit_override
 
 UNITS = {"千円": 1000, "百万円": 1_000_000, "円": 1}
 
@@ -57,7 +57,7 @@ def convert(raw, doc_id, page_no):
         ptype, start, end = _period(c.get("date"), c.get("label"))
         cols.append({"id": f"c{i}", "label": normalize_label(c.get("label") or "")[0], "period_type": ptype,
                      "period_end": end, **({"period_start": start} if start else {}), "_src": k})
-    rows = []
+    rows, heading = [], ""
     for i, r in enumerate(raw.get("rows") or [], 1):
         label, refs = normalize_label(r.get("label") or "")
         rv = list(r.get("values") or [])
@@ -73,7 +73,10 @@ def convert(raw, doc_id, page_no):
             rtype = "total" if len(r.get("path") or []) <= 1 else "subtotal"
         else:
             rtype = "item"
-        rows.append({"id": f"r{i:02d}", "label": label, "path": [normalize_label(p)[0] for p in r.get("path") or []],
+        unit = unit_override(label, heading)
+        if rtype == "header":
+            heading = label
+        rows.append({"id": f"r{i:02d}", "label": label, "unit_override": unit, "path": [normalize_label(p)[0] for p in r.get("path") or []],
                      "row_type": rtype, "raw": rawv, "values": values, "footnote_refs": refs})
     for c in cols:
         c.pop("_src")

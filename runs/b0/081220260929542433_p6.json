@@ -41,10 +41,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.2,
+    135.5,
+    99.2,
+    144.5
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -62,12 +73,23 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    149.0,
+    112.2,
+    158.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "資産の部"
    ],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -85,6 +107,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    162.5,
+    522.9,
+    171.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     162.5,
+     397.7,
+     171.5
+    ],
+    "c1": [
+     495.9,
+     162.5,
+     522.9,
+     171.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -92,6 +134,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -109,6 +152,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    176.0,
+    522.9,
+    185.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     176.0,
+     397.7,
+     185.0
+    ],
+    "c1": [
+     495.9,
+     176.0,
+     522.9,
+     185.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -116,6 +179,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -133,6 +197,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    189.5,
+    522.9,
+    198.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     189.5,
+     397.7,
+     198.5
+    ],
+    "c1": [
+     500.4,
+     189.5,
+     522.9,
+     198.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -140,6 +224,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -157,6 +242,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    203.0,
+    522.9,
+    212.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     203.0,
+     397.7,
+     212.0
+    ],
+    "c1": [
+     513.9,
+     203.0,
+     522.9,
+     212.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -164,6 +269,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -181,6 +287,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    216.5,
+    522.9,
+    225.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     216.5,
+     397.7,
+     225.5
+    ],
+    "c1": [
+     500.4,
+     216.5,
+     522.9,
+     225.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -188,6 +314,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r07"
   },
   {
@@ -205,6 +332,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    230.0,
+    522.9,
+    239.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     230.0,
+     397.7,
+     239.0
+    ],
+    "c1": [
+     500.4,
+     230.0,
+     522.9,
+     239.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -212,6 +359,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r08"
   },
   {
@@ -229,6 +377,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    243.5,
+    522.9,
+    252.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     379.7,
+     243.5,
+     397.7,
+     252.5
+    ],
+    "c1": [
+     504.9,
+     243.5,
+     522.9,
+     252.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "contra",
@@ -236,6 +404,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r09"
   },
   {
@@ -253,6 +422,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    257.0,
+    522.9,
+    266.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     257.0,
+     397.7,
+     266.0
+    ],
+    "c1": [
+     495.9,
+     257.0,
+     522.9,
+     266.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "subtotal",
@@ -260,6 +449,7 @@
     "資産の部",
     "流動資産"
    ],
+   "unit_override": null,
    "id": "r10"
   },
   {
@@ -277,12 +467,23 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    270.5,
+    112.2,
+    279.5
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "資産の部"
    ],
+   "unit_override": null,
    "id": "r11"
   },
   {
@@ -300,6 +501,16 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    89.2,
+    284.0,
+    143.2,
+    293.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 2,
    "row_type": "header",
@@ -307,6 +518,7 @@
     "資産の部",
     "固定資産"
    ],
+   "unit_override": null,
    "id": "r12"
   },
   {
@@ -324,6 +536,26 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    102.2,
+    297.5,
+    522.9,
+    306.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     297.5,
+     397.7,
+     306.5
+    ],
+    "c1": [
+     495.9,
+     297.5,
+     522.9,
+     306.5
+    ]
+   },
    "tainted": false,
    "level": 3,
    "row_type": "net",
@@ -332,10 +564,938 @@
     "固定資産",
     "有形固定資産"
    ],
+   "unit_override": null,
    "id": "r13"
+  },
+  {
+   "label": "流動資産合計",
+   "raw": {
+    "c0": "51,466",
+    "c1": "57,174"
+   },
+   "values": {
+    "c0": 51466,
+    "c1": 57174
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    89.2,
+    257.0,
+    522.9,
+    266.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     257.0,
+     397.7,
+     266.0
+    ],
+    "c1": [
+     495.9,
+     257.0,
+     522.9,
+     266.0
+    ]
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "unit_override": null,
+   "id": "r14"
+  },
+  {
+   "label": "固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    270.5,
+    112.2,
+    279.5
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "header",
+   "path": [
+    "資産の部"
+   ],
+   "unit_override": null,
+   "id": "r15"
+  },
+  {
+   "label": "有形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    89.2,
+    284.0,
+    143.2,
+    293.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "unit_override": null,
+   "id": "r16"
+  },
+  {
+   "label": "建物及び構築物(純額)",
+   "raw": {
+    "c0": "10,515",
+    "c1": "10,005"
+   },
+   "values": {
+    "c0": 10515,
+    "c1": 10005
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    297.5,
+    522.9,
+    306.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     297.5,
+     397.7,
+     306.5
+    ],
+    "c1": [
+     495.9,
+     297.5,
+     522.9,
+     306.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "net",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r17"
+  },
+  {
+   "label": "機械装置及び運搬具(純額)",
+   "raw": {
+    "c0": "13,789",
+    "c1": "14,311"
+   },
+   "values": {
+    "c0": 13789,
+    "c1": 14311
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    311.0,
+    522.9,
+    320.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     311.0,
+     397.7,
+     320.0
+    ],
+    "c1": [
+     495.9,
+     311.0,
+     522.9,
+     320.0
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "net",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r18"
+  },
+  {
+   "label": "工具、器具及び備品(純額)",
+   "raw": {
+    "c0": "4,144",
+    "c1": "4,721"
+   },
+   "values": {
+    "c0": 4144,
+    "c1": 4721
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    324.5,
+    522.9,
+    333.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     324.5,
+     397.7,
+     333.5
+    ],
+    "c1": [
+     500.4,
+     324.5,
+     522.9,
+     333.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "net",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r19"
+  },
+  {
+   "label": "土地",
+   "raw": {
+    "c0": "1,890",
+    "c1": "1,916"
+   },
+   "values": {
+    "c0": 1890,
+    "c1": 1916
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    338.0,
+    522.9,
+    347.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     338.0,
+     397.7,
+     347.0
+    ],
+    "c1": [
+     500.4,
+     338.0,
+     522.9,
+     347.0
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r20"
+  },
+  {
+   "label": "建設仮勘定",
+   "raw": {
+    "c0": "3,261",
+    "c1": "2,794"
+   },
+   "values": {
+    "c0": 3261,
+    "c1": 2794
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    351.5,
+    522.9,
+    360.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     351.5,
+     397.7,
+     360.5
+    ],
+    "c1": [
+     500.4,
+     351.5,
+     522.9,
+     360.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r21"
+  },
+  {
+   "label": "有形固定資産合計",
+   "raw": {
+    "c0": "33,601",
+    "c1": "33,749"
+   },
+   "values": {
+    "c0": 33601,
+    "c1": 33749
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    365.0,
+    522.9,
+    374.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     365.0,
+     397.7,
+     374.0
+    ],
+    "c1": [
+     495.9,
+     365.0,
+     522.9,
+     374.0
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "有形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r22"
+  },
+  {
+   "label": "無形固定資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    89.2,
+    378.5,
+    143.2,
+    387.5
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "unit_override": null,
+   "id": "r23"
+  },
+  {
+   "label": "ソフトウエア",
+   "raw": {
+    "c0": "2,728",
+    "c1": "2,110"
+   },
+   "values": {
+    "c0": 2728,
+    "c1": 2110
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    392.0,
+    522.9,
+    401.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     392.0,
+     397.7,
+     401.0
+    ],
+    "c1": [
+     500.4,
+     392.0,
+     522.9,
+     401.0
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r24"
+  },
+  {
+   "label": "のれん",
+   "raw": {
+    "c0": "60",
+    "c1": "30"
+   },
+   "values": {
+    "c0": 60,
+    "c1": 30
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    405.5,
+    522.9,
+    414.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     405.5,
+     397.7,
+     414.5
+    ],
+    "c1": [
+     513.9,
+     405.5,
+     522.9,
+     414.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r25"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "13",
+    "c1": "105"
+   },
+   "values": {
+    "c0": 13,
+    "c1": 105
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    419.0,
+    522.9,
+    428.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     419.0,
+     397.7,
+     428.0
+    ],
+    "c1": [
+     509.4,
+     419.0,
+     522.9,
+     428.0
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r26"
+  },
+  {
+   "label": "無形固定資産合計",
+   "raw": {
+    "c0": "2,802",
+    "c1": "2,246"
+   },
+   "values": {
+    "c0": 2802,
+    "c1": 2246
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    432.5,
+    522.9,
+    441.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     432.5,
+     397.7,
+     441.5
+    ],
+    "c1": [
+     500.4,
+     432.5,
+     522.9,
+     441.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "無形固定資産"
+   ],
+   "unit_override": null,
+   "id": "r27"
+  },
+  {
+   "label": "投資その他の資産",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    89.2,
+    446.0,
+    161.2,
+    455.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "header",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "unit_override": null,
+   "id": "r28"
+  },
+  {
+   "label": "投資有価証券",
+   "raw": {
+    "c0": "276",
+    "c1": "464"
+   },
+   "values": {
+    "c0": 276,
+    "c1": 464
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    459.5,
+    522.9,
+    468.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     459.5,
+     397.7,
+     468.5
+    ],
+    "c1": [
+     509.4,
+     459.5,
+     522.9,
+     468.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "unit_override": null,
+   "id": "r29"
+  },
+  {
+   "label": "繰延税金資産",
+   "raw": {
+    "c0": "1,459",
+    "c1": "399"
+   },
+   "values": {
+    "c0": 1459,
+    "c1": 399
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    473.0,
+    522.9,
+    482.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     473.0,
+     397.7,
+     482.0
+    ],
+    "c1": [
+     509.4,
+     473.0,
+     522.9,
+     482.0
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "unit_override": null,
+   "id": "r30"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "784",
+    "c1": "844"
+   },
+   "values": {
+    "c0": 784,
+    "c1": 844
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    486.5,
+    522.9,
+    495.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     486.5,
+     397.7,
+     495.5
+    ],
+    "c1": [
+     509.4,
+     486.5,
+     522.9,
+     495.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "item",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "unit_override": null,
+   "id": "r31"
+  },
+  {
+   "label": "貸倒引当金",
+   "raw": {
+    "c0": "△56",
+    "c1": "△56"
+   },
+   "values": {
+    "c0": -56,
+    "c1": -56
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    500.0,
+    522.9,
+    509.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     379.7,
+     500.0,
+     397.7,
+     509.0
+    ],
+    "c1": [
+     504.9,
+     500.0,
+     522.9,
+     509.0
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "contra",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "unit_override": null,
+   "id": "r32"
+  },
+  {
+   "label": "投資その他の資産合計",
+   "raw": {
+    "c0": "2,463",
+    "c1": "1,652"
+   },
+   "values": {
+    "c0": 2463,
+    "c1": 1652
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    102.2,
+    513.5,
+    522.9,
+    522.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     513.5,
+     397.7,
+     522.5
+    ],
+    "c1": [
+     500.4,
+     513.5,
+     522.9,
+     522.5
+    ]
+   },
+   "tainted": false,
+   "level": 3,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産",
+    "投資その他の資産"
+   ],
+   "unit_override": null,
+   "id": "r33"
+  },
+  {
+   "label": "固定資産合計",
+   "raw": {
+    "c0": "38,867",
+    "c1": "37,647"
+   },
+   "values": {
+    "c0": 38867,
+    "c1": 37647
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    89.2,
+    527.0,
+    522.9,
+    536.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     527.0,
+     397.7,
+     536.0
+    ],
+    "c1": [
+     495.9,
+     527.0,
+     522.9,
+     536.0
+    ]
+   },
+   "tainted": false,
+   "level": 2,
+   "row_type": "subtotal",
+   "path": [
+    "資産の部",
+    "固定資産"
+   ],
+   "unit_override": null,
+   "id": "r34"
   }
  ],
  "continues_on_next_page": true,
+ "page_size": [
+  595.4,
+  842.1
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": [
   {
    "reason": "ocr-differs",

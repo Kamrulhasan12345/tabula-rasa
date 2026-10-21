@@ -41,10 +41,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    299.1,
+    94.6,
+    505.3,
+    103.6
+   ],
+   "cell_bbox": {
+    "c0": [
+     317.1,
+     94.6,
+     437.8,
+     103.6
+    ],
+    "c1": [
+     442.3,
+     94.6,
+     505.3,
+     103.6
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -62,10 +83,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    131.0,
+    522.9,
+    140.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     131.0,
+     397.7,
+     140.0
+    ],
+    "c1": [
+     495.9,
+     131.0,
+     522.9,
+     140.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -83,10 +125,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    144.5,
+    522.9,
+    153.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     144.5,
+     397.7,
+     153.5
+    ],
+    "c1": [
+     500.4,
+     144.5,
+     522.9,
+     153.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -104,10 +167,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    158.0,
+    522.9,
+    167.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     158.0,
+     397.7,
+     167.0
+    ],
+    "c1": [
+     513.9,
+     158.0,
+     522.9,
+     167.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -125,10 +209,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    171.5,
+    522.9,
+    180.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     171.5,
+     397.7,
+     180.5
+    ],
+    "c1": [
+     509.4,
+     171.5,
+     522.9,
+     180.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -146,10 +251,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    185.0,
+    522.9,
+    194.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     379.7,
+     185.0,
+     397.7,
+     194.0
+    ],
+    "c1": [
+     509.4,
+     185.0,
+     522.9,
+     194.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -167,10 +293,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    198.5,
+    522.9,
+    207.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     198.5,
+     397.7,
+     207.5
+    ],
+    "c1": [
+     509.4,
+     198.5,
+     522.9,
+     207.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r07"
   },
   {
@@ -188,10 +335,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    212.0,
+    522.9,
+    221.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     379.7,
+     212.0,
+     397.7,
+     221.0
+    ],
+    "c1": [
+     500.4,
+     212.0,
+     522.9,
+     221.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r08"
   },
   {
@@ -209,10 +377,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    225.5,
+    522.9,
+    234.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     225.5,
+     397.7,
+     234.5
+    ],
+    "c1": [
+     500.4,
+     225.5,
+     522.9,
+     234.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r09"
   },
   {
@@ -230,10 +419,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    239.0,
+    522.9,
+    248.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     239.0,
+     397.7,
+     248.0
+    ],
+    "c1": [
+     491.4,
+     239.0,
+     522.9,
+     248.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r10"
   },
   {
@@ -251,10 +461,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    252.5,
+    522.9,
+    261.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     252.5,
+     397.7,
+     261.5
+    ],
+    "c1": [
+     500.4,
+     252.5,
+     522.9,
+     261.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r11"
   },
   {
@@ -272,10 +503,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    266.0,
+    522.9,
+    275.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     266.0,
+     397.7,
+     275.0
+    ],
+    "c1": [
+     509.4,
+     266.0,
+     522.9,
+     275.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r12"
   },
   {
@@ -293,10 +545,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    279.5,
+    522.9,
+    288.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     279.5,
+     397.7,
+     288.5
+    ],
+    "c1": [
+     509.4,
+     279.5,
+     522.9,
+     288.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r13"
   },
   {
@@ -314,10 +587,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    293.0,
+    522.9,
+    302.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     293.0,
+     397.7,
+     302.0
+    ],
+    "c1": [
+     504.9,
+     293.0,
+     522.9,
+     302.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r14"
   },
   {
@@ -335,10 +629,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    306.5,
+    522.9,
+    315.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     306.5,
+     397.7,
+     315.5
+    ],
+    "c1": [
+     513.9,
+     306.5,
+     522.9,
+     315.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r15"
   },
   {
@@ -356,10 +671,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    320.0,
+    522.9,
+    329.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     320.0,
+     397.7,
+     329.0
+    ],
+    "c1": [
+     509.4,
+     320.0,
+     522.9,
+     329.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r16"
   },
   {
@@ -377,10 +713,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    333.5,
+    522.9,
+    342.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     333.5,
+     397.7,
+     342.5
+    ],
+    "c1": [
+     500.4,
+     333.5,
+     522.9,
+     342.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r17"
   },
   {
@@ -398,10 +755,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    347.0,
+    522.9,
+    356.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     347.0,
+     397.7,
+     356.0
+    ],
+    "c1": [
+     509.4,
+     347.0,
+     522.9,
+     356.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r18"
   },
   {
@@ -419,10 +797,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    360.5,
+    522.9,
+    369.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     360.5,
+     397.7,
+     369.5
+    ],
+    "c1": [
+     513.9,
+     360.5,
+     522.9,
+     369.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r19"
   },
   {
@@ -440,10 +839,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    374.0,
+    522.9,
+    383.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     374.0,
+     397.7,
+     383.0
+    ],
+    "c1": [
+     500.4,
+     374.0,
+     522.9,
+     383.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r20"
   },
   {
@@ -461,10 +881,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    387.5,
+    522.9,
+    396.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     387.5,
+     397.7,
+     396.5
+    ],
+    "c1": [
+     491.4,
+     387.5,
+     522.9,
+     396.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r21"
   },
   {
@@ -482,10 +923,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    401.0,
+    522.9,
+    410.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     401.0,
+     397.7,
+     410.0
+    ],
+    "c1": [
+     495.9,
+     401.0,
+     522.9,
+     410.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r22"
   },
   {
@@ -503,10 +965,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    414.5,
+    522.9,
+    423.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     414.5,
+     397.7,
+     423.5
+    ],
+    "c1": [
+     509.4,
+     414.5,
+     522.9,
+     423.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r23"
   },
   {
@@ -524,10 +1007,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    428.0,
+    522.9,
+    437.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     428.0,
+     397.7,
+     437.0
+    ],
+    "c1": [
+     491.4,
+     428.0,
+     522.9,
+     437.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r24"
   },
   {
@@ -545,10 +1049,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    441.5,
+    522.9,
+    450.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     441.5,
+     397.7,
+     450.5
+    ],
+    "c1": [
+     513.9,
+     441.5,
+     522.9,
+     450.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r25"
   },
   {
@@ -566,10 +1091,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    455.0,
+    522.9,
+    464.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     455.0,
+     397.7,
+     464.0
+    ],
+    "c1": [
+     491.4,
+     455.0,
+     522.9,
+     464.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r26"
   },
   {
@@ -587,10 +1133,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    468.5,
+    522.9,
+    477.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     468.5,
+     397.7,
+     477.5
+    ],
+    "c1": [
+     513.9,
+     468.5,
+     522.9,
+     477.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r27"
   },
   {
@@ -608,14 +1175,43 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    482.0,
+    522.9,
+    491.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     482.0,
+     397.7,
+     491.0
+    ],
+    "c1": [
+     500.4,
+     482.0,
+     522.9,
+     491.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r28"
   }
  ],
  "continues_on_next_page": false,
+ "page_size": [
+  595.4,
+  842.1
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": [
   {
    "reason": "ocr-differs",

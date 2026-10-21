@@ -1,5 +1,22 @@
 {
- "rows": [],
+ "doc_id": "scan_p9",
+ "page": 1,
+ "statement_type": null,
+ "scope": null,
+ "accounting_standard": "J-GAAP",
+ "is_corrected": false,
+ "correction_side": null,
+ "unit": null,
  "columns": [],
- "error": "IndexError: list index out of range"
+ "rows": [],
+ "continues_on_next_page": false,
+ "page_size": [
+  608.4,
+  851.76
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
+ "security_flags": []
 }

@@ -41,10 +41,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.2,
+    147.5,
+    522.9,
+    156.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     357.2,
+     147.5,
+     397.7,
+     156.5
+    ],
+    "c1": [
+     482.4,
+     147.5,
+     522.9,
+     156.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -62,10 +83,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.2,
+    161.0,
+    522.9,
+    170.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     357.2,
+     161.0,
+     397.7,
+     170.0
+    ],
+    "c1": [
+     482.4,
+     161.0,
+     522.9,
+     170.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -83,10 +125,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.2,
+    174.5,
+    522.9,
+    183.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     174.5,
+     397.7,
+     183.5
+    ],
+    "c1": [
+     491.4,
+     174.5,
+     522.9,
+     183.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -104,10 +167,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.2,
+    188.0,
+    522.9,
+    197.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     188.0,
+     397.7,
+     197.0
+    ],
+    "c1": [
+     491.4,
+     188.0,
+     522.9,
+     197.0
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -125,10 +209,31 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.2,
+    201.5,
+    522.9,
+    210.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     201.5,
+     397.7,
+     210.5
+    ],
+    "c1": [
+     491.4,
+     201.5,
+     522.9,
+     210.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -146,10 +251,21 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    63.2,
+    215.0,
+    108.2,
+    224.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -167,16 +283,881 @@
     "c0": false,
     "c1": false
    },
+   "bbox": [
+    76.2,
+    228.5,
+    522.9,
+    237.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     228.5,
+     397.7,
+     237.5
+    ],
+    "c1": [
+     495.9,
+     228.5,
+     522.9,
+     237.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r07"
+  },
+  {
+   "label": "販売費及び一般管理費",
+   "raw": {
+    "c0": "342,127",
+    "c1": "352,825"
+   },
+   "values": {
+    "c0": 342127,
+    "c1": 352825
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    63.2,
+    188.0,
+    522.9,
+    197.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     188.0,
+     397.7,
+     197.0
+    ],
+    "c1": [
+     491.4,
+     188.0,
+     522.9,
+     197.0
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r08"
+  },
+  {
+   "label": "営業利益",
+   "raw": {
+    "c0": "247,025",
+    "c1": "400,255"
+   },
+   "values": {
+    "c0": 247025,
+    "c1": 400255
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    63.2,
+    201.5,
+    522.9,
+    210.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     201.5,
+     397.7,
+     210.5
+    ],
+    "c1": [
+     491.4,
+     201.5,
+     522.9,
+     210.5
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r09"
+  },
+  {
+   "label": "営業外収益",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    63.2,
+    215.0,
+    108.2,
+    224.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "unit_override": null,
+   "id": "r10"
+  },
+  {
+   "label": "受取利息",
+   "raw": {
+    "c0": "5,447",
+    "c1": "12,522"
+   },
+   "values": {
+    "c0": 5447,
+    "c1": 12522
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    228.5,
+    522.9,
+    237.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     228.5,
+     397.7,
+     237.5
+    ],
+    "c1": [
+     495.9,
+     228.5,
+     522.9,
+     237.5
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r11"
+  },
+  {
+   "label": "受取配当金",
+   "raw": {
+    "c0": "1,530",
+    "c1": "―"
+   },
+   "values": {
+    "c0": 1530,
+    "c1": 0
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    242.0,
+    522.9,
+    251.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     242.0,
+     397.7,
+     251.0
+    ],
+    "c1": [
+     513.9,
+     242.0,
+     522.9,
+     251.0
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r12"
+  },
+  {
+   "label": "不動産賃貸料",
+   "raw": {
+    "c0": "4,704",
+    "c1": "4,498"
+   },
+   "values": {
+    "c0": 4704,
+    "c1": 4498
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    255.5,
+    522.9,
+    264.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     255.5,
+     397.7,
+     264.5
+    ],
+    "c1": [
+     500.4,
+     255.5,
+     522.9,
+     264.5
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r13"
+  },
+  {
+   "label": "古紙売却収入",
+   "raw": {
+    "c0": "2,023",
+    "c1": "2,404"
+   },
+   "values": {
+    "c0": 2023,
+    "c1": 2404
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    269.0,
+    522.9,
+    278.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     269.0,
+     397.7,
+     278.0
+    ],
+    "c1": [
+     500.4,
+     269.0,
+     522.9,
+     278.0
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r14"
+  },
+  {
+   "label": "還付加算金",
+   "raw": {
+    "c0": "―",
+    "c1": "4,331"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 4331
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    282.5,
+    522.9,
+    291.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     282.5,
+     397.7,
+     291.5
+    ],
+    "c1": [
+     500.4,
+     282.5,
+     522.9,
+     291.5
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r15"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "1,544",
+    "c1": "320"
+   },
+   "values": {
+    "c0": 1544,
+    "c1": 320
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    296.0,
+    522.9,
+    305.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     296.0,
+     397.7,
+     305.0
+    ],
+    "c1": [
+     509.4,
+     296.0,
+     522.9,
+     305.0
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r16"
+  },
+  {
+   "label": "営業外収益合計",
+   "raw": {
+    "c0": "15,249",
+    "c1": "24,077"
+   },
+   "values": {
+    "c0": 15249,
+    "c1": 24077
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    309.5,
+    522.9,
+    318.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     309.5,
+     397.7,
+     318.5
+    ],
+    "c1": [
+     495.9,
+     309.5,
+     522.9,
+     318.5
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外収益"
+   ],
+   "unit_override": null,
+   "id": "r17"
+  },
+  {
+   "label": "営業外費用",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    63.2,
+    323.0,
+    108.2,
+    332.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "unit_override": null,
+   "id": "r18"
+  },
+  {
+   "label": "不動産賃貸費用",
+   "raw": {
+    "c0": "1,002",
+    "c1": "1,027"
+   },
+   "values": {
+    "c0": 1002,
+    "c1": 1027
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    336.5,
+    522.9,
+    345.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     336.5,
+     397.7,
+     345.5
+    ],
+    "c1": [
+     500.4,
+     336.5,
+     522.9,
+     345.5
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "unit_override": null,
+   "id": "r19"
+  },
+  {
+   "label": "固定資産除却損",
+   "raw": {
+    "c0": "49",
+    "c1": "1,522"
+   },
+   "values": {
+    "c0": 49,
+    "c1": 1522
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    350.0,
+    522.9,
+    359.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     350.0,
+     397.7,
+     359.0
+    ],
+    "c1": [
+     500.4,
+     350.0,
+     522.9,
+     359.0
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "unit_override": null,
+   "id": "r20"
+  },
+  {
+   "label": "その他",
+   "raw": {
+    "c0": "603",
+    "c1": "527"
+   },
+   "values": {
+    "c0": 603,
+    "c1": 527
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    363.5,
+    522.9,
+    372.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     363.5,
+     397.7,
+     372.5
+    ],
+    "c1": [
+     509.4,
+     363.5,
+     522.9,
+     372.5
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "営業外費用"
+   ],
+   "unit_override": null,
+   "id": "r21"
+  },
+  {
+   "label": "営業外費用合計",
+   "raw": {
+    "c0": "1,655",
+    "c1": "3,078"
+   },
+   "values": {
+    "c0": 1655,
+    "c1": 3078
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    377.0,
+    522.9,
+    386.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     377.0,
+     397.7,
+     386.0
+    ],
+    "c1": [
+     500.4,
+     377.0,
+     522.9,
+     386.0
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "営業外費用"
+   ],
+   "unit_override": null,
+   "id": "r22"
+  },
+  {
+   "label": "経常利益",
+   "raw": {
+    "c0": "260,620",
+    "c1": "421,255"
+   },
+   "values": {
+    "c0": 260620,
+    "c1": 421255
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    63.2,
+    390.5,
+    522.9,
+    399.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     390.5,
+     397.7,
+     399.5
+    ],
+    "c1": [
+     491.4,
+     390.5,
+     522.9,
+     399.5
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r23"
+  },
+  {
+   "label": "特別利益",
+   "raw": {
+    "c0": null,
+    "c1": null
+   },
+   "values": {
+    "c0": null,
+    "c1": null
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    63.2,
+    404.0,
+    99.2,
+    413.0
+   ],
+   "cell_bbox": {
+    "c0": null,
+    "c1": null
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "header",
+   "path": [],
+   "unit_override": null,
+   "id": "r24"
+  },
+  {
+   "label": "投資有価証券売却益",
+   "raw": {
+    "c0": "―",
+    "c1": "137,488"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 137488
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    417.5,
+    522.9,
+    426.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     417.5,
+     397.7,
+     426.5
+    ],
+    "c1": [
+     491.4,
+     417.5,
+     522.9,
+     426.5
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "item",
+   "path": [
+    "特別利益"
+   ],
+   "unit_override": null,
+   "id": "r25"
+  },
+  {
+   "label": "特別利益合計",
+   "raw": {
+    "c0": "―",
+    "c1": "137,488"
+   },
+   "values": {
+    "c0": 0,
+    "c1": 137488
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    76.2,
+    431.0,
+    522.9,
+    440.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     431.0,
+     397.7,
+     440.0
+    ],
+    "c1": [
+     491.4,
+     431.0,
+     522.9,
+     440.0
+    ]
+   },
+   "tainted": false,
+   "level": 1,
+   "row_type": "total",
+   "path": [
+    "特別利益"
+   ],
+   "unit_override": null,
+   "id": "r26"
+  },
+  {
+   "label": "税金等調整前四半期純利益",
+   "raw": {
+    "c0": "260,620",
+    "c1": "558,743"
+   },
+   "values": {
+    "c0": 260620,
+    "c1": 558743
+   },
+   "footnote_refs": [],
+   "underlined": {
+    "c0": false,
+    "c1": false
+   },
+   "bbox": [
+    63.2,
+    444.5,
+    522.9,
+    453.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     444.5,
+     397.7,
+     453.5
+    ],
+    "c1": [
+     491.4,
+     444.5,
+     522.9,
+     453.5
+    ]
+   },
+   "tainted": false,
+   "level": 0,
+   "row_type": "item",
+   "path": [],
+   "unit_override": null,
+   "id": "r27"
   }
  ],
  "continues_on_next_page": false,
+ "page_size": [
+  595.4,
+  842.1
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": [
   {
    "reason": "ocr-differs",

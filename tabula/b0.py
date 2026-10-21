@@ -10,7 +10,7 @@ import unicodedata
 import camelot
 import pdfplumber
 
-from tabula.normalize import normalize_label, parse_value
+from tabula.normalize import normalize_label, parse_value, unit_override
 from tabula.router import route
 from tabula.security import verify_page
 
@@ -38,48 +38,54 @@ def extract(pdf_path, page_no=1):
     page = pdfplumber.open(pdf_path).pages[page_no - 1]
     words, flags = verify_page(page)
     meta = route(page, words)
-    table = camelot.read_pdf(str(pdf_path), flavor="stream", pages=str(page_no))[0]
     h = float(page.height)
-
-    raw_rows = []
-    for cells in table.cells:
-        out = []
-        for c in cells:
-            top, bottom = h - c.y2, h - c.y1
-            inside = [w for w in words if _in(w, c.x1, c.x2, top, bottom)]
-            out.append({"words": [w for w in inside if w["verified"]], "tainted": any(not w["verified"] for w in inside)})
-        raw_rows.append(out)
-
-    # value columns: the ones whose verified cells parse as numbers; header rows sit above the first label row
-    ncols = len(raw_rows[0])
     text = lambda cell: "".join(w["text"] for w in sorted(cell["words"], key=lambda w: w["x0"]))
-    vcols = [k for k in range(1, ncols) if sum(isinstance(parse_value(text(r[k])), int) for r in raw_rows) >= 3]
-    # IFRS statements have a 注記 (note number) column: small bare integers, never comma-grouped or △
-    vcols = [k for k in vcols if any(re.search(r"\d{1,3}(,\d{3})+", text(r[k])) for r in raw_rows)]  # note refs like "7,27" are not
-    # one column per numeric column; period from the page header when the router found it, else unknown
-    periods = meta["periods"][:len(vcols)] if len(meta["periods"]) >= len(vcols) else []
-    columns = [{"id": f"c{i}", "label": "", "period_type": periods[i]["period_type"] if periods else None,
-                "period_end": periods[i]["period_end"] if periods else None} for i in range(len(vcols))]
-    for i, k in enumerate(vcols):  # column label = first non-date header text in that column
-        hdr = [text(r[k]) for r in raw_rows if text(r[k]) and not isinstance(parse_value(text(r[k])), int) and "月" not in text(r[k])]  # skip date lines
-        if i < len(columns) and hdr:
-            columns[i]["label"] = unicodedata.normalize("NFKC", hdr[0])
+    columns, rows = None, []
+    # every table Camelot finds (a page can hold PL + 包括利益, or a split BS); tables with the same number of
+    # value columns are one statement continuing. ponytail: a table with a different column layout is dropped,
+    # add doc["other_tables"] when segment / 注記 tables matter.
+    for table in camelot.read_pdf(str(pdf_path), flavor="stream", pages=str(page_no)):
+        raw_rows = []
+        for cells in table.cells:
+            out = []
+            for c in cells:
+                top, bottom = h - c.y2, h - c.y1
+                inside = [w for w in words if _in(w, c.x1, c.x2, top, bottom)]
+                out.append({"words": [w for w in inside if w["verified"]], "tainted": any(not w["verified"] for w in inside)})
+            raw_rows.append(out)
 
-    rows = []
-    for r in raw_rows:
-        label_cell = r[0]
-        if not label_cell["words"]:
+        # value columns: the ones whose verified cells parse as numbers; header rows sit above the first label row
+        ncols = len(raw_rows[0])
+        vcols = [k for k in range(1, ncols) if sum(isinstance(parse_value(text(r[k])), int) for r in raw_rows) >= 3]
+        # IFRS statements have a 注記 (note number) column: small bare integers, never comma-grouped or △
+        vcols = [k for k in vcols if any(re.search(r"\d{1,3}(,\d{3})+", text(r[k])) for r in raw_rows)]  # note refs like "7,27" are not
+        if not vcols or (columns is not None and len(vcols) != len(columns)):
             continue
-        label, refs = normalize_label(text(label_cell))
-        x0 = min(w["x0"] for w in label_cell["words"])
-        raw = {columns[i]["id"]: (text(r[k]) or None) for i, k in enumerate(vcols) if i < len(columns)}
-        values = {cid: (None if r[vcols[i]]["tainted"] else parse_value(v)) for i, (cid, v) in enumerate(raw.items())}
-        vwords = {columns[i]["id"]: r[k]["words"] for i, k in enumerate(vcols) if i < len(columns)}
-        rows.append({"label": label, "x0": x0, "raw": raw, "values": values, "footnote_refs": refs,
-                     "underlined": {cid: any(_underlined(page, w) for w in ws) for cid, ws in vwords.items()},
-                     "bbox": _box(label_cell["words"] + [w for ws in vwords.values() for w in ws]),
-                     "cell_bbox": {cid: _box(ws) for cid, ws in vwords.items()},
-                     "tainted": label_cell["tainted"] or any(r[k]["tainted"] for k in vcols)})
+        if columns is None:
+            # one column per numeric column; period from the page header when the router found it, else unknown
+            periods = meta["periods"][:len(vcols)] if len(meta["periods"]) >= len(vcols) else []
+            columns = [{"id": f"c{i}", "label": "", "period_type": periods[i]["period_type"] if periods else None,
+                        "period_end": periods[i]["period_end"] if periods else None} for i in range(len(vcols))]
+            for i, k in enumerate(vcols):  # column label = first non-date header text in that column
+                hdr = [text(r[k]) for r in raw_rows if text(r[k]) and not isinstance(parse_value(text(r[k])), int) and "月" not in text(r[k])]  # skip date lines
+                if hdr:
+                    columns[i]["label"] = unicodedata.normalize("NFKC", hdr[0])
+
+        for r in raw_rows:
+            label_cell = r[0]
+            if not label_cell["words"]:
+                continue
+            label, refs = normalize_label(text(label_cell))
+            x0 = min(w["x0"] for w in label_cell["words"])
+            raw = {columns[i]["id"]: (text(r[k]) or None) for i, k in enumerate(vcols)}
+            values = {cid: (None if r[vcols[i]]["tainted"] else parse_value(v)) for i, (cid, v) in enumerate(raw.items())}
+            vwords = {columns[i]["id"]: r[k]["words"] for i, k in enumerate(vcols)}
+            rows.append({"label": label, "x0": x0, "raw": raw, "values": values, "footnote_refs": refs,
+                         "underlined": {cid: any(_underlined(page, w) for w in ws) for cid, ws in vwords.items()},
+                         "bbox": _box(label_cell["words"] + [w for ws in vwords.values() for w in ws]),
+                         "cell_bbox": {cid: _box(ws) for cid, ws in vwords.items()},
+                         "tainted": label_cell["tainted"] or any(r[k]["tainted"] for k in vcols)})
+    columns = columns or []
 
     # levels: cluster label x0 (within 3pt)
     xs = []
@@ -91,7 +97,7 @@ def extract(pdf_path, page_no=1):
         r["level"] = max(i for i, x in enumerate(xs) if x0 >= x - 3)
 
     # row types and paths
-    stack, last_item = [], None
+    stack, last_item, heading = [], None, ""
     for i, r in enumerate(rows, 1):
         has_values = any(v is not None for v in r["values"].values())
         if not has_values and not any(r["raw"].values()):
@@ -108,7 +114,9 @@ def extract(pdf_path, page_no=1):
         r["path"] = [s["label"] for s in stack]
         if r["row_type"] == "contra" and last_item and last_item["level"] < r["level"]:
             r["path"].append(last_item["label"])
+        r["unit_override"] = unit_override(r["label"], heading)
         if r["row_type"] == "header":
+            heading = r["label"]  # ponytail: a 1株当たり heading's 円 carries to every later row; it's the PL's last block
             stack.append(r)
             r["values"] = {cid: None for cid in r["values"]}
         if r["row_type"] == "item":

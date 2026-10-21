@@ -48,14 +48,19 @@ def _overlaps(a, b):
     return a["x0"] < b["x1"] and b["x0"] < a["x1"] and a["top"] < b["bottom"] and b["top"] < a["bottom"]
 
 
-def verify_page(page):
-    """page: pdfplumber Page -> (words, flags). Each word gets "verified": bool."""
+def ocr_lines(img):
+    """PIL page render -> [(normalized text, x0, top, x1, bottom)] in render pixels."""
     global _ocr
     _ocr = _ocr or RapidOCR()
+    r = _ocr(np.asarray(img.convert("RGB")))
+    return [(_norm(t), b[:, 0].min(), b[:, 1].min(), b[:, 0].max(), b[:, 1].max()) for t, b in zip(r.txts or (), r.boxes if r.boxes is not None else ())]
+
+
+def verify_page(page):
+    """page: pdfplumber Page -> (words, flags). Each word gets "verified": bool."""
     img = page.to_image(resolution=DPI).original
     gray = np.asarray(img.convert("L"))
-    r = _ocr(np.asarray(img.convert("RGB")))
-    ocr = [(_norm(t), b[:, 0].min(), b[:, 1].min(), b[:, 0].max(), b[:, 1].max()) for t, b in zip(r.txts or (), r.boxes if r.boxes is not None else ())]
+    ocr = ocr_lines(img)
     s = DPI / 72
     words = page.extract_words(extra_attrs=["size"])
     flags = []

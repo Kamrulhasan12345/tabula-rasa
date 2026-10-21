@@ -32,10 +32,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    55.7,
+    57.3,
+    154.7,
+    66.3
+   ],
+   "cell_bbox": {
+    "c0": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -50,12 +60,22 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    73.7,
+    72.3,
+    154.7,
+    81.3
+   ],
+   "cell_bbox": {
+    "c0": null
+   },
    "tainted": false,
    "level": 2,
    "row_type": "header",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -70,12 +90,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    132.5,
+    397.7,
+    141.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     352.7,
+     132.5,
+     397.7,
+     141.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -90,12 +125,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    146.0,
+    397.7,
+    155.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     352.7,
+     146.0,
+     397.7,
+     155.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -110,12 +160,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    159.5,
+    397.7,
+    168.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     357.2,
+     159.5,
+     397.7,
+     168.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -130,12 +195,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    173.0,
+    397.7,
+    182.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     357.2,
+     173.0,
+     397.7,
+     182.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -150,12 +230,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    186.5,
+    397.7,
+    195.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     357.2,
+     186.5,
+     397.7,
+     195.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r07"
   },
   {
@@ -170,12 +265,22 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    200.0,
+    108.2,
+    209.0
+   ],
+   "cell_bbox": {
+    "c0": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r08"
   },
   {
@@ -190,6 +295,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    213.5,
+    397.7,
+    222.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     213.5,
+     397.7,
+     222.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -197,6 +316,7 @@
     "(2)四半期損益計算書",
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r09"
   },
   {
@@ -211,6 +331,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    227.0,
+    397.7,
+    236.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     227.0,
+     397.7,
+     236.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -218,6 +352,7 @@
     "(2)四半期損益計算書",
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r10"
   },
   {
@@ -232,6 +367,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    240.5,
+    397.7,
+    249.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     240.5,
+     397.7,
+     249.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -239,6 +388,7 @@
     "(2)四半期損益計算書",
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r11"
   },
   {
@@ -253,6 +403,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    254.0,
+    397.7,
+    263.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     254.0,
+     397.7,
+     263.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -260,6 +424,7 @@
     "(2)四半期損益計算書",
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r12"
   },
   {
@@ -274,6 +439,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    267.5,
+    397.7,
+    276.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     267.5,
+     397.7,
+     276.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "subtotal",
@@ -281,6 +460,7 @@
     "(2)四半期損益計算書",
     "営業外収益"
    ],
+   "unit_override": null,
    "id": "r13"
   },
   {
@@ -295,12 +475,22 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    281.0,
+    108.2,
+    290.0
+   ],
+   "cell_bbox": {
+    "c0": null
+   },
    "tainted": false,
    "level": 1,
    "row_type": "header",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r14"
   },
   {
@@ -315,6 +505,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    294.5,
+    397.7,
+    303.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     294.5,
+     397.7,
+     303.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -322,6 +526,7 @@
     "(2)四半期損益計算書",
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r15"
   },
   {
@@ -336,6 +541,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    308.0,
+    397.7,
+    317.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     308.0,
+     397.7,
+     317.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -343,6 +562,7 @@
     "(2)四半期損益計算書",
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r16"
   },
   {
@@ -357,6 +577,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    321.5,
+    397.7,
+    330.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     321.5,
+     397.7,
+     330.5
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "item",
@@ -364,6 +598,7 @@
     "(2)四半期損益計算書",
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r17"
   },
   {
@@ -378,6 +613,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    335.0,
+    397.7,
+    344.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     335.0,
+     397.7,
+     344.0
+    ]
+   },
    "tainted": false,
    "level": 2,
    "row_type": "subtotal",
@@ -385,6 +634,7 @@
     "(2)四半期損益計算書",
     "営業外費用"
    ],
+   "unit_override": null,
    "id": "r18"
   },
   {
@@ -399,12 +649,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    348.5,
+    397.7,
+    357.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     357.2,
+     348.5,
+     397.7,
+     357.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r19"
   },
   {
@@ -419,12 +684,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    362.0,
+    397.7,
+    371.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     357.2,
+     362.0,
+     397.7,
+     371.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r20"
   },
   {
@@ -439,12 +719,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    375.5,
+    397.7,
+    384.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     375.5,
+     397.7,
+     384.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r21"
   },
   {
@@ -459,12 +754,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    389.0,
+    397.7,
+    398.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     370.7,
+     389.0,
+     397.7,
+     398.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r22"
   },
   {
@@ -479,12 +789,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    402.5,
+    397.7,
+    411.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     402.5,
+     397.7,
+     411.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r23"
   },
   {
@@ -499,16 +824,39 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    416.0,
+    397.7,
+    425.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     366.2,
+     416.0,
+     397.7,
+     425.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(2)四半期損益計算書"
    ],
+   "unit_override": null,
    "id": "r24"
   }
  ],
  "continues_on_next_page": false,
+ "page_size": [
+  595.4,
+  842.1
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": [
   {
    "reason": "ocr-differs",

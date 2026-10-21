@@ -6,7 +6,7 @@ from jeraconv import jeraconv
 
 NIL = set("－―—-ー−")  # U+FF0D U+2015 U+2014 - U+30FC U+2212
 NEG = "△▲−-－"
-NUM = re.compile(r"^(\d{1,3}(,\d{3})*|\d+)$")
+NUM = re.compile(r"^(\d{1,3}(,\d{3})*|\d+)(\.\d+)?$")  # decimals only appear in 円 / % rows (1株当たり, 比率)
 
 
 def _radicals():
@@ -39,8 +39,21 @@ def parse_value(raw):
     s = unicodedata.normalize("NFKC", s).strip()
     if not NUM.match(s):
         return "unparsed"
-    n = int(s.replace(",", ""))
+    n = float(s.replace(",", "")) if "." in s else int(s.replace(",", ""))
     return -n if neg else n
+
+
+def unit_override(label, context=""):
+    """Row unit inside a 千円/百万円 table (PRD §4 unit_override). context: the nearest heading row above,
+    since 1株当たり blocks print the unit once on the heading (e.g. 基本的1株当たり当期利益(円) / 継続事業)."""
+    s = unicodedata.normalize("NFKC", f"{label}|{context}")
+    if "1株当たり" in s or "(円)" in s:
+        return "円"
+    if "(株)" in label or "株式数" in label:
+        return "株"
+    if "(%)" in label or "%" in label or label.endswith("率"):
+        return "%"
+    return None
 
 
 def normalize_label(raw):

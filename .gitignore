@@ -18,3 +18,7 @@ runs/b1/*
 !runs/b1/kaggle_edinet/
 runs/b1/kaggle_*/*
 !runs/b1/kaggle_*/b1_outputs.json
+
+# secrets
+.env
+.env.*

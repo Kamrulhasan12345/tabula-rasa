@@ -32,10 +32,25 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    132.5,
+    397.7,
+    141.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     132.5,
+     397.7,
+     141.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r01"
   },
   {
@@ -50,10 +65,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    146.0,
+    135.2,
+    155.0
+   ],
+   "cell_bbox": {
+    "c0": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r02"
   },
   {
@@ -68,12 +93,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    159.5,
+    397.7,
+    168.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     159.5,
+     397.7,
+     168.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "その他の包括利益"
    ],
+   "unit_override": null,
    "id": "r03"
   },
   {
@@ -88,12 +128,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    173.0,
+    397.7,
+    182.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     388.7,
+     173.0,
+     397.7,
+     182.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "total",
    "path": [
     "その他の包括利益"
    ],
+   "unit_override": null,
    "id": "r04"
   },
   {
@@ -108,10 +163,25 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    186.5,
+    397.7,
+    195.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     186.5,
+     397.7,
+     195.5
+    ]
+   },
    "tainted": false,
    "level": 0,
    "row_type": "item",
    "path": [],
+   "unit_override": null,
    "id": "r05"
   },
   {
@@ -126,10 +196,20 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    63.2,
+    200.0,
+    99.2,
+    209.0
+   ],
+   "cell_bbox": {
+    "c0": null
+   },
    "tainted": false,
    "level": 0,
    "row_type": "header",
    "path": [],
+   "unit_override": null,
    "id": "r06"
   },
   {
@@ -144,12 +224,27 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    213.5,
+    397.7,
+    222.5
+   ],
+   "cell_bbox": {
+    "c0": [
+     375.2,
+     213.5,
+     397.7,
+     222.5
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(内訳)"
    ],
+   "unit_override": null,
    "id": "r07"
   },
   {
@@ -164,15 +259,38 @@
    "underlined": {
     "c0": false
    },
+   "bbox": [
+    76.2,
+    227.0,
+    397.7,
+    236.0
+   ],
+   "cell_bbox": {
+    "c0": [
+     384.2,
+     227.0,
+     397.7,
+     236.0
+    ]
+   },
    "tainted": false,
    "level": 1,
    "row_type": "item",
    "path": [
     "(内訳)"
    ],
+   "unit_override": null,
    "id": "r08"
   }
  ],
  "continues_on_next_page": false,
+ "page_size": [
+  595.4,
+  842.1
+ ],
+ "rounding": {
+  "method": "unknown",
+  "source": "none"
+ },
  "security_flags": []
 }

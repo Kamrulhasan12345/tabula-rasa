@@ -48,16 +48,29 @@ Not started:
 
 | # | Item | PRD ref | Time |
 |---|---|---|---|
-| 1 | **VLM endpoint.** The client is done; still needs a real endpoint: `vllm serve` on a GPU host, or a hosted VLM API key. Then set `TABULA_VLM_URL` | F1, F7 | 1 h once it exists |
+| 1 | **VLM endpoint:** out of scope for now (user decision 2026-10-22). Demo replay stays the default; client ready (`TABULA_VLM_URL`) | F1, F7 | – |
 | 2 | ~~Library function + FastAPI server~~ done (`api.py`, `server.py`) | F1, F3 | – |
-| 3 | ~~Cell `bbox`~~ done for text-layer pages. Scan pages (VLM only) have no boxes: needs OCR box matching | §4 | 2 h for scans |
-| 4 | ~~Runtime sum checks~~ done for 合計/小計 rows. Profit lines (売上総利益 = 売上高 − 売上原価) not yet | F6 | 2 h for PL |
-| 5 | Latency p95 ≤ 10 s/page (VLM ~300 s; security OCR ~18 s) | §9 | 4–8 h |
-| 6 | All tables on a page; B0 and gold take only Camelot's first table | F1 | 2–3 h |
-| 7 | Multi-page stitching; check 資産合計 = 負債純資産合計 | F8 | 2–3 h |
-| 8 | Per-row unit overrides (1株当たり 円, 株, %) | F4a | 1 h |
+| 3 | ~~Cell `bbox`~~ done. Text-layer pages: from verified words. Scans: OCR line matching (`api.locate_cells`), 261/291 cells correct on the synthetic scans (92% located, 98% of those right) | §4 | – |
+| 4 | ~~Runtime sum checks~~ done. 合計/小計 structure + J-GAAP profit lines (`checks.infer_checks`). On gold values: 478 pass, 10 false alarms (2%); profit lines 122/122. IFRS P/L not covered | F6 | – |
+| 5 | Latency p95 ≤ 10 s/page. Security OCR ~18 s/page dominates without a VLM | §9 | 4–8 h |
+| 6 | ~~All tables on a page~~ done in B0 (same-layout tables merge; other layouts dropped, `ponytail:` note). Gold for affected pages needs a rebuild | F1 | – |
+| 7 | ~~Multi-page stitching~~ done: `api.stitch` groups pages by `continues_on_next_page`, checks 資産合計 = 負債純資産合計 exactly | F8 | – |
+| 8 | ~~Unit overrides~~ done: 1株当たり / (円) → 円 (decimals parsed), 株, %; heading context carries to rows below | F4a | – |
 | 9 | ~~HTML output~~ done (`api.to_html`, CLI and server) | F3 | – |
-| 10 | Keep 訂正前 and 訂正後 tables apart when both are on one page | F6a | 2 h |
+| 10 | Keep 訂正前 and 訂正後 apart when both are on one page. Not built: no such page found in the eval set yet | F6a | 2 h |
+
+### Tracks B/C (hosted APIs), `tabula/remote.py`
+
+| Service | Role | Status |
+|---|---|---|
+| ScaleDown Extract | table reader (OCR then extract) | **Live.** Key in `.env`. Approach `scaledown` in `run_eval`; replies cached in `runs/scaledown/raw/` |
+| TypeLLM | table reader (typed arrays) | **Live.** Key in `.env`. Approach `typellm`. Values come as one `" | "`-joined string, since nested arrays are unsupported |
+| Amos 1 | yes/no check of disputed cells vs image | Adapter only; opt-in `TABULA_AMOS=1` (no key; English-only model) |
+| Sqwish Kettei | row_type classifier with abstention | Adapter only; needs `SQWISH_API_KEY` (possible waitlist) |
+
+- **Keys** live in `.env`, which is git-ignored and loaded by `tabula/__init__.py`. Never print or commit them.
+- **Budget:** TypeLLM $5 credit, ScaleDown 50M free tokens. Each page is called once and the reply is cached.
+- **Tests:** `tests/test_remote.py` clears the keys and uses a fake server, so it never spends credit.
 
 ## How things fit together
 
