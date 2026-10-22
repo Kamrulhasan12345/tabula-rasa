@@ -132,6 +132,29 @@ Every mode can be picked per parse: in the viewer's **Settings**, with CLI flags
 | Demo replay | saved replies for the eval pages: no keys, no network |
 | Fallback | if the chosen reader fails, try the others (TypeLLM, then ScaleDown, then VLM) |
 
+### Image readers: how they work, what we send, what they cost
+
+Every reader gets the **page rendered as a PNG (200 dpi)**, never the PDF's text layer, so hidden text can't reach a model. Each reply becomes the same table shape, so the comparison with the text layer works the same for all of them (`tabula/b1.py: convert`). Replies are cached by image hash, so a page is paid for once.
+
+| Reader | How it works | Request we send | Cost per page |
+|---|---|---|---|
+| **TypeLLM** | constrained (typed) decoding: the model can only emit the schema we declare | `POST api.typellm.ai/v1/generate` with a Bearer key. Body: `context` (transcription rules), `images: [data:image/png;base64,…]`, `questions` (`unit` string, `columns` array of `{label, date}`, `rows` array of `{label, path, values}` where `values` is one `" \| "`-joined string, since nested arrays aren't supported), `options.temperature: 0`, `timeout: 90` | **≈ $0.0001**: about 2.5k input tokens (the image is scaled to ~2048 px ≈ 2k tokens, plus rules) at $0.05/M. Typed output is free; we don't use thinking ($0.50/M). New accounts get $5 credit |
+| **ScaleDown** | OCRs the document, then extracts the fields described in a JSON schema | `POST api.scaledown.xyz/v1/chat/completions` with an `x-api-key` header. Body: `model: extract-1`, system message (transcription rules), a user message, `response_format: json_schema` (`unit`, `columns[]`, `rows[]` with `values[]`), `document` (base64 PNG), `document_mime_type: image/png` | **≈ $0.0001** (estimate): $0.04/M input tokens and $0 output per the OpenRouter listing, on roughly the page's OCR text plus the schema. The free tier covers 50M tokens |
+| **VLM** | a general vision-language model transcribes the page to JSON | `POST {base}/chat/completions` (OpenAI format) with an optional Bearer key. Body: `model`, `temperature: 0`, `max_tokens: 6000`, one user message with `image_url` (data URI PNG) plus the transcription prompt (`tabula/vlm.py: PROMPT`) | **the provider's price**: measured with Qwen3-VL, a median of ~4.1k input and ~1.9k output tokens per page. Self-hosted on a free Kaggle T4: $0, but ~300 s/page |
+| **none** | text layer only | nothing leaves the machine | $0 |
+
+**Optional checks** (evidence only; values never change):
+- **Amos** (`TABULA_AMOS=1`):
+  - `POST api.amos.scira.ai/v1/systemone`, no key.
+  - Sends a 150 dpi PNG plus up to 32 yes/no questions per call, one per disputed cell ("row X shows exactly Y in column k").
+  - Price not documented. English-only per its docs.
+- **Sqwish** (`SQWISH_API_KEY`):
+  - `POST api.sqwish.ai/v1/decide`.
+  - Text only: our verified rows as `id | path | label | values`, plus one row-type question per row (up to 128 per call).
+  - $0.02/M input tokens (`kettei-core`).
+
+Prices are from each vendor's docs as of 2026-10-22; check current pricing before relying on them. Measured accuracy is in the table above and in REPORT §3.
+
 **Bring your own VLM.** In the viewer, choose *VLM*, then pick a provider preset (local vLLM, OpenAI, Google Gemini, OpenRouter) or type any OpenAI-compatible base URL. Then set the model name and, if needed, a key.
 
 ![Settings with the VLM reader and the OpenAI preset](docs/images/settings-vlm.png)
