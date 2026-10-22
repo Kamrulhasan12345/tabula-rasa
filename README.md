@@ -1,131 +1,331 @@
 # Tabula Rasa
 
-Japanese financial-filing PDF page → correct, typed table (決算短信, 有価証券報告書, 訂正 filings).
-Take-home for Ur AI (Document Intelligence & VLM R&D). Results and recommendation: [REPORT.md](REPORT.md). Design: [docs/PRD.md](docs/PRD.md).
+**Turn Japanese financial-filing PDFs into correct, typed tables, and show which numbers you can trust.**
 
-## Run it
+Tabula Rasa reads each statement page of a 決算短信 or 有価証券報告書 (balance sheet, P/L, cash flow, including 訂正 filings and scans). It returns a table with row hierarchy, periods, units and signed values. Every number is read twice: once from the PDF's text layer, once from the page image. A number is approved only when both readings agree.
 
-```bash
-python -m venv .venv && .venv/bin/pip install -r requirements.txt
-```
+![Viewer: a balance sheet with every cross-checked number boxed in green, next to the extracted table](docs/images/viewer.png)
 
-Linux also needs `qpdf` and a CJK font (e.g. `noto-fonts-cjk`): many EDINET PDFs don't embed their fonts.
-
-```bash
-.venv/bin/python -m tabula docs/balance_sheet_after_correction.pdf -o out/
-```
-
-For every statement page this writes `out/<doc>_p<n>.json` (PRD §4 schema), `.csv` and `.html`. Each value cell carries a status:
-
-| status | meaning |
+| On 85 real filing pages (4,619 numbers checked against XBRL) | |
 |---|---|
-| `agreed` | text layer and image reader read the same number |
-| `review` | they disagree, or the cell held hidden/unverified text: send to a human |
-| `b0_only` | text layer only (reader skipped or unavailable) |
-| `reader_only` | no usable text layer (scan): image reader only |
+| Numbers correct | **100%** (4,619 / 4,619) |
+| Pages fully correct | **93%** (79 / 85) |
+| Numbers approved automatically (both readers agree) | **92%**, all of them correct |
+| Cost per page | ≈ $0.0001 (one TypeLLM call) |
 
-Each page also gets:
-- `cell_bbox` per cell: `[x0, top, x1, bottom]` in PDF points, top-left origin. Text-layer pages only.
-- `check_results`: sum checks inferred from the 合計 / 小計 rows, run with the filing's rounding rule.
-- `warnings` and a page `status` of `ok` or `review`.
+Details, comparisons and method: [REPORT.md](REPORT.md).
 
-## Demo (no keys, no network)
+---
+
+## Contents
+
+- [Features](#features)
+- [Quick start (demo, no keys)](#quick-start-demo-no-keys)
+- [Installation](#installation)
+- [Usage](#usage): [web app](#web-app) · [command line](#command-line) · [Python](#python) · [HTTP API](#http-api)
+- [Configuration](#configuration)
+- [Output](#output)
+- [How it works](#how-it-works)
+- [Security](#security)
+- [Evaluation](#evaluation)
+- [Development](#development)
+- [Troubleshooting](#troubleshooting)
+- [Project layout](#project-layout)
+
+## Features
+
+- **Statement tables to JSON, CSV and HTML.** Row hierarchy (資産の部 › 流動資産 › 現金及び預金) and row types (item, contra, net, subtotal, total). Periods as dates, units (千円 / 百万円), and signs from △ / ▲ / （ ）.
+- **A status on every number:** `agreed`, `review`, `reader_only` (scans) or `b0_only`. Only disagreements and scans need a person.
+- **Sum checks with no labels needed.** 合計 and 小計 rows and J-GAAP profit lines are checked, allowing for the filing's rounding rule (切り捨て / 四捨五入). Statements split across pages are joined, and 資産合計 = 負債純資産合計 is checked.
+- **Handles real-world filings:**
+  - scans (no text layer)
+  - permission-locked and font-less EDINET PDFs
+  - 和暦 dates
+  - IFRS note-number columns
+  - per-share rows in 円
+- **Resists hidden-text and prompt-injection attacks.** Only text that is visibly painted on the page can become a value.
+- **Web viewer:** page image with colour-coded cell boxes next to the table; click a box to find its row.
+- **Cheap by design:** a free local pass first, a cached image reader second, and automatic fallback between readers.
+
+## Quick start (demo, no keys)
+
+```bash
+git clone https://github.com/Kamrulhasan12345/tabula-rasa.git
+```
+
+```bash
+cd tabula-rasa && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+```
 
 ```bash
 TABULA_DEMO=1 .venv/bin/uvicorn tabula.server:app --port 8765
 ```
 
-Open http://localhost:8765.
-1. Pick an eval sample and click **Load sample**, then **Parse**.
-2. See the page image with every cell boxed by status: green agreed, red review, amber reader-only, grey text-layer-only. Next to it is the table, with sum checks and warnings.
+Open **http://localhost:8765**, choose a sample, click **Load sample**, then **Parse**.
 
-In demo mode every reader (TypeLLM, ScaleDown, VLM) replays its saved reply for the 86 eval pages, so the demo works offline and spends nothing. Other uploads still parse, with the text-layer reader only. A fresh clone has only the sample page's PDF; the other samples need the local `data/` filings.
+- Demo mode replays saved reader replies, so it needs no API keys and no network, and costs nothing.
+- A fresh clone ships one sample: the balance sheet in `docs/`. The other eval filings appear in the list only if their PDFs are in `data/` (not in git, for licence and size reasons).
+- You can also upload any PDF. Pages outside the eval set are read from the text layer only in demo mode.
 
-## Cost and fallback policy
+![Viewer on a scanned page: numbers read from the image are boxed in amber](docs/images/viewer-scan.png)
 
-| env | effect |
+Direct links work too, e.g. `http://localhost:8765/?sample=balance_sheet_after_correction&page=1`.
+
+## Installation
+
+**Requirements**
+
+| | |
 |---|---|
-| `TABULA_CROSSCHECK=all` (default) | every page is also read from the image, so every cell gets agreed or review |
-| `TABULA_CROSSCHECK=needed` | the paid reader runs only when the text layer can't vouch for the page: scan, unverified text, failing sum, undated column. 27% fewer calls on the eval set; skipped cells show `b0_only` |
-| `TABULA_READER_CONCURRENCY=4` | reader calls in flight while B0 works through the pages (TypeLLM allows 4) |
-| `TABULA_CACHE` | reply cache keyed by the page image's hash (default `runs/cache`), so a page is never billed twice |
+| Python | 3.11+ (developed on 3.13) |
+| OS packages | `qpdf` (opens permission-locked PDFs), a CJK font such as Noto CJK (EDINET PDFs often don't embed fonts) |
+| RAM | ~1.5 GB free (OCR for the security check uses ~600 MB per page) |
+| GPU | not needed |
 
-If the chosen reader fails (error or timeout), the next one is tried: TypeLLM, then ScaleDown, then the VLM. If none answers, the page is still served from the text layer alone, with a warning.
+```bash
+sudo apt install qpdf fonts-noto-cjk
+```
 
-## Second reader
+On Arch: `sudo pacman -S qpdf noto-fonts-cjk`. On macOS: `brew install qpdf`; macOS already has CJK fonts.
 
-`TABULA_READER` picks what reads the page image alongside the text layer:
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+```
 
-| value | reader |
-|---|---|
-| `typellm` (default when `TYPELLM_API_KEY` is set) | TypeLLM API, the best measured: see REPORT §3 |
-| `scaledown` | ScaleDown Extract API |
-| `vlm` | Qwen3-VL via an OpenAI-compatible endpoint, or demo replay (below) |
+`uv pip install --python .venv/bin/python -r requirements.txt` works too.
 
-Put keys in `.env` (git-ignored, loaded automatically): `TYPELLM_API_KEY`, `SCALEDOWN_API_KEY`, `SQWISH_API_KEY`. `TABULA_AMOS=1` enables Amos cell checks; it needs no key but sends page images out.
+**API keys (optional).** Copy the template and fill in what you have:
 
-### VLM: live or demo
+```bash
+cp .env.example .env
+```
 
-The VLM reader (`tabula/vlm.py`) speaks the OpenAI-compatible chat API. That's what `vllm serve Qwen/Qwen3-VL-8B-Instruct` and most hosted VLMs expose.
+With `TYPELLM_API_KEY` set, TypeLLM becomes the image reader. Without any key, pages are read from the text layer alone (`b0_only`) unless `TABULA_DEMO=1`.
 
-| env | effect |
-|---|---|
-| `TABULA_VLM_URL=http://host:8000/v1` | live: each page image is sent there |
-| `TABULA_VLM_MODEL`, `TABULA_VLM_KEY` | model name, bearer token |
-| unset (default) | demo: replays saved Kaggle outputs (`runs/b1/kaggle*/`) for the 86 eval pages; other PDFs get the text-layer reader alone |
+## Usage
 
-## HTTP API (for a UI)
+### Web app
 
 ```bash
 .venv/bin/uvicorn tabula.server:app --port 8000
 ```
 
-Interactive docs: http://localhost:8000/docs
+Open http://localhost:8000.
+1. Upload a PDF (or load a sample) and click **Parse**.
+2. Pages appear as they finish. Pick one to see the page with boxed cells, the table, sum checks and warnings, plus a CSV download.
 
-| call | what |
+| Box colour | Status | Meaning |
+|---|---|---|
+| green | `agreed` | text layer and image reader read the same number |
+| red | `review` | they disagree, or the cell held hidden/unverified text: check by hand |
+| amber | `reader_only` | scanned page, read from the image only |
+| grey | `b0_only` | text layer only (image reader skipped or unavailable) |
+
+### Command line
+
+```bash
+.venv/bin/python -m tabula docs/balance_sheet_after_correction.pdf -o out/
+```
+
+```text
+  p1: consolidated_balance_sheet | 43 rows, 74 cells, 0 to review | sums 12 ok / 0 fail | engine b0+typellm | ok -> out/balance_sheet_after_correction_p1.csv
+docs/balance_sheet_after_correction.pdf: reader typellm | crosscheck all, 1 reader calls | table pages [1]
+```
+
+| Option | Meaning |
 |---|---|
-| `POST /documents` (multipart `file`, optional `name`) | upload; returns `id`, page count, detected table pages |
-| `POST /documents/{id}/parse?pages=3,5` | start parsing in the background (202) |
-| `GET /documents/{id}` | `state`: uploaded / queued / running / done / failed, plus `pages_done` |
-| `GET /documents/{id}/pages/{n}` | page JSON |
-| `GET /documents/{id}/pages/{n}.csv`, `.html` | derived views; HTML cells carry `class="<cell_status>"` |
-| `GET /documents/{id}/pages/{n}/image.png?dpi=100` | page image; box px = points × dpi / 72 |
+| `-p 3,5` | only these pages (default: every page that prints 単位 and has a numeric table, plus image-only pages) |
+| `-o DIR` | output folder; each page gets `.json`, `.csv` (Excel-ready UTF-8 BOM) and `.html` |
+| `--doc-id ID` | id for demo replay of an eval filing, e.g. `--doc-id 081220261008548219` |
 
-More env vars:
-- `TABULA_STORE`: upload folder.
-- `TABULA_CORS_ORIGINS`: UI origins allowed to call the API.
+### Python
 
-In Python: `from tabula.api import parse_pdf`.
+```python
+from tabula.api import parse_pdf, to_csv
 
-## Evaluate
+result = parse_pdf("filing.pdf")            # or pages=[7, 9]
+for page in result["pages"]:
+    print(page["page"], page["statement_type"], page["status"])
+    print(to_csv(page))
+print(result["statements"])                 # pages joined into statements, with balance checks
+```
+
+### HTTP API
+
+Interactive docs: `/docs` (OpenAPI). Parsing runs in the background; poll the document for progress.
+
+| Method | Path | What |
+|---|---|---|
+| `POST` | `/documents` | upload (multipart `file`, optional `name`); returns `id`, page count, table pages |
+| `POST` | `/documents/{id}/parse?pages=3,5` | start parsing (202) |
+| `GET` | `/documents/{id}` | `state` (uploaded / queued / running / done / failed), `pages_done`, `statements` |
+| `GET` | `/documents/{id}/pages/{n}` | page JSON |
+| `GET` | `/documents/{id}/pages/{n}.csv` / `.html` | the same table as CSV / HTML |
+| `GET` | `/documents/{id}/pages/{n}/image.png?dpi=100` | page image; a box in px = PDF points × dpi / 72 |
+| `GET` | `/samples`, `POST /samples/{key}` | eval filings available on this machine |
+| `GET` | `/health` | reader in use, demo flag, crosscheck mode |
 
 ```bash
-.venv/bin/python -m tabula.run_eval b0 b1 hybrid
+curl -F file=@docs/balance_sheet_after_correction.pdf localhost:8000/documents
 ```
 
 ```bash
-.venv/bin/python tools/by_group.py b0 b1 hybrid
+curl -X POST localhost:8000/documents/<id>/parse
 ```
 
 ```bash
-.venv/bin/python tools/calibration.py
+curl localhost:8000/documents/<id>/pages/1
 ```
 
-Gold: `gold/*.json`, 86 pages. Every number is matched to the filing's own XBRL; see PRD §5.2.
+Uploads are treated as untrusted:
+- only real PDFs up to 50 MB are accepted
+- ids are content hashes, and names are sanitized
+- one document is parsed at a time
 
-## Layout
+## Configuration
 
-| path | what |
+All settings are environment variables. Put them in `.env`, which is loaded automatically; see [.env.example](.env.example).
+
+| Variable | Default | Effect |
+|---|---|---|
+| `TYPELLM_API_KEY` | – | enables TypeLLM, the default image reader |
+| `SCALEDOWN_API_KEY` | – | enables ScaleDown Extract (fallback reader) |
+| `TABULA_READER` | `typellm` if its key is set, else `vlm` | `typellm` / `scaledown` / `vlm` |
+| `TABULA_DEMO` | off | `1`: every reader replays saved replies (eval pages); no network |
+| `TABULA_CROSSCHECK` | `all` | `needed`: call the reader only when the text layer can't vouch for a page (scan, unverified text, failing sum, undated column) |
+| `TABULA_READER_CONCURRENCY` | `4` | reader calls in flight while the local pass runs |
+| `TABULA_CACHE` | `runs/cache` | reply cache keyed by page-image hash: a page is never billed twice |
+| `TABULA_VLM_URL`, `TABULA_VLM_MODEL`, `TABULA_VLM_KEY` | – | self-hosted VLM via an OpenAI-compatible endpoint, e.g. `vllm serve Qwen/Qwen3-VL-8B-Instruct` |
+| `TABULA_AMOS` | off | `1`: Amos checks disputed cells against the image (no key; sends images to amos.scira.ai) |
+| `SQWISH_API_KEY` | – | Sqwish row-type classifier (optional evidence) |
+| `TABULA_STORE` | `runs/store` | uploaded PDFs and results (server) |
+| `TABULA_CORS_ORIGINS` | – | comma-separated origins allowed to call the API from a browser |
+
+**Reader fallback:** if the chosen reader fails, the next one is tried: TypeLLM, then ScaleDown, then the VLM. If none answers, the page comes back from the text layer alone, with a warning.
+
+## Output
+
+One JSON object per page. Abridged, from the sample page:
+
+```json
+{
+  "page": 1, "statement_type": "consolidated_balance_sheet", "scope": "consolidated",
+  "unit": {"raw": "千円", "multiplier": 1000, "currency": "JPY"},
+  "rounding": {"method": "unknown", "source": "none"},
+  "columns": [{"id": "c0", "label": "前連結会計年度", "period_type": "instant", "period_end": "2025-03-31"},
+              {"id": "c1", "label": "当連結会計年度", "period_type": "instant", "period_end": "2026-03-31"}],
+  "rows": [{
+    "id": "r17", "label": "減価償却累計額", "level": 4, "row_type": "contra",
+    "path": ["資産の部", "固定資産", "有形固定資産", "建物及び構築物"],
+    "raw": {"c0": "△1,923,585", "c1": "△1,640,253"},
+    "values": {"c0": -1923585, "c1": -1640253},
+    "cell_status": {"c0": "agreed", "c1": "agreed"},
+    "cell_bbox": {"c0": [347.9, 341.8, 397.5, 350.8], "c1": [472.9, 341.8, 522.6, 350.8]},
+    "unit_override": null
+  }],
+  "check_results": [{"total": "r13", "label": "流動資産合計", "column": "c0", "status": "ok", "diff": 3}],
+  "status": "ok", "warnings": [], "security_flags": [], "engine": "b0+typellm"
+}
+```
+
+- `values` are in the table unit (multiply by `unit.multiplier` for yen). `raw` keeps the printed text.
+- `rounding` comes from the filing's note (切り捨て / 四捨五入) when the page prints one. Otherwise it is `unknown`, and sum checks use a tolerance of the number of items.
+- `－` is 0, and an empty cell is `null`. Per-share rows carry `unit_override: "円"` and may be decimals.
+- `cell_bbox` is `[x0, top, x1, bottom]` in PDF points with a top-left origin.
+- The full schema is in PRD §4.
+
+## How it works
+
+```
+PDF page
+ ├─ security   only text visibly painted on the page is trusted (OCR cross-check)    local, free
+ ├─ router     statement type, 連結/個別, standard, unit, periods, 訂正前/後
+ ├─ B0         Camelot cells rebuilt from trusted words + Japanese label rules       local, free
+ ├─ reader     page image → TypeLLM (or ScaleDown / VLM): demo replay → cache → API  ≈ $0.0001
+ ├─ merge      cell by cell: agreed / review / reader_only / b0_only
+ └─ checks     sums (合計, 小計, profit lines), rounding-aware; statements joined across pages
+```
+
+- **Values come from the text layer** where it can be trusted, because it is the filer's own text. The image reader confirms them.
+- **Scans** are read from the image alone, and their cell boxes are found by OCR.
+- **Nothing an API returns is accepted** just because it makes a sum balance. Sum failures only send the page to review.
+
+## Security
+
+Filing PDFs are untrusted input. A page can hide text that people can't see but parsers and LLMs read: white or tiny text, text under a box, off-page text, hidden layers, a fake number in the row-band colour. Tabula Rasa trusts a word only if:
+- its font is at least 4 pt
+- its contrast is visible
+- it doesn't overlap another word
+- OCR of the rendered page reads the same text at that spot
+
+A cell with an untrusted word becomes `review`, never a value. Image readers get pixels only; the raw text layer is never sent to an LLM. On 11 poisoned test PDFs this caught every attack. Three public scanners each missed at least one: REPORT §5.
+
+## Evaluation
+
+The eval set has 85 pages: TDnet 決算短信, EDINET 有価証券報告書 and synthetic scans. Every number in the gold tables matches the filer's own XBRL.
+
+```bash
+.venv/bin/python -m tabula.run_eval b1 typellm scaledown hybrid_typellm
+```
+
+```bash
+.venv/bin/python tools/by_group.py b0 b1 typellm scaledown hybrid hybrid_typellm
+```
+
+```bash
+.venv/bin/python tools/calibration.py hybrid_typellm
+```
+
+Rescoring is free and offline: reader replies and B0 predictions are committed (`runs/`). Results and analysis: [REPORT.md](REPORT.md). Design, metrics and research: [docs/PRD.md](docs/PRD.md).
+
+## Development
+
+Each test prints `ok`. Run them one at a time; the OCR ones need ~600 MB.
+
+| Test | Covers | Time |
+|---|---|---|
+| `tests/test_m0.py` | normalizer (△, －, 和暦, radicals), rounding-aware sums | s |
+| `tests/test_m1.py` | security check on 11 poisoned PDFs, router | ~3 min |
+| `tests/test_m2.py` | metrics and scoring | s |
+| `tests/test_m3.py` | B0 on the sample page | ~30 s |
+| `tests/test_hybrid.py` | merge, reader fallback, cache, demo replay | s |
+| `tests/test_remote.py` | API adapters against a fake server (never spends credit) | s |
+| `tests/test_api.py` | HTTP API end to end, viewer, samples | ~30 s |
+
+```bash
+.venv/bin/python tests/test_hybrid.py
+```
+
+Agents and contributors: start with [docs/PROGRESS.md](docs/PROGRESS.md), which covers state, open work, gotchas and conventions.
+
+## Troubleshooting
+
+| Symptom | Fix |
 |---|---|
-| `tabula/security.py` | trusts only text that is visibly painted on the page (OCR cross-check); blocks hidden-text prompt injection |
-| `tabula/normalize.py`, `checks.py` | △/－/radicals/和暦 normalization; rounding-aware sum checks |
-| `tabula/router.py` | statement type, scope, standard, unit, periods, 訂正前/後 |
-| `tabula/b0.py` | text layer + Camelot + rules (CPU) |
-| `tabula/b1.py` | VLM output → §4 schema |
-| `tabula/hybrid.py` | B0 + B1 cross-check, per-cell status |
-| `tabula/vlm.py` | VLM client: live OpenAI-compatible endpoint, or demo replay |
-| `tabula/remote.py` | ScaleDown, TypeLLM, Amos, Sqwish adapters |
-| `tabula/api.py`, `server.py` | `parse_pdf()` library call; FastAPI server |
-| `tabula/evaluate.py`, `run_eval.py` | metrics M1–M6, TEDS |
-| `tools/` | data collection (TDnet, EDINET), silver-gold builder, synthetic scans, report tables |
-| `tests/` | `test_m0.py` … `test_hybrid.py`, `test_api.py` (fake VLM endpoint), `test_remote.py` (fake vendor APIs), poisoned-PDF fixtures |
+| Kanji missing; every word flagged `not-visible` on EDINET PDFs | install a CJK font (Noto CJK); those PDFs don't embed theirs |
+| `camelot` / PDF permission errors | install `qpdf`; locked PDFs are decrypted to a temp copy |
+| Process killed (exit 137) | not enough RAM: run one parse at a time, close other heavy apps |
+| Every cell is `b0_only` | no reader available: set `TYPELLM_API_KEY`, or `TABULA_DEMO=1` for eval pages |
+| `reader_error` warnings | the API failed or timed out; the next reader was tried, and the page still has text-layer values |
+
+## Project layout
+
+| Path | What |
+|---|---|
+| `tabula/server.py`, `static/index.html` | HTTP API and the web viewer |
+| `tabula/api.py` | `parse_pdf()`: pipeline, sum checks, statement stitching, CSV / HTML |
+| `tabula/hybrid.py` | cell-by-cell merge; reader policy (demo, cache, fallback, crosscheck) |
+| `tabula/b0.py`, `router.py`, `security.py` | local pass: tables from trusted words, page metadata, visibility check |
+| `tabula/remote.py`, `vlm.py`, `b1.py` | image readers (TypeLLM, ScaleDown, Amos, Sqwish, VLM) and their output adapter |
+| `tabula/normalize.py`, `checks.py` | number/date/label normalization; rounding-aware sum checks |
+| `tabula/evaluate.py`, `run_eval.py`, `approaches.py` | metrics and the eval harness |
+| `tools/` | data collection (TDnet, EDINET), XBRL gold builder, synthetic scans, report tables |
+| `kaggle/` | VLM inference jobs (Qwen3-VL-8B, Unsloth, T4) |
+| `gold/`, `runs/` | eval gold pages; saved predictions and reader replies |
+| `docs/` | PRD, progress log, sample PDF, screenshots |
+
+Built as a take-home for Ur AI (Document Intelligence & VLM R&D).
+
+**Data licensing:**
+- Filing PDFs and XBRL are not redistributed.
+- The `tdnet` package (AGPL-3.0) is used only by the collection tools; it is not required to run the app.

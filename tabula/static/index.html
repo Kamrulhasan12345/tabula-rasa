@@ -29,7 +29,7 @@
   .box.hit { outline:3px solid #1d4ed8; }
   table { border-collapse:collapse; width:100%; }
   th, td { border-bottom:1px solid var(--line); padding:3px 6px; text-align:left; white-space:nowrap; }
-  td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
   td.agreed { color:var(--agreed); } td.review { color:var(--review); font-weight:600; background:#c6282812; }
   td.reader_only { color:var(--reader); } td.b0_only { color:var(--b0); }
   tr.header th, tr.total th { font-weight:700; } tr.hit { background:#1d4ed81a; }
@@ -105,7 +105,7 @@ async function showPage(n, btn) {
     + ` · sums ${p.check_results.filter(c => c.status === "ok").length} ok / ${p.check_results.filter(c => c.status === "fail").length} fail`;
   $("warnings").replaceChildren(...(p.warnings || []).map(w => el("p", "warn", w)));
   const t = el("table"), head = el("tr"); head.append(el("th"));
-  (p.columns || []).forEach(c => head.append(el("th", null, `${c.label || ""} ${c.period_end || ""}`)));
+  (p.columns || []).forEach(c => { const h = el("th", "num", c.period_end || c.label || c.id); h.title = c.label || ""; head.append(h); });
   t.append(head);
   (p.rows || []).forEach(r => {
     const tr = el("tr", r.row_type); const th = el("th", null, r.label); th.style.paddingLeft = `${6 + 12 * (r.level || 0)}px`; tr.append(th);
@@ -128,6 +128,14 @@ async function showPage(n, btn) {
   const csv = el("a", null, "Download CSV"); csv.href = `/documents/${doc.id}/pages/${n}.csv`;
   $("table").replaceChildren(csv, t);
 }
+// deep link: /?sample=<key>&page=<n> opens a sample (and an already-parsed page) directly
+(async () => {
+  const q = new URLSearchParams(location.search), key = q.get("sample");
+  if (!key) return;
+  await load(api(`/samples/${encodeURIComponent(key)}`, { method: "POST" }), "sample");
+  const n = q.get("page"), b = [...$("pages").children].find(x => x.textContent === `p${n}`);
+  if (b) b.click();
+})();
 </script>
 </body>
 </html>
