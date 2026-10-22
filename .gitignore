@@ -30,3 +30,6 @@ runs/typellm/*
 runs/scaledown/*
 !runs/scaledown/raw/
 !.env.example
+
+# demo recording frames (tools/record_demo.py)
+docs/media/raw/

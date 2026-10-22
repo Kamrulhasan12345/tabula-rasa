@@ -4,6 +4,13 @@ For agents and people picking this project up. Newest state first. Results: [REP
 
 ## Current state (2026-10-22)
 
+**Live test + demo media (latest).**
+- Real calls (no demo, empty cache), scored against gold: CLI with TypeLLM on 081220261008548219 p7/9/19 got 220/220 cells, all pages exact, 51 s.
+- The viewer runs (sample balance sheet, scan12) are both exact.
+- `tools/record_demo.py` (Playwright on the system Chromium, CDP screencast, then ffmpeg) produces `docs/media/demo.mp4`, `demo.gif` and `live-*.png`. Waits are fast-forwarded 12×.
+- Playwright's own video recording needs `playwright install ffmpeg` (a download), so we use the screencast instead.
+
+
 **Every mode selectable per parse (latest).**
 - `tabula/config.py`: every option is an env-var name; a request's `settings` dict overrides env (`config.get`).
 - Threaded through `parse_pdf(settings=)` → `read_second` → readers.

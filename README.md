@@ -4,7 +4,9 @@
 
 Tabula Rasa reads each statement page of a 決算短信 or 有価証券報告書 (balance sheet, P/L, cash flow, including 訂正 filings and scans). It returns a table with row hierarchy, periods, units and signed values. Every number is read twice: once from the PDF's text layer, once from the page image. A number is approved only when both readings agree.
 
-![Viewer: a balance sheet with every cross-checked number boxed in green, next to the extracted table](docs/images/viewer.png)
+![Live run: upload a balance sheet, parse it with TypeLLM, inspect cells; then a scanned page; then the same sheet with ScaleDown](docs/media/demo.gif)
+
+*A live run with real API calls: TypeLLM and ScaleDown, no replay. Parsing waits are fast-forwarded 12×; each page took 37–49 s. [MP4 version](docs/media/demo.mp4).*
 
 | On 85 real filing pages (4,619 numbers checked against XBRL) | |
 |---|---|
@@ -14,6 +16,14 @@ Tabula Rasa reads each statement page of a 決算短信 or 有価証券報告書
 | Cost per page | ≈ $0.0001 (one TypeLLM call) |
 
 Details, comparisons and method: [REPORT.md](REPORT.md).
+
+**Live check (2026-10-22), real API calls, no cache or replay**, scored against the XBRL-checked gold:
+
+| Run | Result |
+|---|---|
+| CLI, TypeLLM, 3 pages of HKS's 決算短信 | 220 / 220 numbers right, all pages exact, 51 s in total |
+| Viewer, TypeLLM: the sample balance sheet | exact |
+| Viewer, TypeLLM: a synthetic scan | exact |
 
 ---
 
@@ -68,7 +78,9 @@ Open **http://localhost:8765**, choose a sample, click **Load sample**, then **P
 - A fresh clone ships one sample: the balance sheet in `docs/`. The other eval filings appear in the list only if their PDFs are in `data/` (not in git, for licence and size reasons).
 - You can also upload any PDF. Pages outside the eval set are read from the text layer only in demo mode.
 
-![Viewer on a scanned page: numbers read from the image are boxed in amber](docs/images/viewer-scan.png)
+| Born-digital page: every number agreed (green) | Scanned page: read from the image only (amber) |
+|---|---|
+| ![Balance sheet parsed live with TypeLLM](docs/media/live-balance-click.png) | ![Scanned cash-flow page parsed live with TypeLLM](docs/media/live-scan.png) |
 
 Direct links work too, e.g. `http://localhost:8765/?sample=balance_sheet_after_correction&page=1`.
 
@@ -339,6 +351,20 @@ Each test prints `ok`. Run them one at a time; the OCR ones need ~600 MB.
 
 ```bash
 .venv/bin/python tests/test_hybrid.py
+```
+
+Regenerate the demo video and screenshots against a live server (real API calls):
+
+```bash
+.venv/bin/pip install -r requirements-dev.txt
+```
+
+```bash
+TABULA_CACHE=runs/live_cache TABULA_STORE=runs/live_store .venv/bin/uvicorn tabula.server:app --port 8765
+```
+
+```bash
+.venv/bin/python tools/record_demo.py
 ```
 
 Agents and contributors: start with [docs/PROGRESS.md](docs/PROGRESS.md), which covers state, open work, gotchas and conventions.

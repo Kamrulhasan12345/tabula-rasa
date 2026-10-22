@@ -141,7 +141,11 @@ api("/samples").then(list => list.forEach(s => {
   const o = el("option", null, `${s.company} · ${s.title} · p${s.pages.join(",")}`); o.value = s.key; $("sample").append(o);
 }));
 
-function setDoc(meta) { doc = meta; $("parse").disabled = false; showState(meta); }
+function setDoc(meta) {
+  if (!doc || doc.id !== meta.id) ["pagebox", "table", "warnings"].forEach(id => $(id).replaceChildren());  // don't show the previous file
+  if (!doc || doc.id !== meta.id) $("pmeta").textContent = "";
+  doc = meta; $("parse").disabled = false; showState(meta);
+}
 function showState(m) {
   $("info").textContent = m.reader !== undefined && m.state === "done" ? `read with: ${m.reader}${m.demo ? " (demo replay)" : ""} · ${m.reader_calls} reader calls` : "";
   $("state").textContent = `${m.filename} · ${m.state}${m.pages_done.length ? ` · pages done: ${m.pages_done.join(", ")}` : ""}${m.error ? ` · ${m.error}` : ""}`;
@@ -158,7 +162,8 @@ $("upload").onclick = () => {
 };
 $("parse").onclick = async () => {
   try {
-    showState(await api(`/documents/${doc.id}/parse`, { method: "POST", headers: { "Content-Type": "application/json" },
+    ["pagebox", "table", "warnings"].forEach(id => $(id).replaceChildren()); $("pmeta").textContent = "";
+  showState(await api(`/documents/${doc.id}/parse`, { method: "POST", headers: { "Content-Type": "application/json" },
                                                         body: JSON.stringify(options()) }));
   } catch (e) { $("state").textContent = String(e); return; }
   clearInterval(timer);
