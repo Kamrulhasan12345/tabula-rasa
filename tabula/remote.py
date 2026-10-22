@@ -19,6 +19,8 @@ import time
 import urllib.error
 import urllib.request
 
+from tabula import config
+
 TIMEOUT = 120
 ROW_TYPES = {"header": "section heading row with no numbers (e.g. 資産の部, 流動資産)",
              "item": "ordinary line item with numbers", "contra": "deduction from the row above, e.g. 減価償却累計額, 貸倒引当金",
@@ -69,11 +71,11 @@ def _table_schema(str_t="string"):
                                                     "values": {"type": "array", "items": {"type": str_t}}})}}
 
 
-def scaledown_read(png):
-    key = os.environ.get("SCALEDOWN_API_KEY")
+def scaledown_read(png, settings=None):
+    key = config.get("SCALEDOWN_API_KEY", settings)
     if not key:
         return None
-    base = os.environ.get("TABULA_SCALEDOWN_URL", "https://api.scaledown.xyz/v1")
+    base = config.get("TABULA_SCALEDOWN_URL", settings, "https://api.scaledown.xyz/v1")
     body = {"model": "extract-1",
             "messages": [{"role": "system", "content": TABLE_RULES},
                          {"role": "user", "content": "Transcribe the table in the attached page image."}],
@@ -85,11 +87,11 @@ def scaledown_read(png):
     return _rows_from(json.loads(resp["choices"][0]["message"]["content"]).get("structured_result"))
 
 
-def typellm_read(png):
-    key = os.environ.get("TYPELLM_API_KEY")
+def typellm_read(png, settings=None):
+    key = config.get("TYPELLM_API_KEY", settings)
     if not key:
         return None
-    base = os.environ.get("TABULA_TYPELLM_URL", "https://api.typellm.ai/v1")
+    base = config.get("TABULA_TYPELLM_URL", settings, "https://api.typellm.ai/v1")
     qs = {k: {**{kk: vv for kk, vv in v.items() if kk != "description"}, "instructions": v.get("description", "")}
           for k, v in _table_schema().items()}
     # TypeLLM: "arrays inside objects are not supported yet" -> a row's values come as one " | "-joined string

@@ -169,9 +169,11 @@ def stitch(pages):
     return out
 
 
-def parse_pdf(pdf_path, pages=None, doc_id=None, on_page=None):
+def parse_pdf(pdf_path, pages=None, doc_id=None, on_page=None, settings=None):
     """pages: 1-based list, default auto-detect. doc_id: key for saved replies (demo mode).
     on_page(doc): called after each page, for progress reporting.
+    settings: per-request overrides of the env-var options (tabula/config.py), e.g. {"TABULA_READER": "vlm",
+              "TABULA_VLM_URL": ..., "TABULA_CROSSCHECK": "needed"}.
 
     Cost / latency policy:
       TABULA_CROSSCHECK=all (default)  every page is read by the second reader too: every cell gets agreed/review.
@@ -180,28 +182,30 @@ def parse_pdf(pdf_path, pages=None, doc_id=None, on_page=None):
     Reader calls (network) run in a thread pool while B0 (CPU, OCR; one at a time for memory) works through the
     pages, so a document costs ~max(B0 total, slowest reader batch), not their sum."""
     from concurrent.futures import ThreadPoolExecutor
-    from tabula.hybrid import merge, needs_reader, read_second, reader_name, run_b0
+    from tabula import config
+    from tabula.hybrid import demo, merge, needs_reader, read_second, reader_name, run_b0
     doc_id = doc_id or Path(pdf_path).stem
     tables, image_only = (list(pages), []) if pages else find_pages(pdf_path)
     todo = tables + image_only
-    reader = reader_name()
-    every = os.environ.get("TABULA_CROSSCHECK", "all") != "needed"
+    reader = reader_name(settings)
+    every = config.get("TABULA_CROSSCHECK", settings, "all") != "needed" and reader != "none"
     out = []
-    with ThreadPoolExecutor(int(os.environ.get("TABULA_READER_CONCURRENCY", "4"))) as pool:  # TypeLLM allows 4 in flight
-        futs = {n: pool.submit(read_second, pdf_path, n, doc_id, reader) for n in todo} if every else {}
+    with ThreadPoolExecutor(int(config.get("TABULA_READER_CONCURRENCY", settings, "4"))) as pool:  # TypeLLM allows 4 in flight
+        futs = {n: pool.submit(read_second, pdf_path, n, doc_id, reader, settings) for n in todo} if every else {}
         b0s = {}
         for n in todo:
             b0s[n] = run_b0(pdf_path, n)
-            if n not in futs and needs_reader(b0s[n]):
-                futs[n] = pool.submit(read_second, pdf_path, n, doc_id, reader)
+            if n not in futs and reader != "none" and needs_reader(b0s[n]):
+                futs[n] = pool.submit(read_second, pdf_path, n, doc_id, reader, settings)
         for n in todo:
-            second = futs[n].result() if n in futs else (None, {"reader": None, "skipped": "B0 passed every check"})
+            second = futs[n].result() if n in futs else (None, {"reader": None, "skipped": "reader set to none" if reader == "none"
+                                                                 else "B0 passed every check"})
             used = second[1].get("reader")
             doc = finish_page(pdf_path, n, merge(b0s[n], second[0], "b1" if used in ("vlm", None) else used), second[1])
             out.append(doc)
             if on_page:
                 on_page(doc)
-    return {"doc_id": doc_id, "reader": reader, "crosscheck": "all" if every else "needed", "demo": os.environ.get("TABULA_DEMO") == "1",
+    return {"doc_id": doc_id, "reader": reader, "crosscheck": "all" if every else "needed", "demo": demo(settings),
             "reader_calls": len(futs), "table_pages": tables, "image_only_pages": image_only,
             "statements": stitch(out), "pages": out}
 

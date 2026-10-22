@@ -4,6 +4,15 @@ For agents and people picking this project up. Newest state first. Results: [REP
 
 ## Current state (2026-10-22)
 
+**Every mode selectable per parse (latest).**
+- `tabula/config.py`: every option is an env-var name; a request's `settings` dict overrides env (`config.get`).
+- Threaded through `parse_pdf(settings=)` → `read_second` → readers.
+- Readers: `typellm` | `scaledown` | `vlm` (any OpenAI-compatible endpoint, request-supplied URL/model/key) | `none`. Plus `TABULA_FALLBACK` and `TABULA_CROSSCHECK`.
+- Server: `ParseOptions` JSON body on `POST /documents/{id}/parse`. Request keys are never written to `meta.json`. `GET /readers` lists readers with accuracy and availability. `TABULA_ALLOW_CLIENT_ENDPOINTS=0` blocks request-supplied URLs.
+- Viewer Settings panel: reader, cross-check, demo, fallback, VLM presets, keys; optional localStorage. CLI: `--reader --crosscheck --demo --no-fallback --vlm-url --vlm-model`.
+- VLM replies are cached per endpoint and model.
+
+
 **Pipeline policy + demo (latest).**
 - `hybrid.read_second` takes the cheapest source first: demo replay (`TABULA_DEMO=1`, all readers), then the reply cache keyed by image hash (`runs/cache`), then a live call.
 - Fallback chain: TypeLLM, then ScaleDown, then VLM.

@@ -3,7 +3,10 @@
     .venv/bin/uvicorn tabula.server:app --port 8000          # docs at http://localhost:8000/docs
 
 POST /documents                      multipart file (+ optional form field "name": key for saved VLM outputs)
-POST /documents/{id}/parse?pages=3,5 start parsing in the background (default: auto-detected pages) -> 202
+POST /documents/{id}/parse           start parsing in the background -> 202. Optional JSON body (ParseOptions):
+                                     pages, reader (typellm|scaledown|vlm|none), crosscheck (all|needed), demo,
+                                     fallback, vlm_url, vlm_model, vlm_key, typellm_key, scaledown_key
+GET  /readers                        readers, measured accuracy, availability on this server
 GET  /documents/{id}                 state: uploaded | queued | running | done | failed, pages_done
 GET  /documents/{id}/pages/{n}       PRD §4 JSON with cell_status, cell_bbox, check_results
 GET  /documents/{id}/pages/{n}.csv | .html
@@ -11,6 +14,7 @@ GET  /documents/{id}/pages/{n}/image.png?dpi=100   page render; bbox px = points
 GET  /health
 GET  /samples, POST /samples/{key}   eval filings on this machine, loaded with their eval pages (demo)
 GET  /                               demo viewer (tabula/static/index.html)
+Env: TABULA_ALLOW_CLIENT_ENDPOINTS=0 rejects request-supplied VLM URLs (shared servers: the server would call them).
 Env: TABULA_VLM_URL / _MODEL / _KEY (tabula/vlm.py), TABULA_STORE (upload dir), TABULA_CORS_ORIGINS (UI origins).
 Uploads are untrusted: only "%PDF" files up to 50 MB; ids are content hashes, names are sanitized.
 """
@@ -23,9 +27,12 @@ import threading
 from pathlib import Path
 
 import pdfplumber
-from fastapi import BackgroundTasks, FastAPI, File, Form, HTTPException, Query, UploadFile
+from typing import Literal
+
+from fastapi import BackgroundTasks, Body, FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, PlainTextResponse, Response
+from pydantic import BaseModel, Field
 
 from tabula import vlm
 from tabula.api import find_pages, parse_pdf, to_csv, to_html
@@ -138,7 +145,35 @@ def _register(data, filename, name, demo_pages=None):
     return meta
 
 
-def _run(d, pages):
+class ParseOptions(BaseModel):
+    """Per-request choices; anything left out falls back to the server's env (.env). Keys are used for this parse
+    only and never written to disk (meta.json records which options were set, not their values)."""
+    pages: list[int] | None = None
+    reader: Literal["typellm", "scaledown", "vlm", "none"] | None = None
+    crosscheck: Literal["all", "needed"] | None = None
+    demo: bool | None = None
+    fallback: bool | None = None
+    vlm_url: str | None = Field(None, max_length=500)
+    vlm_model: str | None = Field(None, max_length=200)
+    vlm_key: str | None = Field(None, max_length=500)
+    typellm_key: str | None = Field(None, max_length=500)
+    scaledown_key: str | None = Field(None, max_length=500)
+
+    def settings(self):
+        b = lambda v: None if v is None else ("1" if v else "0")
+        return {k: v for k, v in {
+            "TABULA_READER": self.reader, "TABULA_CROSSCHECK": self.crosscheck, "TABULA_DEMO": b(self.demo),
+            "TABULA_FALLBACK": b(self.fallback), "TABULA_VLM_URL": self.vlm_url, "TABULA_VLM_MODEL": self.vlm_model,
+            "TABULA_VLM_KEY": self.vlm_key, "TYPELLM_API_KEY": self.typellm_key, "SCALEDOWN_API_KEY": self.scaledown_key,
+        }.items() if v not in (None, "")}
+
+    def public(self):  # what's safe to store and show back
+        out = self.model_dump(exclude={"vlm_key", "typellm_key", "scaledown_key"}, exclude_none=True)
+        out["keys_from_request"] = [k for k in ("vlm_key", "typellm_key", "scaledown_key") if getattr(self, k)]
+        return out
+
+
+def _run(d, pages, settings=None):
     meta = _meta(d)
     with LOCK:
         meta.update(state="running", pages_done=[], error=None)
@@ -149,7 +184,7 @@ def _run(d, pages):
             meta["pages_done"].append(doc["page"])
             _save_meta(d, meta)
         try:
-            res = parse_pdf(d / "doc.pdf", pages, meta["name"], on_page=done)
+            res = parse_pdf(d / "doc.pdf", pages, meta["name"], on_page=done, settings=settings)
             meta.update(state="done", reader=res["reader"], demo=res["demo"], reader_calls=res["reader_calls"],
                         statements=res["statements"])
         except Exception as e:  # keep the pages already done; report the rest
@@ -158,18 +193,36 @@ def _run(d, pages):
 
 
 @app.post("/documents/{doc_id}/parse", status_code=202)
-def start(doc_id: str, background: BackgroundTasks, pages: str | None = Query(None, pattern=r"^\d+(,\d+)*$")):
+def start(doc_id: str, background: BackgroundTasks, opts: ParseOptions | None = Body(None),
+          pages: str | None = Query(None, pattern=r"^\d+(,\d+)*$")):
     d = _dir(doc_id)
     meta = _meta(d)
     if meta["state"] in ("queued", "running"):
         return meta
-    page_list = [int(p) for p in pages.split(",")] if pages else meta.get("demo_pages")  # samples: the eval pages
+    opts = opts or ParseOptions()
+    page_list = opts.pages or ([int(p) for p in pages.split(",")] if pages else meta.get("demo_pages"))  # samples: eval pages
     if page_list and not all(1 <= p <= meta["n_pages"] for p in page_list):
         raise HTTPException(422, f"pages must be 1..{meta['n_pages']}")
-    meta["state"] = "queued"
+    if opts.vlm_url:
+        if os.environ.get("TABULA_ALLOW_CLIENT_ENDPOINTS", "1") != "1":
+            raise HTTPException(403, "this server doesn't accept VLM endpoints from requests (TABULA_ALLOW_CLIENT_ENDPOINTS=0)")
+        if not re.match(r"https?://", opts.vlm_url):
+            raise HTTPException(422, "vlm_url must be http(s)")
+    meta.update(state="queued", options=opts.public())
     _save_meta(d, meta)
-    background.add_task(_run, d, page_list)
+    background.add_task(_run, d, page_list, opts.settings())
     return meta
+
+
+@app.get("/readers")
+def readers():
+    """Every reader with its measured accuracy and whether this server can use it without request-supplied keys."""
+    from tabula import config
+    from tabula.hybrid import reader_name
+    return {"default": reader_name(), "demo": config.get("TABULA_DEMO") == "1",
+            "crosscheck": config.get("TABULA_CROSSCHECK", None, "all"),
+            "client_endpoints": os.environ.get("TABULA_ALLOW_CLIENT_ENDPOINTS", "1") == "1",
+            "readers": [{"id": k, **v, "available": config.available(k)} for k, v in config.READERS.items()]}
 
 
 @app.get("/documents/{doc_id}")

@@ -22,6 +22,7 @@ Details, comparisons and method: [REPORT.md](REPORT.md).
 - [Features](#features)
 - [Quick start (demo, no keys)](#quick-start-demo-no-keys)
 - [Installation](#installation)
+- [Choosing a mode](#choosing-a-mode)
 - [Usage](#usage): [web app](#web-app) · [command line](#command-line) · [Python](#python) · [HTTP API](#http-api)
 - [Configuration](#configuration)
 - [Output](#output)
@@ -102,6 +103,32 @@ cp .env.example .env
 
 With `TYPELLM_API_KEY` set, TypeLLM becomes the image reader. Without any key, pages are read from the text layer alone (`b0_only`) unless `TABULA_DEMO=1`.
 
+## Choosing a mode
+
+Every mode can be picked per parse: in the viewer's **Settings**, with CLI flags, or in the API request body. Anything you leave unset falls back to the server's `.env`.
+
+| Image reader | What it is | Measured on the eval set | Needs |
+|---|---|---|---|
+| `typellm` (default with a key) | TypeLLM typed-extraction API | 0.996 cells alone, **1.000 with the text layer**, ≈ $0.0001/page | `TYPELLM_API_KEY` |
+| `scaledown` | ScaleDown Extract API | 0.720 cells (drops rows/columns on dense statements) | `SCALEDOWN_API_KEY` |
+| `vlm` | any OpenAI-compatible vision model: local vLLM, OpenAI, Gemini, OpenRouter… | Qwen3-VL-8B: 0.995 alone, 0.999 with the text layer. Other models not measured | endpoint URL, model, key |
+| `none` | text layer only | exact on born-digital pages; can't read scans; no cross-check | nothing |
+
+| Option | Choices |
+|---|---|
+| Cross-check | `all`: every number agreed or flagged · `needed`: call the reader only where the text layer can't vouch (cheaper) |
+| Demo replay | saved replies for the eval pages: no keys, no network |
+| Fallback | if the chosen reader fails, try the others (TypeLLM, then ScaleDown, then VLM) |
+
+**Bring your own VLM.** In the viewer, choose *VLM*, then pick a provider preset (local vLLM, OpenAI, Google Gemini, OpenRouter) or type any OpenAI-compatible base URL. Then set the model name and, if needed, a key.
+
+![Settings with the VLM reader and the OpenAI preset](docs/images/settings-vlm.png)
+
+**Keys entered in the viewer:**
+- They are sent with that parse only. The server uses them for that request and never writes them to disk; `meta.json` only records which options were set.
+- **Remember** keeps them in your browser's local storage. Leave it off on shared machines.
+- On a shared server, set `TABULA_ALLOW_CLIENT_ENDPOINTS=0` so users can't make the server call arbitrary URLs.
+
 ## Usage
 
 ### Web app
@@ -127,6 +154,10 @@ Open http://localhost:8000.
 .venv/bin/python -m tabula docs/balance_sheet_after_correction.pdf -o out/
 ```
 
+```bash
+TABULA_VLM_KEY=sk-... .venv/bin/python -m tabula filing.pdf --reader vlm --vlm-url https://api.openai.com/v1 --vlm-model gpt-4o
+```
+
 ```text
   p1: consolidated_balance_sheet | 43 rows, 74 cells, 0 to review | sums 12 ok / 0 fail | engine b0+typellm | ok -> out/balance_sheet_after_correction_p1.csv
 docs/balance_sheet_after_correction.pdf: reader typellm | crosscheck all, 1 reader calls | table pages [1]
@@ -137,6 +168,9 @@ docs/balance_sheet_after_correction.pdf: reader typellm | crosscheck all, 1 read
 | `-p 3,5` | only these pages (default: every page that prints 単位 and has a numeric table, plus image-only pages) |
 | `-o DIR` | output folder; each page gets `.json`, `.csv` (Excel-ready UTF-8 BOM) and `.html` |
 | `--doc-id ID` | id for demo replay of an eval filing, e.g. `--doc-id 081220261008548219` |
+| `--reader R` | `typellm` / `scaledown` / `vlm` / `none` |
+| `--vlm-url URL --vlm-model M` | use any OpenAI-compatible VLM; key from `TABULA_VLM_KEY` |
+| `--crosscheck all\|needed`, `--demo`, `--no-fallback` | as in [Choosing a mode](#choosing-a-mode) |
 
 ### Python
 
@@ -144,6 +178,9 @@ docs/balance_sheet_after_correction.pdf: reader typellm | crosscheck all, 1 read
 from tabula.api import parse_pdf, to_csv
 
 result = parse_pdf("filing.pdf")            # or pages=[7, 9]
+# any option, per call (same names as .env):
+result = parse_pdf("filing.pdf", settings={"TABULA_READER": "vlm", "TABULA_VLM_URL": "http://localhost:8000/v1",
+                                            "TABULA_VLM_MODEL": "Qwen/Qwen3-VL-8B-Instruct", "TABULA_CROSSCHECK": "needed"})
 for page in result["pages"]:
     print(page["page"], page["statement_type"], page["status"])
     print(to_csv(page))
@@ -157,7 +194,8 @@ Interactive docs: `/docs` (OpenAPI). Parsing runs in the background; poll the do
 | Method | Path | What |
 |---|---|---|
 | `POST` | `/documents` | upload (multipart `file`, optional `name`); returns `id`, page count, table pages |
-| `POST` | `/documents/{id}/parse?pages=3,5` | start parsing (202) |
+| `POST` | `/documents/{id}/parse` | start parsing (202); optional JSON body below |
+| `GET` | `/readers` | readers with measured accuracy and whether this server has them configured |
 | `GET` | `/documents/{id}` | `state` (uploaded / queued / running / done / failed), `pages_done`, `statements` |
 | `GET` | `/documents/{id}/pages/{n}` | page JSON |
 | `GET` | `/documents/{id}/pages/{n}.csv` / `.html` | the same table as CSV / HTML |
@@ -170,8 +208,13 @@ curl -F file=@docs/balance_sheet_after_correction.pdf localhost:8000/documents
 ```
 
 ```bash
-curl -X POST localhost:8000/documents/<id>/parse
+curl -X POST localhost:8000/documents/<id>/parse -H 'Content-Type: application/json' -d '{"reader": "scaledown", "crosscheck": "needed"}'
 ```
+
+The parse body (every field optional):
+- `pages`, `reader`, `crosscheck`, `demo`, `fallback`
+- `vlm_url`, `vlm_model`, `vlm_key`
+- `typellm_key`, `scaledown_key`
 
 ```bash
 curl localhost:8000/documents/<id>/pages/1
@@ -184,13 +227,15 @@ Uploads are treated as untrusted:
 
 ## Configuration
 
-All settings are environment variables. Put them in `.env`, which is loaded automatically; see [.env.example](.env.example).
+All settings are environment variables. Put them in `.env`, which is loaded automatically; see [.env.example](.env.example). These are the server's defaults; each parse can override them ([Choosing a mode](#choosing-a-mode)).
 
 | Variable | Default | Effect |
 |---|---|---|
 | `TYPELLM_API_KEY` | – | enables TypeLLM, the default image reader |
 | `SCALEDOWN_API_KEY` | – | enables ScaleDown Extract (fallback reader) |
-| `TABULA_READER` | `typellm` if its key is set, else `vlm` | `typellm` / `scaledown` / `vlm` |
+| `TABULA_READER` | `typellm` if its key is set, else `vlm` | `typellm` / `scaledown` / `vlm` / `none` |
+| `TABULA_FALLBACK` | `1` | `0`: don't try other readers when the chosen one fails |
+| `TABULA_ALLOW_CLIENT_ENDPOINTS` | `1` | `0`: reject VLM URLs sent in requests (shared servers) |
 | `TABULA_DEMO` | off | `1`: every reader replays saved replies (eval pages); no network |
 | `TABULA_CROSSCHECK` | `all` | `needed`: call the reader only when the text layer can't vouch for a page (scan, unverified text, failing sum, undated column) |
 | `TABULA_READER_CONCURRENCY` | `4` | reader calls in flight while the local pass runs |

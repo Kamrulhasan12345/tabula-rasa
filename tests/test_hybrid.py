@@ -51,20 +51,31 @@ TABLE = {"unit": "千円", "columns": [{"label": "当期", "date": "2026年3月3
 calls = []
 
 
-def down(png):
+def down(png, settings=None):
     raise OSError("down")
 
 
-remote.READERS.update(typellm=down, scaledown=lambda png: calls.append(1) or TABLE)
+remote.READERS.update(typellm=down, scaledown=lambda png, settings=None: calls.append(1) or TABLE)
 PDF = str(Path(__file__).parent.parent / "docs/balance_sheet_after_correction.pdf")
 d, m = hybrid.read_second(PDF, 1, "t", "typellm")
 assert m["reader"] == "scaledown" and "typellm: OSError" in m["reader_error"] and d["rows"][0]["values"] == {"c0": 1000}
 d, m = hybrid.read_second(PDF, 1, "t", "typellm")
 assert m["reader"] == "scaledown" and len(calls) == 1  # second time: scaledown's reply comes from the cache
 
+# per-request settings override env: reader off, fallback off, a key given only in the request
+assert hybrid.read_second(PDF, 1, "t", "none") == (None, {"reader": None, "skipped": "reader set to none"})
+d, m = hybrid.read_second(PDF, 1, "t", "typellm", {"TABULA_FALLBACK": "0"})
+assert d is None and m["reader"] is None and "typellm: OSError" in m["reader_error"]
+os.environ.pop("SCALEDOWN_API_KEY")
+os.environ["TABULA_CACHE"] = tempfile.mkdtemp()
+assert hybrid.read_second(PDF, 1, "t", "scaledown", {"TABULA_FALLBACK": "0"})[0] is None  # no key: nothing to call
+d, m = hybrid.read_second(PDF, 1, "t", "scaledown", {"SCALEDOWN_API_KEY": "from-request", "TABULA_FALLBACK": "0"})
+assert m["reader"] == "scaledown" and len(calls) == 2
+assert hybrid.reader_name({"TABULA_READER": "vlm"}) == "vlm" and hybrid.demo({"TABULA_DEMO": "0"}) is False
+
 os.environ["TABULA_DEMO"] = "1"  # replay saved replies of an eval page; no keys or network used
 d, m = hybrid.read_second("not-needed.pdf", 7, "081220261008548219", "typellm")
-assert m["reader"] == "typellm" and len(d["rows"]) > 30 and len(calls) == 1
+assert m["reader"] == "typellm" and len(d["rows"]) > 30 and len(calls) == 2  # replay: no new call
 d, m = hybrid.read_second("not-needed.pdf", 1, "balance_sheet_after_correction", "vlm")
 assert m["reader"] == "vlm" and len(d["rows"]) == 43
 print("ok policy")

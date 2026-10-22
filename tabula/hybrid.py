@@ -14,6 +14,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
+from tabula import config
 from tabula.evaluate import _col_map, align
 
 
@@ -83,56 +84,63 @@ CHAIN = ["typellm", "scaledown", "vlm"]  # fallback order after the chosen reade
 ROOT = Path(__file__).parent.parent
 
 
-def reader_name():
-    """Second reader: TABULA_READER = vlm | typellm | scaledown; default typellm when its key is set, else vlm."""
-    return os.environ.get("TABULA_READER") or ("typellm" if os.environ.get("TYPELLM_API_KEY") else "vlm")
+def reader_name(settings=None):
+    """TABULA_READER = typellm | scaledown | vlm | none; default typellm when its key is set, else vlm."""
+    return config.get("TABULA_READER", settings) or ("typellm" if config.get("TYPELLM_API_KEY", settings) else "vlm")
 
 
-def demo():
+def demo(settings=None):
     """TABULA_DEMO=1: every reader replays saved replies (eval pages), never touches the network or needs keys."""
-    return os.environ.get("TABULA_DEMO") == "1"
+    return config.get("TABULA_DEMO", settings) == "1"
 
 
-def _fetch(reader, key, png):
+def _fetch(reader, key, png, settings=None):
     """One reader's raw table for a page, cheapest source first:
     demo replay (runs/<reader>/raw/<key>.json, Kaggle outputs for vlm) -> reply cache keyed by the page image's
-    hash (a page already read is never billed again) -> live call. None = this reader has nothing."""
+    hash (and, for a VLM, its endpoint + model) -> live call. None = this reader has nothing."""
     import hashlib
     from tabula import remote, vlm
     from tabula.b1 import _json
-    if reader == "vlm":
-        if demo() or vlm.mode() == "demo":
+    if demo(settings):
+        if reader == "vlm":
             rec = vlm._saved().get(key + ".png")
-        else:
-            rec = vlm.read_page(key + ".png", png)
-        return _json(rec["text"]) if rec else None
-    if demo():
+            return _json(rec["text"]) if rec else None
         f = ROOT / f"runs/{reader}/raw/{key}.json"
         return json.loads(f.read_text())["raw"] if f.exists() else None
-    if not os.environ.get({"typellm": "TYPELLM_API_KEY", "scaledown": "SCALEDOWN_API_KEY"}[reader]):
+    if not config.available(reader, settings):
         return None
     img = png()
-    cache = Path(os.environ.get("TABULA_CACHE", ROOT / "runs/cache")) / reader / (hashlib.sha256(img).hexdigest()[:32] + ".json")
+    tag = reader
+    if reader == "vlm":  # different endpoints / models must not share replies
+        tag += "/" + hashlib.sha256(f"{config.get('TABULA_VLM_URL', settings)}|{config.get('TABULA_VLM_MODEL', settings)}".encode()).hexdigest()[:12]
+    cache = Path(config.get("TABULA_CACHE", settings, str(ROOT / "runs/cache"))) / tag / (hashlib.sha256(img).hexdigest()[:32] + ".json")
     if cache.exists():
         return json.loads(cache.read_text())
-    raw = remote.READERS[reader](img)
+    if reader == "vlm":
+        rec = vlm._call(img, settings)
+        raw = _json(rec["text"]) if rec else None
+    else:
+        raw = remote.READERS[reader](img, settings)
     if raw:
         cache.parent.mkdir(parents=True, exist_ok=True)
         cache.write_text(json.dumps(raw, ensure_ascii=False))
     return raw
 
 
-def read_second(pdf_path, page_no, doc_id, reader):
-    """-> (§4 doc or None, meta). Tries the chosen reader, then the rest of CHAIN, until one answers.
-    Image-only readers: the PDF text layer never reaches them."""
+def read_second(pdf_path, page_no, doc_id, reader, settings=None):
+    """-> (§4 doc or None, meta). Tries the chosen reader, then (TABULA_FALLBACK, default on) the rest of CHAIN,
+    until one answers. reader "none" = text layer only. Image-only readers: the PDF text layer never reaches them."""
     from functools import lru_cache
     from tabula.b1 import _png, convert
+    if reader == "none":
+        return None, {"reader": None, "skipped": "reader set to none"}
     png = lru_cache(maxsize=1)(lambda: _png(pdf_path, page_no))  # rendered once, only if a live call needs it
+    chain = [reader] + ([c for c in CHAIN if c != reader] if config.get("TABULA_FALLBACK", settings, "1") != "0" else [])
     errors = []
-    for r in [reader] + [c for c in CHAIN if c != reader]:
+    for r in chain:
         try:
-            raw = _fetch(r, f"{doc_id}_p{page_no}", png)
-        except (OSError, ValueError) as e:  # API down / timeout / unreadable reply: try the next reader
+            raw = _fetch(r, f"{doc_id}_p{page_no}", png, settings)
+        except (OSError, ValueError, KeyError) as e:  # API down / timeout / unreadable reply: try the next reader
             errors.append(f"{r}: {type(e).__name__}: {str(e)[:120]}")
             continue
         if raw:
@@ -154,10 +162,10 @@ def needs_reader(b0):
     return not doc["checks"] or any(st == "fail" for *_, st, _ in run_checks(doc))
 
 
-def parse(pdf_path, page_no, doc_id=None, b0=None, second=None, reader=None):
+def parse(pdf_path, page_no, doc_id=None, b0=None, second=None, reader=None, settings=None):
     """second: a precomputed (doc, meta) from the second reader (eval caches / parallel prefetch); else called now."""
-    reader = reader or reader_name()
+    reader = reader or reader_name(settings)
     b0 = b0 if b0 is not None else run_b0(pdf_path, page_no)
-    b1, meta = second if second is not None else read_second(pdf_path, page_no, doc_id or Path(pdf_path).stem, reader)
+    b1, meta = second if second is not None else read_second(pdf_path, page_no, doc_id or Path(pdf_path).stem, reader, settings)
     used = meta.get("reader", reader)
     return merge(b0, b1, "b1" if used in ("vlm", None) else used), meta

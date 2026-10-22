@@ -15,6 +15,14 @@
   button { cursor:pointer; background:var(--ink); color:#fff; border-color:var(--ink); }
   button:disabled { opacity:.4; cursor:default; }
   #info, #state { color:var(--muted); }
+  details#settings { background:var(--panel); border-bottom:1px solid var(--line); padding:8px 16px; }
+  details#settings summary { cursor:pointer; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:10px 16px; margin-top:10px; }
+  .grid label { display:flex; flex-direction:column; gap:4px; font-size:13px; color:var(--muted); }
+  .grid label.inline { flex-direction:row; align-items:center; gap:8px; }
+  .grid input[type=text], .grid input[type=password], .grid select { width:100%; color:var(--ink); }
+  .hint { font-size:12px; color:var(--muted); margin:8px 0 0; }
+  .hidden { display:none !important; }
   #pages { display:flex; gap:6px; padding:8px 16px; flex-wrap:wrap; }
   #pages button { background:#fff; color:var(--ink); }
   #pages button.on { background:var(--ink); color:#fff; }
@@ -49,6 +57,28 @@
   <span id="state"></span>
   <span id="info"></span>
 </header>
+<details id="settings" open>
+  <summary id="settingsSummary">Settings</summary>
+  <div class="grid">
+    <label>Image reader <select id="reader"></select><span id="readerEval" class="hint"></span></label>
+    <label>Cross-check
+      <select id="crosscheck"><option value="all">every page (every number agreed or flagged)</option>
+        <option value="needed">only where the text layer can't vouch (cheaper)</option></select></label>
+    <label class="inline"><input type="checkbox" id="demo"> Demo replay (saved replies, no keys, no network)</label>
+    <label class="inline"><input type="checkbox" id="fallback" checked> Fall back to other readers if this one fails</label>
+    <label class="vlm">VLM provider
+      <select id="preset"><option value="">custom</option><option value="vllm">local vLLM</option><option value="openai">OpenAI</option>
+        <option value="gemini">Google Gemini</option><option value="openrouter">OpenRouter</option></select></label>
+    <label class="vlm">VLM base URL (OpenAI-compatible) <input type="text" id="vlm_url" placeholder="https://api.openai.com/v1"></label>
+    <label class="vlm">VLM model <input type="text" id="vlm_model" placeholder="gpt-4o"></label>
+    <label class="vlm">VLM API key <input type="password" id="vlm_key" autocomplete="off" placeholder="optional for local servers"></label>
+    <label class="key-typellm">TypeLLM API key <input type="password" id="typellm_key" autocomplete="off" placeholder="blank: use the server's key"></label>
+    <label class="key-scaledown">ScaleDown API key <input type="password" id="scaledown_key" autocomplete="off" placeholder="blank: use the server's key"></label>
+    <label class="inline"><input type="checkbox" id="remember"> Remember settings and keys in this browser</label>
+  </div>
+  <p class="hint">Keys are sent to this server with each parse and used for that parse only; the server doesn't store them.
+    Leave a field blank to use the server's own configuration (.env).</p>
+</details>
 <div id="pages"></div>
 <main>
   <div class="panel"><div class="legend" id="legend"></div><div id="pagebox"></div></div>
@@ -65,13 +95,55 @@ for (const [k, c] of [["agreed", "agreed"], ["review", "review"], ["reader only"
   s.append(i, k); $("legend").append(s);
 }
 
-api("/health").then(h => $("info").textContent = `reader: ${h.reader}${h.demo ? " (demo replay)" : ""} · crosscheck: ${h.crosscheck}`);
+const PRESETS = {
+  vllm: ["http://localhost:8000/v1", "Qwen/Qwen3-VL-8B-Instruct"],
+  openai: ["https://api.openai.com/v1", "gpt-4o"],
+  gemini: ["https://generativelanguage.googleapis.com/v1beta/openai", "gemini-2.5-flash"],
+  openrouter: ["https://openrouter.ai/api/v1", ""],
+};
+const FIELDS = ["reader", "crosscheck", "demo", "fallback", "vlm_url", "vlm_model", "vlm_key", "typellm_key", "scaledown_key", "remember"];
+let READERS = {};
+const store = { get() { try { return JSON.parse(localStorage.getItem("tabula.settings") || "null"); } catch { return null; } },
+                set(v) { try { v ? localStorage.setItem("tabula.settings", JSON.stringify(v)) : localStorage.removeItem("tabula.settings"); } catch {} } };
+const val = id => $(id).type === "checkbox" ? $(id).checked : $(id).value.trim();
+function saveSettings() { store.set($("remember").checked ? Object.fromEntries(FIELDS.map(f => [f, val(f)])) : null); }
+function refreshSettings() {
+  const r = $("reader").value, info = READERS[r] || {};
+  document.querySelectorAll(".vlm").forEach(e => e.classList.toggle("hidden", r !== "vlm"));
+  $("readerEval").textContent = `${info.eval || ""}${info.available || $("demo").checked ? "" : " · needs a key or endpoint below"}`;
+  $("settingsSummary").textContent = `Settings · reader: ${r}${$("demo").checked ? " (demo replay)" : ""} · cross-check: ${$("crosscheck").value}`;
+  saveSettings();
+}
+function options() {  // ParseOptions for POST /documents/{id}/parse; blanks fall back to the server's .env
+  const o = { reader: $("reader").value, crosscheck: $("crosscheck").value, demo: $("demo").checked, fallback: $("fallback").checked };
+  for (const f of ["vlm_url", "vlm_model", "vlm_key", "typellm_key", "scaledown_key"]) if (val(f)) o[f] = val(f);
+  return o;
+}
+api("/readers").then(cfg => {
+  for (const r of cfg.readers) {
+    READERS[r.id] = r;
+    const o = el("option", null, `${r.label}${r.available || cfg.demo ? "" : " (not configured)"}`); o.value = r.id; $("reader").append(o);
+  }
+  $("reader").value = cfg.default; $("crosscheck").value = cfg.crosscheck; $("demo").checked = cfg.demo;
+  if (!cfg.client_endpoints) $("vlm_url").disabled = true;
+  const saved = store.get();
+  if (saved) for (const f of FIELDS) if (f in saved) { $(f).type === "checkbox" ? ($(f).checked = saved[f]) : ($(f).value = saved[f]); }
+  const q = new URLSearchParams(location.search);  // deep link: &reader=vlm&preset=openai
+  if (READERS[q.get("reader")]) $("reader").value = q.get("reader");
+  if (PRESETS[q.get("preset")]) { $("preset").value = q.get("preset"); [$("vlm_url").value, $("vlm_model").value] = PRESETS[q.get("preset")]; }
+  refreshSettings();
+});
+$("preset").onchange = () => { const p = PRESETS[$("preset").value]; if (p) { $("vlm_url").value = p[0]; $("vlm_model").value = p[1]; $("demo").checked = false; } refreshSettings(); };
+FIELDS.forEach(f => $(f).addEventListener("change", refreshSettings));
+// entering an endpoint or key means "use it": demo replay would ignore it, so switch demo off
+["vlm_url", "vlm_key", "typellm_key", "scaledown_key"].forEach(f => $(f).addEventListener("input", () => { $("demo").checked = false; refreshSettings(); }));
 api("/samples").then(list => list.forEach(s => {
   const o = el("option", null, `${s.company} · ${s.title} · p${s.pages.join(",")}`); o.value = s.key; $("sample").append(o);
 }));
 
 function setDoc(meta) { doc = meta; $("parse").disabled = false; showState(meta); }
 function showState(m) {
+  $("info").textContent = m.reader !== undefined && m.state === "done" ? `read with: ${m.reader}${m.demo ? " (demo replay)" : ""} · ${m.reader_calls} reader calls` : "";
   $("state").textContent = `${m.filename} · ${m.state}${m.pages_done.length ? ` · pages done: ${m.pages_done.join(", ")}` : ""}${m.error ? ` · ${m.error}` : ""}`;
   $("pages").replaceChildren(...m.pages_done.map(n => { const b = el("button", null, `p${n}`); b.onclick = () => showPage(n, b); return b; }));
 }
@@ -85,7 +157,10 @@ $("upload").onclick = () => {
   const fd = new FormData(); fd.append("file", f); load(api("/documents", { method: "POST", body: fd }), f.name);
 };
 $("parse").onclick = async () => {
-  showState(await api(`/documents/${doc.id}/parse`, { method: "POST" }));
+  try {
+    showState(await api(`/documents/${doc.id}/parse`, { method: "POST", headers: { "Content-Type": "application/json" },
+                                                        body: JSON.stringify(options()) }));
+  } catch (e) { $("state").textContent = String(e); return; }
   clearInterval(timer);
   timer = setInterval(async () => {
     const m = await api(`/documents/${doc.id}`); showState(m);
@@ -128,7 +203,7 @@ async function showPage(n, btn) {
   const csv = el("a", null, "Download CSV"); csv.href = `/documents/${doc.id}/pages/${n}.csv`;
   $("table").replaceChildren(csv, t);
 }
-// deep link: /?sample=<key>&page=<n> opens a sample (and an already-parsed page) directly
+// deep link: /?sample=<key>&page=<n>[&reader=..&preset=..] opens a sample (and an already-parsed page) directly
 (async () => {
   const q = new URLSearchParams(location.search), key = q.get("sample");
   if (!key) return;

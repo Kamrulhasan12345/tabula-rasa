@@ -17,6 +17,8 @@ import urllib.request
 from functools import lru_cache
 from pathlib import Path
 
+from tabula import config
+
 RUNS = Path(__file__).parent.parent / "runs/b1"
 TIMEOUT = 900  # s; an 8B VLM on one T4 needs ~300 s for a dense page
 
@@ -32,8 +34,8 @@ Output only JSON, no markdown:
 {"title": "...", "unit": "...", "columns": [{"label": "...", "date": "..."}], "rows": [{"label": "...", "path": ["..."], "values": ["...", "..."]}]}"""
 
 
-def mode():
-    return "live" if os.environ.get("TABULA_VLM_URL") else "demo"
+def mode(settings=None):
+    return "live" if config.get("TABULA_VLM_URL", settings) else "demo"
 
 
 @lru_cache(maxsize=1)
@@ -44,16 +46,16 @@ def _saved():
     return recs
 
 
-def _call(png):
-    url = os.environ["TABULA_VLM_URL"].rstrip("/") + "/chat/completions"
-    body = {"model": os.environ.get("TABULA_VLM_MODEL", "Qwen/Qwen3-VL-8B-Instruct"),
+def _call(png, settings=None):
+    url = config.get("TABULA_VLM_URL", settings).rstrip("/") + "/chat/completions"
+    body = {"model": config.get("TABULA_VLM_MODEL", settings, "Qwen/Qwen3-VL-8B-Instruct"),
             "temperature": 0, "max_tokens": 6000,
             "messages": [{"role": "user", "content": [
                 {"type": "image_url", "image_url": {"url": "data:image/png;base64," + base64.b64encode(png).decode()}},
                 {"type": "text", "text": PROMPT}]}]}
     headers = {"Content-Type": "application/json"}
-    if os.environ.get("TABULA_VLM_KEY"):
-        headers["Authorization"] = "Bearer " + os.environ["TABULA_VLM_KEY"]
+    if config.get("TABULA_VLM_KEY", settings):
+        headers["Authorization"] = "Bearer " + config.get("TABULA_VLM_KEY", settings)
     t0 = time.perf_counter()
     req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=headers)
     with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
@@ -62,8 +64,8 @@ def _call(png):
             "tokens": (resp.get("usage") or {}).get("completion_tokens")}
 
 
-def read_page(key, render):
+def read_page(key, render, settings=None):
     """key: "<doc_id>_p<page>.png" (demo lookup); render: () -> PNG bytes (called only in live mode)."""
-    if mode() == "demo":
+    if mode(settings) == "demo":
         return _saved().get(key)
-    return _call(render())
+    return _call(render(), settings)
