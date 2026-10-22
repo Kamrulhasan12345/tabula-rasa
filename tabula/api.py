@@ -1,7 +1,8 @@
 """Library entry point: parse a PDF into one §4 table per statement page, ready for a UI.
 
     from tabula.api import parse_pdf
-    result = parse_pdf("filing.pdf")          # {"doc_id", "vlm_mode", "table_pages", "image_only_pages", "pages": [...]}
+    result = parse_pdf("filing.pdf")  # {"doc_id", "reader", "crosscheck", "demo", "reader_calls", "table_pages",
+                                      #  "image_only_pages", "statements", "pages": [...]}
 
 Each page: PRD §4 JSON from tabula.hybrid, plus
   rows[].bbox / rows[].cell_bbox   [x0, top, x1, bottom] in PDF points, origin top-left (B0 pages only;
@@ -20,7 +21,6 @@ from pathlib import Path
 
 import pdfplumber
 
-from tabula import vlm
 from tabula.checks import infer_checks, run_checks
 from tabula.hybrid import parse
 
@@ -44,10 +44,10 @@ def locate_cells(pdf_path, doc):
     """Boxes for a VLM-only (scan) page: OCR the render, find each row's label line top to bottom, then the
     OCR boxes on that line whose digits equal each value's digits, left to right. Unfound cells stay None."""
     from rapidfuzz.distance import Levenshtein
-    from tabula.security import DPI, _norm, ocr_lines
+    from tabula.security import DPI, _norm, ocr_lines, render
     with pdfplumber.open(pdf_path) as pdf:
         page = pdf.pages[doc["page"] - 1]
-        lines, size = ocr_lines(page.to_image(resolution=DPI).original), [round(float(page.width), 1), round(float(page.height), 1)]
+        lines, size = ocr_lines(render(page, DPI)), [round(float(page.width), 1), round(float(page.height), 1)]
     k = 72 / DPI
     pt = lambda o: [round(float(v) * k, 1) for v in o[1:]]
     digits = lambda t: re.sub(r"\D", "", t or "")
@@ -76,10 +76,13 @@ def locate_cells(pdf_path, doc):
     doc["bbox_source"] = "ocr"
 
 
-def parse_page(pdf_path, page_no, doc_id):
-    doc, meta = parse(pdf_path, page_no, doc_id)
+def finish_page(pdf_path, page_no, doc, meta):
+    """Merged page -> UI-ready page: sum checks, warnings, boxes for reader-only pages, optional Track C evidence."""
     doc.setdefault("rounding", {"method": "unknown", "source": "none"})
     doc["warnings"] = [meta["reader_error"]] if meta.get("reader_error") else []
+    doc["reader"] = meta.get("reader")
+    if meta.get("skipped"):
+        doc["skipped"] = meta["skipped"]
     doc["checks"] = infer_checks(doc) if doc.get("rows") else []
     labels = {r["id"]: r["label"] for r in doc.get("rows") or []}
     doc["check_results"] = [{"total": c["total"], "label": labels.get(c["total"]), "column": cid, "status": st, "diff": d}
@@ -94,6 +97,11 @@ def parse_page(pdf_path, page_no, doc_id):
         locate_cells(pdf_path, doc)
     _decision_models(pdf_path, doc)
     return doc
+
+
+def parse_page(pdf_path, page_no, doc_id):
+    doc, meta = parse(pdf_path, page_no, doc_id)
+    return finish_page(pdf_path, page_no, doc, meta)
 
 
 def _decision_models(pdf_path, doc):
@@ -162,20 +170,39 @@ def stitch(pages):
 
 
 def parse_pdf(pdf_path, pages=None, doc_id=None, on_page=None):
-    """pages: 1-based list, default auto-detect. doc_id: key for saved VLM outputs (demo mode).
-    on_page(doc): called after each page, for progress reporting."""
+    """pages: 1-based list, default auto-detect. doc_id: key for saved replies (demo mode).
+    on_page(doc): called after each page, for progress reporting.
+
+    Cost / latency policy:
+      TABULA_CROSSCHECK=all (default)  every page is read by the second reader too: every cell gets agreed/review.
+      TABULA_CROSSCHECK=needed         the reader is called only for pages B0 can't vouch for (hybrid.needs_reader):
+                                       scans, unverified text, failing sums, undated columns. Other pages: b0_only.
+    Reader calls (network) run in a thread pool while B0 (CPU, OCR; one at a time for memory) works through the
+    pages, so a document costs ~max(B0 total, slowest reader batch), not their sum."""
+    from concurrent.futures import ThreadPoolExecutor
+    from tabula.hybrid import merge, needs_reader, read_second, reader_name, run_b0
     doc_id = doc_id or Path(pdf_path).stem
-    if pages:
-        tables, image_only = list(pages), []
-    else:
-        tables, image_only = find_pages(pdf_path)
+    tables, image_only = (list(pages), []) if pages else find_pages(pdf_path)
+    todo = tables + image_only
+    reader = reader_name()
+    every = os.environ.get("TABULA_CROSSCHECK", "all") != "needed"
     out = []
-    for n in tables + image_only:
-        out.append(parse_page(pdf_path, n, doc_id))
-        if on_page:
-            on_page(out[-1])
-    from tabula.hybrid import reader_name
-    return {"doc_id": doc_id, "reader": reader_name(), "vlm_mode": vlm.mode(), "table_pages": tables, "image_only_pages": image_only,
+    with ThreadPoolExecutor(int(os.environ.get("TABULA_READER_CONCURRENCY", "4"))) as pool:  # TypeLLM allows 4 in flight
+        futs = {n: pool.submit(read_second, pdf_path, n, doc_id, reader) for n in todo} if every else {}
+        b0s = {}
+        for n in todo:
+            b0s[n] = run_b0(pdf_path, n)
+            if n not in futs and needs_reader(b0s[n]):
+                futs[n] = pool.submit(read_second, pdf_path, n, doc_id, reader)
+        for n in todo:
+            second = futs[n].result() if n in futs else (None, {"reader": None, "skipped": "B0 passed every check"})
+            used = second[1].get("reader")
+            doc = finish_page(pdf_path, n, merge(b0s[n], second[0], "b1" if used in ("vlm", None) else used), second[1])
+            out.append(doc)
+            if on_page:
+                on_page(doc)
+    return {"doc_id": doc_id, "reader": reader, "crosscheck": "all" if every else "needed", "demo": os.environ.get("TABULA_DEMO") == "1",
+            "reader_calls": len(futs), "table_pages": tables, "image_only_pages": image_only,
             "statements": stitch(out), "pages": out}
 
 

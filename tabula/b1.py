@@ -91,9 +91,10 @@ def convert(raw, doc_id, page_no):
 def _png(pdf_path, page_no, dpi=200):  # same resolution as the Kaggle page images
     import io
     import pdfplumber
+    from tabula.security import render
     with pdfplumber.open(pdf_path) as pdf:
         buf = io.BytesIO()
-        pdf.pages[page_no - 1].to_image(resolution=dpi).original.save(buf, "PNG")
+        render(pdf.pages[page_no - 1], dpi).save(buf, "PNG")
         return buf.getvalue()
 
 

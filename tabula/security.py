@@ -12,6 +12,7 @@ A flagged word is not used for extraction; a page with flags goes to human revie
 Metadata, annotations, form fields and attachments are never read, so they need no check.
 """
 import re
+import threading
 import unicodedata
 
 import numpy as np
@@ -48,6 +49,16 @@ def _overlaps(a, b):
     return a["x0"] < b["x1"] and b["x0"] < a["x1"] and a["top"] < b["bottom"] and b["top"] < a["bottom"]
 
 
+RENDER_LOCK = threading.Lock()
+
+
+def render(page, dpi):
+    """pdfplumber page -> PIL image. pdfium (pypdfium2) is not thread-safe, and reader calls / the server's image
+    endpoint render from other threads, so every render in the project goes through this lock."""
+    with RENDER_LOCK:
+        return page.to_image(resolution=dpi).original
+
+
 def ocr_lines(img):
     """PIL page render -> [(normalized text, x0, top, x1, bottom)] in render pixels."""
     global _ocr
@@ -58,7 +69,7 @@ def ocr_lines(img):
 
 def verify_page(page):
     """page: pdfplumber Page -> (words, flags). Each word gets "verified": bool."""
-    img = page.to_image(resolution=DPI).original
+    img = render(page, DPI)
     gray = np.asarray(img.convert("L"))
     ocr = ocr_lines(img)
     s = DPI / 72

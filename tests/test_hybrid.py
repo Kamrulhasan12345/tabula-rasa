@@ -38,3 +38,33 @@ assert scan["engine"] == "b1" and scan["rows"][0]["cell_status"] == {"c0": "read
 
 assert merge({"rows": [], "columns": []}, None)["status"] == "failed"
 print("ok")
+
+# reader policy (no network): fallback chain, reply cache, demo replay
+import os, tempfile  # noqa: E401,E402
+from tabula import hybrid, remote  # noqa: E402
+
+for k in ("TYPELLM_API_KEY", "SCALEDOWN_API_KEY", "TABULA_DEMO", "TABULA_VLM_URL"):
+    os.environ.pop(k, None)
+os.environ |= {"TYPELLM_API_KEY": "x", "SCALEDOWN_API_KEY": "y", "TABULA_CACHE": tempfile.mkdtemp()}
+TABLE = {"unit": "千円", "columns": [{"label": "当期", "date": "2026年3月31日"}],
+         "rows": [{"label": "現金及び預金", "path": ["資産の部"], "values": ["1,000"]}]}
+calls = []
+
+
+def down(png):
+    raise OSError("down")
+
+
+remote.READERS.update(typellm=down, scaledown=lambda png: calls.append(1) or TABLE)
+PDF = str(Path(__file__).parent.parent / "docs/balance_sheet_after_correction.pdf")
+d, m = hybrid.read_second(PDF, 1, "t", "typellm")
+assert m["reader"] == "scaledown" and "typellm: OSError" in m["reader_error"] and d["rows"][0]["values"] == {"c0": 1000}
+d, m = hybrid.read_second(PDF, 1, "t", "typellm")
+assert m["reader"] == "scaledown" and len(calls) == 1  # second time: scaledown's reply comes from the cache
+
+os.environ["TABULA_DEMO"] = "1"  # replay saved replies of an eval page; no keys or network used
+d, m = hybrid.read_second("not-needed.pdf", 7, "081220261008548219", "typellm")
+assert m["reader"] == "typellm" and len(d["rows"]) > 30 and len(calls) == 1
+d, m = hybrid.read_second("not-needed.pdf", 1, "balance_sheet_after_correction", "vlm")
+assert m["reader"] == "vlm" and len(d["rows"]) == 43
+print("ok policy")

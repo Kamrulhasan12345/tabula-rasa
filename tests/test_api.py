@@ -66,4 +66,8 @@ assert c.get(f"/documents/{doc_id}/pages/1.csv").text.lstrip("﻿").startswith("
 assert 'class="agreed"' in c.get(f"/documents/{doc_id}/pages/1.html").text
 assert c.get(f"/documents/{doc_id}/pages/1/image.png").content[:4] == b"\x89PNG"
 assert c.get(f"/documents/{doc_id}/pages/2").status_code == 404
+assert "Tabula Rasa" in c.get("/").text  # demo viewer
+assert any(x["key"] == "balance_sheet_after_correction" for x in c.get("/samples").json())
+assert c.post("/samples/balance_sheet_after_correction").json()["demo_pages"] == [1]
+assert c.post("/samples/nope").status_code == 404
 print("ok", len(page["check_results"]), "sum checks")

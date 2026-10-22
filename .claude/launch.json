@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tabula-demo",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "TABULA_DEMO=1 TABULA_STORE=runs/demo_store .venv/bin/uvicorn tabula.server:app --port 8765"],
+      "port": 8765
+    }
+  ]
+}

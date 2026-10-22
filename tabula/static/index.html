@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabula Rasa viewer</title>
+<style>
+  :root { --bg:#f7f7f5; --panel:#fff; --ink:#1d1d1b; --muted:#6b6b66; --line:#deded8;
+          --agreed:#1f8a4c; --review:#c62828; --reader:#b7791f; --b0:#5f6b7a; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif; background:var(--bg); color:var(--ink); }
+  header { display:flex; flex-wrap:wrap; gap:12px; align-items:center; padding:12px 16px; background:var(--panel); border-bottom:1px solid var(--line); }
+  header h1 { font-size:16px; margin:0 12px 0 0; }
+  select, input, button { font:inherit; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  button { cursor:pointer; background:var(--ink); color:#fff; border-color:var(--ink); }
+  button:disabled { opacity:.4; cursor:default; }
+  #info, #state { color:var(--muted); }
+  #pages { display:flex; gap:6px; padding:8px 16px; flex-wrap:wrap; }
+  #pages button { background:#fff; color:var(--ink); }
+  #pages button.on { background:var(--ink); color:#fff; }
+  main { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:16px; padding:0 16px 16px; }
+  @media (max-width: 900px) { main { grid-template-columns:1fr; } }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px; overflow:auto; }
+  #pagebox { position:relative; display:inline-block; }
+  #pagebox { width:100%; } #pagebox img { display:block; width:100%; height:auto; }
+  .box { position:absolute; border:2px solid; pointer-events:auto; cursor:pointer; }
+  .box.agreed { border-color:var(--agreed); } .box.review { border-color:var(--review); background:#c628281f; }
+  .box.reader_only { border-color:var(--reader); } .box.b0_only { border-color:var(--b0); }
+  .box.hit { outline:3px solid #1d4ed8; }
+  table { border-collapse:collapse; width:100%; }
+  th, td { border-bottom:1px solid var(--line); padding:3px 6px; text-align:left; white-space:nowrap; }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  td.agreed { color:var(--agreed); } td.review { color:var(--review); font-weight:600; background:#c6282812; }
+  td.reader_only { color:var(--reader); } td.b0_only { color:var(--b0); }
+  tr.header th, tr.total th { font-weight:700; } tr.hit { background:#1d4ed81a; }
+  .legend span { margin-right:12px; } .legend i { display:inline-block; width:10px; height:10px; margin-right:4px; border:2px solid; }
+  .warn { color:var(--review); margin:4px 0; }
+  .meta { color:var(--muted); margin:0 0 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Tabula Rasa</h1>
+  <select id="sample"><option value="">— eval sample —</option></select>
+  <button id="loadSample">Load sample</button>
+  <input type="file" id="file" accept="application/pdf">
+  <button id="upload">Upload</button>
+  <button id="parse" disabled>Parse</button>
+  <span id="state"></span>
+  <span id="info"></span>
+</header>
+<div id="pages"></div>
+<main>
+  <div class="panel"><div class="legend" id="legend"></div><div id="pagebox"></div></div>
+  <div class="panel"><p class="meta" id="pmeta"></p><div id="warnings"></div><div id="table"></div></div>
+</main>
+<script>
+const DPI = 100, K = DPI / 72, $ = id => document.getElementById(id);
+let doc = null, timer = null;
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const api = async (path, opts) => { const r = await fetch(path, opts); if (!r.ok) throw new Error(`${r.status} ${await r.text()}`); return r.json(); };
+
+for (const [k, c] of [["agreed", "agreed"], ["review", "review"], ["reader only", "reader_only"], ["text layer only", "b0_only"]]) {
+  const s = el("span"); const i = el("i"); i.style.borderColor = `var(--${c === "reader_only" ? "reader" : c === "b0_only" ? "b0" : c})`;
+  s.append(i, k); $("legend").append(s);
+}
+
+api("/health").then(h => $("info").textContent = `reader: ${h.reader}${h.demo ? " (demo replay)" : ""} · crosscheck: ${h.crosscheck}`);
+api("/samples").then(list => list.forEach(s => {
+  const o = el("option", null, `${s.company} · ${s.title} · p${s.pages.join(",")}`); o.value = s.key; $("sample").append(o);
+}));
+
+function setDoc(meta) { doc = meta; $("parse").disabled = false; showState(meta); }
+function showState(m) {
+  $("state").textContent = `${m.filename} · ${m.state}${m.pages_done.length ? ` · pages done: ${m.pages_done.join(", ")}` : ""}${m.error ? ` · ${m.error}` : ""}`;
+  $("pages").replaceChildren(...m.pages_done.map(n => { const b = el("button", null, `p${n}`); b.onclick = () => showPage(n, b); return b; }));
+}
+async function load(promise, label) {  // Parse stays off until the document is registered
+  $("parse").disabled = true; $("state").textContent = `loading ${label}…`;
+  try { setDoc(await promise); } catch (e) { $("state").textContent = String(e); }
+}
+$("loadSample").onclick = () => $("sample").value && load(api(`/samples/${encodeURIComponent($("sample").value)}`, { method: "POST" }), "sample");
+$("upload").onclick = () => {
+  const f = $("file").files[0]; if (!f) return;
+  const fd = new FormData(); fd.append("file", f); load(api("/documents", { method: "POST", body: fd }), f.name);
+};
+$("parse").onclick = async () => {
+  showState(await api(`/documents/${doc.id}/parse`, { method: "POST" }));
+  clearInterval(timer);
+  timer = setInterval(async () => {
+    const m = await api(`/documents/${doc.id}`); showState(m);
+    if (m.state === "done" || m.state === "failed") { clearInterval(timer); if (m.pages_done.length) $("pages").firstChild.click(); }
+  }, 2000);
+};
+
+async function showPage(n, btn) {
+  [...$("pages").children].forEach(b => b.classList.toggle("on", b === btn));
+  const p = await api(`/documents/${doc.id}/pages/${n}`);
+  const img = el("img"); img.src = `/documents/${doc.id}/pages/${n}/image.png?dpi=${DPI}`; img.alt = `page ${n}`;
+  const box = $("pagebox"); box.replaceChildren(img);
+  await new Promise(res => { img.onload = res; img.onerror = res; });
+  const k = p.page_size ? img.clientWidth / p.page_size[0] : img.clientWidth / (img.naturalWidth / K);  // px per PDF point
+  const cols = (p.columns || []).map(c => c.id);
+  $("pmeta").textContent = `${p.statement_type || "-"} · ${p.unit ? p.unit.raw : "unit ?"} · engine ${p.engine} · ${p.status}`
+    + ` · sums ${p.check_results.filter(c => c.status === "ok").length} ok / ${p.check_results.filter(c => c.status === "fail").length} fail`;
+  $("warnings").replaceChildren(...(p.warnings || []).map(w => el("p", "warn", w)));
+  const t = el("table"), head = el("tr"); head.append(el("th"));
+  (p.columns || []).forEach(c => head.append(el("th", null, `${c.label || ""} ${c.period_end || ""}`)));
+  t.append(head);
+  (p.rows || []).forEach(r => {
+    const tr = el("tr", r.row_type); const th = el("th", null, r.label); th.style.paddingLeft = `${6 + 12 * (r.level || 0)}px`; tr.append(th);
+    cols.forEach(cid => {
+      const st = (r.cell_status || {})[cid] || "", v = (r.values || {})[cid];
+      const td = el("td", `num ${st}`, v == null ? "" : typeof v === "number" ? v.toLocaleString("ja-JP") : v);
+      td.title = `${(r.raw || {})[cid] || ""} ${st}`; tr.append(td);
+      const b = (r.cell_bbox || {})[cid];
+      if (b) {
+        const d = el("div", `box ${st}`); Object.assign(d.style, { left: `${b[0] * k - 2}px`, top: `${b[1] * k - 2}px`,
+          width: `${(b[2] - b[0]) * k + 4}px`, height: `${(b[3] - b[1]) * k + 4}px` });
+        d.title = `${r.label}: ${(r.raw || {})[cid]} (${st})`;
+        d.onclick = () => { document.querySelectorAll(".hit").forEach(x => x.classList.remove("hit")); d.classList.add("hit"); tr.classList.add("hit"); tr.scrollIntoView({ block: "center" }); };
+        tr.onclick = () => { document.querySelectorAll(".hit").forEach(x => x.classList.remove("hit")); tr.classList.add("hit"); d.classList.add("hit"); d.scrollIntoView({ block: "center" }); };
+        box.append(d);
+      }
+    });
+    t.append(tr);
+  });
+  const csv = el("a", null, "Download CSV"); csv.href = `/documents/${doc.id}/pages/${n}.csv`;
+  $("table").replaceChildren(csv, t);
+}
+</script>
+</body>
+</html>

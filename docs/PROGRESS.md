@@ -4,6 +4,16 @@ For agents and people picking this project up. Newest state first. Results: [REP
 
 ## Current state (2026-10-22)
 
+**Pipeline policy + demo (latest).**
+- `hybrid.read_second` takes the cheapest source first: demo replay (`TABULA_DEMO=1`, all readers), then the reply cache keyed by image hash (`runs/cache`), then a live call.
+- Fallback chain: TypeLLM, then ScaleDown, then VLM.
+- `TABULA_CROSSCHECK=needed` skips the reader on pages B0 can vouch for (`hybrid.needs_reader`): 27% fewer calls on eval.
+- `api.parse_pdf` runs reader calls in a thread pool while B0 runs.
+- **pdfium is not thread-safe.** Every render goes through `security.render` (one lock). Without it: native crash, `free(): chunks in smallbin corrupted`.
+- Demo viewer at `/` (`tabula/static/index.html`), with `/samples` for one-click eval filings. Launch config: `.claude/launch.json` (`tabula-demo`).
+- **RAM:** don't run the demo server, the browser pane and an OCR test at the same time (exit 137).
+
+
 **Tracks B/C + whole-page gold (latest).**
 - TypeLLM and ScaleDown run on all 85 pages (keys in `.env`). Gold is whole-page now: 4,619 cells.
 - Hybrid B0 + TypeLLM (default reader): 1.000 cells, 0.93 page exact, 0.987 hierarchy, ≈ $0.0001/page.

@@ -9,6 +9,8 @@ GET  /documents/{id}/pages/{n}       PRD §4 JSON with cell_status, cell_bbox, c
 GET  /documents/{id}/pages/{n}.csv | .html
 GET  /documents/{id}/pages/{n}/image.png?dpi=100   page render; bbox px = points * dpi / 72
 GET  /health
+GET  /samples, POST /samples/{key}   eval filings on this machine, loaded with their eval pages (demo)
+GET  /                               demo viewer (tabula/static/index.html)
 Env: TABULA_VLM_URL / _MODEL / _KEY (tabula/vlm.py), TABULA_STORE (upload dir), TABULA_CORS_ORIGINS (UI origins).
 Uploads are untrusted: only "%PDF" files up to 50 MB; ids are content hashes, names are sanitized.
 """
@@ -23,10 +25,11 @@ from pathlib import Path
 import pdfplumber
 from fastapi import BackgroundTasks, FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import PlainTextResponse, Response
+from fastapi.responses import FileResponse, PlainTextResponse, Response
 
 from tabula import vlm
 from tabula.api import find_pages, parse_pdf, to_csv, to_html
+from tabula.security import render
 
 STORE = Path(os.environ.get("TABULA_STORE", Path(__file__).parent.parent / "runs/store"))
 MAX_BYTES = 50 * 1024 * 1024
@@ -54,10 +57,49 @@ def _save_meta(d, meta):
     (d / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1))
 
 
+ROOT = Path(__file__).parent.parent
+
+
+def _samples():
+    """Eval filings whose PDF is on this machine: {key: (pdf path, doc_id, [eval pages])}. Their saved replies
+    let TABULA_DEMO=1 run with no keys or network. In a fresh clone only the sample page is present."""
+    out = {}
+    for gp in sorted((ROOT / "gold").glob("*.json")):
+        g = json.loads(gp.read_text())
+        if g.get("gold_status") not in (None, "confirmed"):  # None: the hand-labelled sample page
+            continue
+        pdf = ROOT / ((g.get("source") or {}).get("pdf") or f"docs/{g['doc_id']}.pdf")
+        if pdf.exists():
+            title = ((g.get("source") or {}).get("title") or g["doc_id"]) + (" · synthetic scan" if "_scan" in g["doc_id"] else "")
+            e = out.setdefault(g["doc_id"], {"pdf": pdf, "pages": [], "title": title,
+                                             "company": (g.get("source") or {}).get("company") or ""})
+            e["pages"].append(g["page"])
+    return out
+
+
+@app.get("/samples")
+def samples():
+    return [{"key": k, "title": v["title"], "company": v["company"], "pages": sorted(v["pages"])} for k, v in _samples().items()]
+
+
+@app.post("/samples/{key}", status_code=201)
+def load_sample(key: str):
+    s = _samples().get(key)
+    if not s:
+        raise HTTPException(404, "no such sample on this machine")
+    return _register(s["pdf"].read_bytes(), s["pdf"].name, key, sorted(s["pages"]))
+
+
+@app.get("/", include_in_schema=False)
+def viewer():
+    return FileResponse(Path(__file__).parent / "static/index.html")
+
+
 @app.get("/health")
 def health():
     from tabula.hybrid import reader_name
-    return {"status": "ok", "reader": reader_name(), "vlm_mode": vlm.mode()}
+    return {"status": "ok", "reader": reader_name(), "demo": os.environ.get("TABULA_DEMO") == "1",
+            "crosscheck": os.environ.get("TABULA_CROSSCHECK", "all"), "vlm_mode": vlm.mode()}
 
 
 @app.post("/documents", status_code=201)
@@ -67,10 +109,18 @@ async def upload(file: UploadFile = File(...), name: str | None = Form(None)):
         raise HTTPException(413, "PDF over 50 MB")
     if not data.startswith(b"%PDF"):
         raise HTTPException(415, "not a PDF")
+    return _register(data, file.filename, name)
+
+
+def _register(data, filename, name, demo_pages=None):
     doc_id = hashlib.sha256(data).hexdigest()[:16]
     d = STORE / doc_id
     if (d / "meta.json").exists():
-        return _meta(d)
+        meta = _meta(d)
+        if demo_pages and meta.get("demo_pages") != demo_pages:  # same PDF loaded as a sample: key replies by its eval id
+            meta.update(demo_pages=demo_pages, name=name)
+            _save_meta(d, meta)
+        return meta
     d.mkdir(parents=True, exist_ok=True)
     (d / "doc.pdf").write_bytes(data)
     try:
@@ -81,9 +131,9 @@ async def upload(file: UploadFile = File(...), name: str | None = Form(None)):
         (d / "doc.pdf").unlink()
         d.rmdir()
         raise HTTPException(422, f"unreadable PDF: {type(e).__name__}")
-    key = re.sub(r"[^A-Za-z0-9_-]", "", name or Path(file.filename or "").stem)[:64] or doc_id
-    meta = {"id": doc_id, "name": key, "filename": file.filename, "n_pages": n_pages, "table_pages": tables,
-            "image_only_pages": image_only, "state": "uploaded", "pages_done": [], "error": None}
+    key = re.sub(r"[^A-Za-z0-9_-]", "", name or Path(filename or "").stem)[:64] or doc_id
+    meta = {"id": doc_id, "name": key, "filename": filename, "n_pages": n_pages, "table_pages": tables,
+            "image_only_pages": image_only, "demo_pages": demo_pages, "state": "uploaded", "pages_done": [], "error": None}
     _save_meta(d, meta)
     return meta
 
@@ -100,7 +150,8 @@ def _run(d, pages):
             _save_meta(d, meta)
         try:
             res = parse_pdf(d / "doc.pdf", pages, meta["name"], on_page=done)
-            meta.update(state="done", vlm_mode=res["vlm_mode"])
+            meta.update(state="done", reader=res["reader"], demo=res["demo"], reader_calls=res["reader_calls"],
+                        statements=res["statements"])
         except Exception as e:  # keep the pages already done; report the rest
             meta.update(state="failed", error=f"{type(e).__name__}: {e}")
         _save_meta(d, meta)
@@ -112,7 +163,7 @@ def start(doc_id: str, background: BackgroundTasks, pages: str | None = Query(No
     meta = _meta(d)
     if meta["state"] in ("queued", "running"):
         return meta
-    page_list = [int(p) for p in pages.split(",")] if pages else None
+    page_list = [int(p) for p in pages.split(",")] if pages else meta.get("demo_pages")  # samples: the eval pages
     if page_list and not all(1 <= p <= meta["n_pages"] for p in page_list):
         raise HTTPException(422, f"pages must be 1..{meta['n_pages']}")
     meta["state"] = "queued"
@@ -150,7 +201,7 @@ def page_image(doc_id: str, n: int, dpi: int = Query(100, ge=36, le=300)):
         raise HTTPException(404, "no such page")
     with pdfplumber.open(d / "doc.pdf") as pdf:
         buf = io.BytesIO()
-        pdf.pages[n - 1].to_image(resolution=dpi).original.save(buf, "PNG")
+        render(pdf.pages[n - 1], dpi).save(buf, "PNG")
     return Response(buf.getvalue(), media_type="image/png")
 
 

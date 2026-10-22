@@ -19,15 +19,38 @@ For every statement page this writes `out/<doc>_p<n>.json` (PRD §4 schema), `.c
 
 | status | meaning |
 |---|---|
-| `agreed` | text layer and VLM read the same number |
+| `agreed` | text layer and image reader read the same number |
 | `review` | they disagree, or the cell held hidden/unverified text: send to a human |
-| `b0_only` | text layer only (no VLM output for this page yet) |
-| `reader_only` | no usable text layer (scan): VLM reading only |
+| `b0_only` | text layer only (reader skipped or unavailable) |
+| `reader_only` | no usable text layer (scan): image reader only |
 
 Each page also gets:
 - `cell_bbox` per cell: `[x0, top, x1, bottom]` in PDF points, top-left origin. Text-layer pages only.
 - `check_results`: sum checks inferred from the 合計 / 小計 rows, run with the filing's rounding rule.
 - `warnings` and a page `status` of `ok` or `review`.
+
+## Demo (no keys, no network)
+
+```bash
+TABULA_DEMO=1 .venv/bin/uvicorn tabula.server:app --port 8765
+```
+
+Open http://localhost:8765.
+1. Pick an eval sample and click **Load sample**, then **Parse**.
+2. See the page image with every cell boxed by status: green agreed, red review, amber reader-only, grey text-layer-only. Next to it is the table, with sum checks and warnings.
+
+In demo mode every reader (TypeLLM, ScaleDown, VLM) replays its saved reply for the 86 eval pages, so the demo works offline and spends nothing. Other uploads still parse, with the text-layer reader only. A fresh clone has only the sample page's PDF; the other samples need the local `data/` filings.
+
+## Cost and fallback policy
+
+| env | effect |
+|---|---|
+| `TABULA_CROSSCHECK=all` (default) | every page is also read from the image, so every cell gets agreed or review |
+| `TABULA_CROSSCHECK=needed` | the paid reader runs only when the text layer can't vouch for the page: scan, unverified text, failing sum, undated column. 27% fewer calls on the eval set; skipped cells show `b0_only` |
+| `TABULA_READER_CONCURRENCY=4` | reader calls in flight while B0 works through the pages (TypeLLM allows 4) |
+| `TABULA_CACHE` | reply cache keyed by the page image's hash (default `runs/cache`), so a page is never billed twice |
+
+If the chosen reader fails (error or timeout), the next one is tried: TypeLLM, then ScaleDown, then the VLM. If none answers, the page is still served from the text layer alone, with a warning.
 
 ## Second reader
 

@@ -32,13 +32,16 @@ def main(argv=None):
         print(f"  p{doc['page']}: {doc.get('statement_type') or '-'} | {len(doc.get('rows') or [])} rows, {len(cells)} cells, "
               f"{cells.count('review')} to review | sums {len(doc['check_results']) - fails} ok / {fails} fail | "
               f"engine {doc['engine']} | {doc['status']} -> {stem}.csv")
+        if doc.get("skipped"):
+            print(f"    reader skipped: {doc['skipped']}")
         for w in doc["warnings"] + [f"security: {f}" for f in doc.get("security_flags") or []]:
             print(f"    {w}")
 
     res_id = a.doc_id or a.pdf.stem
     pages = [int(x) for x in a.pages.split(",")] if a.pages else None
     res = parse_pdf(a.pdf, pages, res_id, on_page=report)
-    print(f"{a.pdf}: reader {res['reader']} (VLM {res['vlm_mode']}) | table pages {res['table_pages']}"
+    print(f"{a.pdf}: reader {res['reader']}{' (demo replay)' if res['demo'] else ''} | crosscheck {res['crosscheck']}, "
+          f"{res['reader_calls']} reader calls | table pages {res['table_pages']}"
           + (f" | image-only {res['image_only_pages']}" if res["image_only_pages"] else ""))
 
 
